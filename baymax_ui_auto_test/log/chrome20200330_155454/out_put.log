@@ -1,0 +1,34 @@
+2020-03-30 15:54:54,341  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 15:54:54,450  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 15:54:54,535  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 15:54:54,606  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 15:54:54,662  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 15:54:54,727  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 15:55:00,870  - INFO - ----  test007__校验“质量分析”页面___//*[@test-id="/dataGovernance"]__xpath__action_chains__ __        ----
+2020-03-30 15:55:02,455  - INFO - ----  test007__校验“质量分析”页面___//*[@test-id="/qualityAnalysis/analysisTemplate"]__xpath__click__ __        ----
+2020-03-30 15:55:02,505  - INFO - ----  test007__校验“质量分析”页面___ __ __move_by_offset__ __        ----
+2020-03-30 15:55:02,781  - INFO - ----  test007__校验“质量分析”页面___ __ __get_current_url__ __        ----
+2020-03-30 15:55:02,812  - INFO - ----  test007__校验“质量分析”页面___//button/span[contains(text(), '分析模板')]__xpath__ __ __        ----
+2020-03-30 15:55:02,825  - INFO - ----  test007__校验“质量分析”页面___//*[contains(text(),"新建")]__xpath__ __ __        ----
+2020-03-30 15:55:02,834  - INFO - ----  test007__校验“质量分析”页面___//*[contains(text(),"数据集")]__xpath__ __ __        ----
+2020-03-30 15:55:02,834  - INFO - [CheckPoint_1]: test_a006_quality_analyze_ : OK
+2020-03-30 15:55:02,834  - INFO - [CheckPoint_2]: test_a006_quality_analyze_ : NG
+2020-03-30 15:55:05,157  - INFO - ----  testba009__校验“元数据分析”页面___//*[@test-id="/dataGovernance"]__xpath__action_chains__ __        ----
+2020-03-30 15:55:06,743  - INFO - ----  testba009__校验“元数据分析”页面___//*[@test-id="/schemaAnalysis/:id/"]__xpath__click__ __        ----
+2020-03-30 15:55:06,802  - INFO - ----  testba009__校验“元数据分析”页面___ __ __move_by_offset__ __        ----
+2020-03-30 15:55:07,071  - INFO - ----  testba009__校验“元数据分析”页面___ __ __get_current_url__ __        ----
+2020-03-30 15:55:07,124  - INFO - ----  testba009__校验“元数据分析”页面___bm-ch-zebra-schemaAnalysis-input__name__ __ __        ----
+2020-03-30 15:55:07,125  - INFO - [CheckPoint_3]: test_a007_metadata_analyze_ : OK
+2020-03-30 15:55:07,125  - INFO - [CheckPoint_4]: test_a007_metadata_analyze_ : NG
+2020-03-30 15:55:09,455  - INFO - ----  test008__校验“血缘分析”页面___//*[@test-id="/dataGovernance"]__xpath__action_chains__ __        ----
+2020-03-30 15:55:11,029  - INFO - ----  test008__校验“血缘分析”页面___//*[@test-id="/kinship/:id/"]__xpath__click__ __        ----
+2020-03-30 15:55:11,076  - INFO - ----  test008__校验“血缘分析”页面___ __ __move_by_offset__ __        ----
+2020-03-30 15:55:11,351  - INFO - ----  test008__校验“血缘分析”页面___ __ __get_current_url__ __        ----
+2020-03-30 15:55:11,363  - INFO - ----  test008__校验“血缘分析”页面___bm-ch-zebra-kinship-input__name__ __ __        ----
+2020-03-30 15:55:11,363  - INFO - [CheckPoint_5]: test_a008_blood_analyze_ : OK
+2020-03-30 15:55:11,363  - INFO - [CheckPoint_6]: test_a008_blood_analyze_ : NG
+2020-03-30 15:55:13,696  - INFO - ----  test009__校验“流程管理”页面___//*[@test-id="/dataAnalysis"]__xpath__action_chains__ __        ----
+2020-03-30 15:55:15,182  - INFO - ----  test009__校验“流程管理”页面___//*[@test-id="/design"]__xpath__click__ __        ----
+2020-03-30 15:55:15,231  - INFO - ----  test009__校验“流程管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 15:55:15,506  - INFO - ----  test009__校验“流程管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 15:55:35,807  - INFO - [CheckPoint_7]: test_a009_flow_manage_请检查//button/span[contains(text(), '目录')]是否存在: NG

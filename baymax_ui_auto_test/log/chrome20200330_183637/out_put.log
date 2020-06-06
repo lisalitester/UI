@@ -1,0 +1,22 @@
+2020-03-30 18:36:37,082  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 18:36:37,194  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 18:36:37,275  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 18:36:37,353  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 18:36:37,409  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 18:36:37,473  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 18:36:38,558  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-30 18:36:40,045  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-30 18:36:40,598  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-30 18:36:41,901  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-03-30 18:36:41,949  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-03-30 18:36:41,976  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-03-30 18:36:41,994  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-03-30 18:36:41,994  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-03-30 18:36:45,322  - INFO - ----  test018__校验“闭合资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__get_attr__ __        ----
+2020-03-30 18:36:45,341  - INFO - ----  test018__校验“闭合资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-03-30 18:36:45,373  - INFO - ----  test018__校验“闭合资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__get_attr__ __        ----
+2020-03-30 18:36:45,384  - INFO - ----  test018__校验“闭合资源目录的文件夹”页面___ __ __ __ __        ----
+2020-03-30 18:36:45,385  - INFO - ----  test018__校验“闭合资源目录的文件夹”页面___ __ __ __ __        ----
+2020-03-30 18:36:45,385  - INFO - ----  test018__校验“闭合资源目录的文件夹”页面___ __ __ __ __        ----
+2020-03-30 18:36:45,385  - INFO - [CheckPoint_3]: test_a018_close_dir_ : OK
+2020-03-30 18:36:45,385  - INFO - [CheckPoint_4]: test_a018_close_dir_ : NG

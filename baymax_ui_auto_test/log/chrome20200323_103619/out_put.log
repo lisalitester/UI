@@ -1,0 +1,10 @@
+2020-03-23 10:36:19,417  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-23 10:36:19,501  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-23 10:36:19,585  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-23 10:36:19,642  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-23 10:36:19,692  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-23 10:36:19,749  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-23 10:36:21,844  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-23 10:36:23,326  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-23 10:36:23,379  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-23 10:36:45,023  - INFO - [CheckPoint_1]: test_a002_resource_dir_请检查数据源是否存在: NG

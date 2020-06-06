@@ -1,0 +1,16 @@
+2020-03-30 16:34:26,864  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 16:34:26,966  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 16:34:27,049  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 16:34:27,117  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 16:34:27,169  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 16:34:27,236  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 16:34:28,317  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-30 16:34:29,914  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-03-30 16:34:29,957  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 16:34:30,230  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 16:34:50,576  - INFO - [CheckPoint_1]: test_b017_user_manage_请检查//input[@placeholder='请填写内容']是否存在: NG
+2020-03-30 16:35:13,254  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-30 16:35:14,839  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-03-30 16:35:14,904  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 16:35:15,162  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 16:35:35,475  - INFO - [CheckPoint_1]: test_b017_user_manage_请检查//input[@placeholder='请填写内容']是否存在: NG

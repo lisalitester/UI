@@ -1,0 +1,18 @@
+2020-04-01 16:53:32,322  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 16:53:32,412  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 16:53:33,506  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 16:53:33,570  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 16:53:33,629  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 16:53:33,695  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 16:54:14,454  - INFO - [CheckPoint_1]: test_a017_open_dir_请检查//*[@name="Standards"]/preceding-sibling::i[1]是否存在: NG
+2020-04-01 16:54:37,169  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 16:54:38,698  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 16:54:39,262  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 16:54:40,560  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-04-01 16:54:40,620  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-04-01 16:54:40,649  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-04-01 16:54:40,667  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-04-01 16:54:40,667  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-04-01 16:54:45,603  - INFO - ----  test027__校验“元数据-复制schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/i__xpath__click__ __        ----
+2020-04-01 16:55:06,980  - INFO - [CheckPoint_3]: test_a027_copy_schema_请检查//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/ul/li[4]/em/span/font/font是否存在: NG
+2020-04-01 16:55:12,334  - INFO - ----  test027__校验“元数据-复制schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/i__xpath__click__ __        ----

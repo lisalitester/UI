@@ -1,0 +1,31 @@
+2020-03-30 16:12:47,831  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 16:12:47,926  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 16:12:48,016  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 16:12:48,074  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 16:12:48,130  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 16:12:48,195  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 16:12:49,285  - INFO - ----  test010__校验“项目目录”页面___//*[@test-id="/dataAnalysis"]__xpath__action_chains__ __        ----
+2020-03-30 16:12:50,764  - INFO - ----  test010__校验“项目目录”页面___//*[@test-id="/resourceManProject"]__xpath__click__ __        ----
+2020-03-30 16:12:50,814  - INFO - ----  test010__校验“项目目录”页面___ __ __move_by_offset__ __        ----
+2020-03-30 16:12:51,072  - INFO - ----  test010__校验“项目目录”页面___ __ __get_current_url__ __        ----
+2020-03-30 16:12:51,086  - INFO - ----  test010__校验“项目目录”页面___//button/span[contains(text(), '目录')]__xpath__ __ __        ----
+2020-03-30 16:12:51,086  - INFO - [CheckPoint_1]: test_a010_project_dir_ : OK
+2020-03-30 16:12:51,086  - INFO - [CheckPoint_2]: test_a010_project_dir_ : NG
+2020-03-30 16:12:53,406  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/dataMonitoring"]__xpath__action_chains__ __        ----
+2020-03-30 16:12:54,880  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl"]__xpath__action_chains__ __        ----
+2020-03-30 16:12:56,864  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl" and text() = '任务监控']__xpath__click__ __        ----
+2020-03-30 16:12:56,915  - INFO - ----  test013__校验“任务监控”页面#___ __ __get_current_url__ __        ----
+2020-03-30 16:12:58,009  - INFO - ----  test013__校验“任务监控”页面#___//*[text()='任务完成情况监控' and @class="title"]__xpath__ __ __        ----
+2020-03-30 16:13:18,347  - INFO - [CheckPoint_3]: test_a013_task_control_请检查//*[text()='任务调度' and @class="title"]是否存在: NG
+2020-03-30 16:13:20,692  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/dataMonitoring"]__xpath__action_chains__ __        ----
+2020-03-30 16:13:22,214  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl"]__xpath__action_chains__ __        ----
+2020-03-30 16:13:24,228  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl" and text() = '任务监控']__xpath__click__ __        ----
+2020-03-30 16:13:24,338  - INFO - ----  test013__校验“任务监控”页面#___ __ __get_current_url__ __        ----
+2020-03-30 16:13:24,359  - INFO - ----  test013__校验“任务监控”页面#___//*[text()='任务完成情况监控' and @class="title"]__xpath__ __ __        ----
+2020-03-30 16:13:44,677  - INFO - [CheckPoint_3]: test_a013_task_control_请检查//*[text()='任务调度' and @class="title"]是否存在: NG
+2020-03-30 16:13:47,033  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/dataMonitoring"]__xpath__action_chains__ __        ----
+2020-03-30 16:13:48,525  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl"]__xpath__action_chains__ __        ----
+2020-03-30 16:13:50,504  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl" and text() = '任务监控']__xpath__click__ __        ----
+2020-03-30 16:13:50,565  - INFO - ----  test013__校验“任务监控”页面#___ __ __get_current_url__ __        ----
+2020-03-30 16:13:50,578  - INFO - ----  test013__校验“任务监控”页面#___//*[text()='任务完成情况监控' and @class="title"]__xpath__ __ __        ----
+2020-03-30 16:14:10,983  - INFO - [CheckPoint_3]: test_a013_task_control_请检查//*[text()='任务调度' and @class="title"]是否存在: NG

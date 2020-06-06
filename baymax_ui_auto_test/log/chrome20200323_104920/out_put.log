@@ -1,0 +1,14 @@
+2020-03-23 10:50:00,970  - INFO - [CheckPoint_1]: test_a002_resource_dir_请检查//*[@test-id="/dataIntegration"]是否存在: NG
+2020-03-23 10:50:43,917  - INFO - [CheckPoint_1]: test_a002_resource_dir_请检查//*[@test-id="/dataIntegration"]是否存在: NG
+2020-03-23 10:51:02,169  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-23 10:51:02,266  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-23 10:51:03,368  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-23 10:51:03,425  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-23 10:51:03,480  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-23 10:51:03,546  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-23 10:51:04,630  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-23 10:51:06,117  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-23 10:51:07,202  - INFO - ----  test002__校验“资源目录”页面__//*[@test-id="/resourceMan"]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-03-23 10:51:07,202  - INFO - [CheckPoint_1]: test_a002_resource_dir_请检查//*[@test-id="/resourceMan"]是否存在: NG

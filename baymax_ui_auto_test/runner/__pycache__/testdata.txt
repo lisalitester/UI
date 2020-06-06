@@ -1,5 +1,11 @@
 迁移测试环境 数据如下：
 
-数据标准：文件夹 auto_UI_a   auto_UI_b
-数据源： auto_UI
+数据标准：文件夹 auto_UI_a，auto_UI_b
+数据源： 文件夹auto_UI
+	  auto_kafka_sjj
 数据驱动：auto_mysql auto_hive auto_oracle
+元数据： 文件夹auto_UI
+	  auto_kafka     id st   name st  age int
+
+数据集: auto_kafka_sjj     
+auto_hdfs_sjj (path:/tmp/hn/csv)

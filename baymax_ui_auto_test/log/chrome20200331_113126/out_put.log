@@ -1,0 +1,20 @@
+2020-03-31 11:31:26,156  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-31 11:31:26,245  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-31 11:31:26,331  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-31 11:31:26,392  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-31 11:31:26,446  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-31 11:31:26,507  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-31 11:31:27,621  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-31 11:31:29,100  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-31 11:31:29,654  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-31 11:31:30,961  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-03-31 11:31:31,009  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-03-31 11:31:31,038  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-03-31 11:31:31,057  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-03-31 11:31:31,057  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-03-31 11:31:37,656  - INFO - ----  test022__校验“新建JDBC数据源”页面___/html/body/div/div/div/div[2]/section/div/div/section/div[1]/form/div[2]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-03-31 11:31:37,703  - INFO - ----  test022__校验“新建JDBC数据源”页面___//em[@name="auto_UI"]__xpath__click__ __        ----
+2020-03-31 11:31:37,815  - INFO - ----  test022__校验“新建JDBC数据源”页面___bm-ch-resMan-resourceman-create-button__id__click__ __        ----
+2020-03-31 11:31:39,437  - INFO - ----  test022__校验“新建JDBC数据源”页面___//*[contains(text(), "JDBC")]__xpaths__click__ __        ----
+2020-03-31 11:31:40,060  - INFO - ----  test022__校验“新建JDBC数据源”页面___bm-ch-resMan-dbsource-name-input__name__send_keys__JDBC_DS_185488__        ----
+2020-03-31 11:31:40,270  - INFO - ----  test022__校验“新建JDBC数据源”页面___bm-ch-resMan-dbsource-chineseName-select__name__click__ __        ----

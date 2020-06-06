@@ -1,0 +1,11 @@
+2020-03-30 17:44:49,207  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 17:44:49,322  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 17:44:50,406  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 17:44:50,466  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 17:44:50,527  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 17:44:50,596  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 17:45:01,792  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-30 17:45:03,277  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-30 17:45:03,836  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:45:05,116  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-03-30 17:45:25,322  - INFO - [CheckPoint_1]: test_a017_open_dir_请检查auto_ui_a是否存在: NG

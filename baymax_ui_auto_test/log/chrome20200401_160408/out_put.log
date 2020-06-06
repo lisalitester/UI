@@ -1,0 +1,13 @@
+2020-04-01 16:04:08,379  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 16:04:08,498  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 16:04:08,586  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 16:04:08,606  - INFO - ----  test001__校验“成功登录”页面__/html/body/div[2]/div[1]/div[1]/ul/li[1]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 16:04:49,165  - INFO - [CheckPoint_1]: test_a017_open_dir_请检查//*[@name="Standards"]/preceding-sibling::i[1]是否存在: NG
+2020-04-01 16:04:51,919  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 16:04:51,958  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 16:04:52,023  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 16:04:52,115  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 16:04:52,175  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 16:04:52,237  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----

@@ -1,0 +1,20 @@
+2020-03-31 12:15:44,039  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-31 12:15:44,131  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-31 12:15:45,222  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-31 12:15:45,283  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-31 12:15:45,339  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-31 12:15:45,404  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-31 12:16:02,671  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-31 12:16:04,145  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-31 12:16:04,693  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-31 12:16:05,964  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-03-31 12:16:06,029  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-03-31 12:16:06,059  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-03-31 12:16:06,077  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-03-31 12:16:06,077  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-03-31 12:16:21,160  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-03-31 12:16:42,563  - INFO - [CheckPoint_3]: test_b003_create_dbsource_jdbc_hive_请检查//em[@name="auto_DataSource"]是否存在: NG
+2020-03-31 12:16:59,355  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-03-31 12:17:20,669  - INFO - [CheckPoint_3]: test_b003_create_dbsource_jdbc_hive_请检查//em[@name="auto_DataSource"]是否存在: NG
+2020-03-31 12:17:27,399  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-03-31 12:17:47,684  - INFO - [CheckPoint_3]: test_b003_create_dbsource_jdbc_hive_请检查//em[@name="auto_DataSource"]是否存在: NG

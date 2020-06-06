@@ -1,0 +1,38 @@
+2020-04-01 11:28:54,919  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 11:28:55,005  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 11:28:55,080  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 11:28:55,145  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 11:28:55,198  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 11:28:55,265  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 11:28:56,368  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 11:28:57,884  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 11:28:58,445  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 11:28:59,737  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-04-01 11:29:00,821  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-04-01 11:29:00,849  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-04-01 11:29:00,867  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-04-01 11:29:00,867  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-04-01 11:29:07,080  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-04-01 11:29:07,129  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___//em[@name="auto_UI"]__xpath__click__ __        ----
+2020-04-01 11:29:07,729  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___bm-ch-resMan-resourceman-create-button__id__click__ __        ----
+2020-04-01 11:29:08,788  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”__bm-ch-resMan-resourceman-create-button__没定位的错误Message: element click intercepted: Element <button data-v-190856c6="" type="button" class="el-button dropdown-toggle el-button--info" id="bm-ch-resMan-resourceman-create-button" toggle="dropdown">...</button> is not clickable at point (1777, 74). Other element would receive the click: <div class="el-loading-mask" style="">...</div>
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 11:29:08,788  - INFO - [CheckPoint_3]: test_b007_create_source_mongodb_请检查bm-ch-resMan-resourceman-create-button是否存在: NG
+2020-04-01 11:29:14,627  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-04-01 11:29:14,673  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___//em[@name="auto_UI"]__xpath__click__ __        ----
+2020-04-01 11:29:15,260  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___bm-ch-resMan-resourceman-create-button__id__click__ __        ----
+2020-04-01 11:29:15,810  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___bm-ch-resMan-resourceman-mongoDBSource-dropdown-menu__id__click__ __        ----
+2020-04-01 11:29:16,428  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___bm-ch-resourceMan-mongoDBsource-name-input__name__send_keys__mongodb_source_767107__        ----
+2020-04-01 11:29:16,597  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___bm-ch-resourceMan-mongoDBsource-attributes-address-input__name__send_keys__192.168.1.189__        ----
+2020-04-01 11:29:16,703  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___bm-ch-resourceMan-mongoDBsource-attributes-port-input__name__clear__ __        ----
+2020-04-01 11:29:16,738  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___bm-ch-resourceMan-mongoDBsource-attributes-port-input__name__send_keys__456786__        ----
+2020-04-01 11:29:16,814  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___bm-ch-resourceMan-mongoDBsource-attributes-username-input__name__send_keys__456786__        ----
+2020-04-01 11:29:16,879  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___bm-ch-resourceMan-mongoDBsource-attributes-password-input__name__send_keys__456786__        ----
+2020-04-01 11:29:16,946  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___bm-ch-resourceMan-mongoDBsource-attributes-database-input__name__send_keys__456786__        ----
+2020-04-01 11:29:17,017  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___bm-ch-resourceMan-mongoDBsource-save-ok__name__click__ __        ----
+2020-04-01 11:29:17,096  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___bm-ch-resMan-resourceman-create-button__id__ __ __        ----
+2020-04-01 11:29:18,116  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___//*[contains(text(), "mongodb_source_767107")]__xpath__ __ __        ----
+2020-04-01 11:29:18,126  - INFO - ----  test_b007__校验“数据源-新建_mongodb_数据源”___//*[@id="bm-ch-resourceMan-table"]/div[3]/table/tbody/tr/td[4]/div__xpath__get_text__ __        ----
+2020-04-01 11:29:18,149  - INFO - [CheckPoint_3]: test_b007_create_source_mongodb_ : OK
+2020-04-01 11:29:18,149  - INFO - [CheckPoint_4]: test_b007_create_source_mongodb_ : NG

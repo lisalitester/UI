@@ -1,0 +1,536 @@
+2020-04-01 17:22:02,846  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 17:22:02,915  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 17:22:04,013  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 17:22:04,066  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 17:22:04,122  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 17:22:04,182  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 17:22:05,262  - INFO - ----  test001__校验“成功登录”页面___//*[text()="dir1"]__xpath__ __ __        ----
+2020-04-01 17:22:05,272  - INFO - ----  test001__校验“成功登录”页面___//*[contains(text(),'数据集成')]__xpath__ __ __        ----
+2020-04-01 17:22:05,272  - INFO - [CheckPoint_1]: testlogin_ : OK
+2020-04-01 17:22:05,273  - INFO - [CheckPoint_2]: testlogin_ : NG
+2020-04-01 17:22:14,693  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 17:22:14,767  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 17:22:15,857  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 17:22:15,909  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 17:22:15,965  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 17:22:16,023  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 17:22:22,164  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:22:23,654  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 17:22:24,209  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:22:25,502  - INFO - ----  test002__校验“资源目录”页面___Datasources__name__ __ __        ----
+2020-04-01 17:22:25,511  - INFO - ----  test002__校验“资源目录”页面___Schemas__name__ __ __        ----
+2020-04-01 17:22:25,520  - INFO - ----  test002__校验“资源目录”页面___Datasets__name__ __ __        ----
+2020-04-01 17:22:25,530  - INFO - ----  test002__校验“资源目录”页面___Standards__name__ __ __        ----
+2020-04-01 17:22:25,540  - INFO - ----  test002__校验“资源目录”页面___//*[contains(text(),'资源目录')]__xpath__ __ __        ----
+2020-04-01 17:22:25,540  - INFO - [CheckPoint_3]: test_a002_resource_dir_ : OK
+2020-04-01 17:22:25,541  - INFO - [CheckPoint_4]: test_a002_resource_dir_ : NG
+2020-04-01 17:22:27,904  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:22:29,395  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/synchronization"]__xpath__click__ __        ----
+2020-04-01 17:22:29,490  - INFO - ----  test004__校验“数据导入”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:22:29,767  - INFO - ----  test004__校验“数据导入”页面___//*[contains(text(),"新建")]__xpath__ __ __        ----
+2020-04-01 17:22:29,779  - INFO - ----  test004__校验“数据导入”页面___//*[contains(text(),'数据集')]__xpath__ __ __        ----
+2020-04-01 17:22:29,779  - INFO - ----  test004__校验“数据导入”页面___ __ __get_current_url__ __        ----
+2020-04-01 17:22:29,784  - INFO - [CheckPoint_5]: test_a003_data_import_ : OK
+2020-04-01 17:22:29,784  - INFO - [CheckPoint_6]: test_a003_data_import_ : NG
+2020-04-01 17:22:32,152  - INFO - ----  test005__校验“文件导入”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:22:33,629  - INFO - ----  test005__校验“文件导入”页面___//*[@test-id="/fileSynchronization"]__xpath__click__ __        ----
+2020-04-01 17:22:33,713  - INFO - ----  test005__校验“文件导入”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:22:33,988  - INFO - ----  test005__校验“文件导入”页面___bm-ch-col-filesys-create-button__id__ __ __        ----
+2020-04-01 17:22:33,988  - INFO - ----  test005__校验“文件导入”页面___ __ __get_current_url__ __        ----
+2020-04-01 17:22:33,994  - INFO - [CheckPoint_7]: test_a004_file_import_ : OK
+2020-04-01 17:22:33,994  - INFO - [CheckPoint_8]: test_a004_file_import_ : NG
+2020-04-01 17:22:36,327  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:22:37,814  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 17:22:37,874  - INFO - ----  test006__校验“采集器”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:22:38,146  - INFO - ----  test006__校验“采集器”页面___bm-ch-col-template-create-button__id__ __ __        ----
+2020-04-01 17:22:38,157  - INFO - ----  test006__校验“采集器”页面___//button/*[contains(text(),'采集器')]__xpath__ __ __        ----
+2020-04-01 17:22:38,157  - INFO - ----  test006__校验“采集器”页面___ __ __get_current_url__ __        ----
+2020-04-01 17:22:38,174  - INFO - ----  test006__校验“采集器”页面___//*[contains(text(),'主键')]__xpath__ __ __        ----
+2020-04-01 17:22:38,191  - INFO - ----  test006__校验“采集器”页面___//*[contains(text(),'主机地址')]__xpath__ __ __        ----
+2020-04-01 17:22:38,191  - INFO - [CheckPoint_9]: test_a005_file_import_ : OK
+2020-04-01 17:22:38,191  - INFO - [CheckPoint_10]: test_a005_file_import_ : NG
+2020-04-01 17:22:40,567  - INFO - ----  test007__校验“质量分析”页面___//*[@test-id="/dataGovernance"]__xpath__action_chains__ __        ----
+2020-04-01 17:22:42,150  - INFO - ----  test007__校验“质量分析”页面___//*[@test-id="/qualityAnalysis/analysisTemplate"]__xpath__click__ __        ----
+2020-04-01 17:22:42,210  - INFO - ----  test007__校验“质量分析”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:22:42,471  - INFO - ----  test007__校验“质量分析”页面___ __ __get_current_url__ __        ----
+2020-04-01 17:22:42,485  - INFO - ----  test007__校验“质量分析”页面___//button/span[contains(text(), '分析模板')]__xpath__ __ __        ----
+2020-04-01 17:22:42,492  - INFO - ----  test007__校验“质量分析”页面___//*[contains(text(),"新建")]__xpath__ __ __        ----
+2020-04-01 17:22:42,504  - INFO - ----  test007__校验“质量分析”页面___//*[contains(text(),"数据集")]__xpath__ __ __        ----
+2020-04-01 17:22:42,504  - INFO - [CheckPoint_11]: test_a006_quality_analyze_ : OK
+2020-04-01 17:22:42,504  - INFO - [CheckPoint_12]: test_a006_quality_analyze_ : NG
+2020-04-01 17:22:44,910  - INFO - ----  testba009__校验“元数据分析”页面___//*[@test-id="/dataGovernance"]__xpath__action_chains__ __        ----
+2020-04-01 17:22:46,493  - INFO - ----  testba009__校验“元数据分析”页面___//*[@test-id="/schemaAnalysis/:id/"]__xpath__click__ __        ----
+2020-04-01 17:22:46,544  - INFO - ----  testba009__校验“元数据分析”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:22:46,808  - INFO - ----  testba009__校验“元数据分析”页面___ __ __get_current_url__ __        ----
+2020-04-01 17:22:46,823  - INFO - ----  testba009__校验“元数据分析”页面___bm-ch-zebra-schemaAnalysis-input__name__ __ __        ----
+2020-04-01 17:22:46,824  - INFO - [CheckPoint_13]: test_a007_metadata_analyze_ : OK
+2020-04-01 17:22:46,824  - INFO - [CheckPoint_14]: test_a007_metadata_analyze_ : NG
+2020-04-01 17:22:49,130  - INFO - ----  test008__校验“血缘分析”页面___//*[@test-id="/dataGovernance"]__xpath__action_chains__ __        ----
+2020-04-01 17:22:50,709  - INFO - ----  test008__校验“血缘分析”页面___//*[@test-id="/kinship/:id/"]__xpath__click__ __        ----
+2020-04-01 17:22:50,779  - INFO - ----  test008__校验“血缘分析”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:22:51,044  - INFO - ----  test008__校验“血缘分析”页面___ __ __get_current_url__ __        ----
+2020-04-01 17:22:51,057  - INFO - ----  test008__校验“血缘分析”页面___bm-ch-zebra-kinship-input__name__ __ __        ----
+2020-04-01 17:22:51,057  - INFO - [CheckPoint_15]: test_a008_blood_analyze_ : OK
+2020-04-01 17:22:51,057  - INFO - [CheckPoint_16]: test_a008_blood_analyze_ : NG
+2020-04-01 17:22:53,386  - INFO - ----  test009__校验“流程管理”页面___//*[@test-id="/dataAnalysis"]__xpath__action_chains__ __        ----
+2020-04-01 17:22:54,861  - INFO - ----  test009__校验“流程管理”页面___//*[@test-id="/design"]__xpath__click__ __        ----
+2020-04-01 17:22:54,909  - INFO - ----  test009__校验“流程管理”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:22:55,183  - INFO - ----  test009__校验“流程管理”页面___ __ __get_current_url__ __        ----
+2020-04-01 17:22:55,197  - INFO - ----  test009__校验“流程管理”页面___//*[contains(text(), '流程目录')]__xpath__ __ __        ----
+2020-04-01 17:22:56,234  - INFO - ----  test009__校验“流程管理”页面___//*[contains(text(), '根目录')]__xpath__ __ __        ----
+2020-04-01 17:22:56,235  - INFO - [CheckPoint_17]: test_a009_flow_manage_ : OK
+2020-04-01 17:22:56,235  - INFO - [CheckPoint_18]: test_a009_flow_manage_ : NG
+2020-04-01 17:22:58,556  - INFO - ----  test010__校验“项目目录”页面___//*[@test-id="/dataAnalysis"]__xpath__action_chains__ __        ----
+2020-04-01 17:23:00,031  - INFO - ----  test010__校验“项目目录”页面___//*[@test-id="/resourceManProject"]__xpath__click__ __        ----
+2020-04-01 17:23:00,109  - INFO - ----  test010__校验“项目目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:23:00,374  - INFO - ----  test010__校验“项目目录”页面___ __ __get_current_url__ __        ----
+2020-04-01 17:23:00,388  - INFO - ----  test010__校验“项目目录”页面___//button/span[contains(text(), '目录')]__xpath__ __ __        ----
+2020-04-01 17:23:00,388  - INFO - [CheckPoint_19]: test_a010_project_dir_ : OK
+2020-04-01 17:23:00,388  - INFO - [CheckPoint_20]: test_a010_project_dir_ : NG
+2020-04-01 17:23:02,717  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/dataMonitoring"]__xpath__action_chains__ __        ----
+2020-04-01 17:23:04,210  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl"]__xpath__action_chains__ __        ----
+2020-04-01 17:23:06,214  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl" and text() = '任务监控']__xpath__click__ __        ----
+2020-04-01 17:23:06,264  - INFO - ----  test013__校验“任务监控”页面#___ __ __get_current_url__ __        ----
+2020-04-01 17:23:06,345  - INFO - ----  test013__校验“任务监控”页面#___//*[contains(text(),'任务完成情况监控')]__xpath__ __ __        ----
+2020-04-01 17:23:06,345  - INFO - [CheckPoint_21]: test_a013_task_control_ : OK
+2020-04-01 17:23:06,345  - INFO - [CheckPoint_22]: test_a013_task_control_ : NG
+2020-04-01 17:23:08,722  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-04-01 17:23:10,326  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/roleManagement"]__xpath__click__ __        ----
+2020-04-01 17:23:10,409  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:23:10,703  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-04-01 17:23:10,737  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[contains(text(),'添加角色')]__xpath__ __ __        ----
+2020-04-01 17:23:11,737  - INFO - [CheckPoint_23]: test_a017_role_manage_ : OK
+2020-04-01 17:23:11,737  - INFO - [CheckPoint_24]: test_a017_role_manage_ : NG
+2020-04-01 17:23:34,432  - INFO - ----  017-user_manager__校验“权限管理-用户管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-04-01 17:23:36,009  - INFO - ----  017-user_manager__校验“权限管理-用户管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-04-01 17:23:36,082  - INFO - ----  017-user_manager__校验“权限管理-用户管理”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:23:36,367  - INFO - ----  017-user_manager__校验“权限管理-用户管理”页面___ __ __get_current_url__ __        ----
+2020-04-01 17:23:36,394  - INFO - ----  017-user_manager__校验“权限管理-用户管理”页面___//input[@placeholder='请填入内容']__xpath__ __ __        ----
+2020-04-01 17:23:37,412  - INFO - ----  017-user_manager__校验“权限管理-用户管理”页面___//i[@class='el-icon-search']__xpath__ __ __        ----
+2020-04-01 17:23:38,447  - INFO - ----  017-user_manager__校验“权限管理-用户管理”页面___//*[@class='el-form-item__content']__xpath__ __ __        ----
+2020-04-01 17:23:39,479  - INFO - ----  017-user_manager__校验“权限管理-用户管理”页面___//*[@class='has-gutter']__xpath__ __ __        ----
+2020-04-01 17:23:40,491  - INFO - ----  017-user_manager__校验“权限管理-用户管理”页面___//span[text()='删除']__xpath__ __ __        ----
+2020-04-01 17:23:41,504  - INFO - ----  017-user_manager__校验“权限管理-用户管理”页面___//span[text()='启用']__xpath__ __ __        ----
+2020-04-01 17:23:42,530  - INFO - ----  017-user_manager__校验“权限管理-用户管理”页面___//span[text()='禁用']__xpath__ __ __        ----
+2020-04-01 17:23:43,541  - INFO - ----  017-user_manager__校验“权限管理-用户管理”页面___//span[text()='添加用户']__xpath__ __ __        ----
+2020-04-01 17:23:44,542  - INFO - [CheckPoint_25]: test_b017_user_manage_ : OK
+2020-04-01 17:23:44,542  - INFO - [CheckPoint_26]: test_b017_user_manage_ : NG
+2020-04-01 17:23:57,263  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 17:23:57,393  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 17:23:57,472  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 17:23:57,548  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 17:23:57,605  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 17:23:57,668  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 17:24:08,892  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:24:10,398  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 17:24:10,958  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:24:12,244  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-04-01 17:24:12,300  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-04-01 17:24:12,329  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-04-01 17:24:12,346  - INFO - [CheckPoint_27]: test_a017_open_dir_ : OK
+2020-04-01 17:24:12,346  - INFO - [CheckPoint_28]: test_a017_open_dir_ : NG
+2020-04-01 17:24:17,399  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/i__xpath__click__ __        ----
+2020-04-01 17:24:17,448  - INFO - ----  test028__校验“元数据-删除schema”页面___//em[@name="move_to"]__xpath__click__ __        ----
+2020-04-01 17:24:19,594  - INFO - ----  test028__校验“元数据-删除schema”页面___//tr//*[contains(text(), "schema_")]__xpaths__get_text__ __        ----
+2020-04-01 17:24:20,642  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[contains(text(), 'schema_030432_copy')]/ancestor::td/preceding-sibling::td[1]__xpath__click__ __        ----
+2020-04-01 17:24:20,717  - INFO - ----  test028__校验“元数据-删除schema”页面___bm-ch-resMan-resourceman-delete-beiruanModel-button__id__click__ __        ----
+2020-04-01 17:24:21,502  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[contains(text(), "确定")]__xpaths__click__ __        ----
+2020-04-01 17:24:21,529  - INFO - ----  test028__校验“元数据-删除schema”页面__//*[contains(text(), "确定")]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 17:24:21,529  - INFO - [CheckPoint_29]: test_a028_delete_schema_请检查//*[contains(text(), "确定")]是否存在: NG
+2020-04-01 17:24:26,435  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/i__xpath__click__ __        ----
+2020-04-01 17:24:26,482  - INFO - ----  test028__校验“元数据-删除schema”页面___//em[@name="move_to"]__xpath__click__ __        ----
+2020-04-01 17:24:27,595  - INFO - ----  test028__校验“元数据-删除schema”页面___//tr//*[contains(text(), "schema_")]__xpaths__get_text__ __        ----
+2020-04-01 17:24:28,632  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[contains(text(), 'schema_030432_copy')]/ancestor::td/preceding-sibling::td[1]__xpath__click__ __        ----
+2020-04-01 17:24:28,690  - INFO - ----  test028__校验“元数据-删除schema”页面___bm-ch-resMan-resourceman-delete-beiruanModel-button__id__click__ __        ----
+2020-04-01 17:24:29,464  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[contains(text(), "确定")]__xpaths__click__ __        ----
+2020-04-01 17:24:49,839  - INFO - [CheckPoint_29]: test_a028_delete_schema_请检查//*[contains(text(), "恭喜你，删除已成功")]是否存在: NG
+2020-04-01 17:24:57,858  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/i__xpath__click__ __        ----
+2020-04-01 17:24:57,912  - INFO - ----  test028__校验“元数据-删除schema”页面___//em[@name="move_to"]__xpath__click__ __        ----
+2020-04-01 17:24:59,041  - INFO - ----  test028__校验“元数据-删除schema”页面___//tr//*[contains(text(), "schema_")]__xpaths__get_text__ __        ----
+2020-04-01 17:25:00,070  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[contains(text(), 'schema_030432_copy')]/ancestor::td/preceding-sibling::td[1]__xpath__click__ __        ----
+2020-04-01 17:25:00,132  - INFO - ----  test028__校验“元数据-删除schema”页面___bm-ch-resMan-resourceman-delete-beiruanModel-button__id__click__ __        ----
+2020-04-01 17:25:00,951  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[contains(text(), "确定")]__xpaths__click__ __        ----
+2020-04-01 17:25:21,326  - INFO - [CheckPoint_29]: test_a028_delete_schema_请检查//*[contains(text(), "恭喜你，删除已成功")]是否存在: NG
+2020-04-01 17:25:33,169  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 17:25:33,280  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 17:25:34,368  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 17:25:34,428  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 17:25:34,486  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 17:25:34,560  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 17:25:40,683  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:25:42,170  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/synchronization"]__xpath__click__ __        ----
+2020-04-01 17:25:42,221  - INFO - ----  test004__校验“数据导入”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:25:46,035  - INFO - ----  test043__校验“新建数据导入”创建任务___bm-ch-sys-syschronization-create-button__id__click__ __        ----
+2020-04-01 17:25:46,663  - INFO - ----  test043__校验“新建数据导入”创建任务___//*[@id="bm-ch-syschronization-table"]//*[@class="el-loading-mask"and @style="display: none;"]__xpath__ __ __        ----
+2020-04-01 17:25:46,673  - INFO - ----  test043__校验“新建数据导入”创建任务___//*[@name="bm-ch-step1Form-datasource-input"]/ancestor::div[1]/div/button__xpath__click__ __        ----
+2020-04-01 17:25:50,343  - INFO - ----  test043__校验“新建数据导入”创建任务___//*[@name="ch-components-dataSourceInq-dataSourceInquire-search-table-data"]//input[@placeholder="请输入名称"]__xpath__send_keys__dbs_mysql_info10__        ----
+2020-04-01 17:25:50,512  - INFO - ----  test043__校验“新建数据导入”创建任务___//*[@name="ch-components-dataSourceInq-dataSourceInquire-search-table-data"]//button__xpath__click__ __        ----
+2020-04-01 17:26:11,828  - INFO - [CheckPoint_30]: test_a043_create_data_import_请检查//*[@id="ch-components-dataSourceInq-dataSourceInquire-table"]//table/tbody/tr/td[1]是否存在: NG
+2020-04-01 17:26:34,396  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:26:35,874  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/synchronization"]__xpath__click__ __        ----
+2020-04-01 17:26:35,893  - INFO - ----  test004__校验“数据导入”页面__//*[@test-id="/synchronization"]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 17:26:38,628  - INFO - ----  test043__校验“新建数据导入”创建任务___bm-ch-sys-syschronization-create-button__id__click__ __        ----
+2020-04-01 17:26:39,683  - INFO - ----  test043__校验“新建数据导入”创建任务__bm-ch-sys-syschronization-create-button__没定位的错误Message: element click intercepted: Element <button data-v-49d9672e="" type="button" class="el-button el-button--info" id="bm-ch-sys-syschronization-create-button">...</button> is not clickable at point (1597, 74). Other element would receive the click: <div class="el-step__head is-wait">...</div>
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 17:26:39,683  - INFO - [CheckPoint_30]: test_a043_create_data_import_请检查bm-ch-sys-syschronization-create-button是否存在: NG
+2020-04-01 17:27:02,296  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:27:03,800  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/synchronization"]__xpath__click__ __        ----
+2020-04-01 17:27:03,873  - INFO - ----  test004__校验“数据导入”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:27:10,767  - INFO - ----  test043__校验“新建数据导入”创建任务___bm-ch-sys-syschronization-create-button__id__click__ __        ----
+2020-04-01 17:27:11,385  - INFO - ----  test043__校验“新建数据导入”创建任务___//*[@id="bm-ch-syschronization-table"]//*[@class="el-loading-mask"and @style="display: none;"]__xpath__ __ __        ----
+2020-04-01 17:27:11,399  - INFO - ----  test043__校验“新建数据导入”创建任务___//*[@name="bm-ch-step1Form-datasource-input"]/ancestor::div[1]/div/button__xpath__click__ __        ----
+2020-04-01 17:27:11,996  - INFO - ----  test043__校验“新建数据导入”创建任务___//*[@name="ch-components-dataSourceInq-dataSourceInquire-search-table-data"]//input[@placeholder="请输入名称"]__xpath__send_keys__dbs_mysql_info10__        ----
+2020-04-01 17:27:12,118  - INFO - ----  test043__校验“新建数据导入”创建任务___//*[@name="ch-components-dataSourceInq-dataSourceInquire-search-table-data"]//button__xpath__click__ __        ----
+2020-04-01 17:27:33,402  - INFO - [CheckPoint_30]: test_a043_create_data_import_请检查//*[@id="ch-components-dataSourceInq-dataSourceInquire-table"]//table/tbody/tr/td[1]是否存在: NG
+2020-04-01 17:27:38,438  - INFO - ----  test044__校验“数据导入”复制任务___ __ __ __ __        ----
+2020-04-01 17:27:59,662  - INFO - [CheckPoint_31]: test_a044_copy_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[3]//tr[1]/td[1]//span是否存在: NG
+2020-04-01 17:28:06,345  - INFO - ----  test044__校验“数据导入”复制任务___ __ __ __ __        ----
+2020-04-01 17:28:27,642  - INFO - [CheckPoint_31]: test_a044_copy_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[3]//tr[1]/td[1]//span是否存在: NG
+2020-04-01 17:28:32,587  - INFO - ----  test044__校验“数据导入”复制任务___ __ __ __ __        ----
+2020-04-01 17:28:53,765  - INFO - [CheckPoint_31]: test_a044_copy_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[3]//tr[1]/td[1]//span是否存在: NG
+2020-04-01 17:29:03,189  - INFO - ----  test053__校验“新建数据导入”启用任务___ __ __ __ __        ----
+2020-04-01 17:29:24,449  - INFO - [CheckPoint_32]: test_a053_start_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[3]//tr[1]/td[1]//span是否存在: NG
+2020-04-01 17:29:33,814  - INFO - ----  test053__校验“新建数据导入”启用任务___ __ __ __ __        ----
+2020-04-01 17:29:55,088  - INFO - [CheckPoint_32]: test_a053_start_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[3]//tr[1]/td[1]//span是否存在: NG
+2020-04-01 17:30:00,147  - INFO - ----  test053__校验“新建数据导入”启用任务___ __ __ __ __        ----
+2020-04-01 17:30:21,444  - INFO - [CheckPoint_32]: test_a053_start_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[3]//tr[1]/td[1]//span是否存在: NG
+2020-04-01 17:30:27,348  - INFO - ----  test054__校验数据导入“打开执行列表”___ __ __ __ __        ----
+2020-04-01 17:30:48,826  - INFO - [CheckPoint_33]: test_a054_execute_list_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[4]//tr[1]//a[contains(text(), "执行列表")]是否存在: NG
+2020-04-01 17:30:55,823  - INFO - ----  test054__校验数据导入“打开执行列表”___ __ __ __ __        ----
+2020-04-01 17:31:17,236  - INFO - [CheckPoint_33]: test_a054_execute_list_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[4]//tr[1]//a[contains(text(), "执行列表")]是否存在: NG
+2020-04-01 17:31:23,139  - INFO - ----  test054__校验数据导入“打开执行列表”___ __ __ __ __        ----
+2020-04-01 17:31:44,475  - INFO - [CheckPoint_33]: test_a054_execute_list_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[4]//tr[1]//a[contains(text(), "执行列表")]是否存在: NG
+2020-04-01 17:31:59,931  - INFO - ----  test055__校验数据导入“打开预览数据集”___ __ __ __ __        ----
+2020-04-01 17:32:21,330  - INFO - [CheckPoint_34]: test_a055_preview_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[4]//tr[1]//a[contains(text(), "预览数据集")]是否存在: NG
+2020-04-01 17:32:27,336  - INFO - ----  test055__校验数据导入“打开预览数据集”___ __ __ __ __        ----
+2020-04-01 17:32:48,629  - INFO - [CheckPoint_34]: test_a055_preview_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[4]//tr[1]//a[contains(text(), "预览数据集")]是否存在: NG
+2020-04-01 17:32:55,585  - INFO - ----  test055__校验数据导入“打开预览数据集”___ __ __ __ __        ----
+2020-04-01 17:33:16,878  - INFO - [CheckPoint_34]: test_a055_preview_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[4]//tr[1]//a[contains(text(), "预览数据集")]是否存在: NG
+2020-04-01 17:33:22,895  - INFO - ----  test056__校验“新建数据导入”停用任务___ __ __ __ __        ----
+2020-04-01 17:33:44,211  - INFO - [CheckPoint_35]: test_a056_stop_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[3]//tr[1]/td[1]//span是否存在: NG
+2020-04-01 17:33:50,035  - INFO - ----  test056__校验“新建数据导入”停用任务___ __ __ __ __        ----
+2020-04-01 17:34:11,376  - INFO - [CheckPoint_35]: test_a056_stop_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[3]//tr[1]/td[1]//span是否存在: NG
+2020-04-01 17:34:19,291  - INFO - ----  test056__校验“新建数据导入”停用任务___ __ __ __ __        ----
+2020-04-01 17:34:40,605  - INFO - [CheckPoint_35]: test_a056_stop_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[3]//tr[1]/td[1]//span是否存在: NG
+2020-04-01 17:34:45,619  - INFO - ----  test057__校验“数据导入”删除任务___ __ __ __ __        ----
+2020-04-01 17:35:06,931  - INFO - [CheckPoint_36]: test_a057_delete_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[3]//tr[1]/td[2]/div/a是否存在: NG
+2020-04-01 17:35:11,977  - INFO - ----  test057__校验“数据导入”删除任务___ __ __ __ __        ----
+2020-04-01 17:35:33,339  - INFO - [CheckPoint_36]: test_a057_delete_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[3]//tr[1]/td[2]/div/a是否存在: NG
+2020-04-01 17:35:38,364  - INFO - ----  test057__校验“数据导入”删除任务___ __ __ __ __        ----
+2020-04-01 17:35:59,628  - INFO - [CheckPoint_36]: test_a057_delete_data_import_请检查//*[@id="bm-ch-syschronization-table"]/div[3]//tr[1]/td[2]/div/a是否存在: NG
+2020-04-01 17:36:10,831  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 17:36:10,943  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 17:36:12,047  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 17:36:12,104  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 17:36:12,162  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 17:36:12,225  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 17:36:18,382  - INFO - ----  test005__校验“文件导入”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:36:19,895  - INFO - ----  test005__校验“文件导入”页面___//*[@test-id="/fileSynchronization"]__xpath__click__ __        ----
+2020-04-01 17:36:19,946  - INFO - ----  test005__校验“文件导入”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:36:22,775  - INFO - ----  test058__校验“文件导入-创建”任务___bm-ch-col-filesys-create-button__id__click__ __        ----
+2020-04-01 17:36:23,417  - INFO - ----  test058__校验“文件导入-创建”任务___//*[@name="bm-ch-file-step1Form-dataSource-name-input"]/ancestor::div[1]/div/button__xpath__click__ __        ----
+2020-04-01 17:36:24,495  - INFO - ----  test058__校验“文件导入-创建”任务__//*[@name="bm-ch-file-step1Form-dataSource-name-input"]/ancestor::div[1]/div/button__没定位的错误Message: element click intercepted: Element <button data-v-2f3b75a4="" type="button" class="el-button el-button--default">...</button> is not clickable at point (1412, 276). Other element would receive the click: <div class="el-loading-mask" style="">...</div>
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 17:36:24,495  - INFO - [CheckPoint_37]: test_a058_create_file_import_请检查//*[@name="bm-ch-file-step1Form-dataSource-name-input"]/ancestor::div[1]/div/button是否存在: NG
+2020-04-01 17:36:47,186  - INFO - ----  test005__校验“文件导入”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:36:48,691  - INFO - ----  test005__校验“文件导入”页面___//*[@test-id="/fileSynchronization"]__xpath__click__ __        ----
+2020-04-01 17:36:48,764  - INFO - ----  test005__校验“文件导入”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:37:00,931  - INFO - ----  test058__校验“文件导入-创建”任务___bm-ch-col-filesys-create-button__id__click__ __        ----
+2020-04-01 17:37:01,530  - INFO - ----  test058__校验“文件导入-创建”任务___//*[@name="bm-ch-file-step1Form-dataSource-name-input"]/ancestor::div[1]/div/button__xpath__click__ __        ----
+2020-04-01 17:37:02,118  - INFO - ----  test058__校验“文件导入-创建”任务___//*[@name="ch-components-dataSourceInq-dataSourceInquire-search-table-data"]//input[@placeholder="请输入名称"]__xpath__send_keys__ftp_info4_twac2__        ----
+2020-04-01 17:37:02,247  - INFO - ----  test058__校验“文件导入-创建”任务___//*[@name="ch-components-dataSourceInq-dataSourceInquire-search-table-data"]//button__xpath__click__ __        ----
+2020-04-01 17:37:23,603  - INFO - [CheckPoint_37]: test_a058_create_file_import_请检查//*[@id="ch-components-dataSourceInq-dataSourceInquire-table"]/div[3]/table/tbody/tr/td[1]/div/label是否存在: NG
+2020-04-01 17:37:46,287  - INFO - ----  test005__校验“文件导入”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:37:47,773  - INFO - ----  test005__校验“文件导入”页面___//*[@test-id="/fileSynchronization"]__xpath__click__ __        ----
+2020-04-01 17:37:47,800  - INFO - ----  test005__校验“文件导入”页面__//*[@test-id="/fileSynchronization"]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 17:37:50,551  - INFO - ----  test058__校验“文件导入-创建”任务___bm-ch-col-filesys-create-button__id__click__ __        ----
+2020-04-01 17:37:51,609  - INFO - ----  test058__校验“文件导入-创建”任务__bm-ch-col-filesys-create-button__没定位的错误Message: element click intercepted: Element <button data-v-ffcccd14="" type="button" class="el-button el-button--info" id="bm-ch-col-filesys-create-button">...</button> is not clickable at point (1597, 74). Other element would receive the click: <div class="el-step__head is-wait">...</div>
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 17:37:51,609  - INFO - [CheckPoint_37]: test_a058_create_file_import_请检查bm-ch-col-filesys-create-button是否存在: NG
+2020-04-01 17:37:56,444  - INFO - ----  test044__校验“文件导入-复制”任务___ __ __ __ __        ----
+2020-04-01 17:38:17,654  - INFO - [CheckPoint_38]: test_a059_copy_file_import_请检查//*[@id="bm-ch-fileSys-table"]/div[3]//tr[1]/td[1]//label是否存在: NG
+2020-04-01 17:38:22,755  - INFO - ----  test044__校验“文件导入-复制”任务___ __ __ __ __        ----
+2020-04-01 17:38:44,009  - INFO - [CheckPoint_38]: test_a059_copy_file_import_请检查//*[@id="bm-ch-fileSys-table"]/div[3]//tr[1]/td[1]//label是否存在: NG
+2020-04-01 17:38:48,988  - INFO - ----  test044__校验“文件导入-复制”任务___ __ __ __ __        ----
+2020-04-01 17:39:10,288  - INFO - [CheckPoint_38]: test_a059_copy_file_import_请检查//*[@id="bm-ch-fileSys-table"]/div[3]//tr[1]/td[1]//label是否存在: NG
+2020-04-01 17:39:21,572  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 17:39:21,679  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 17:39:22,765  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 17:39:22,820  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 17:39:22,875  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 17:39:22,936  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 17:39:24,061  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:39:25,537  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 17:39:25,589  - INFO - ----  test006__校验“采集器”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:39:29,191  - INFO - ----  test060__校验“采集器注册”任务___bm-ch-col-template-create-button__id__click__ __        ----
+2020-04-01 17:39:29,794  - INFO - ----  test060__校验“采集器注册”任务___bm-ch-col-edit-id-input__name__send_keys__a83__        ----
+2020-04-01 17:39:29,879  - INFO - ----  test060__校验“采集器注册”任务___bm-ch-col-edit-name-input__name__send_keys__collector_autoui__        ----
+2020-04-01 17:39:30,044  - INFO - ----  test060__校验“采集器注册”任务___bm-ch-col-edit-secretKey-input__name__send_keys__123456__        ----
+2020-04-01 17:39:30,129  - INFO - ----  test060__校验“采集器注册”任务___bm-ch-col-edit-form-ok__name__click__ __        ----
+2020-04-01 17:39:31,228  - INFO - ----  test060__校验“采集器注册”任务___//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui']__xpath__ __ __        ----
+2020-04-01 17:39:31,242  - INFO - ----  test060__校验“采集器注册”任务___//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui']/ancestor::td/following-sibling::td[4]/div__xpath__get_text__ __        ----
+2020-04-01 17:39:31,274  - INFO - ----  test060__校验“采集器注册”任务___//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui']/ancestor::td/following-sibling::td[5]/div__xpath__get_text__ __        ----
+2020-04-01 17:39:31,293  - INFO - [CheckPoint_39]: test_a060_create_collector_ : OK
+2020-04-01 17:39:31,293  - INFO - [CheckPoint_40]: test_a060_create_collector_ : NG
+2020-04-01 17:39:36,065  - INFO - ----  test061__校验“采集器编辑”任务___ __ __ __ __        ----
+2020-04-01 17:39:37,077  - INFO - ----  test061__校验“采集器编辑”任务___//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui']/ancestor::td/preceding-sibling::td[2]//label__xpath__click__ __        ----
+2020-04-01 17:39:37,170  - INFO - ----  test061__校验“采集器编辑”任务___bm-ch-col-template-edit-button__id__click__ __        ----
+2020-04-01 17:39:37,765  - INFO - ----  test061__校验“采集器编辑”任务___bm-ch-col-edit-name-input__name__send_keys___edit__        ----
+2020-04-01 17:39:37,859  - INFO - ----  test061__校验“采集器编辑”任务___bm-ch-col-edit-form-ok__name__click__ __        ----
+2020-04-01 17:39:38,910  - INFO - ----  test061__校验“采集器编辑”任务___//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui_edit']__xpath__ __ __        ----
+2020-04-01 17:39:38,910  - INFO - [CheckPoint_41]: test_a061_edit_collector_ : OK
+2020-04-01 17:39:38,910  - INFO - [CheckPoint_42]: test_a061_edit_collector_ : NG
+2020-04-01 17:39:43,591  - INFO - ----  test062__校验“采集器删除”任务___ __ __ __ __        ----
+2020-04-01 17:39:44,604  - INFO - ----  test062__校验“采集器删除”任务___//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui_edit']/ancestor::td/preceding-sibling::td[2]//label__xpath__click__ __        ----
+2020-04-01 17:39:44,670  - INFO - ----  test062__校验“采集器删除”任务___bm-ch-col-template-delete-button__id__click__ __        ----
+2020-04-01 17:39:45,321  - INFO - ----  test062__校验“采集器删除”任务___/html/body/div[@aria-label="提示"]//*[contains(text(), '确定')]__xpath__click__ __        ----
+2020-04-01 17:39:46,391  - INFO - ----  test062__校验“采集器删除”任务___//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui_edit']__xpath__ __ __        ----
+2020-04-01 17:39:46,391  - INFO - [CheckPoint_43]: test_a062_delete_collector_==检查点_断言“新建的采集器名称存在”失败_//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui_edit']依然在页面==: NG
+2020-04-01 17:39:53,105  - INFO - ----  test062__校验“采集器删除”任务___ __ __ __ __        ----
+2020-04-01 17:39:54,114  - INFO - ----  test062__校验“采集器删除”任务___//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui_edit']/ancestor::td/preceding-sibling::td[2]//label__xpath__click__ __        ----
+2020-04-01 17:39:54,179  - INFO - ----  test062__校验“采集器删除”任务___bm-ch-col-template-delete-button__id__click__ __        ----
+2020-04-01 17:39:54,783  - INFO - ----  test062__校验“采集器删除”任务___/html/body/div[@aria-label="提示"]//*[contains(text(), '确定')]__xpath__click__ __        ----
+2020-04-01 17:39:55,843  - INFO - ----  test062__校验“采集器删除”任务___//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui_edit']__xpath__ __ __        ----
+2020-04-01 17:39:55,843  - INFO - [CheckPoint_43]: test_a062_delete_collector_==检查点_断言“新建的采集器名称存在”失败_//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui_edit']依然在页面==: NG
+2020-04-01 17:40:00,622  - INFO - ----  test062__校验“采集器删除”任务___ __ __ __ __        ----
+2020-04-01 17:40:01,632  - INFO - ----  test062__校验“采集器删除”任务___//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui_edit']/ancestor::td/preceding-sibling::td[2]//label__xpath__click__ __        ----
+2020-04-01 17:40:01,694  - INFO - ----  test062__校验“采集器删除”任务___bm-ch-col-template-delete-button__id__click__ __        ----
+2020-04-01 17:40:02,278  - INFO - ----  test062__校验“采集器删除”任务___/html/body/div[@aria-label="提示"]//*[contains(text(), '确定')]__xpath__click__ __        ----
+2020-04-01 17:40:03,345  - INFO - ----  test062__校验“采集器删除”任务___//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui_edit']__xpath__ __ __        ----
+2020-04-01 17:40:03,345  - INFO - [CheckPoint_43]: test_a062_delete_collector_==检查点_断言“新建的采集器名称存在”失败_//*[@id="bm-ch-collector-template-table"]//div[text()='collector_autoui_edit']依然在页面==: NG
+2020-04-01 17:40:12,638  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 17:40:12,761  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 17:40:13,864  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 17:40:13,917  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 17:40:13,975  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 17:40:14,039  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 17:40:21,193  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:40:22,678  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 17:40:22,730  - INFO - ----  test006__校验“采集器”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:40:45,718  - INFO - [CheckPoint_44]: test_a063_collector_import_data_请检查//button//span[contains(text(), '采集器 ')]是否存在: NG
+2020-04-01 17:41:08,369  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:41:09,874  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 17:41:09,922  - INFO - ----  test006__校验“采集器”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:41:33,053  - INFO - [CheckPoint_44]: test_a063_collector_import_data_请检查//button//span[contains(text(), '采集器 ')]是否存在: NG
+2020-04-01 17:41:55,669  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:41:57,197  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 17:41:57,249  - INFO - ----  test006__校验“采集器”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:42:20,502  - INFO - [CheckPoint_44]: test_a063_collector_import_data_请检查//button//span[contains(text(), '采集器 ')]是否存在: NG
+2020-04-01 17:42:26,677  - INFO - ----  test064__校验“采集器-导入任务-同步任务信息”页面校验___ __ __ __ __        ----
+2020-04-01 17:42:48,025  - INFO - [CheckPoint_45]: test_a064_collector_import_data_sync_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td[2]/div/a是否存在: NG
+2020-04-01 17:42:54,119  - INFO - ----  test064__校验“采集器-导入任务-同步任务信息”页面校验___ __ __ __ __        ----
+2020-04-01 17:43:15,371  - INFO - [CheckPoint_45]: test_a064_collector_import_data_sync_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td[2]/div/a是否存在: NG
+2020-04-01 17:43:21,355  - INFO - ----  test064__校验“采集器-导入任务-同步任务信息”页面校验___ __ __ __ __        ----
+2020-04-01 17:43:42,608  - INFO - [CheckPoint_45]: test_a064_collector_import_data_sync_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td[2]/div/a是否存在: NG
+2020-04-01 17:44:09,450  - INFO - [CheckPoint_46]: test_a065_collector_import_data_source_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td[4]/div/a是否存在: NG
+2020-04-01 17:44:35,640  - INFO - [CheckPoint_46]: test_a065_collector_import_data_source_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td[4]/div/a是否存在: NG
+2020-04-01 17:45:01,774  - INFO - [CheckPoint_46]: test_a065_collector_import_data_source_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td[4]/div/a是否存在: NG
+2020-04-01 17:45:07,803  - INFO - ----  test066__校验“采集器-导入任务-预览”页面校验___ __ __ __ __        ----
+2020-04-01 17:45:29,093  - INFO - [CheckPoint_47]: test_a066_collector_import_data_preview_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td/div/a[contains(text(), '预览')]是否存在: NG
+2020-04-01 17:45:36,847  - INFO - ----  test066__校验“采集器-导入任务-预览”页面校验___ __ __ __ __        ----
+2020-04-01 17:45:58,198  - INFO - [CheckPoint_47]: test_a066_collector_import_data_preview_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td/div/a[contains(text(), '预览')]是否存在: NG
+2020-04-01 17:46:04,348  - INFO - ----  test066__校验“采集器-导入任务-预览”页面校验___ __ __ __ __        ----
+2020-04-01 17:46:25,613  - INFO - [CheckPoint_47]: test_a066_collector_import_data_preview_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td/div/a[contains(text(), '预览')]是否存在: NG
+2020-04-01 17:46:38,033  - INFO - ----  test067__校验“采集器-导入任务-预览-关闭”页面校验___ __ __ __ __        ----
+2020-04-01 17:46:59,306  - INFO - [CheckPoint_48]: test_a067_collector_import_data_close_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td/div/a[contains(text(), '预览')]是否存在: NG
+2020-04-01 17:47:04,311  - INFO - ----  test067__校验“采集器-导入任务-预览-关闭”页面校验___ __ __ __ __        ----
+2020-04-01 17:47:25,579  - INFO - [CheckPoint_48]: test_a067_collector_import_data_close_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td/div/a[contains(text(), '预览')]是否存在: NG
+2020-04-01 17:47:30,622  - INFO - ----  test067__校验“采集器-导入任务-预览-关闭”页面校验___ __ __ __ __        ----
+2020-04-01 17:47:51,883  - INFO - [CheckPoint_48]: test_a067_collector_import_data_close_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td/div/a[contains(text(), '预览')]是否存在: NG
+2020-04-01 17:47:58,959  - INFO - ----  test068__校验“采集器-导入任务-预览-确定”页面校验___ __ __ __ __        ----
+2020-04-01 17:48:20,295  - INFO - [CheckPoint_49]: test_a068_collector_import_data_ok_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td/div/a[contains(text(), '预览')]是否存在: NG
+2020-04-01 17:48:25,250  - INFO - ----  test068__校验“采集器-导入任务-预览-确定”页面校验___ __ __ __ __        ----
+2020-04-01 17:48:46,549  - INFO - [CheckPoint_49]: test_a068_collector_import_data_ok_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td/div/a[contains(text(), '预览')]是否存在: NG
+2020-04-01 17:48:51,506  - INFO - ----  test068__校验“采集器-导入任务-预览-确定”页面校验___ __ __ __ __        ----
+2020-04-01 17:49:12,761  - INFO - [CheckPoint_49]: test_a068_collector_import_data_ok_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td/div/a[contains(text(), '预览')]是否存在: NG
+2020-04-01 17:49:17,755  - INFO - ----  test069__校验“采集器-导入任务-执行”页面校验___ __ __ __ __        ----
+2020-04-01 17:49:39,122  - INFO - [CheckPoint_50]: test_a069_collector_import_data_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td/div/a[contains(text(), '执行')]是否存在: NG
+2020-04-01 17:49:46,074  - INFO - ----  test069__校验“采集器-导入任务-执行”页面校验___ __ __ __ __        ----
+2020-04-01 17:50:07,426  - INFO - [CheckPoint_50]: test_a069_collector_import_data_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td/div/a[contains(text(), '执行')]是否存在: NG
+2020-04-01 17:50:12,347  - INFO - ----  test069__校验“采集器-导入任务-执行”页面校验___ __ __ __ __        ----
+2020-04-01 17:50:33,688  - INFO - [CheckPoint_50]: test_a069_collector_import_data_请检查//*[@id="bm-ch-collector-importDatas-table"]/div[3]/table/tbody/tr[1]/td/div/a[contains(text(), '执行')]是否存在: NG
+2020-04-01 17:50:39,696  - INFO - ----  test070__校验“采集器-导入任务-执行列表-查看日志”页面校验___//*[@name="bm-ch-col-importData-collectorId-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 17:50:39,761  - INFO - ----  test070__校验“采集器-导入任务-执行列表-查看日志”页面校验___//*[@name="bm-ch-col-importData-collectorId-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 17:51:01,182  - INFO - [CheckPoint_51]: test_a070_collector_import_data_view_log_请检查//*[@id="bm-ch-collector-importDatas-table"]//*[contains(text(), 'cjq_rw')]//ancestor::td/following-sibling::td//a[contains(text(), '执行')]是否存在: NG
+2020-04-01 17:51:09,078  - INFO - ----  test070__校验“采集器-导入任务-执行列表-查看日志”页面校验___//*[@name="bm-ch-col-importData-collectorId-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 17:51:09,141  - INFO - ----  test070__校验“采集器-导入任务-执行列表-查看日志”页面校验___//*[@name="bm-ch-col-importData-collectorId-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 17:51:30,486  - INFO - [CheckPoint_51]: test_a070_collector_import_data_view_log_请检查//*[@id="bm-ch-collector-importDatas-table"]//*[contains(text(), 'cjq_rw')]//ancestor::td/following-sibling::td//a[contains(text(), '执行')]是否存在: NG
+2020-04-01 17:51:36,539  - INFO - ----  test070__校验“采集器-导入任务-执行列表-查看日志”页面校验___//*[@name="bm-ch-col-importData-collectorId-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 17:51:36,602  - INFO - ----  test070__校验“采集器-导入任务-执行列表-查看日志”页面校验___//*[@name="bm-ch-col-importData-collectorId-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 17:52:03,013  - INFO - [CheckPoint_51]: test_a070_collector_import_data_view_log_请检查//*[@id="bm-ch-collector-importDatas-table"]//*[contains(text(), 'cjq_rw')]//ancestor::td/following-sibling::td//a[contains(text(), '执行')]是否存在: NG
+2020-04-01 17:52:10,813  - INFO - ----  test071__校验“采集器-导入任务-执行列表-查看错误日志”页面校验___//*[@name="bm-ch-col-importData-collectorId-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 17:52:10,875  - INFO - ----  test071__校验“采集器-导入任务-执行列表-查看错误日志”页面校验___//*[@name="bm-ch-col-importData-collectorId-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 17:52:37,291  - INFO - [CheckPoint_52]: test_a071_collector_import_data_view_error_log_请检查//*[@id="bm-ch-collector-importDatas-table"]//*[contains(text(), 'cjq_rw')]//ancestor::td/following-sibling::td//a[contains(text(), '执行')]是否存在: NG
+2020-04-01 17:52:45,053  - INFO - ----  test071__校验“采集器-导入任务-执行列表-查看错误日志”页面校验___//*[@name="bm-ch-col-importData-collectorId-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 17:52:45,109  - INFO - ----  test071__校验“采集器-导入任务-执行列表-查看错误日志”页面校验___//*[@name="bm-ch-col-importData-collectorId-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 17:53:11,507  - INFO - [CheckPoint_52]: test_a071_collector_import_data_view_error_log_请检查//*[@id="bm-ch-collector-importDatas-table"]//*[contains(text(), 'cjq_rw')]//ancestor::td/following-sibling::td//a[contains(text(), '执行')]是否存在: NG
+2020-04-01 17:53:17,572  - INFO - ----  test071__校验“采集器-导入任务-执行列表-查看错误日志”页面校验___//*[@name="bm-ch-col-importData-collectorId-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 17:53:17,628  - INFO - ----  test071__校验“采集器-导入任务-执行列表-查看错误日志”页面校验___//*[@name="bm-ch-col-importData-collectorId-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 17:53:44,122  - INFO - [CheckPoint_52]: test_a071_collector_import_data_view_error_log_请检查//*[@id="bm-ch-collector-importDatas-table"]//*[contains(text(), 'cjq_rw')]//ancestor::td/following-sibling::td//a[contains(text(), '执行')]是否存在: NG
+2020-04-01 17:53:53,748  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 17:53:53,821  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 17:53:53,902  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 17:53:53,962  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 17:53:54,017  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 17:53:54,075  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 17:54:02,237  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:54:03,717  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 17:54:03,766  - INFO - ----  test006__校验“采集器”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:54:30,801  - INFO - [CheckPoint_53]: test_a072_collector_dir_请检查//span[text()="c83"]是否存在: NG
+2020-04-01 17:54:53,393  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:54:54,909  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 17:54:54,955  - INFO - ----  test006__校验“采集器”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:55:18,631  - INFO - [CheckPoint_53]: test_a072_collector_dir_请检查//span[text()="c83"]是否存在: NG
+2020-04-01 17:55:41,230  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:55:42,739  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 17:55:42,789  - INFO - ----  test006__校验“采集器”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:56:05,971  - INFO - [CheckPoint_53]: test_a072_collector_dir_请检查//span[text()="c83"]是否存在: NG
+2020-04-01 17:56:12,018  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___ __ __ __ __        ----
+2020-04-01 17:56:13,030  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___//button/span[contains(text(), "采集器详细信息")]__xpath__ __ __        ----
+2020-04-01 17:56:13,039  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___//label[@for="id"]__xpath__get_text__ __        ----
+2020-04-01 17:56:13,066  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___//label[@for="name"]__xpath__get_text__ __        ----
+2020-04-01 17:56:13,092  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___//label[@for="ip"]__xpath__get_text__ __        ----
+2020-04-01 17:56:13,110  - INFO - [CheckPoint_54]: test_a074_collector_detail_==检查点____info: 断言有“地址” 存在___ 预期的属性值: 地址 不等于获取的属性值: Ip: NG
+2020-04-01 17:56:20,210  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___ __ __ __ __        ----
+2020-04-01 17:56:21,234  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___//button/span[contains(text(), "采集器详细信息")]__xpath__ __ __        ----
+2020-04-01 17:56:21,241  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___//label[@for="id"]__xpath__get_text__ __        ----
+2020-04-01 17:56:21,265  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___//label[@for="name"]__xpath__get_text__ __        ----
+2020-04-01 17:56:21,287  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___//label[@for="ip"]__xpath__get_text__ __        ----
+2020-04-01 17:56:21,304  - INFO - [CheckPoint_54]: test_a074_collector_detail_==检查点____info: 断言有“地址” 存在___ 预期的属性值: 地址 不等于获取的属性值: Ip: NG
+2020-04-01 17:56:27,079  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___ __ __ __ __        ----
+2020-04-01 17:56:28,090  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___//button/span[contains(text(), "采集器详细信息")]__xpath__ __ __        ----
+2020-04-01 17:56:28,098  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___//label[@for="id"]__xpath__get_text__ __        ----
+2020-04-01 17:56:28,121  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___//label[@for="name"]__xpath__get_text__ __        ----
+2020-04-01 17:56:28,144  - INFO - ----  test074__校验“采集器-详情信息-页面校验”___//label[@for="ip"]__xpath__get_text__ __        ----
+2020-04-01 17:56:28,161  - INFO - [CheckPoint_54]: test_a074_collector_detail_==检查点____info: 断言有“地址” 存在___ 预期的属性值: 地址 不等于获取的属性值: Ip: NG
+2020-04-01 17:56:32,999  - INFO - ----  test075__校验“采集器-任务列表-页面校验”___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:56:34,475  - INFO - ----  test075__校验“采集器-任务列表-页面校验”___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 17:56:34,537  - INFO - ----  test075__校验“采集器-任务列表-页面校验”___ __ __move_by_offset__ __        ----
+2020-04-01 17:56:55,144  - INFO - [CheckPoint_55]: test_a075_collector_task_list_请检查//span[text()="c83"]是否存在: NG
+2020-04-01 17:57:00,128  - INFO - ----  test075__校验“采集器-任务列表-页面校验”___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:57:01,605  - INFO - ----  test075__校验“采集器-任务列表-页面校验”___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 17:57:01,650  - INFO - ----  test075__校验“采集器-任务列表-页面校验”___ __ __move_by_offset__ __        ----
+2020-04-01 17:57:22,229  - INFO - [CheckPoint_55]: test_a075_collector_task_list_请检查//span[text()="c83"]是否存在: NG
+2020-04-01 17:57:27,141  - INFO - ----  test075__校验“采集器-任务列表-页面校验”___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:57:28,621  - INFO - ----  test075__校验“采集器-任务列表-页面校验”___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 17:57:28,666  - INFO - ----  test075__校验“采集器-任务列表-页面校验”___ __ __move_by_offset__ __        ----
+2020-04-01 17:57:49,246  - INFO - [CheckPoint_55]: test_a075_collector_task_list_请检查//span[text()="c83"]是否存在: NG
+2020-04-01 17:57:56,211  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___ __ __ __ __        ----
+2020-04-01 17:58:06,389  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___//button/span[contains(text(), "采集器详细信息")]__xpath__click__ __        ----
+2020-04-01 17:58:06,944  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___//li/a[contains(text(), "采集器任务列表")]__xpath__click__ __        ----
+2020-04-01 17:58:07,629  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___bm-ch-col-tasklist-create-button__id__click__ __        ----
+2020-04-01 17:58:08,199  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___bm-ch-step1Form-name-input__name__send_keys__auto_collecter989960__        ----
+2020-04-01 17:58:08,376  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___//*[@name="bm-ch-step1Form-datasource-input"]/following-sibling::div/button__xpath__click__ __        ----
+2020-04-01 17:58:29,303  - INFO - [CheckPoint_56]: test_a076_collector_task_list_create_请检查//*[@id="dataTree"]//*[@name="数据源"]/preceding-sibling::i[1]是否存在: NG
+2020-04-01 17:58:35,351  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___ __ __ __ __        ----
+2020-04-01 17:58:36,390  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___//button/span[contains(text(), "采集器详细信息")]__xpath__click__ __        ----
+2020-04-01 17:58:36,951  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___//li/a[contains(text(), "采集器任务列表")]__xpath__click__ __        ----
+2020-04-01 17:58:37,617  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___bm-ch-col-tasklist-create-button__id__click__ __        ----
+2020-04-01 17:58:38,206  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___bm-ch-step1Form-name-input__name__send_keys__auto_collecter607746__        ----
+2020-04-01 17:58:38,416  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___//*[@name="bm-ch-step1Form-datasource-input"]/following-sibling::div/button__xpath__click__ __        ----
+2020-04-01 17:58:59,250  - INFO - [CheckPoint_56]: test_a076_collector_task_list_create_请检查//*[@id="dataTree"]//*[@name="数据源"]/preceding-sibling::i[1]是否存在: NG
+2020-04-01 17:59:07,226  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___ __ __ __ __        ----
+2020-04-01 17:59:08,236  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___//button/span[contains(text(), "采集器详细信息")]__xpath__click__ __        ----
+2020-04-01 17:59:08,778  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___//li/a[contains(text(), "采集器任务列表")]__xpath__click__ __        ----
+2020-04-01 17:59:09,430  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___bm-ch-col-tasklist-create-button__id__click__ __        ----
+2020-04-01 17:59:10,011  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___bm-ch-step1Form-name-input__name__send_keys__auto_collecter557739__        ----
+2020-04-01 17:59:10,197  - INFO - ----  test076__校验“采集器-任务列表-新建任务”___//*[@name="bm-ch-step1Form-datasource-input"]/following-sibling::div/button__xpath__click__ __        ----
+2020-04-01 17:59:31,162  - INFO - [CheckPoint_56]: test_a076_collector_task_list_create_请检查//*[@id="dataTree"]//*[@name="数据源"]/preceding-sibling::i[1]是否存在: NG
+2020-04-01 17:59:37,211  - INFO - ----  test077__校验“采集器-复制”任务___ __ __ __ __        ----
+2020-04-01 17:59:58,468  - INFO - [CheckPoint_57]: test_a077_collector_task_list_copy_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[3]//tr[1]/td[1]//label是否存在: NG
+2020-04-01 18:00:06,596  - INFO - ----  test077__校验“采集器-复制”任务___ __ __ __ __        ----
+2020-04-01 18:00:27,819  - INFO - [CheckPoint_57]: test_a077_collector_task_list_copy_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[3]//tr[1]/td[1]//label是否存在: NG
+2020-04-01 18:00:33,971  - INFO - ----  test077__校验“采集器-复制”任务___ __ __ __ __        ----
+2020-04-01 18:00:55,324  - INFO - [CheckPoint_57]: test_a077_collector_task_list_copy_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[3]//tr[1]/td[1]//label是否存在: NG
+2020-04-01 18:00:59,685  - INFO - ----  test078__校验“采集器任务”启用任务___ __ __ __ __        ----
+2020-04-01 18:01:20,991  - INFO - [CheckPoint_58]: test_a078_collector_task_list_start_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[3]//tr[1]/td[1]//label是否存在: NG
+2020-04-01 18:01:28,419  - INFO - ----  test078__校验“采集器任务”启用任务___ __ __ __ __        ----
+2020-04-01 18:01:49,696  - INFO - [CheckPoint_58]: test_a078_collector_task_list_start_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[3]//tr[1]/td[1]//label是否存在: NG
+2020-04-01 18:01:55,714  - INFO - ----  test078__校验“采集器任务”启用任务___ __ __ __ __        ----
+2020-04-01 18:02:16,983  - INFO - [CheckPoint_58]: test_a078_collector_task_list_start_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[3]//tr[1]/td[1]//label是否存在: NG
+2020-04-01 18:02:21,974  - INFO - ----  test079__校验“采集器-任务列表-停用”任务___ __ __ __ __        ----
+2020-04-01 18:02:43,268  - INFO - [CheckPoint_59]: test_a079_collector_task_list_stop_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[3]//tr[1]/td[1]//label是否存在: NG
+2020-04-01 18:02:48,216  - INFO - ----  test079__校验“采集器-任务列表-停用”任务___ __ __ __ __        ----
+2020-04-01 18:03:09,501  - INFO - [CheckPoint_59]: test_a079_collector_task_list_stop_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[3]//tr[1]/td[1]//label是否存在: NG
+2020-04-01 18:03:15,998  - INFO - ----  test079__校验“采集器-任务列表-停用”任务___ __ __ __ __        ----
+2020-04-01 18:03:37,355  - INFO - [CheckPoint_59]: test_a079_collector_task_list_stop_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[3]//tr[1]/td[1]//label是否存在: NG
+2020-04-01 18:03:42,219  - INFO - ----  test080__校验“采集器-任务列表-删除”任务___ __ __ __ __        ----
+2020-04-01 18:04:03,474  - INFO - [CheckPoint_60]: test_a080_collector_task_list_delete_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[3]//a[contains(text(), "auto_collecter")]/ancestor::td/preceding-sibling::td[1]//label是否存在: NG
+2020-04-01 18:04:08,503  - INFO - ----  test080__校验“采集器-任务列表-删除”任务___ __ __ __ __        ----
+2020-04-01 18:04:29,773  - INFO - [CheckPoint_60]: test_a080_collector_task_list_delete_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[3]//a[contains(text(), "auto_collecter")]/ancestor::td/preceding-sibling::td[1]//label是否存在: NG
+2020-04-01 18:04:34,800  - INFO - ----  test080__校验“采集器-任务列表-删除”任务___ __ __ __ __        ----
+2020-04-01 18:04:56,126  - INFO - [CheckPoint_60]: test_a080_collector_task_list_delete_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[3]//a[contains(text(), "auto_collecter")]/ancestor::td/preceding-sibling::td[1]//label是否存在: NG
+2020-04-01 18:05:03,235  - INFO - ----  test081__校验“采集器-任务列表-同步任务信息”页面校验___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 18:05:04,711  - INFO - ----  test081__校验“采集器-任务列表-同步任务信息”页面校验___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 18:05:04,774  - INFO - ----  test081__校验“采集器-任务列表-同步任务信息”页面校验___ __ __move_by_offset__ __        ----
+2020-04-01 18:05:25,441  - INFO - [CheckPoint_61]: test_a081_collector_task_list_sync_请检查//span[text()="c83"]是否存在: NG
+2020-04-01 18:05:43,524  - INFO - ----  test081__校验“采集器-任务列表-同步任务信息”页面校验___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 18:05:45,010  - INFO - ----  test081__校验“采集器-任务列表-同步任务信息”页面校验___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 18:05:45,052  - INFO - ----  test081__校验“采集器-任务列表-同步任务信息”页面校验___ __ __move_by_offset__ __        ----
+2020-04-01 18:06:05,579  - INFO - [CheckPoint_61]: test_a081_collector_task_list_sync_请检查//span[text()="c83"]是否存在: NG
+2020-04-01 18:07:04,931  - INFO - ----  test081__校验“采集器-任务列表-同步任务信息”页面校验___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 18:07:06,411  - INFO - ----  test081__校验“采集器-任务列表-同步任务信息”页面校验___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-04-01 18:07:06,455  - INFO - ----  test081__校验“采集器-任务列表-同步任务信息”页面校验___ __ __move_by_offset__ __        ----
+2020-04-01 18:07:27,134  - INFO - [CheckPoint_61]: test_a081_collector_task_list_sync_请检查//span[text()="c83"]是否存在: NG
+2020-04-01 18:07:54,414  - INFO - [CheckPoint_62]: test_a082_collector_task_list_view_请检查//*[contains(text(),'c_1_in')]是否存在: NG
+2020-04-01 18:08:20,111  - INFO - [CheckPoint_62]: test_a082_collector_task_list_view_请检查//*[contains(text(),'c_1_in')]是否存在: NG
+2020-04-01 18:08:45,687  - INFO - [CheckPoint_62]: test_a082_collector_task_list_view_请检查//*[contains(text(),'c_1_in')]是否存在: NG
+2020-04-01 18:08:50,576  - INFO - ----  test083__校验“采集器-任务列表-执行列表”页面校验___ __ __ __ __        ----
+2020-04-01 18:09:11,956  - INFO - [CheckPoint_63]: test_a083_collector_task_list_execute_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//tr[1]//a[contains(text(), '执行列表')]是否存在: NG
+2020-04-01 18:09:17,002  - INFO - ----  test083__校验“采集器-任务列表-执行列表”页面校验___ __ __ __ __        ----
+2020-04-01 18:09:38,322  - INFO - [CheckPoint_63]: test_a083_collector_task_list_execute_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//tr[1]//a[contains(text(), '执行列表')]是否存在: NG
+2020-04-01 18:09:45,296  - INFO - ----  test083__校验“采集器-任务列表-执行列表”页面校验___ __ __ __ __        ----
+2020-04-01 18:10:06,603  - INFO - [CheckPoint_63]: test_a083_collector_task_list_execute_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//tr[1]//a[contains(text(), '执行列表')]是否存在: NG
+2020-04-01 18:10:13,047  - INFO - ----  test084__校验“采集器-任务列表-执行列表-查看日志”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:10:13,106  - INFO - ----  test084__校验“采集器-任务列表-执行列表-查看日志”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:10:34,433  - INFO - [CheckPoint_64]: test_a084_collector_task_list_execute_view_log_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//a[contains(text(), 'cjq_rw')]//ancestor::td/following-sibling::td//a[contains(text(), '执行列表')]是否存在: NG
+2020-04-01 18:10:42,023  - INFO - ----  test084__校验“采集器-任务列表-执行列表-查看日志”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:10:42,089  - INFO - ----  test084__校验“采集器-任务列表-执行列表-查看日志”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:11:03,460  - INFO - [CheckPoint_64]: test_a084_collector_task_list_execute_view_log_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//a[contains(text(), 'cjq_rw')]//ancestor::td/following-sibling::td//a[contains(text(), '执行列表')]是否存在: NG
+2020-04-01 18:11:09,521  - INFO - ----  test084__校验“采集器-任务列表-执行列表-查看日志”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:11:09,584  - INFO - ----  test084__校验“采集器-任务列表-执行列表-查看日志”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:11:30,926  - INFO - [CheckPoint_64]: test_a084_collector_task_list_execute_view_log_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//a[contains(text(), 'cjq_rw')]//ancestor::td/following-sibling::td//a[contains(text(), '执行列表')]是否存在: NG
+2020-04-01 18:11:37,030  - INFO - ----  test085__校验“采集器-任务列表-执行列表-查看错误日志”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:11:37,104  - INFO - ----  test085__校验“采集器-任务列表-执行列表-查看错误日志”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:11:58,572  - INFO - [CheckPoint_65]: test_a085_collector_task_list_execute_view_err_log_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//a[contains(text(), 'cjq_rw')]//ancestor::td/following-sibling::td//a[contains(text(), '执行列表')]是否存在: NG
+2020-04-01 18:12:06,823  - INFO - ----  test085__校验“采集器-任务列表-执行列表-查看错误日志”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:12:06,893  - INFO - ----  test085__校验“采集器-任务列表-执行列表-查看错误日志”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:12:28,259  - INFO - [CheckPoint_65]: test_a085_collector_task_list_execute_view_err_log_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//a[contains(text(), 'cjq_rw')]//ancestor::td/following-sibling::td//a[contains(text(), '执行列表')]是否存在: NG
+2020-04-01 18:12:34,353  - INFO - ----  test085__校验“采集器-任务列表-执行列表-查看错误日志”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:12:34,420  - INFO - ----  test085__校验“采集器-任务列表-执行列表-查看错误日志”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:12:55,740  - INFO - [CheckPoint_65]: test_a085_collector_task_list_execute_view_err_log_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//a[contains(text(), 'cjq_rw')]//ancestor::td/following-sibling::td//a[contains(text(), '执行列表')]是否存在: NG
+2020-04-01 18:13:01,744  - INFO - ----  test086__校验“采集器-任务列表-预览数据集”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:13:01,801  - INFO - ----  test086__校验“采集器-任务列表-预览数据集”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:13:23,170  - INFO - [CheckPoint_66]: test_a086_collector_task_list_execute_preview_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//table/tbody/tr[1]/td/div/a[contains(text(), '预览数据集')]是否存在: NG
+2020-04-01 18:13:31,176  - INFO - ----  test086__校验“采集器-任务列表-预览数据集”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:13:31,243  - INFO - ----  test086__校验“采集器-任务列表-预览数据集”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:13:52,590  - INFO - [CheckPoint_66]: test_a086_collector_task_list_execute_preview_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//table/tbody/tr[1]/td/div/a[contains(text(), '预览数据集')]是否存在: NG
+2020-04-01 18:13:58,544  - INFO - ----  test086__校验“采集器-任务列表-预览数据集”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:13:58,608  - INFO - ----  test086__校验“采集器-任务列表-预览数据集”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:14:19,847  - INFO - [CheckPoint_66]: test_a086_collector_task_list_execute_preview_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//table/tbody/tr[1]/td/div/a[contains(text(), '预览数据集')]是否存在: NG
+2020-04-01 18:14:24,860  - INFO - ----  test087__校验“采集器-任务列表-预览数据集-关闭”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:14:24,920  - INFO - ----  test087__校验“采集器-任务列表-预览数据集-关闭”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:14:46,361  - INFO - [CheckPoint_67]: test_a087_collector_task_list_execute_preview_close_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//table/tbody/tr[1]/td/div/a[contains(text(), '预览数据集')]是否存在: NG
+2020-04-01 18:14:53,590  - INFO - ----  test087__校验“采集器-任务列表-预览数据集-关闭”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:14:53,656  - INFO - ----  test087__校验“采集器-任务列表-预览数据集-关闭”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:15:15,006  - INFO - [CheckPoint_67]: test_a087_collector_task_list_execute_preview_close_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//table/tbody/tr[1]/td/div/a[contains(text(), '预览数据集')]是否存在: NG
+2020-04-01 18:15:20,009  - INFO - ----  test087__校验“采集器-任务列表-预览数据集-关闭”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:15:20,075  - INFO - ----  test087__校验“采集器-任务列表-预览数据集-关闭”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:15:41,485  - INFO - [CheckPoint_67]: test_a087_collector_task_list_execute_preview_close_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//table/tbody/tr[1]/td/div/a[contains(text(), '预览数据集')]是否存在: NG
+2020-04-01 18:16:01,933  - INFO - ----  test088__校验“采集器-任务列表-预览数据集-确定”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:16:02,001  - INFO - ----  test088__校验“采集器-任务列表-预览数据集-确定”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:16:23,380  - INFO - [CheckPoint_68]: test_a088_collector_task_list_execute_preview_ok_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//table/tbody/tr[1]/td/div/a[contains(text(), '预览数据集')]是否存在: NG
+2020-04-01 18:16:28,736  - INFO - ----  test088__校验“采集器-任务列表-预览数据集-确定”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:16:28,800  - INFO - ----  test088__校验“采集器-任务列表-预览数据集-确定”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----
+2020-04-01 18:16:50,237  - INFO - [CheckPoint_68]: test_a088_collector_task_list_execute_preview_ok_请检查//*[@id="bm-ch-collector-detailTaskList-table"]/div[4]//table/tbody/tr[1]/td/div/a[contains(text(), '预览数据集')]是否存在: NG
+2020-04-01 18:16:55,693  - INFO - ----  test088__校验“采集器-任务列表-预览数据集-确定”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]/input__xpath__send_keys__cjq_rw__        ----
+2020-04-01 18:16:55,749  - INFO - ----  test088__校验“采集器-任务列表-预览数据集-确定”页面校验___//*[@name="bm-ch-col-tasklist-searchListTable-search-select"]//button__xpath__click__ __        ----

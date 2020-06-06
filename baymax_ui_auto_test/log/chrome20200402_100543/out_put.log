@@ -1,0 +1,14 @@
+2020-04-02 10:05:43,022  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-02 10:05:43,191  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-02 10:05:43,273  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-02 10:05:43,352  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-02 10:05:43,404  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-02 10:05:43,469  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-02 10:05:54,746  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'实时计算')]__xpath__action_chains__ __        ----
+2020-04-02 10:05:56,229  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'作业管理')]__xpath__click__ __        ----
+2020-04-02 10:05:56,786  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___ __ __get_current_url__ __        ----
+2020-04-02 10:06:17,032  - INFO - [CheckPoint_1]: test_01_task_administration_page_verification_请检查//*[contains(text(),'创建作业')]是否存在: NG
+2020-04-02 10:06:39,659  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'实时计算')]__xpath__action_chains__ __        ----
+2020-04-02 10:06:41,179  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'作业管理')]__xpath__click__ __        ----
+2020-04-02 10:06:41,724  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___ __ __get_current_url__ __        ----
+2020-04-02 10:07:02,074  - INFO - [CheckPoint_1]: test_01_task_administration_page_verification_请检查//*[contains(text(),'创建作业')]是否存在: NG

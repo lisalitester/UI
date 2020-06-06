@@ -1,0 +1,28 @@
+2020-03-18 12:14:38,938  - INFO - ----  test001__校验“成功登录”页面___//*[@placeholder="请选择"]__xpath__click__ __        ----
+2020-03-18 12:14:39,047  - INFO - ----  test001__校验“成功登录”页面___//*[@placeholder="请选择"]__xpath__send_keys__default__        ----
+2020-03-18 12:14:40,139  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-18 12:14:40,202  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-18 12:14:40,261  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-18 12:14:40,331  - INFO - ----  test001__校验“成功登录”页面___确定__name__click__ __        ----
+2020-03-18 12:14:41,414  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'实时计算')]__xpath__action_chains__ __        ----
+2020-03-18 12:14:42,894  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'作业管理')]__xpath__click__ __        ----
+2020-03-18 12:14:43,456  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___ __ __get_current_url__ __        ----
+2020-03-18 12:14:43,471  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'创建作业')]__xpath__ __ __        ----
+2020-03-18 12:14:43,480  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'刷新')]__xpath__ __ __        ----
+2020-03-18 12:14:43,488  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'名称')]__xpath__ __ __        ----
+2020-03-18 12:14:43,494  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'类型')]__xpath__ __ __        ----
+2020-03-18 12:14:43,494  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'操作')]__xpath__ __ __        ----
+2020-03-18 12:14:43,494  - INFO - [CheckPoint_1]: test_01_task_administration_page_verification_ : OK
+2020-03-18 12:14:43,494  - INFO - [CheckPoint_2]: test_01_task_administration_page_verification_ : NG
+2020-03-18 12:14:46,862  - INFO - ----  test_05_task_dispose_cancel__校验“创建作业-流式处理-作业配置-取消”___//*[contains(text(),'创建作业')]__xpath__action_chains__ __        ----
+2020-03-18 12:14:48,418  - INFO - ----  test_05_task_dispose_cancel__校验“创建作业-流式处理-作业配置-取消”___//*[contains(text(),'流式处理')]__xpath__click__ __        ----
+2020-03-18 12:14:48,980  - INFO - ----  test_05_task_dispose_cancel__校验“创建作业-流式处理-作业配置-取消”___//*[contains(text(),'作业配置')]__xpath__click__ __        ----
+2020-03-18 12:14:49,621  - INFO - ----  test_05_task_dispose_cancel__校验“创建作业-流式处理-作业配置-取消”___//*[contains(text(),'取消')]__xpath__click__ __        ----
+2020-03-18 12:14:50,199  - INFO - ----  test_05_task_dispose_cancel__校验“创建作业-流式处理-作业配置-取消”___ __ __get_current_url__ __        ----
+2020-03-18 12:14:50,209  - INFO - ----  test_05_task_dispose_cancel__校验“创建作业-流式处理-作业配置-取消”___//*[contains(text(),'创建作业')]__xpath__ __ __        ----
+2020-03-18 12:14:50,215  - INFO - ----  test_05_task_dispose_cancel__校验“创建作业-流式处理-作业配置-取消”___//*[contains(text(),'刷新')]__xpath__ __ __        ----
+2020-03-18 12:14:50,222  - INFO - ----  test_05_task_dispose_cancel__校验“创建作业-流式处理-作业配置-取消”___//*[contains(text(),'名称')]__xpath__ __ __        ----
+2020-03-18 12:14:50,228  - INFO - ----  test_05_task_dispose_cancel__校验“创建作业-流式处理-作业配置-取消”___//*[contains(text(),'类型')]__xpath__ __ __        ----
+2020-03-18 12:14:50,228  - INFO - ----  test_05_task_dispose_cancel__校验“创建作业-流式处理-作业配置-取消”___//*[contains(text(),'操作')]__xpath__ __ __        ----
+2020-03-18 12:14:50,228  - INFO - [CheckPoint_3]: test_05_task_dispose_cancel_ : OK
+2020-03-18 12:14:50,228  - INFO - [CheckPoint_4]: test_05_task_dispose_cancel_ : NG

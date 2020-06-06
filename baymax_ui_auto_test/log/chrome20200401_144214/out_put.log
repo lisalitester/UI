@@ -1,0 +1,29 @@
+2020-04-01 14:42:14,302  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 14:42:14,414  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 14:42:15,515  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 14:42:15,569  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 14:42:15,625  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 14:42:15,688  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 14:42:26,943  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 14:42:28,467  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 14:42:29,026  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 14:42:30,321  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-04-01 14:42:30,372  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-04-01 14:42:30,409  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-04-01 14:42:30,425  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-04-01 14:42:30,426  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-04-01 14:42:37,238  - INFO - ----  test025__校验“元数据-新建schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-04-01 14:42:37,286  - INFO - ----  test025__校验“元数据-新建schema”页面___auto_UI__name__click__ __        ----
+2020-04-01 14:42:38,140  - INFO - ----  test025__校验“元数据-新建schema”页面___bm-ch-resMan-resourceman-create-button__id__click__ __        ----
+2020-04-01 14:42:38,161  - INFO - ----  test025__校验“元数据-新建schema”页面__bm-ch-resMan-resourceman-create-button__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 14:42:38,161  - INFO - [CheckPoint_3]: test_a025_create_schema_请检查bm-ch-resMan-resourceman-create-button是否存在: NG
+2020-04-01 14:42:42,990  - INFO - ----  test025__校验“元数据-新建schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-04-01 14:42:43,034  - INFO - ----  test025__校验“元数据-新建schema”页面___auto_UI__name__click__ __        ----
+2020-04-01 14:42:43,898  - INFO - ----  test025__校验“元数据-新建schema”页面___bm-ch-resMan-resourceman-create-button__id__click__ __        ----
+2020-04-01 14:42:43,915  - INFO - ----  test025__校验“元数据-新建schema”页面__bm-ch-resMan-resourceman-create-button__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 14:42:43,916  - INFO - [CheckPoint_3]: test_a025_create_schema_请检查bm-ch-resMan-resourceman-create-button是否存在: NG
+2020-04-01 14:43:09,408  - INFO - [CheckPoint_3]: test_a025_create_schema_请检查//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i是否存在: NG

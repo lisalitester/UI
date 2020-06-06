@@ -1,0 +1,31 @@
+2020-03-31 12:22:07,709  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-31 12:22:07,781  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-31 12:22:07,856  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-31 12:22:07,917  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-31 12:22:07,967  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-31 12:22:08,038  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-31 12:22:09,113  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-31 12:22:10,588  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-31 12:22:11,136  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-31 12:22:12,420  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-03-31 12:22:12,471  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-03-31 12:22:12,500  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-03-31 12:22:12,518  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-03-31 12:22:12,518  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-03-31 12:22:21,539  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-03-31 12:22:21,587  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___//em[@name="auto_UI"]__xpath__click__ __        ----
+2020-03-31 12:22:21,706  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___bm-ch-resMan-resourceman-create-button__id__click__ __        ----
+2020-03-31 12:22:23,287  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___bm-ch-resMan-resourceman-DBSource-dropdown-menu__id__click__ __        ----
+2020-03-31 12:22:23,923  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___bm-ch-resMan-dbsource-name-input__name__send_keys__JDBC_DS_hive_918247__        ----
+2020-03-31 12:22:24,186  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___bm-ch-resMan-dbsource-chineseName-select__name__click__ __        ----
+2020-03-31 12:22:24,452  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___auto_hive__name__click__ __        ----
+2020-03-31 12:22:24,533  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___bm-ch-resMan-dbsource-attributes-user-input__name__send_keys__hive__        ----
+2020-03-31 12:22:24,611  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___bm-ch-resMan-dbsource-attributes-password-input__name__send_keys__hive__        ----
+2020-03-31 12:22:24,681  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___bm-ch-resMan-dbsource-attributes-url-input__name__clear__ __        ----
+2020-03-31 12:22:24,714  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___bm-ch-resMan-dbsource-attributes-url-input__name__send_keys__jdbc:hive2://info2:10000__        ----
+2020-03-31 12:22:24,948  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___bm-ch-resMan-dbsource--save-ok__name__click__ __        ----
+2020-03-31 12:22:25,024  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___bm-ch-resMan-resourceman-create-button__id__ __ __        ----
+2020-03-31 12:22:26,043  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___//*[contains(text(), "JDBC_DS_hive_918247")]__xpath__ __ __        ----
+2020-03-31 12:22:26,053  - INFO - ----  test_b003__校验“数据源-新建JDBC_hive数据源”___//*[@id="bm-ch-resourceMan-table"]/div[3]/table/tbody/tr/td[4]/div__xpath__get_text__ __        ----
+2020-03-31 12:22:26,078  - INFO - [CheckPoint_3]: test_b003_create_dbsource_jdbc_hive_ : OK
+2020-03-31 12:22:26,078  - INFO - [CheckPoint_4]: test_b003_create_dbsource_jdbc_hive_ : NG

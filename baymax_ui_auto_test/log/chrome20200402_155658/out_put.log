@@ -1,0 +1,17 @@
+2020-04-02 15:56:58,412  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-02 15:56:58,521  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-02 15:56:59,607  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-02 15:56:59,666  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-02 15:56:59,724  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-02 15:56:59,786  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-02 15:57:16,114  - INFO - ----  test_01_task_operation_page_verification__实时计算-作业运维页面校验___//*[contains(text(),'实时计算')]__xpath__action_chains__ __        ----
+2020-04-02 15:57:17,601  - INFO - ----  test_01_task_operation_page_verification__实时计算-作业运维页面校验___//*[contains(text(),'作业运维')]__xpath__click__ __        ----
+2020-04-02 15:57:18,161  - INFO - ----  test_01_task_operation_page_verification__实时计算-作业运维页面校验___ __ __get_current_url__ __        ----
+2020-04-02 15:57:18,210  - INFO - ----  test_01_task_operation_page_verification__实时计算-作业运维页面校验___//*[contains(text(),'刷新')]__xpath__ __ __        ----
+2020-04-02 15:57:18,223  - INFO - ----  test_01_task_operation_page_verification__实时计算-作业运维页面校验___//*[contains(text(),'名称')]__xpath__ __ __        ----
+2020-04-02 15:57:18,234  - INFO - ----  test_01_task_operation_page_verification__实时计算-作业运维页面校验___//*[contains(text(),'执行引擎')]__xpath__ __ __        ----
+2020-04-02 15:57:18,246  - INFO - ----  test_01_task_operation_page_verification__实时计算-作业运维页面校验___//*[contains(text(),'状态')]__xpath__ __ __        ----
+2020-04-02 15:57:18,256  - INFO - ----  test_01_task_operation_page_verification__实时计算-作业运维页面校验___//*[contains(text(),'部署时间')]__xpath__ __ __        ----
+2020-04-02 15:57:18,267  - INFO - ----  test_01_task_operation_page_verification__实时计算-作业运维页面校验___//*[contains(text(),'操作')]__xpath__ __ __        ----
+2020-04-02 15:57:18,267  - INFO - [CheckPoint_1]: test_01_task_operation_page_verification_ : OK
+2020-04-02 15:57:18,267  - INFO - [CheckPoint_2]: test_01_task_operation_page_verification_ : NG

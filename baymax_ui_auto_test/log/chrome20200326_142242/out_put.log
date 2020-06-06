@@ -1,0 +1,17 @@
+2020-03-26 14:22:42,213  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-26 14:22:42,316  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-26 14:22:43,409  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-26 14:22:43,464  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-26 14:22:43,517  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-26 14:22:43,581  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-26 14:22:44,702  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-26 14:22:46,281  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/roleManagement"]__xpath__click__ __        ----
+2020-03-26 14:22:46,324  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-26 14:22:46,583  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-26 14:22:46,599  - INFO - [CheckPoint_1]: test_017a_role_manage_==检查点____info: 检查"质量分析的URL"是否正确___ 预期的属性值: http://192.168.1.84:8515/#/roleManagement 不等于获取的属性值: http://192.168.1.84:8515/#/releaseNote: NG
+2020-03-26 14:23:09,277  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-26 14:23:10,874  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/roleManagement"]__xpath__click__ __        ----
+2020-03-26 14:23:10,891  - INFO - ----  test017__校验“权限管理-角色管理”页面__//*[@test-id="/roleManagement"]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-03-26 14:23:10,891  - INFO - [CheckPoint_1]: test_017a_role_manage_请检查//*[@test-id="/roleManagement"]是否存在: NG

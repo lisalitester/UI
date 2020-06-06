@@ -1,0 +1,47 @@
+2020-03-23 11:17:22,858  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-23 11:17:22,952  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-23 11:17:23,038  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-23 11:17:23,099  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-23 11:17:23,155  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-23 11:17:23,226  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-23 11:17:24,318  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-23 11:17:25,898  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/roleManagement"]__xpath__click__ __        ----
+2020-03-23 11:17:25,940  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-23 11:17:26,222  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-23 11:17:26,236  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@id="operationPanel"]/div[2]/div/button[4]/span__xpath__ __ __        ----
+2020-03-23 11:17:27,236  - INFO - [CheckPoint_1]: test_017a_role_manage_ : OK
+2020-03-23 11:17:27,236  - INFO - [CheckPoint_2]: test_017a_role_manage_ : NG
+2020-03-23 11:17:29,575  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-23 11:17:31,169  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-03-23 11:17:31,218  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面__//*[@test-id="/userManagement"]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-03-23 11:17:31,218  - INFO - [CheckPoint_3]: test_017b_user_manage_请检查//*[@test-id="/userManagement"]是否存在: NG
+2020-03-23 11:17:33,568  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-23 11:17:35,175  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-03-23 11:17:35,220  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-23 11:17:35,481  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-23 11:17:55,808  - INFO - [CheckPoint_3]: test_017b_user_manage_请检查//input[@placeholder='请填写内容']是否存在: NG
+2020-03-23 11:17:58,109  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-23 11:17:59,703  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-03-23 11:17:59,738  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面__//*[@test-id="/userManagement"]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-03-23 11:17:59,738  - INFO - [CheckPoint_3]: test_017b_user_manage_请检查//*[@test-id="/userManagement"]是否存在: NG
+2020-03-23 11:18:22,450  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-23 11:18:23,936  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-23 11:18:24,011  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-23 11:18:45,502  - INFO - [CheckPoint_4]: test_a002_resource_dir_请检查数据源是否存在: NG
+2020-03-23 11:19:08,051  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-23 11:19:09,536  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-23 11:19:09,619  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-23 11:19:31,225  - INFO - [CheckPoint_4]: test_a002_resource_dir_请检查数据源是否存在: NG
+2020-03-23 11:19:53,862  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-23 11:19:55,348  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-23 11:19:55,366  - INFO - ----  test002__校验“资源目录”页面__//*[@test-id="/resourceMan"]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-03-23 11:19:55,366  - INFO - [CheckPoint_4]: test_a002_resource_dir_请检查//*[@test-id="/resourceMan"]是否存在: NG
+2020-03-23 11:19:57,710  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-23 11:19:59,203  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/synchronization"]__xpath__click__ __        ----
+2020-03-23 11:19:59,300  - INFO - ----  test004__校验“数据导入”页面___ __ __move_by_offset__ __        ----

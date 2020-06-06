@@ -1,0 +1,37 @@
+2020-04-01 11:53:22,900  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 11:53:23,022  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 11:53:23,103  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 11:53:23,158  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 11:53:23,209  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 11:53:23,276  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 11:53:34,544  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 11:53:36,032  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 11:53:36,581  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 11:53:37,870  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-04-01 11:53:37,916  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-04-01 11:53:37,944  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-04-01 11:53:37,978  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-04-01 11:53:37,979  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-04-01 11:53:43,010  - INFO - ----  test024__校验“删除JDBC数据源”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-04-01 11:53:43,060  - INFO - ----  test024__校验“删除JDBC数据源”页面___//em[@name="auto_UI"]__xpath__click__ __        ----
+2020-04-01 11:53:44,182  - INFO - ----  test024__校验“删除JDBC数据源”页面___//tr//*[contains(text(), "JDBC")]__xpaths__get_text__ __        ----
+2020-04-01 11:53:44,219  - INFO - ----  test024__校验“删除JDBC数据源”页面___//*[contains(text(), 'JDBC_DS_hive_918247')]/ancestor::td/preceding-sibling::td[1]__xpath__click__ __        ----
+2020-04-01 11:53:44,288  - INFO - ----  test024__校验“删除JDBC数据源”页面___bm-ch-resMan-resourceman-delete-beiruanModel-button__id__click__ __        ----
+2020-04-01 11:53:45,055  - INFO - ----  test024__校验“删除JDBC数据源”页面___//*[contains(text(), "确定")]__xpaths__click__ __        ----
+2020-04-01 11:54:05,416  - INFO - [CheckPoint_3]: test_a024_delete_dbsource_jdbc_请检查//*[contains(text(), "恭喜你，删除已成功")]是否存在: NG
+2020-04-01 11:54:10,426  - INFO - ----  test024__校验“删除JDBC数据源”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-04-01 11:54:10,476  - INFO - ----  test024__校验“删除JDBC数据源”页面___//em[@name="auto_UI"]__xpath__click__ __        ----
+2020-04-01 11:54:12,579  - INFO - ----  test024__校验“删除JDBC数据源”页面___//tr//*[contains(text(), "JDBC")]__xpaths__get_text__ __        ----
+2020-04-01 11:54:12,610  - INFO - ----  test024__校验“删除JDBC数据源”页面___//*[contains(text(), 'JDBC_DS_hive_918247')]/ancestor::td/preceding-sibling::td[1]__xpath__click__ __        ----
+2020-04-01 11:54:13,704  - INFO - ----  test024__校验“删除JDBC数据源”页面___bm-ch-resMan-resourceman-delete-beiruanModel-button__id__click__ __        ----
+2020-04-01 11:54:14,485  - INFO - ----  test024__校验“删除JDBC数据源”页面___//*[contains(text(), "确定")]__xpaths__click__ __        ----
+2020-04-01 11:54:14,513  - INFO - ----  test024__校验“删除JDBC数据源”页面__//*[contains(text(), "确定")]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 11:54:14,513  - INFO - [CheckPoint_3]: test_a024_delete_dbsource_jdbc_请检查//*[contains(text(), "确定")]是否存在: NG
+2020-04-01 11:54:19,393  - INFO - ----  test024__校验“删除JDBC数据源”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-04-01 11:54:19,444  - INFO - ----  test024__校验“删除JDBC数据源”页面___//em[@name="auto_UI"]__xpath__click__ __        ----
+2020-04-01 11:54:20,557  - INFO - ----  test024__校验“删除JDBC数据源”页面___//tr//*[contains(text(), "JDBC")]__xpaths__get_text__ __        ----
+2020-04-01 11:54:20,588  - INFO - ----  test024__校验“删除JDBC数据源”页面___//*[contains(text(), 'JDBC_DS_hive_918247')]/ancestor::td/preceding-sibling::td[1]__xpath__click__ __        ----
+2020-04-01 11:54:20,649  - INFO - ----  test024__校验“删除JDBC数据源”页面___bm-ch-resMan-resourceman-delete-beiruanModel-button__id__click__ __        ----
+2020-04-01 11:54:21,421  - INFO - ----  test024__校验“删除JDBC数据源”页面___//*[contains(text(), "确定")]__xpaths__click__ __        ----

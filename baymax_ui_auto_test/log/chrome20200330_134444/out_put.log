@@ -1,0 +1,22 @@
+2020-03-30 13:44:44,811  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 13:44:44,927  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 13:44:45,003  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 13:44:45,068  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 13:44:45,125  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 13:44:45,189  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 13:45:01,508  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-30 13:45:03,104  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/roleManagement"]__xpath__click__ __        ----
+2020-03-30 13:45:03,149  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 13:45:03,440  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 13:45:03,473  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@id="operationPanel"]/div[2]/div/button[4]/span__xpath__ __ __        ----
+2020-03-30 13:45:04,474  - INFO - [CheckPoint_1]: test_017a_role_manage_ : OK
+2020-03-30 13:45:04,474  - INFO - [CheckPoint_2]: test_017a_role_manage_ : NG
+2020-03-30 13:45:06,814  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-30 13:45:08,402  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-03-30 13:45:08,485  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 13:45:08,755  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 13:45:29,139  - INFO - [CheckPoint_3]: test_017b_user_manage_请检查//input[@placeholder='请填写内容']是否存在: NG
+2020-03-30 13:45:31,470  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-30 13:45:33,047  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-03-30 13:45:33,110  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 13:45:33,378  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----

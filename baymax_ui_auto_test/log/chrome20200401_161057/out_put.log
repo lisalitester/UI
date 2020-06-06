@@ -1,0 +1,41 @@
+2020-04-01 16:10:57,416  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 16:10:57,601  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 16:10:57,684  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 16:10:57,745  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 16:10:57,802  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 16:10:57,863  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 16:11:10,105  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 16:11:11,607  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 16:11:12,165  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 16:11:13,447  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-04-01 16:11:13,504  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-04-01 16:11:13,537  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-04-01 16:11:13,555  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-04-01 16:11:13,555  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-04-01 16:13:09,442  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/i__xpath__click__ __        ----
+2020-04-01 16:13:10,494  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/ul/li[4]/em/span__xpath__click__ __        ----
+2020-04-01 16:13:11,619  - INFO - ----  test026__校验“元数据-移动schema”页面___//tr//*[contains(text(), "schema_")]__xpaths__get_text__ __        ----
+2020-04-01 16:13:12,653  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[contains(text(), 'schema_030432')]/ancestor::td/preceding-sibling::td[1]__xpath__click__ __        ----
+2020-04-01 16:13:12,713  - INFO - ----  test026__校验“元数据-移动schema”页面___bm-ch-resMan-resourceman-move-button__id__click__ __        ----
+2020-04-01 16:13:13,470  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[@id="dataTree"]/div/ul/li/ul/li/i__xpath__click__ __        ----
+2020-04-01 16:13:13,521  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[@id="dataTree"]//*[@name="move_to"]__xpath__click__ __        ----
+2020-04-01 16:13:13,581  - INFO - ----  test026__校验“元数据-移动schema”页面___bm-ch-resourceMan-submitResourceTree-ResourceTree-ok__name__click__ __        ----
+2020-04-01 16:13:35,013  - INFO - [CheckPoint_3]: test_a026_move_schema_请检查/html/body/div[5]/div/div[3]/button[2]/span是否存在: NG
+2020-04-01 16:13:40,167  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/i__xpath__click__ __        ----
+2020-04-01 16:13:41,215  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/ul/li[4]/em/span__xpath__click__ __        ----
+2020-04-01 16:13:42,338  - INFO - ----  test026__校验“元数据-移动schema”页面___//tr//*[contains(text(), "schema_")]__xpaths__get_text__ __        ----
+2020-04-01 16:13:43,369  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[contains(text(), 'schema_030432')]/ancestor::td/preceding-sibling::td[1]__xpath__click__ __        ----
+2020-04-01 16:13:43,459  - INFO - ----  test026__校验“元数据-移动schema”页面___bm-ch-resMan-resourceman-move-button__id__click__ __        ----
+2020-04-01 16:13:44,233  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[@id="dataTree"]/div/ul/li/ul/li/i__xpath__click__ __        ----
+2020-04-01 16:13:44,279  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[@id="dataTree"]//*[@name="move_to"]__xpath__click__ __        ----
+2020-04-01 16:13:44,377  - INFO - ----  test026__校验“元数据-移动schema”页面___bm-ch-resourceMan-submitResourceTree-ResourceTree-ok__name__click__ __        ----
+2020-04-01 16:14:05,744  - INFO - [CheckPoint_3]: test_a026_move_schema_请检查/html/body/div[5]/div/div[3]/button[2]/span是否存在: NG
+2020-04-01 16:14:17,504  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/i__xpath__click__ __        ----
+2020-04-01 16:14:19,602  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/ul/li[4]/em/span__xpath__click__ __        ----
+2020-04-01 16:14:20,717  - INFO - ----  test026__校验“元数据-移动schema”页面___//tr//*[contains(text(), "schema_")]__xpaths__get_text__ __        ----
+2020-04-01 16:14:21,759  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[contains(text(), 'schema_030432')]/ancestor::td/preceding-sibling::td[1]__xpath__click__ __        ----
+2020-04-01 16:14:21,822  - INFO - ----  test026__校验“元数据-移动schema”页面___bm-ch-resMan-resourceman-move-button__id__click__ __        ----
+2020-04-01 16:14:22,605  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[@id="dataTree"]/div/ul/li/ul/li/i__xpath__click__ __        ----
+2020-04-01 16:14:22,651  - INFO - ----  test026__校验“元数据-移动schema”页面___//*[@id="dataTree"]//*[@name="move_to"]__xpath__click__ __        ----
+2020-04-01 16:14:22,715  - INFO - ----  test026__校验“元数据-移动schema”页面___bm-ch-resourceMan-submitResourceTree-ResourceTree-ok__name__click__ __        ----
+2020-04-01 16:14:44,020  - INFO - [CheckPoint_3]: test_a026_move_schema_请检查/html/body/div[5]/div/div[3]/button[2]/span是否存在: NG

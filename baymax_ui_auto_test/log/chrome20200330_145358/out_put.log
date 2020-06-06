@@ -1,0 +1,18 @@
+2020-03-30 14:53:58,649  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 14:53:58,731  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 14:53:58,821  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 14:53:58,880  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 14:53:58,930  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 14:53:58,986  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 14:54:00,065  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-30 14:54:01,654  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/roleManagement"]__xpath__click__ __        ----
+2020-03-30 14:54:01,698  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 14:54:01,966  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 14:54:01,983  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@id="operationPanel"]/div[2]/div/button[4]/span__xpath__ __ __        ----
+2020-03-30 14:54:02,983  - INFO - [CheckPoint_1]: test_017a_role_manage_ : OK
+2020-03-30 14:54:02,983  - INFO - [CheckPoint_2]: test_017a_role_manage_ : NG
+2020-03-30 14:54:05,336  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-30 14:54:06,940  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-03-30 14:54:07,041  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 14:54:07,306  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 14:54:07,309  - INFO - [CheckPoint_3]: test_017b_user_manage_==检查点____info: 检查"质量分析的URL"是否正确___ 预期的属性值: http://192.168.1.84:8515/#/userManagement 不等于获取的属性值: http://192.168.1.84:8515/#/roleManagement: NG

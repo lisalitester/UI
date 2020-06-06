@@ -1,0 +1,38 @@
+2020-03-23 10:28:59,180  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-23 10:28:59,257  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-23 10:28:59,341  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-23 10:28:59,407  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-23 10:28:59,461  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-23 10:28:59,528  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-23 10:29:11,775  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-23 10:29:13,370  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/roleManagement"]__xpath__click__ __        ----
+2020-03-23 10:29:13,412  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-23 10:29:13,689  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-23 10:29:13,704  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@id="operationPanel"]/div[2]/div/button[4]/span__xpath__ __ __        ----
+2020-03-23 10:29:14,704  - INFO - [CheckPoint_1]: test_017a_role_manage_ : OK
+2020-03-23 10:29:14,704  - INFO - [CheckPoint_2]: test_017a_role_manage_ : NG
+2020-03-23 10:29:17,045  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-23 10:29:18,636  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-03-23 10:29:18,729  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-23 10:29:19,033  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-23 10:29:39,375  - INFO - [CheckPoint_3]: test_017b_user_manage_请检查//input[@placeholder='请填写内容']是否存在: NG
+2020-03-23 10:29:41,704  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-23 10:29:43,309  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-03-23 10:29:43,338  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面__//*[@test-id="/userManagement"]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-03-23 10:29:43,338  - INFO - [CheckPoint_3]: test_017b_user_manage_请检查//*[@test-id="/userManagement"]是否存在: NG
+2020-03-23 10:29:45,665  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-23 10:29:47,246  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-03-23 10:29:47,264  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面__//*[@test-id="/userManagement"]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-03-23 10:29:47,264  - INFO - [CheckPoint_3]: test_017b_user_manage_请检查//*[@test-id="/userManagement"]是否存在: NG
+2020-03-23 10:30:09,948  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-23 10:30:11,436  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-23 10:30:11,508  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-23 10:30:33,273  - INFO - [CheckPoint_4]: test_a002_resource_dir_请检查数据源是否存在: NG
+2020-03-23 10:30:55,974  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-23 10:31:02,462  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-23 10:31:07,546  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-23 10:31:34,135  - INFO - [CheckPoint_4]: test_a002_resource_dir_请检查数据源是否存在: NG

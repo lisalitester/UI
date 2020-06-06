@@ -1,0 +1,16 @@
+2020-03-30 16:03:25,341  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 16:03:25,458  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 16:03:26,551  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 16:03:26,611  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 16:03:26,669  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 16:03:26,735  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 16:03:43,063  - INFO - ----  test009__校验“流程管理”页面___//*[@test-id="/dataAnalysis"]__xpath__action_chains__ __        ----
+2020-03-30 16:03:44,554  - INFO - ----  test009__校验“流程管理”页面___//*[@test-id="/design"]__xpath__click__ __        ----
+2020-03-30 16:03:44,607  - INFO - ----  test009__校验“流程管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 16:03:44,882  - INFO - ----  test009__校验“流程管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 16:04:05,112  - INFO - [CheckPoint_1]: test_a009_flow_manage_请检查//button/span[contains(text(), '目录')]是否存在: NG
+2020-03-30 16:04:27,760  - INFO - ----  test009__校验“流程管理”页面___//*[@test-id="/dataAnalysis"]__xpath__action_chains__ __        ----
+2020-03-30 16:04:29,233  - INFO - ----  test009__校验“流程管理”页面___//*[@test-id="/design"]__xpath__click__ __        ----
+2020-03-30 16:04:29,292  - INFO - ----  test009__校验“流程管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 16:04:29,560  - INFO - ----  test009__校验“流程管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 16:04:49,894  - INFO - [CheckPoint_1]: test_a009_flow_manage_请检查//button/span[contains(text(), '目录')]是否存在: NG

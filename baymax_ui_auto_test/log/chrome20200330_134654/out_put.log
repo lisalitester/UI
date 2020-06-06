@@ -1,0 +1,10 @@
+2020-03-30 13:46:54,348  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 13:46:54,454  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 13:46:55,540  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 13:46:55,599  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 13:46:55,658  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 13:46:55,725  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 13:47:10,005  - INFO - ----  test001__校验“成功登录”页面___//*[text()="dir1"]__xpath__ __ __        ----
+2020-03-30 13:47:15,107  - INFO - ----  test001__校验“成功登录”页面___//*[contains(text(),'数据集成')]__xpath__ __ __        ----
+2020-03-30 13:47:15,107  - INFO - [CheckPoint_1]: testlogin_ : OK
+2020-03-30 13:47:15,107  - INFO - [CheckPoint_2]: testlogin_ : NG

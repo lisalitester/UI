@@ -1,0 +1,3 @@
+2020-03-31 10:44:53,532  - INFO - [CheckPoint_1]: test_a022_create_dbsource_jdbc_请检查/html/body/div[1]/div/div/div[2]/section/div/div/section/div[1]/form/div[2]/ul/li/ul[2]/li/i是否存在: NG
+2020-03-31 10:45:19,889  - INFO - [CheckPoint_1]: test_a022_create_dbsource_jdbc_请检查/html/body/div[1]/div/div/div[2]/section/div/div/section/div[1]/form/div[2]/ul/li/ul[2]/li/i是否存在: NG
+2020-03-31 10:45:47,811  - INFO - [CheckPoint_1]: test_a022_create_dbsource_jdbc_请检查/html/body/div[1]/div/div/div[2]/section/div/div/section/div[1]/form/div[2]/ul/li/ul[2]/li/i是否存在: NG

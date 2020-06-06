@@ -26,8 +26,8 @@ from cases.case_data_analyze.case_project_dir.case_project_dir import ProjectDir
 from cases.case_authority_management.case_role_mange.case_role_management import RoleManagementTest
 from cases.case_authority_management.case_user_manage.case_user_management import UserManagementTest
 # 实时计算          
-#from cases.case_real_time_computation.case_task_administration.case_task_administration  import TaskAdministrationTest #作业管理
-#from cases.case_real_time_computation.case_task_operation.case_task_operation import TaskOperation#作业运维
+from cases.case_real_time_computation.case_task_administration.case_task_administration  import TaskAdministrationTest #作业管理
+from cases.case_real_time_computation.case_task_operation.case_task_operation import TaskOperationTest#作业运维
 #from cases.case_real_time_computation.case_task_template.case_task_template import TaskTemplate#作业模板
 #from cases.case_real_time_computation.case_interactive_query.case_interactive_query import InteractiveQuery#交互式查询
 #from cases.case_real_time_computation.case_process_design.case_process_design import ProcessDesign #实时计算流程设计
@@ -71,10 +71,7 @@ def suite_case(who):
     Check_module = {
       
         #'bayMax': [LoginTest,HomePageTest]
-        'bayMax': [LoginTest, HomePageTest, OperateDirTest, DataImportTest,  FileImportTest, 
-                   CollectorTemplateTest,CollectorimportDataTest, CollectorTaskListTest, OperationalMonitoringTest,
-                    TaskControlTest, QualityAnalyzeTest,BloodAnalyzeTest, SchemaAnalyzeTest, FlowManagementTest, 
-                    ProjectDirTest,RoleManagementTest,UserManagementTest]
+        'bayMax': [TaskOperationTest]
 #         
     }
     cases = map(ParametrizedTestCase.parametrize, Check_module[who])
@@ -100,4 +97,4 @@ if __name__ == '__main__':
     mk_file()
     runnerCaseApp()
     writeExcel()
-    send()
+ #   send()

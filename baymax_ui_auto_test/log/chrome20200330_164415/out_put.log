@@ -1,0 +1,35 @@
+2020-03-30 16:44:15,053  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 16:44:15,174  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 16:44:15,256  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 16:44:15,318  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 16:44:15,372  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 16:44:15,432  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 16:44:21,553  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-30 16:44:23,048  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-30 16:44:23,597  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-30 16:44:24,892  - INFO - ----  test002__校验“资源目录”页面___Datasources__name__ __ __        ----
+2020-03-30 16:44:24,901  - INFO - ----  test002__校验“资源目录”页面___Schemas__name__ __ __        ----
+2020-03-30 16:44:24,910  - INFO - ----  test002__校验“资源目录”页面___Datasets__name__ __ __        ----
+2020-03-30 16:44:24,920  - INFO - ----  test002__校验“资源目录”页面___Standards__name__ __ __        ----
+2020-03-30 16:44:24,931  - INFO - ----  test002__校验“资源目录”页面___//*[contains(text(),'资源目录')]__xpath__ __ __        ----
+2020-03-30 16:44:24,931  - INFO - [CheckPoint_1]: test_a002_resource_dir_ : OK
+2020-03-30 16:44:24,931  - INFO - [CheckPoint_2]: test_a002_resource_dir_ : NG
+2020-03-30 16:44:27,266  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-30 16:44:28,760  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/synchronization"]__xpath__click__ __        ----
+2020-03-30 16:44:28,853  - INFO - ----  test004__校验“数据导入”页面___ __ __move_by_offset__ __        ----
+2020-03-30 16:44:29,127  - INFO - ----  test004__校验“数据导入”页面___//*[contains(text(),"新建")]__xpath__ __ __        ----
+2020-03-30 16:44:29,138  - INFO - ----  test004__校验“数据导入”页面___//*[contains(text(),'数据集')]__xpath__ __ __        ----
+2020-03-30 16:44:29,138  - INFO - ----  test004__校验“数据导入”页面___ __ __get_current_url__ __        ----
+2020-03-30 16:44:29,144  - INFO - [CheckPoint_3]: test_a003_data_import_ : OK
+2020-03-30 16:44:29,144  - INFO - [CheckPoint_4]: test_a003_data_import_ : NG
+2020-03-30 16:44:31,486  - INFO - ----  test003__校验“文件管理”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-30 16:44:32,976  - INFO - ----  test003__校验“文件管理”页面___//*[@test-id="/dataMan"]__xpath__click__ __        ----
+2020-03-30 16:44:33,053  - INFO - ----  test003__校验“文件管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 16:44:53,701  - INFO - [CheckPoint_5]: test_a003_file_manage_请检查//*[text()="文件列表"]是否存在: NG
+2020-03-30 16:44:56,032  - INFO - ----  test003__校验“文件管理”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-30 16:44:57,534  - INFO - ----  test003__校验“文件管理”页面___//*[@test-id="/dataMan"]__xpath__click__ __        ----
+2020-03-30 16:44:57,606  - INFO - ----  test003__校验“文件管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 16:45:18,185  - INFO - [CheckPoint_5]: test_a003_file_manage_请检查//*[text()="文件列表"]是否存在: NG
+2020-03-30 16:45:20,509  - INFO - ----  test003__校验“文件管理”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-30 16:45:21,987  - INFO - ----  test003__校验“文件管理”页面___//*[@test-id="/dataMan"]__xpath__click__ __        ----
+2020-03-30 16:45:22,052  - INFO - ----  test003__校验“文件管理”页面___ __ __move_by_offset__ __        ----

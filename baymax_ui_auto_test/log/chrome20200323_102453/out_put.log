@@ -1,0 +1,33 @@
+2020-03-23 10:24:53,467  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-23 10:24:53,567  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-23 10:24:54,656  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-23 10:24:54,717  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-23 10:24:54,780  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-23 10:24:54,849  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-23 10:25:02,010  - INFO - ----  test001__校验“成功登录”页面___//*[text()="dir1"]__xpath__ __ __        ----
+2020-03-23 10:25:02,019  - INFO - ----  test001__校验“成功登录”页面___//*[contains(text(),'数据集成')]__xpath__ __ __        ----
+2020-03-23 10:25:02,019  - INFO - [CheckPoint_1]: testlogin_ : OK
+2020-03-23 10:25:02,020  - INFO - [CheckPoint_2]: testlogin_ : NG
+2020-03-23 10:25:13,980  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-23 10:25:14,091  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-23 10:25:14,175  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-23 10:25:14,240  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-23 10:25:14,292  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-23 10:25:14,356  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-23 10:25:34,806  - INFO - [CheckPoint_3]: test_017a_role_manage_请检查//*[@test-id="/systemConfig"]是否存在: NG
+2020-03-23 10:25:57,549  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-23 10:25:59,184  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/roleManagement"]__xpath__click__ __        ----
+2020-03-23 10:25:59,240  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-23 10:25:59,500  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-23 10:25:59,506  - INFO - [CheckPoint_3]: test_017a_role_manage_==检查点____info: 检查"质量分析的URL"是否正确___ 预期的属性值: http://192.168.1.84:8515/#/roleManagement 不等于获取的属性值: http://192.168.1.84:8515/#/releaseNote: NG
+2020-03-23 10:26:22,206  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-23 10:26:23,814  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/roleManagement"]__xpath__click__ __        ----
+2020-03-23 10:26:23,849  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-23 10:26:24,115  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-23 10:26:24,130  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@id="operationPanel"]/div[2]/div/button[4]/span__xpath__ __ __        ----
+2020-03-23 10:26:25,130  - INFO - [CheckPoint_3]: test_017a_role_manage_ : OK
+2020-03-23 10:26:25,131  - INFO - [CheckPoint_4]: test_017a_role_manage_ : NG
+2020-03-23 10:26:27,467  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-23 10:26:29,049  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-03-23 10:26:29,134  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-23 10:26:29,471  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----

@@ -1,0 +1,21 @@
+2020-03-18 12:25:50,216  - INFO - ----  test001__校验“成功登录”页面___//*[@placeholder="请选择"]__xpath__click__ __        ----
+2020-03-18 12:25:50,322  - INFO - ----  test001__校验“成功登录”页面___//*[@placeholder="请选择"]__xpath__send_keys__default__        ----
+2020-03-18 12:25:51,419  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-18 12:25:51,476  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-18 12:25:51,532  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-18 12:25:51,599  - INFO - ----  test001__校验“成功登录”页面___确定__name__click__ __        ----
+2020-03-18 12:25:52,682  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'实时计算')]__xpath__action_chains__ __        ----
+2020-03-18 12:25:54,178  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'作业管理')]__xpath__click__ __        ----
+2020-03-18 12:25:54,733  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___ __ __get_current_url__ __        ----
+2020-03-18 12:25:54,745  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'创建作业')]__xpath__ __ __        ----
+2020-03-18 12:25:54,745  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'刷新')]__xpath__ __ __        ----
+2020-03-18 12:25:54,761  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'名称')]__xpath__ __ __        ----
+2020-03-18 12:25:54,761  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'类型')]__xpath__ __ __        ----
+2020-03-18 12:25:54,776  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'操作')]__xpath__ __ __        ----
+2020-03-18 12:25:54,776  - INFO - [CheckPoint_1]: test_01_task_administration_page_verification_ : OK
+2020-03-18 12:25:54,776  - INFO - [CheckPoint_2]: test_01_task_administration_page_verification_ : NG
+2020-03-18 12:25:58,098  - INFO - ----  test_06_set_up_task__创建作业-流式处理___//*[contains(text(),'创建作业')]__xpath__action_chains__ __        ----
+2020-03-18 12:25:59,619  - INFO - ----  test_06_set_up_task__创建作业-流式处理___//*[contains(text(),'流式处理')]__xpath__click__ __        ----
+2020-03-18 12:26:00,173  - INFO - ----  test_06_set_up_task__创建作业-流式处理___ __ __get_current_url__ __        ----
+2020-03-18 12:26:00,178  - INFO - [CheckPoint_3]: test_06_set_up_task_==检查点____info: 检查"作业管理的URL"是否正确___ 预期的属性值: http://192.168.1.83:8515/#/jobManage 不等于获取的属性值: http://192.168.1.83:8515/#/jobManage/jobDetail/description: NG
+2020-03-18 12:26:03,554  - INFO - ----  test_06_set_up_task__创建作业-流式处理___//*[contains(text(),'创建作业')]__xpath__action_chains__ __        ----

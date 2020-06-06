@@ -1,0 +1,27 @@
+2020-04-01 11:23:43,280  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 11:23:43,380  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 11:23:43,465  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 11:23:43,519  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 11:23:43,567  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 11:23:43,634  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 11:23:49,832  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 11:23:51,320  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 11:23:51,877  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 11:23:53,156  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-04-01 11:23:53,218  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-04-01 11:23:53,248  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-04-01 11:23:53,268  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-04-01 11:23:53,268  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-04-01 11:23:59,143  - INFO - ----  test_b006__校验“数据源-新建_socket_数据源”___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-04-01 11:23:59,194  - INFO - ----  test_b006__校验“数据源-新建_socket_数据源”___//em[@name="auto_UI"]__xpath__click__ __        ----
+2020-04-01 11:23:59,320  - INFO - ----  test_b006__校验“数据源-新建_socket_数据源”___bm-ch-resMan-resourceman-create-button__id__click__ __        ----
+2020-04-01 11:24:00,901  - INFO - ----  test_b006__校验“数据源-新建_socket_数据源”___bm-ch-resMan-resourceman-socketSource-dropdown-menu__id__click__ __        ----
+2020-04-01 11:24:01,497  - INFO - ----  test_b006__校验“数据源-新建_socket_数据源”___bm-ch-resourceMan-socketDBsource-name-input__name__send_keys__socket_source_258796__        ----
+2020-04-01 11:24:01,663  - INFO - ----  test_b006__校验“数据源-新建_socket_数据源”___bm-ch-resourceMan-socketDBsource-attributes-ipAddress-input__name__send_keys__192.168.1.189__        ----
+2020-04-01 11:24:01,769  - INFO - ----  test_b006__校验“数据源-新建_socket_数据源”___bm-ch-resourceMan-socketDBsource-attributes-port-input__name__send_keys__456786__        ----
+2020-04-01 11:24:01,839  - INFO - ----  test_b006__校验“数据源-新建_socket_数据源”___bm-ch-resourceMan-socketDBsource-save-ok__name__click__ __        ----
+2020-04-01 11:24:02,399  - INFO - ----  test_b006__校验“数据源-新建_socket_数据源”___bm-ch-resMan-resourceman-create-button__id__ __ __        ----
+2020-04-01 11:24:04,448  - INFO - ----  test_b006__校验“数据源-新建_socket_数据源”___//*[contains(text(), "socket_source_258796")]__xpath__ __ __        ----
+2020-04-01 11:24:04,465  - INFO - ----  test_b006__校验“数据源-新建_socket_数据源”___//*[@id="bm-ch-resourceMan-table"]/div[3]/table/tbody/tr/td[4]/div__xpath__get_text__ __        ----
+2020-04-01 11:24:04,495  - INFO - [CheckPoint_3]: test_b006_create_source_socket_ : OK
+2020-04-01 11:24:04,495  - INFO - [CheckPoint_4]: test_b006_create_source_socket_ : NG

@@ -1,0 +1,27 @@
+2020-03-10 10:32:33,024  - INFO - ----  test001__校验“成功登录”页面___//*[@placeholder="请选择"]__xpath__click__ __        ----
+2020-03-10 10:32:33,106  - INFO - ----  test001__校验“成功登录”页面___//*[@placeholder="请选择"]__xpath__send_keys__default__        ----
+2020-03-10 10:32:33,182  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-10 10:32:33,248  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-10 10:32:33,297  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-10 10:32:33,356  - INFO - ----  test001__校验“成功登录”页面___确定__name__click__ __        ----
+2020-03-10 10:32:34,444  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'实时计算')]__xpath__action_chains__ __        ----
+2020-03-10 10:32:35,942  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'作业管理')]__xpath__click__ __        ----
+2020-03-10 10:32:36,497  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___ __ __get_current_url__ __        ----
+2020-03-10 10:32:36,533  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'创建作业')]__xpath__ __ __        ----
+2020-03-10 10:32:36,544  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'刷新')]__xpath__ __ __        ----
+2020-03-10 10:32:36,554  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'名称')]__xpath__ __ __        ----
+2020-03-10 10:32:36,563  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'类型')]__xpath__ __ __        ----
+2020-03-10 10:32:36,573  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'操作')]__xpath__ __ __        ----
+2020-03-10 10:32:36,573  - INFO - [CheckPoint_1]: test_01_task_administration_page_verification_ : OK
+2020-03-10 10:32:36,573  - INFO - [CheckPoint_2]: test_01_task_administration_page_verification_ : NG
+2020-03-10 10:32:39,920  - INFO - ----  test_04_task_return__校验“创建作业-流式处理-返回”___//*[contains(text(),'创建作业')]__xpath__action_chains__ __        ----
+2020-03-10 10:32:41,402  - INFO - ----  test_04_task_return__校验“创建作业-流式处理-返回”___//*[contains(text(),'流式处理')]__xpath__click__ __        ----
+2020-03-10 10:32:41,987  - INFO - ----  test_04_task_return__校验“创建作业-流式处理-返回”___//*[contains(text(),'返回')]__xpath__click__ __        ----
+2020-03-10 10:32:42,582  - INFO - ----  test_04_task_return__校验“创建作业-流式处理-返回”___ __ __get_current_url__ __        ----
+2020-03-10 10:32:42,594  - INFO - ----  test_04_task_return__校验“创建作业-流式处理-返回”___//*[contains(text(),'创建作业')]__xpath__ __ __        ----
+2020-03-10 10:32:42,601  - INFO - ----  test_04_task_return__校验“创建作业-流式处理-返回”___//*[contains(text(),'刷新')]__xpath__ __ __        ----
+2020-03-10 10:32:42,607  - INFO - ----  test_04_task_return__校验“创建作业-流式处理-返回”___//*[contains(text(),'名称')]__xpath__ __ __        ----
+2020-03-10 10:32:42,614  - INFO - ----  test_04_task_return__校验“创建作业-流式处理-返回”___//*[contains(text(),'类型')]__xpath__ __ __        ----
+2020-03-10 10:32:42,620  - INFO - ----  test_04_task_return__校验“创建作业-流式处理-返回”___//*[contains(text(),'操作')]__xpath__ __ __        ----
+2020-03-10 10:32:42,620  - INFO - [CheckPoint_3]: test_04_task_return_ : OK
+2020-03-10 10:32:42,620  - INFO - [CheckPoint_4]: test_04_task_return_ : NG

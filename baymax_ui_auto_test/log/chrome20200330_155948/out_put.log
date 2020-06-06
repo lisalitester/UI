@@ -1,0 +1,2 @@
+2020-03-30 16:00:08,309  - INFO - [CheckPoint_1]: test_a008_blood_analyze_请检查//*[@test-id="/dataGovernance"]是否存在: NG
+2020-03-30 16:00:31,358  - INFO - [CheckPoint_1]: test_a008_blood_analyze_请检查//*[@test-id="/dataGovernance"]是否存在: NG

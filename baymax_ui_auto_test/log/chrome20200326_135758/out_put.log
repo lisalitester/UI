@@ -1,0 +1,13 @@
+2020-03-26 13:57:58,189  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-26 13:57:58,300  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-26 13:57:59,391  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-26 13:57:59,448  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-26 13:57:59,505  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-26 13:57:59,569  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-26 13:58:19,855  - INFO - [CheckPoint_1]: test_017a_role_manage_请检查//*[@test-id="/systemConfig"]是否存在: NG
+2020-03-26 13:58:22,602  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-26 13:58:23,680  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-26 13:58:26,832  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-26 13:58:26,882  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-26 13:58:26,936  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-26 13:58:26,994  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----

@@ -1,0 +1,17 @@
+2020-03-31 12:25:10,256  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-31 12:25:10,329  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-31 12:25:10,404  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-31 12:25:10,463  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-31 12:25:10,515  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-31 12:25:10,574  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-31 12:25:16,685  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-31 12:25:18,160  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-31 12:25:18,708  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-31 12:25:20,008  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-03-31 12:25:20,067  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-03-31 12:25:20,096  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-03-31 12:25:20,113  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-03-31 12:25:20,113  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-03-31 12:26:40,174  - INFO - [CheckPoint_3]: test_b004_create_source_http_请检查//*[@name="数据源"]/preceding-sibling::i[1]是否存在: NG
+2020-03-31 12:27:05,508  - INFO - [CheckPoint_3]: test_b004_create_source_http_请检查//*[@name="数据源"]/preceding-sibling::i[1]是否存在: NG
+2020-03-31 12:27:33,136  - INFO - [CheckPoint_3]: test_b004_create_source_http_请检查//*[@name="数据源"]/preceding-sibling::i[1]是否存在: NG

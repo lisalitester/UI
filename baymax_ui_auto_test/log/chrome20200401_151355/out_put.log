@@ -1,0 +1,24 @@
+2020-04-01 15:13:55,032  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 15:13:55,147  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 15:13:56,227  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 15:13:56,282  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 15:13:56,342  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 15:13:56,412  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 15:14:02,565  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 15:14:04,070  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 15:14:04,627  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 15:14:05,909  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-04-01 15:14:05,973  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-04-01 15:14:06,002  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-04-01 15:14:06,020  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-04-01 15:14:06,020  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-04-01 15:14:12,880  - INFO - ----  test025__校验“元数据-新建schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/i__xpath__click__ __        ----
+2020-04-01 15:14:13,729  - INFO - ----  test025__校验“元数据-新建schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/ul/li[4]/em/span__xpath__click__ __        ----
+2020-04-01 15:14:15,854  - INFO - ----  test025__校验“元数据-新建schema”页面___//*[@id="bm-ch-resMan-resourceman-create-button"]/span__xpath__click__ __        ----
+2020-04-01 15:14:16,723  - INFO - ----  test025__校验“元数据-新建schema”页面___bm-ch-resMan-resourceman-schema-dropdown-menu__id__click__ __        ----
+2020-04-01 15:14:16,875  - INFO - ----  test025__校验“元数据-新建schema”页面___bm-ch-resourceMan-schema-name-input__name__send_keys__schema_030432__        ----
+2020-04-01 15:14:17,119  - INFO - ----  test025__校验“元数据-新建schema”页面___bm-ch-resourceMan-schema-form-save-ok__name__click__ __        ----
+2020-04-01 15:14:18,005  - INFO - ----  test025__校验“元数据-新建schema”页面___bm-ch-5-el-pagination__name__ __ __        ----
+2020-04-01 15:14:18,015  - INFO - ----  test025__校验“元数据-新建schema”页面___//*[@id="bm-ch-resourceMan-table"]//table/tbody//*[contains(text(), "schema_030432")]__xpath__ __ __        ----
+2020-04-01 15:14:18,015  - INFO - [CheckPoint_3]: test_a025_create_schema_ : OK
+2020-04-01 15:14:18,015  - INFO - [CheckPoint_4]: test_a025_create_schema_ : NG

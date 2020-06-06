@@ -1,0 +1,115 @@
+2020-03-30 17:05:04,053  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 17:05:04,159  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 17:05:05,245  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 17:05:05,297  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 17:05:05,355  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 17:05:05,415  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 17:05:08,526  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-30 17:05:10,009  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-30 17:05:10,563  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:05:11,843  - INFO - ----  test002__校验“资源目录”页面___Datasources__name__ __ __        ----
+2020-03-30 17:05:11,853  - INFO - ----  test002__校验“资源目录”页面___Schemas__name__ __ __        ----
+2020-03-30 17:05:11,864  - INFO - ----  test002__校验“资源目录”页面___Datasets__name__ __ __        ----
+2020-03-30 17:05:11,873  - INFO - ----  test002__校验“资源目录”页面___Standards__name__ __ __        ----
+2020-03-30 17:05:11,882  - INFO - ----  test002__校验“资源目录”页面___//*[contains(text(),'资源目录')]__xpath__ __ __        ----
+2020-03-30 17:05:11,882  - INFO - [CheckPoint_1]: test_a002_resource_dir_ : OK
+2020-03-30 17:05:11,882  - INFO - [CheckPoint_2]: test_a002_resource_dir_ : NG
+2020-03-30 17:05:14,236  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-30 17:05:15,720  - INFO - ----  test004__校验“数据导入”页面___//*[@test-id="/synchronization"]__xpath__click__ __        ----
+2020-03-30 17:05:15,815  - INFO - ----  test004__校验“数据导入”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:05:16,096  - INFO - ----  test004__校验“数据导入”页面___//*[contains(text(),"新建")]__xpath__ __ __        ----
+2020-03-30 17:05:16,107  - INFO - ----  test004__校验“数据导入”页面___//*[contains(text(),'数据集')]__xpath__ __ __        ----
+2020-03-30 17:05:16,108  - INFO - ----  test004__校验“数据导入”页面___ __ __get_current_url__ __        ----
+2020-03-30 17:05:16,112  - INFO - [CheckPoint_3]: test_a003_data_import_ : OK
+2020-03-30 17:05:16,113  - INFO - [CheckPoint_4]: test_a003_data_import_ : NG
+2020-03-30 17:05:18,427  - INFO - ----  test005__校验“文件导入”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-30 17:05:19,909  - INFO - ----  test005__校验“文件导入”页面___//*[@test-id="/fileSynchronization"]__xpath__click__ __        ----
+2020-03-30 17:05:19,970  - INFO - ----  test005__校验“文件导入”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:05:20,265  - INFO - ----  test005__校验“文件导入”页面___bm-ch-col-filesys-create-button__id__ __ __        ----
+2020-03-30 17:05:20,266  - INFO - ----  test005__校验“文件导入”页面___ __ __get_current_url__ __        ----
+2020-03-30 17:05:20,275  - INFO - [CheckPoint_5]: test_a004_file_import_ : OK
+2020-03-30 17:05:20,275  - INFO - [CheckPoint_6]: test_a004_file_import_ : NG
+2020-03-30 17:05:22,568  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-30 17:05:24,059  - INFO - ----  test006__校验“采集器”页面___//*[@test-id="/collector"]__xpath__click__ __        ----
+2020-03-30 17:05:24,159  - INFO - ----  test006__校验“采集器”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:05:24,443  - INFO - ----  test006__校验“采集器”页面___bm-ch-col-template-create-button__id__ __ __        ----
+2020-03-30 17:05:24,453  - INFO - ----  test006__校验“采集器”页面___//button/*[contains(text(),'采集器')]__xpath__ __ __        ----
+2020-03-30 17:05:24,453  - INFO - ----  test006__校验“采集器”页面___ __ __get_current_url__ __        ----
+2020-03-30 17:05:24,468  - INFO - ----  test006__校验“采集器”页面___//*[contains(text(),'主键')]__xpath__ __ __        ----
+2020-03-30 17:05:24,483  - INFO - ----  test006__校验“采集器”页面___//*[contains(text(),'主机地址')]__xpath__ __ __        ----
+2020-03-30 17:05:24,483  - INFO - [CheckPoint_7]: test_a005_file_import_ : OK
+2020-03-30 17:05:24,483  - INFO - [CheckPoint_8]: test_a005_file_import_ : NG
+2020-03-30 17:05:26,818  - INFO - ----  test007__校验“质量分析”页面___//*[@test-id="/dataGovernance"]__xpath__action_chains__ __        ----
+2020-03-30 17:05:28,413  - INFO - ----  test007__校验“质量分析”页面___//*[@test-id="/qualityAnalysis/analysisTemplate"]__xpath__click__ __        ----
+2020-03-30 17:05:28,475  - INFO - ----  test007__校验“质量分析”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:05:28,817  - INFO - ----  test007__校验“质量分析”页面___ __ __get_current_url__ __        ----
+2020-03-30 17:05:28,835  - INFO - ----  test007__校验“质量分析”页面___//button/span[contains(text(), '分析模板')]__xpath__ __ __        ----
+2020-03-30 17:05:28,843  - INFO - ----  test007__校验“质量分析”页面___//*[contains(text(),"新建")]__xpath__ __ __        ----
+2020-03-30 17:05:28,853  - INFO - ----  test007__校验“质量分析”页面___//*[contains(text(),"数据集")]__xpath__ __ __        ----
+2020-03-30 17:05:28,853  - INFO - [CheckPoint_9]: test_a006_quality_analyze_ : OK
+2020-03-30 17:05:28,854  - INFO - [CheckPoint_10]: test_a006_quality_analyze_ : NG
+2020-03-30 17:05:31,174  - INFO - ----  testba009__校验“元数据分析”页面___//*[@test-id="/dataGovernance"]__xpath__action_chains__ __        ----
+2020-03-30 17:05:32,760  - INFO - ----  testba009__校验“元数据分析”页面___//*[@test-id="/schemaAnalysis/:id/"]__xpath__click__ __        ----
+2020-03-30 17:05:32,809  - INFO - ----  testba009__校验“元数据分析”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:05:33,070  - INFO - ----  testba009__校验“元数据分析”页面___ __ __get_current_url__ __        ----
+2020-03-30 17:05:33,088  - INFO - ----  testba009__校验“元数据分析”页面___bm-ch-zebra-schemaAnalysis-input__name__ __ __        ----
+2020-03-30 17:05:33,088  - INFO - [CheckPoint_11]: test_a007_metadata_analyze_ : OK
+2020-03-30 17:05:33,088  - INFO - [CheckPoint_12]: test_a007_metadata_analyze_ : NG
+2020-03-30 17:05:35,414  - INFO - ----  test008__校验“血缘分析”页面___//*[@test-id="/dataGovernance"]__xpath__action_chains__ __        ----
+2020-03-30 17:05:37,000  - INFO - ----  test008__校验“血缘分析”页面___//*[@test-id="/kinship/:id/"]__xpath__click__ __        ----
+2020-03-30 17:05:37,055  - INFO - ----  test008__校验“血缘分析”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:05:37,327  - INFO - ----  test008__校验“血缘分析”页面___ __ __get_current_url__ __        ----
+2020-03-30 17:05:37,355  - INFO - ----  test008__校验“血缘分析”页面___bm-ch-zebra-kinship-input__name__ __ __        ----
+2020-03-30 17:05:37,355  - INFO - [CheckPoint_13]: test_a008_blood_analyze_ : OK
+2020-03-30 17:05:37,355  - INFO - [CheckPoint_14]: test_a008_blood_analyze_ : NG
+2020-03-30 17:05:39,664  - INFO - ----  test009__校验“流程管理”页面___//*[@test-id="/dataAnalysis"]__xpath__action_chains__ __        ----
+2020-03-30 17:05:41,147  - INFO - ----  test009__校验“流程管理”页面___//*[@test-id="/design"]__xpath__click__ __        ----
+2020-03-30 17:05:41,196  - INFO - ----  test009__校验“流程管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:05:41,464  - INFO - ----  test009__校验“流程管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 17:05:41,500  - INFO - ----  test009__校验“流程管理”页面___//*[contains(text(), '流程目录')]__xpath__ __ __        ----
+2020-03-30 17:05:41,514  - INFO - ----  test009__校验“流程管理”页面___//*[contains(text(), '根目录')]__xpath__ __ __        ----
+2020-03-30 17:05:41,514  - INFO - [CheckPoint_15]: test_a009_flow_manage_ : OK
+2020-03-30 17:05:41,514  - INFO - [CheckPoint_16]: test_a009_flow_manage_ : NG
+2020-03-30 17:05:43,836  - INFO - ----  test010__校验“项目目录”页面___//*[@test-id="/dataAnalysis"]__xpath__action_chains__ __        ----
+2020-03-30 17:05:45,320  - INFO - ----  test010__校验“项目目录”页面___//*[@test-id="/resourceManProject"]__xpath__click__ __        ----
+2020-03-30 17:05:45,390  - INFO - ----  test010__校验“项目目录”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:05:45,665  - INFO - ----  test010__校验“项目目录”页面___ __ __get_current_url__ __        ----
+2020-03-30 17:05:45,680  - INFO - ----  test010__校验“项目目录”页面___//button/span[contains(text(), '目录')]__xpath__ __ __        ----
+2020-03-30 17:05:45,680  - INFO - [CheckPoint_17]: test_a010_project_dir_ : OK
+2020-03-30 17:05:45,680  - INFO - [CheckPoint_18]: test_a010_project_dir_ : NG
+2020-03-30 17:05:47,996  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/dataMonitoring"]__xpath__action_chains__ __        ----
+2020-03-30 17:05:49,475  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl"]__xpath__action_chains__ __        ----
+2020-03-30 17:05:51,500  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl" and text() = '任务监控']__xpath__click__ __        ----
+2020-03-30 17:05:51,556  - INFO - ----  test013__校验“任务监控”页面#___ __ __get_current_url__ __        ----
+2020-03-30 17:05:52,647  - INFO - ----  test013__校验“任务监控”页面#___//*[contains(text(),'任务完成情况监控')]__xpath__ __ __        ----
+2020-03-30 17:05:52,647  - INFO - [CheckPoint_19]: test_a013_task_control_ : OK
+2020-03-30 17:05:52,647  - INFO - [CheckPoint_20]: test_a013_task_control_ : NG
+2020-03-30 17:05:55,015  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-30 17:05:56,606  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/roleManagement"]__xpath__click__ __        ----
+2020-03-30 17:05:56,690  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:05:56,977  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 17:05:56,981  - INFO - [CheckPoint_21]: test_a017_role_manage_==检查点____info: 检查"质量分析的URL"是否正确___ 预期的属性值: http://192.168.1.84:8515/#/userManagement 不等于获取的属性值: http://192.168.1.84:8515/#/roleManagement: NG
+2020-03-30 17:05:59,316  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-30 17:06:00,903  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/roleManagement"]__xpath__click__ __        ----
+2020-03-30 17:06:00,957  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:06:01,217  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 17:06:01,230  - INFO - [CheckPoint_21]: test_a017_role_manage_==检查点____info: 检查"质量分析的URL"是否正确___ 预期的属性值: http://192.168.1.84:8515/#/userManagement 不等于获取的属性值: http://192.168.1.84:8515/#/roleManagement: NG
+2020-03-30 17:06:03,564  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-30 17:06:05,152  - INFO - ----  test017__校验“权限管理-角色管理”页面___//*[@test-id="/roleManagement"]__xpath__click__ __        ----
+2020-03-30 17:06:05,208  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:06:05,468  - INFO - ----  test017__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 17:06:05,473  - INFO - [CheckPoint_21]: test_a017_role_manage_==检查点____info: 检查"质量分析的URL"是否正确___ 预期的属性值: http://192.168.1.84:8515/#/userManagement 不等于获取的属性值: http://192.168.1.84:8515/#/roleManagement: NG
+2020-03-30 17:06:28,201  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/systemConfig"]__xpath__action_chains__ __        ----
+2020-03-30 17:06:29,775  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@test-id="/userManagement"]__xpath__click__ __        ----
+2020-03-30 17:06:29,864  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __move_by_offset__ __        ----
+2020-03-30 17:06:30,134  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___ __ __get_current_url__ __        ----
+2020-03-30 17:06:30,169  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//input[@placeholder='请填入内容']__xpath__ __ __        ----
+2020-03-30 17:06:31,178  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//i[@class='el-icon-search']__xpath__ __ __        ----
+2020-03-30 17:06:32,190  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@class='el-form-item__content']__xpath__ __ __        ----
+2020-03-30 17:06:33,210  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//*[@class='has-gutter']__xpath__ __ __        ----
+2020-03-30 17:06:34,236  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//span[text()='删除']__xpath__ __ __        ----
+2020-03-30 17:06:35,258  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//span[text()='启用']__xpath__ __ __        ----
+2020-03-30 17:06:36,272  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//span[text()='禁用']__xpath__ __ __        ----
+2020-03-30 17:06:37,301  - INFO - ----  017-user_manager__校验“权限管理-角色管理”页面___//span[text()='添加用户']__xpath__ __ __        ----
+2020-03-30 17:06:38,302  - INFO - [CheckPoint_22]: test_b017_user_manage_ : OK
+2020-03-30 17:06:38,303  - INFO - [CheckPoint_23]: test_b017_user_manage_ : NG

@@ -1,0 +1,13 @@
+2020-03-30 15:49:19,355  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 15:49:19,435  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 15:49:20,530  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 15:49:20,587  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 15:49:20,640  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 15:49:20,699  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 15:49:21,796  - INFO - ----  test005__校验“文件导入”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-30 15:49:23,303  - INFO - ----  test005__校验“文件导入”页面___//*[@test-id="/fileSynchronization"]__xpath__click__ __        ----
+2020-03-30 15:49:23,352  - INFO - ----  test005__校验“文件导入”页面___ __ __move_by_offset__ __        ----
+2020-03-30 15:49:23,635  - INFO - ----  test005__校验“文件导入”页面___bm-ch-col-filesys-create-button__id__ __ __        ----
+2020-03-30 15:49:23,635  - INFO - ----  test005__校验“文件导入”页面___ __ __get_current_url__ __        ----
+2020-03-30 15:49:23,640  - INFO - [CheckPoint_1]: test_a004_file_import_ : OK
+2020-03-30 15:49:23,641  - INFO - [CheckPoint_2]: test_a004_file_import_ : NG

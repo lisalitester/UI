@@ -1,0 +1,8 @@
+2020-03-09 16:41:18,765  - INFO - ----  test001__校验“成功登录”页面___//*[@placeholder="请选择"]__xpath__click__ __        ----
+2020-03-09 16:41:18,851  - INFO - ----  test001__校验“成功登录”页面___//*[@placeholder="请选择"]__xpath__send_keys__default__        ----
+2020-03-09 16:41:18,933  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-09 16:41:18,990  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-09 16:41:19,044  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-09 16:41:19,112  - INFO - ----  test001__校验“成功登录”页面___确定__name__click__ __        ----
+2020-03-09 16:41:20,190  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/dataMonitoring"]__xpath__action_chains__ __        ----
+2020-03-09 16:41:21,669  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl"]__xpath__action_chains__ __        ----

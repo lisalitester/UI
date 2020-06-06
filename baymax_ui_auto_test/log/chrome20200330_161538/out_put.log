@@ -1,0 +1,17 @@
+2020-03-30 16:15:38,929  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 16:15:38,997  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 16:15:39,082  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 16:15:39,146  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 16:15:39,199  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 16:15:39,254  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 16:15:40,330  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/dataMonitoring"]__xpath__action_chains__ __        ----
+2020-03-30 16:15:41,809  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl"]__xpath__action_chains__ __        ----
+2020-03-30 16:15:43,789  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl" and text() = '任务监控']__xpath__click__ __        ----
+2020-03-30 16:15:43,838  - INFO - ----  test013__校验“任务监控”页面#___ __ __get_current_url__ __        ----
+2020-03-30 16:15:44,874  - INFO - ----  test013__校验“任务监控”页面#___//*[text()='任务完成情况监控' and @class="title"]__xpath__ __ __        ----
+2020-03-30 16:16:05,218  - INFO - [CheckPoint_1]: test_a013_task_control_请检查//*[text()='任务调度' and @class="title"]是否存在: NG
+2020-03-30 16:16:27,916  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/dataMonitoring"]__xpath__action_chains__ __        ----
+2020-03-30 16:16:29,423  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl"]__xpath__action_chains__ __        ----
+2020-03-30 16:16:31,445  - INFO - ----  test013__校验“任务监控”页面#___//*[@test-id="/hippo/taskControl" and text() = '任务监控']__xpath__click__ __        ----
+2020-03-30 16:16:31,529  - INFO - ----  test013__校验“任务监控”页面#___ __ __get_current_url__ __        ----
+2020-03-30 16:16:31,546  - INFO - ----  test013__校验“任务监控”页面#___//*[text()='任务完成情况监控' and @class="title"]__xpath__ __ __        ----

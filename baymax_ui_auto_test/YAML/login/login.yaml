@@ -4,7 +4,7 @@ testinfo:
   launch: 1
   info: 环境正常
 testcase:
-- element_info: //*[@placeholder="租户"]
+- element_info: //*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input #//*[@placeholder="租户"] 
   find_type: xpath
   operate_type: click
   info: 点击租户输入框

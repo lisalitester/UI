@@ -1,0 +1,16 @@
+2020-03-09 17:24:58,591  - INFO - ----  test001__校验“成功登录”页面___//*[@placeholder="请选择"]__xpath__click__ __        ----
+2020-03-09 17:24:58,680  - INFO - ----  test001__校验“成功登录”页面___//*[@placeholder="请选择"]__xpath__send_keys__default__        ----
+2020-03-09 17:24:58,763  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-09 17:24:58,822  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-09 17:24:58,877  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-09 17:24:58,943  - INFO - ----  test001__校验“成功登录”页面___确定__name__click__ __        ----
+2020-03-09 17:25:05,108  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'实时计算')]__xpath__action_chains__ __        ----
+2020-03-09 17:25:06,584  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'作业管理')]__xpath__click__ __        ----
+2020-03-09 17:25:07,138  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___ __ __get_current_url__ __        ----
+2020-03-09 17:25:07,152  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'创建作业')]__xpath__ __ __        ----
+2020-03-09 17:25:07,162  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'刷新')]__xpath__ __ __        ----
+2020-03-09 17:25:07,172  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'名称')]__xpath__ __ __        ----
+2020-03-09 17:25:07,183  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'类型')]__xpath__ __ __        ----
+2020-03-09 17:25:07,193  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'操作')]__xpath__ __ __        ----
+2020-03-09 17:25:07,193  - INFO - [CheckPoint_1]: test_01_task_administration_page_verification_ : OK
+2020-03-09 17:25:07,193  - INFO - [CheckPoint_2]: test_01_task_administration_page_verification_ : NG

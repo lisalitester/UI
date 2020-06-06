@@ -1,0 +1,41 @@
+2020-04-01 17:06:50,100  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 17:06:50,179  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 17:06:50,271  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 17:06:50,324  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 17:06:50,378  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 17:06:50,442  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 17:06:53,593  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 17:06:55,090  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 17:06:55,642  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 17:06:56,931  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-04-01 17:06:56,990  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-04-01 17:06:57,018  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-04-01 17:06:57,036  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-04-01 17:06:57,036  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-04-01 17:07:01,850  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/i__xpath__click__ __        ----
+2020-04-01 17:07:01,899  - INFO - ----  test028__校验“元数据-删除schema”页面___//em[@name="move_to"]__xpath__click__ __        ----
+2020-04-01 17:07:03,018  - INFO - ----  test028__校验“元数据-删除schema”页面___//tr//*[contains(text(), "schema_")]__xpaths__get_text__ __        ----
+2020-04-01 17:07:04,056  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[contains(text(), 'schema_030432_copy')]/ancestor::td/preceding-sibling::td[1]__xpath__click__ __        ----
+2020-04-01 17:07:04,124  - INFO - ----  test028__校验“元数据-删除schema”页面___bm-ch-resMan-resourceman-delete-beiruanModel-button__id__click__ __        ----
+2020-04-01 17:07:04,904  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[contains(text(), "确定")]__xpaths__click__ __        ----
+2020-04-01 17:07:04,925  - INFO - ----  test028__校验“元数据-删除schema”页面__//*[contains(text(), "确定")]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 17:07:04,925  - INFO - [CheckPoint_3]: test_a028_delete_schema_请检查//*[contains(text(), "确定")]是否存在: NG
+2020-04-01 17:07:09,694  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/i__xpath__click__ __        ----
+2020-04-01 17:07:09,755  - INFO - ----  test028__校验“元数据-删除schema”页面___//em[@name="move_to"]__xpath__click__ __        ----
+2020-04-01 17:07:10,866  - INFO - ----  test028__校验“元数据-删除schema”页面___//tr//*[contains(text(), "schema_")]__xpaths__get_text__ __        ----
+2020-04-01 17:07:11,898  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[contains(text(), 'schema_030432_copy')]/ancestor::td/preceding-sibling::td[1]__xpath__click__ __        ----
+2020-04-01 17:07:11,958  - INFO - ----  test028__校验“元数据-删除schema”页面___bm-ch-resMan-resourceman-delete-beiruanModel-button__id__click__ __        ----
+2020-04-01 17:07:12,735  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[contains(text(), "确定")]__xpaths__click__ __        ----
+2020-04-01 17:07:33,127  - INFO - [CheckPoint_3]: test_a028_delete_schema_请检查//*[contains(text(), "恭喜你，删除已成功")]是否存在: NG
+2020-04-01 17:07:38,205  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[1]/li/i__xpath__click__ __        ----
+2020-04-01 17:07:38,253  - INFO - ----  test028__校验“元数据-删除schema”页面___//em[@name="move_to"]__xpath__click__ __        ----
+2020-04-01 17:07:39,402  - INFO - ----  test028__校验“元数据-删除schema”页面___//tr//*[contains(text(), "schema_")]__xpaths__get_text__ __        ----
+2020-04-01 17:07:40,431  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[contains(text(), 'schema_030432_copy')]/ancestor::td/preceding-sibling::td[1]__xpath__click__ __        ----
+2020-04-01 17:07:40,497  - INFO - ----  test028__校验“元数据-删除schema”页面___bm-ch-resMan-resourceman-delete-beiruanModel-button__id__click__ __        ----
+2020-04-01 17:07:41,266  - INFO - ----  test028__校验“元数据-删除schema”页面___//*[contains(text(), "ok")]__xpaths__click__ __        ----
+2020-04-01 17:07:41,285  - INFO - ----  test028__校验“元数据-删除schema”页面__//*[contains(text(), "ok")]__没定位的错误Message: element not interactable
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 17:07:41,285  - INFO - [CheckPoint_3]: test_a028_delete_schema_请检查//*[contains(text(), "ok")]是否存在: NG

@@ -1,0 +1,38 @@
+2020-04-01 11:19:42,662  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 11:19:42,790  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 11:19:42,866  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 11:19:42,922  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 11:19:42,975  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 11:19:43,034  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 11:20:23,755  - INFO - [CheckPoint_1]: test_a017_open_dir_请检查//*[@name="Standards"]/preceding-sibling::i[1]是否存在: NG
+2020-04-01 11:20:46,413  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 11:20:47,923  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 11:20:48,500  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 11:20:49,789  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-04-01 11:20:49,848  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-04-01 11:20:49,877  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-04-01 11:20:49,895  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-04-01 11:20:49,895  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-04-01 11:21:05,098  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-04-01 11:21:06,175  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___//em[@name="auto_UI"]__xpath__click__ __        ----
+2020-04-01 11:21:06,289  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___bm-ch-resMan-resourceman-create-button__id__click__ __        ----
+2020-04-01 11:21:07,412  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”__bm-ch-resMan-resourceman-create-button__没定位的错误Message: element click intercepted: Element <button data-v-190856c6="" type="button" class="el-button dropdown-toggle el-button--info" id="bm-ch-resMan-resourceman-create-button" toggle="dropdown">...</button> is not clickable at point (1777, 74). Other element would receive the click: <div class="el-loading-mask" style="">...</div>
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-04-01 11:21:07,412  - INFO - [CheckPoint_3]: test_b005_create_source_ftp_请检查bm-ch-resMan-resourceman-create-button是否存在: NG
+2020-04-01 11:21:13,480  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-04-01 11:21:13,529  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___//em[@name="auto_UI"]__xpath__click__ __        ----
+2020-04-01 11:21:13,643  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___bm-ch-resMan-resourceman-create-button__id__click__ __        ----
+2020-04-01 11:21:15,245  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___bm-ch-resMan-resourceman-ftpSource-dropdown-menu__id__click__ __        ----
+2020-04-01 11:21:15,865  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___bm-ch-resMan-ftpsource-name-input__name__send_keys__ftp_source_156261__        ----
+2020-04-01 11:21:16,074  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___bm-ch-resMan-ftpsource-attributes-host-input__name__send_keys__info4__        ----
+2020-04-01 11:21:16,160  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___bm-ch-resMan-ftpsource-attributes-username-input__name__clear__ __        ----
+2020-04-01 11:21:16,193  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___bm-ch-resMan-ftpsource-attributes-username-input__name__send_keys__europa__        ----
+2020-04-01 11:21:16,284  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___bm-ch-resMan-ftpsource-attributes-password-input__name__send_keys__europa__        ----
+2020-04-01 11:21:16,378  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___bm-ch-resMan-ftpsource-attributes-dir-input__name__send_keys__/home/europa/twac/auto__        ----
+2020-04-01 11:21:16,599  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___bm-ch-resourceMan-ftpsource-save-ok__name__click__ __        ----
+2020-04-01 11:21:16,670  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___bm-ch-resMan-resourceman-create-button__id__ __ __        ----
+2020-04-01 11:21:17,704  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___//*[contains(text(), "ftp_source_156261")]__xpath__ __ __        ----
+2020-04-01 11:21:17,714  - INFO - ----  test_b005__校验“数据源-新建_ftp_数据源”___//*[@id="bm-ch-resourceMan-table"]/div[3]/table/tbody/tr/td[4]/div__xpath__get_text__ __        ----
+2020-04-01 11:21:17,737  - INFO - [CheckPoint_3]: test_b005_create_source_ftp_ : OK
+2020-04-01 11:21:17,737  - INFO - [CheckPoint_4]: test_b005_create_source_ftp_ : NG

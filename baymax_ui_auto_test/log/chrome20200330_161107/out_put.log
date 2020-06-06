@@ -1,0 +1,13 @@
+2020-03-30 16:11:07,873  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-30 16:11:07,989  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-30 16:11:09,081  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-30 16:11:09,140  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-30 16:11:09,199  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-30 16:11:09,272  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-30 16:11:10,372  - INFO - ----  test010__校验“项目目录”页面___//*[@test-id="/dataAnalysis"]__xpath__action_chains__ __        ----
+2020-03-30 16:11:11,873  - INFO - ----  test010__校验“项目目录”页面___//*[@test-id="/resourceManProject"]__xpath__click__ __        ----
+2020-03-30 16:11:11,924  - INFO - ----  test010__校验“项目目录”页面___ __ __move_by_offset__ __        ----
+2020-03-30 16:11:12,196  - INFO - ----  test010__校验“项目目录”页面___ __ __get_current_url__ __        ----
+2020-03-30 16:11:12,229  - INFO - ----  test010__校验“项目目录”页面___//button/span[contains(text(), '目录')]__xpath__ __ __        ----
+2020-03-30 16:11:12,229  - INFO - [CheckPoint_1]: test_a010_project_dir_ : OK
+2020-03-30 16:11:12,230  - INFO - [CheckPoint_2]: test_a010_project_dir_ : NG

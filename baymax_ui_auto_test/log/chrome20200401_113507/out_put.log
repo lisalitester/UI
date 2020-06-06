@@ -1,0 +1,20 @@
+2020-04-01 11:35:07,675  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 11:35:07,757  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 11:35:07,841  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 11:35:07,902  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 11:35:07,957  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 11:35:08,018  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 11:35:19,286  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 11:35:20,770  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 11:35:21,329  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 11:35:22,609  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-04-01 11:35:22,657  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-04-01 11:35:22,685  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-04-01 11:35:22,703  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-04-01 11:35:22,703  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-04-01 11:35:30,339  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-04-01 11:35:30,388  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___//em[@name="auto_UI"]__xpath__click__ __        ----
+2020-04-01 11:35:30,516  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-resourceman-create-button__id__click__ __        ----
+2020-04-01 11:35:32,112  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-resourceman-DBSource-dropdown-menu__id__click__ __        ----
+2020-04-01 11:35:32,739  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-dbsource-name-input__name__send_keys__JDBC_DS_oracle_426037__        ----
+2020-04-01 11:35:33,028  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-dbsource-chineseName-select__name__click__ __        ----

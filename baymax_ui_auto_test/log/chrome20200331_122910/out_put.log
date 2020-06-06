@@ -1,0 +1,26 @@
+2020-03-31 12:29:10,945  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-31 12:29:11,057  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-31 12:29:12,149  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-31 12:29:12,201  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-31 12:29:12,260  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-31 12:29:12,326  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-31 12:29:13,410  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-03-31 12:29:14,888  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-03-31 12:29:15,442  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-03-31 12:29:16,719  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-03-31 12:29:16,767  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-03-31 12:29:16,796  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-03-31 12:29:16,813  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-03-31 12:29:16,813  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-03-31 12:29:24,607  - INFO - ----  test_b004__校验“数据源-新建_http_数据源”___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-03-31 12:29:24,653  - INFO - ----  test_b004__校验“数据源-新建_http_数据源”___//em[@name="auto_UI"]__xpath__click__ __        ----
+2020-03-31 12:29:24,777  - INFO - ----  test_b004__校验“数据源-新建_http_数据源”___bm-ch-resMan-resourceman-create-button__id__click__ __        ----
+2020-03-31 12:29:26,385  - INFO - ----  test_b004__校验“数据源-新建_http_数据源”___bm-ch-resMan-resourceman-httpSource-dropdown-menu__id__click__ __        ----
+2020-03-31 12:29:27,005  - INFO - ----  test_b004__校验“数据源-新建_http_数据源”___bm-ch-resourceMan-httpsource-name-input__name__send_keys__http_source_452094__        ----
+2020-03-31 12:29:27,184  - INFO - ----  test_b004__校验“数据源-新建_http_数据源”___bm-ch-resourceMan-httpsource-attributes-url-input__name__send_keys__http://info3:8080/manager/test.json__        ----
+2020-03-31 12:29:27,419  - INFO - ----  test_b004__校验“数据源-新建_http_数据源”___bm-ch-resourceMan-httpsource-save-ok__name__click__ __        ----
+2020-03-31 12:29:27,484  - INFO - ----  test_b004__校验“数据源-新建_http_数据源”___bm-ch-resMan-resourceman-create-button__id__ __ __        ----
+2020-03-31 12:29:28,502  - INFO - ----  test_b004__校验“数据源-新建_http_数据源”___//*[contains(text(), "http_source_452094")]__xpath__ __ __        ----
+2020-03-31 12:29:28,512  - INFO - ----  test_b004__校验“数据源-新建_http_数据源”___//*[@id="bm-ch-resourceMan-table"]/div[3]/table/tbody/tr/td[4]/div__xpath__get_text__ __        ----
+2020-03-31 12:29:28,537  - INFO - [CheckPoint_3]: test_b004_create_source_http_ : OK
+2020-03-31 12:29:28,538  - INFO - [CheckPoint_4]: test_b004_create_source_http_ : NG

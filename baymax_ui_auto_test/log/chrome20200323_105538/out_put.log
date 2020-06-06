@@ -1,0 +1,35 @@
+2020-03-23 10:55:38,104  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-23 10:55:38,184  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-03-23 10:55:39,273  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-23 10:55:39,330  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-23 10:55:39,386  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-23 10:55:39,454  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-03-23 10:55:59,902  - INFO - [CheckPoint_1]: test_017a_role_manage_请检查//*[@test-id="/systemConfig"]是否存在: NG
+2020-03-23 10:56:02,689  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-23 10:56:03,783  - INFO - ----  test001__校验“成功登录”页面__//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__没定位的错误Message: element click intercepted: Element <input type="text" autocomplete="off" placeholder="Select..." class="el-input__inner" readonly="readonly"> is not clickable at point (614, 285). Other element would receive the click: <div class="el-loading-mask" style="">...</div>
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-03-23 10:56:24,160  - INFO - [CheckPoint_1]: test_017a_role_manage_请检查//*[@test-id="/systemConfig"]是否存在: NG
+2020-03-23 10:56:26,960  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-23 10:56:28,051  - INFO - ----  test001__校验“成功登录”页面__//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__没定位的错误Message: element click intercepted: Element <input type="text" autocomplete="off" placeholder="Select..." class="el-input__inner" readonly="readonly"> is not clickable at point (614, 285). Other element would receive the click: <div class="el-loading-mask" style="">...</div>
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-03-23 10:56:48,393  - INFO - [CheckPoint_1]: test_017a_role_manage_请检查//*[@test-id="/systemConfig"]是否存在: NG
+2020-03-23 10:57:11,505  - INFO - [CheckPoint_2]: test_017b_user_manage_请检查//*[@test-id="/systemConfig"]是否存在: NG
+2020-03-23 10:57:34,648  - INFO - [CheckPoint_2]: test_017b_user_manage_请检查//*[@test-id="/systemConfig"]是否存在: NG
+2020-03-23 10:57:57,778  - INFO - [CheckPoint_2]: test_017b_user_manage_请检查//*[@test-id="/systemConfig"]是否存在: NG
+2020-03-23 10:58:00,577  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-23 10:58:01,634  - INFO - ----  test001__校验“成功登录”页面__//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__没定位的错误Message: element click intercepted: Element <input type="text" autocomplete="off" placeholder="Select..." class="el-input__inner" readonly="readonly"> is not clickable at point (614, 285). Other element would receive the click: <div class="el-loading-mask" style="">...</div>
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-03-23 10:58:21,999  - INFO - [CheckPoint_3]: test_a002_resource_dir_请检查//*[@test-id="/dataIntegration"]是否存在: NG
+2020-03-23 10:58:24,771  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-23 10:58:25,868  - INFO - ----  test001__校验“成功登录”页面__//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__没定位的错误Message: element click intercepted: Element <input type="text" autocomplete="off" placeholder="Select..." class="el-input__inner" readonly="readonly"> is not clickable at point (614, 285). Other element would receive the click: <div class="el-loading-mask" style="">...</div>
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-03-23 10:58:46,255  - INFO - [CheckPoint_3]: test_a002_resource_dir_请检查//*[@test-id="/dataIntegration"]是否存在: NG
+2020-03-23 10:58:49,048  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-03-23 10:58:50,100  - INFO - ----  test001__校验“成功登录”页面__//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__没定位的错误Message: element click intercepted: Element <input type="text" autocomplete="off" placeholder="Select..." class="el-input__inner" readonly="readonly"> is not clickable at point (614, 285). Other element would receive the click: <div class="el-loading-mask" style="">...</div>
+  (Session info: chrome=76.0.3809.87)
+        ----
+2020-03-23 10:59:10,505  - INFO - [CheckPoint_3]: test_a002_resource_dir_请检查//*[@test-id="/dataIntegration"]是否存在: NG

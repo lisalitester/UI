@@ -1,0 +1,30 @@
+2020-04-01 11:45:59,878  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 11:46:00,000  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 11:46:00,095  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 11:46:00,202  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 11:46:00,256  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 11:46:00,320  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 11:46:11,583  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 11:46:13,097  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 11:46:13,659  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 11:46:14,953  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-04-01 11:46:15,002  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-04-01 11:46:15,031  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-04-01 11:46:15,052  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-04-01 11:46:15,052  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-04-01 11:46:31,686  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___//*[@id="bm-com-datatree-secondNav-table"]/ul/li/ul[3]/li/i__xpath__click__ __        ----
+2020-04-01 11:46:31,774  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___//em[@name="auto_UI"]__xpath__click__ __        ----
+2020-04-01 11:46:32,383  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-resourceman-create-button__id__click__ __        ----
+2020-04-01 11:46:32,965  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-resourceman-DBSource-dropdown-menu__id__click__ __        ----
+2020-04-01 11:46:33,597  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-dbsource-name-input__name__send_keys__JDBC_DS_oracle_959807__        ----
+2020-04-01 11:46:33,879  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-dbsource-chineseName-select__name__click__ __        ----
+2020-04-01 11:46:34,160  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___auto_oracle__name__click__ __        ----
+2020-04-01 11:46:34,248  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-dbsource-attributes-host-input__name__send_keys__info3__        ----
+2020-04-01 11:46:34,350  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-dbsource-attributes-database-input__name__send_keys__orcl__        ----
+2020-04-01 11:46:34,439  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-dbsource-attributes-user-input__name__send_keys__carpo__        ----
+2020-04-01 11:46:34,558  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-dbsource-attributes-password-input__name__send_keys__123456__        ----
+2020-04-01 11:46:34,658  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-dbsource-attributes-schema-input__name__send_keys__CARPO__        ----
+2020-04-01 11:46:35,584  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___bm-ch-resMan-dbsource-testConnection-button__id__click__ __        ----
+2020-04-01 11:46:36,669  - INFO - ----  test_b009__校验“数据源-新建JDBC_oracle数据源-链接测试”___//*[contains(text(), "恭喜你，连接成功")]__xpath__ __ __        ----
+2020-04-01 11:46:36,670  - INFO - [CheckPoint_3]: test_b009_create_dbsource_jdbc_oracle_connect_ : OK
+2020-04-01 11:46:36,670  - INFO - [CheckPoint_4]: test_b009_create_dbsource_jdbc_oracle_connect_ : NG

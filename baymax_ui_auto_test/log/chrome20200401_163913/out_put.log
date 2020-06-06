@@ -1,0 +1,20 @@
+2020-04-01 16:39:13,527  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__click__ __        ----
+2020-04-01 16:39:13,610  - INFO - ----  test001__校验“成功登录”页面___//*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input__xpath__send_keys__default__        ----
+2020-04-01 16:39:14,702  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-04-01 16:39:14,761  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-04-01 16:39:14,820  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-04-01 16:39:14,889  - INFO - ----  test001__校验“成功登录”页面___login.login__name__click__ __        ----
+2020-04-01 16:39:21,060  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/dataIntegration"]__xpath__action_chains__ __        ----
+2020-04-01 16:39:22,545  - INFO - ----  test002__校验“资源目录”页面___//*[@test-id="/resourceMan"]__xpath__click__ __        ----
+2020-04-01 16:39:23,096  - INFO - ----  test002__校验“资源目录”页面___ __ __move_by_offset__ __        ----
+2020-04-01 16:39:24,387  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___//*[@name="Standards"]/preceding-sibling::i[1]__xpath__click__ __        ----
+2020-04-01 16:39:24,444  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_a__name__is_displayed__ __        ----
+2020-04-01 16:39:24,475  - INFO - ----  test017__校验“展开资源目录的文件夹”页面___auto_UI_b__name__is_displayed__ __        ----
+2020-04-01 16:39:24,493  - INFO - [CheckPoint_1]: test_a017_open_dir_ : OK
+2020-04-01 16:39:24,493  - INFO - [CheckPoint_2]: test_a017_open_dir_ : NG
+2020-04-01 16:39:34,344  - INFO - ----  test027__校验“元数据-复制schema”页面___/html/body/div[1]/div/div/div[2]/section/div/div/section/div[1]/form/div[2]/ul/li/ul[4]/li/i__xpath__click__ __        ----
+2020-04-01 16:39:54,773  - INFO - [CheckPoint_3]: test_a027_copy_schema_请检查/html/body/div[1]/div/div/div[2]/section/div/div/section/div[1]/form/div[2]/ul/li/ul[4]/li/ul/li[4]/em/span是否存在: NG
+2020-04-01 16:39:59,801  - INFO - ----  test027__校验“元数据-复制schema”页面___/html/body/div[1]/div/div/div[2]/section/div/div/section/div[1]/form/div[2]/ul/li/ul[4]/li/i__xpath__click__ __        ----
+2020-04-01 16:40:20,176  - INFO - [CheckPoint_3]: test_a027_copy_schema_请检查/html/body/div[1]/div/div/div[2]/section/div/div/section/div[1]/form/div[2]/ul/li/ul[4]/li/ul/li[4]/em/span是否存在: NG
+2020-04-01 16:40:27,122  - INFO - ----  test027__校验“元数据-复制schema”页面___/html/body/div[1]/div/div/div[2]/section/div/div/section/div[1]/form/div[2]/ul/li/ul[4]/li/i__xpath__click__ __        ----
+2020-04-01 16:40:47,477  - INFO - [CheckPoint_3]: test_a027_copy_schema_请检查/html/body/div[1]/div/div/div[2]/section/div/div/section/div[1]/form/div[2]/ul/li/ul[4]/li/ul/li[4]/em/span是否存在: NG

@@ -1,0 +1,44 @@
+2020-03-09 18:25:31,502  - INFO - ----  test001__校验“成功登录”页面___//*[@placeholder="请选择"]__xpath__click__ __        ----
+2020-03-09 18:25:31,620  - INFO - ----  test001__校验“成功登录”页面___//*[@placeholder="请选择"]__xpath__send_keys__default__        ----
+2020-03-09 18:25:32,704  - INFO - ----  test001__校验“成功登录”页面___/html/body/div[2]/div[1]/div[1]/ul/li[1]__xpath__click__ __        ----
+2020-03-09 18:25:32,762  - INFO - ----  test001__校验“成功登录”页面___name__name__send_keys__dir1__        ----
+2020-03-09 18:25:32,824  - INFO - ----  test001__校验“成功登录”页面___password__name__send_keys__123456__        ----
+2020-03-09 18:25:32,887  - INFO - ----  test001__校验“成功登录”页面___确定__name__click__ __        ----
+2020-03-09 18:25:49,177  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'实时计算')]__xpath__action_chains__ __        ----
+2020-03-09 18:25:50,661  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'作业管理')]__xpath__click__ __        ----
+2020-03-09 18:25:51,217  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___ __ __get_current_url__ __        ----
+2020-03-09 18:25:51,236  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'创建作业')]__xpath__ __ __        ----
+2020-03-09 18:25:51,246  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'刷新')]__xpath__ __ __        ----
+2020-03-09 18:25:51,256  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'名称')]__xpath__ __ __        ----
+2020-03-09 18:25:51,266  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'类型')]__xpath__ __ __        ----
+2020-03-09 18:25:51,277  - INFO - ----  test_01_task_administration_page_verification__实时计算-作业管理页面校验___//*[contains(text(),'操作')]__xpath__ __ __        ----
+2020-03-09 18:25:51,278  - INFO - [CheckPoint_1]: test_01_task_administration_page_verification_ : OK
+2020-03-09 18:25:51,278  - INFO - [CheckPoint_2]: test_01_task_administration_page_verification_ : NG
+2020-03-09 18:25:54,606  - INFO - ----  test_02_set_up_task__创建作业-流式处理页面校验___//*[contains(text(),'创建作业')]__xpath__action_chains__ __        ----
+2020-03-09 18:25:56,113  - INFO - ----  test_02_set_up_task__创建作业-流式处理页面校验___//*[contains(text(),'流式处理')]__xpath__click__ __        ----
+2020-03-09 18:25:56,684  - INFO - ----  test_02_set_up_task__创建作业-流式处理页面校验___ __ __get_current_url__ __        ----
+2020-03-09 18:25:56,699  - INFO - ----  test_02_set_up_task__创建作业-流式处理页面校验___//*[contains(text(),'作业描述')]__xpath__ __ __        ----
+2020-03-09 18:25:56,720  - INFO - ----  test_02_set_up_task__创建作业-流式处理页面校验___//*[contains(text(),'作业配置')]__xpath__ __ __        ----
+2020-03-09 18:25:56,730  - INFO - ----  test_02_set_up_task__创建作业-流式处理页面校验___//*[contains(text(),'编辑')]__xpath__ __ __        ----
+2020-03-09 18:25:56,740  - INFO - ----  test_02_set_up_task__创建作业-流式处理页面校验___//*[contains(text(),'模板')]__xpath__ __ __        ----
+2020-03-09 18:25:56,750  - INFO - ----  test_02_set_up_task__创建作业-流式处理页面校验___//*[contains(text(),'数据表描述')]__xpath__ __ __        ----
+2020-03-09 18:25:56,760  - INFO - ----  test_02_set_up_task__创建作业-流式处理页面校验___//*[contains(text(),'表配置')]__xpath__ __ __        ----
+2020-03-09 18:25:56,770  - INFO - ----  test_02_set_up_task__创建作业-流式处理页面校验___//*[contains(text(),'数据集配置')]__xpath__ __ __        ----
+2020-03-09 18:25:56,780  - INFO - ----  test_02_set_up_task__创建作业-流式处理页面校验___//*[contains(text(),'返回')]__xpath__ __ __        ----
+2020-03-09 18:25:56,780  - INFO - [CheckPoint_3]: test_02_set_up_task_ : OK
+2020-03-09 18:25:56,780  - INFO - [CheckPoint_4]: test_02_set_up_task_ : NG
+2020-03-09 18:26:00,160  - INFO - ----  test_03_task_dispose__创建作业-作业配置页面校验___//*[contains(text(),'创建作业')]__xpath__action_chains__ __        ----
+2020-03-09 18:26:01,665  - INFO - ----  test_03_task_dispose__创建作业-作业配置页面校验___//*[contains(text(),'流式处理')]__xpath__click__ __        ----
+2020-03-09 18:26:02,236  - INFO - ----  test_03_task_dispose__创建作业-作业配置页面校验___//*[contains(text(),'作业配置')]__xpath__click__ __        ----
+2020-03-09 18:26:02,853  - INFO - ----  test_03_task_dispose__创建作业-作业配置页面校验___ __ __get_current_url__ __        ----
+2020-03-09 18:26:02,858  - INFO - [CheckPoint_5]: test_03_task_dispose_==检查点____info: 检查"创建作业的URL"是否正确___ 预期的属性值: http://192.168.1.83:8515/#/jobManage/jobDetail/configure 不等于获取的属性值: http://192.168.1.83:8515/#/jobManage/jobDetail/configure/: NG
+2020-03-09 18:26:06,259  - INFO - ----  test_03_task_dispose__创建作业-作业配置页面校验___//*[contains(text(),'创建作业')]__xpath__action_chains__ __        ----
+2020-03-09 18:26:07,737  - INFO - ----  test_03_task_dispose__创建作业-作业配置页面校验___//*[contains(text(),'流式处理')]__xpath__click__ __        ----
+2020-03-09 18:26:08,316  - INFO - ----  test_03_task_dispose__创建作业-作业配置页面校验___//*[contains(text(),'作业配置')]__xpath__click__ __        ----
+2020-03-09 18:26:08,914  - INFO - ----  test_03_task_dispose__创建作业-作业配置页面校验___ __ __get_current_url__ __        ----
+2020-03-09 18:26:08,928  - INFO - [CheckPoint_5]: test_03_task_dispose_==检查点____info: 检查"创建作业的URL"是否正确___ 预期的属性值: http://192.168.1.83:8515/#/jobManage/jobDetail/configure 不等于获取的属性值: http://192.168.1.83:8515/#/jobManage/jobDetail/configure/: NG
+2020-03-09 18:26:12,282  - INFO - ----  test_03_task_dispose__创建作业-作业配置页面校验___//*[contains(text(),'创建作业')]__xpath__action_chains__ __        ----
+2020-03-09 18:26:13,761  - INFO - ----  test_03_task_dispose__创建作业-作业配置页面校验___//*[contains(text(),'流式处理')]__xpath__click__ __        ----
+2020-03-09 18:26:14,342  - INFO - ----  test_03_task_dispose__创建作业-作业配置页面校验___//*[contains(text(),'作业配置')]__xpath__click__ __        ----
+2020-03-09 18:26:14,969  - INFO - ----  test_03_task_dispose__创建作业-作业配置页面校验___ __ __get_current_url__ __        ----
+2020-03-09 18:26:14,984  - INFO - [CheckPoint_5]: test_03_task_dispose_==检查点____info: 检查"创建作业的URL"是否正确___ 预期的属性值: http://192.168.1.83:8515/#/jobManage/jobDetail/configure 不等于获取的属性值: http://192.168.1.83:8515/#/jobManage/jobDetail/configure/: NG
