@@ -4,46 +4,47 @@ testinfo:
   launch: 0
   info: 先进入资源目录
 testcase:
-- element_info: //*[@name="数据标准"]/preceding-sibling::i[1]
+- element_info: //*[@name="Standards"]/preceding-sibling::i[1]
   find_type: xpath
   operate_type: click
   info: 点击 树‘数据标准’前的文件夹
-- element_info: //em[@name="auto_dir"]/preceding-sibling::i[1]
-  find_type: xpath
+  is_time: 1
+- element_info: //*[starts-with(@name,"dir")]/preceding-sibling::i[1]
+  find_type: xpaths
+  index: 0
   operate_type: click
-  info: 点击 树‘auto_dir’前的文件夹
-- element_info: //*[@id="bm-com-datatree-secondNav-table"]//em[contains(text(),'auto_dir')]/following-sibling::ul/li[1] 
+  info: 点击 树‘dir’前的文件夹
+- element_info: //*[starts-with(@name,"dir")]/preceding-sibling::i[1]
   find_type: xpaths
   index: 0
   operate_type: get_attr
   attr: name
   info: 把第一个包含dir的文件夹 name属性值 放到容器中
-- element_info: //*[@id="bm-com-datatree-secondNav-table"]//em[contains(text(),'auto_dir')]/following-sibling::ul/li[1]
+- element_info: //*[starts-with(@name,"dir")]/span
   find_type: xpaths
   index: 0
   operate_type: click
   info: 点击第一个包含dir的文件夹名字
   is_time: 1
-- element_info: //button/span[contains(text(), '目录')]
+- element_info: //button/span[contains(text(), '操作')]
   find_type: xpath
   operate_type: click
-  info: 点击‘目录’按钮
+  info: 点击‘操作’按钮
   is_time: 1
-- element_info: //ul//*[contains(text(), "删除目录")]
+- element_info: //ul//*[contains(text(), "删除")]
   find_type: xpath
   operate_type: click
-  info: 点击‘删除目录’按钮
+  info: 点击‘删除’按钮
   is_time: 1
-- element_info: //*[@aria-label="提示"]//*[contains(text(), "确定")]
+- element_info: //*[contains(text(), 'OK')]
   find_type: xpath
   operate_type: click
-  info: 点击‘确定’按钮
-  is_time: 1  
-- element_info: //em[@name="auto_dir"]
-  find_type: xpath
-  operate_type: click
-  info:  点击‘auto_dir’文件夹刷新文件夹
+  info: 点击‘OK’按钮
   is_time: 1
+- element_info: //*[@name="Standards"]/preceding-sibling::i[1]
+  find_type: xpath
+  operate_type: click
+  info: 点击 树‘数据标准’前的文件夹
 
 check:
 - element_info: dir+随机数
