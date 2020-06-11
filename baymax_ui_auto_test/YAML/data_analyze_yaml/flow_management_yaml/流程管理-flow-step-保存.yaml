@@ -4,7 +4,7 @@ testinfo:
   launch: 0
   info: 先进入流程管理
 testcase:
-- element_info: //*[@name="根目录"]/preceding-sibling::i[1]
+- element_info: //*[contains(text(),"根目录")]/parent::em/preceding-sibling::i
   find_type: xpath
   operate_type: click
   info: 点击‘根目录'文件夹图标
@@ -22,7 +22,7 @@ testcase:
   operate_type: send_keys
   msg: data_flow_+随机数
   info: 输入data_flow名称
-- element_info: //*[@id="bm-addflow-dialog-form"]//input[@placeholder="请选择流程类型"]
+- element_info: //*[@id="bm-addflow-dialog-form"]//input[@placeholder="Select"]
   find_type: xpath
   operate_type: click
   info: 点击‘流程类型'弹出下拉菜单
@@ -41,7 +41,9 @@ testcase:
   v_index: 0
   operate_type: click
   info:  点击“第一行”flow的名字
-  is_time: 0.5
+  is_time: 3
+- operate_type: refresh
+  info: 刷新
 - element_info: //*[@id="right"]//div[contains(text(), "IO")]
   find_type: xpath
   operate_type: click
@@ -87,21 +89,127 @@ testcase:
   find_type: name
   operate_type: click
   info: 在source弹窗中 点击“确定”按钮
+  is_time: 5
+- element_info: //*[@id="right"]//h4[text()="sink"]
+  find_type: xpath
+  operate_type: drag_el
+  move_to: (-500, 210)
+  info:  拖拽
   is_time: 0.5
+- element_info: //*[@id="designMain"]/div[1]
+  find_type: xpath
+  operate_type: drag_el
+  element_info2: //*[@id="designMain"]/div[3]
+  find_type2: xpath
+  info:  拖拽
+  is_time: 2
+- element_info: //*[@id="designMain"]//div/h4[text()="sink_2"]
+  find_type: xpath
+  operate_type: double_click
+  info:  双击“sink_2”
+  is_time: 2
+- element_info: //*[contains(@title,'导入表格内字段')]
+  find_type: xpath
+  operate_type: click
+  info:  导入表格字段
+  is_time: 1
+- element_info: /html/body/div[4]/div/div[3]/button[2]/span
+  find_type: xpath
+  operate_type: click
+  info:  点击确定
+- element_info: //*[@id="tab-parameter"]/div
+  find_type: xpath
+  operate_type: click
+  info:  点击“参数”
+  is_time: 2
+- element_info: dataSetInq
+  find_type: name
+  operate_type: click
+  info: 搜索数据集
+  is_time: 1
+- element_info: //*[@id="ch-components-dataSourceInq-dataSourceInquire-temp"]//input[@placeholder="请输入名称"]
+  find_type: xpath
+  operate_type: send_keys
+  msg: es
+  info: 数据集查询输入“sjj_ts”
+- element_info: //*[@id="ch-components-dataSourceInq-dataSourceInquire-temp"]//input[@placeholder="请输入名称"]/following-sibling::div/button
+  find_type: xpath
+  operate_type: click
+  info:  点击“数据集查询输入框后的”搜索按钮
+  is_time: 1
+- element_info: //*[@id="ch-components-dataSourceInq-dataSourceInquire-table"]/div[3]/table/tbody/tr/td[1]/div
+  find_type: xpath
+  operate_type: click
+  info:  勾选“数据集sjj_es”
+  is_time: 0.3
+- element_info: bm-ch-step2Form-dataset-ok
+  find_type: name
+  operate_type: click
+  info: 在数据集弹窗中 点击“确定”按钮
+  is_time: 1
+#- element_info: schema
+#  find_type: name
+#  operate_type: send_keys
+#  msg: es+随机数
+#  info: 在元数据输入框输入元数据名称
+#  is_time: 1
+#- element_info: //*[@id="bm-nodeset-sink-form"]/div[5]/div/div/div/input
+#  find_type: xpath
+#  operate_type: click
+#  info: 点击type下拉列表
+#  is_time: 1
+#- element_info: ElasticSearch
+#  find_type: name
+#  operate_type: click
+#  info: 选择elasticsearch
+#  is_time: 1
+- element_info: //*[@id="bm-nodeset-sink-form"]/div[11]/div/div/div[1]/input
+  find_type: xpath
+  operate_type: click
+  info: 选择mode
+  is_time: 1
+- element_info: //*[text()="追加"]
+  find_type: xpath
+  operate_type: click
+  info: 选择追加
+- element_info: //*[@id="bm-nodeset-sink-form"]/div[12]/div/div/div[1]/input
+  find_type: xpath
+  operate_type: click
+  info: 点击idColumn
+  is_time: 1
+- element_info: field_1
+  find_type: name
+  operate_type: click
+  info: 选择idColumn
+  is_time: 1
+- element_info: footer-sure
+  find_type: name
+  operate_type: click
+  info: 点击确定
+  is_time: 1
 - element_info: designSave
   find_type: id
   operate_type: click
   info: 在design页 点击“保存”按钮
-  is_time: 0.5
-check:
-- element_info: //*[text()="success，保存成功！"]
+  is_time: 1
+- element_info: //*[contains(text(),'提交')]
   find_type: xpath
-  check: displayed
-  info: 断言“success，保存成功！”吐词出现
+  operate_type: click
+  info: 点击提交
+  is_time: 1
+check:
+#- element_info: //*[text()="success，保存成功！"]
+#  find_type: xpath
+#  check: displayed
+#  info: 断言“success，保存成功！”吐词出现
 - element_info: //*[@id="designMain"]//div/h4[text()="source_1"]
   find_type: xpath
   check: displayed
   info: 断言“source_1”在design里存在
+- element_info: //*[contains(text(),"根目录")]/parent::em/preceding-sibling::i
+  find_type: xpath
+  operate_type: click
+  info: 点击‘根目录'文件夹图标
 - element_info: //em[@name="auto_flow"]
   find_type: xpath
   operate_type: click

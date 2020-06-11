@@ -4,7 +4,7 @@ testinfo:
   launch: 0
   info: 先进入流程管理
 testcase:
-- element_info: //*[@name="根目录"]/preceding-sibling::i[1]
+- element_info: //*[contains(text(),"根目录")]/parent::em/preceding-sibling::i
   find_type: xpath
   operate_type: click
   info: 点击‘根目录'文件夹图标
@@ -22,7 +22,7 @@ testcase:
   operate_type: send_keys
   msg: work_flow_+随机数
   info: 输入work_flow名称
-- element_info: //*[@id="bm-addflow-dialog-form"]//input[@placeholder="请选择流程类型"]
+- element_info: //*[@id="bm-addflow-dialog-form"]//input[@placeholder="Select"]]
   find_type: xpath
   operate_type: click
   info: 点击‘流程类型'弹出下拉菜单
@@ -59,10 +59,10 @@ testcase:
   info: 在design页 点击“保存”按钮
   is_time: 0.5
 check:
-- element_info: //*[text()="success，保存成功！"]
-  find_type: xpath
-  check: displayed
-  info: 断言“success，保存成功！”吐词出现
+#- element_info: //*[text()="success，保存成功！"]
+#  find_type: xpath
+#  check: displayed
+#  info: 断言“success，保存成功！”吐词出现
 - element_info: //*[@id="designMain"]//div/h4[text()="shell_1"]
   find_type: xpath
   check: displayed

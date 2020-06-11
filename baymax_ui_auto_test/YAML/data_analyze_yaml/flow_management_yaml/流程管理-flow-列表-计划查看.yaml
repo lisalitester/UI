@@ -4,7 +4,7 @@ testinfo:
   launch: 0
   info: 先进入流程管理
 testcase:
-- element_info: //*[@name="根目录"]/preceding-sibling::i[1]
+- element_info: //*[contains(text(),"根目录")]/parent::em/preceding-sibling::i
   find_type: xpath
   operate_type: click
   info: 点击‘根目录'文件夹图标
@@ -17,11 +17,11 @@ testcase:
   operate_type: get_text
   info:  获取列表“第一行的”名字
   is_time: 0.5
-- element_info: //*[@id="bm-rh-flowManage-table"]/div[3]/table/tbody/tr[1]/td/div/span[text()="计划"]
-  find_type: xpath
-  operate_type: click
-  info:  点击“第一行”flow的计划
-  is_time: 0.5
+#- element_info: //*[@id="bm-rh-flowManage-table"]/div[3]/table/tbody/tr[1]/td/div/span[text()="计划"]
+#  find_type: xpath
+#  operate_type: click
+#  info:  点击“第一行”flow的计划
+#  is_time: 0.5
 check:
 - element_info: primaryBtn
   find_type: name

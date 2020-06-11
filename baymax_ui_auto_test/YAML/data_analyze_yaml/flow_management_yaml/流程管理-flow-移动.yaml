@@ -4,7 +4,7 @@ testinfo:
   launch: 0
   info: 先进入流程管理
 testcase:
-- element_info: //*[@name="根目录"]/preceding-sibling::i[1]
+- element_info: //*[contains(text(),"根目录")]/parent::em/preceding-sibling::i
   find_type: xpath
   operate_type: click
   info: 点击‘根目录'文件夹图标
@@ -32,7 +32,7 @@ testcase:
   operate_type: click
   info: 点击‘移动’按钮
   is_time: 0.5
-- element_info: //*[@name="Flows"]/preceding-sibling::i[1]
+- element_info: //*[@id="dataTree"]/div/ul/li/ul/li/i
   find_type: xpath
   operate_type: click
   info: 在弹框中，点击‘Flows'文件夹图标

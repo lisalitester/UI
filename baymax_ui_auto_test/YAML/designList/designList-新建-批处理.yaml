@@ -1,0 +1,48 @@
+testinfo:
+- id: test_a400
+  title: 校验“designList-新建-批处理”
+  launch: 0
+  info: 先进入designList
+testcase:
+- element_info: //*[contains(text(),"Flows")]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'
+  is_time: 1
+- element_info: //span[contains(text(),"新建")]
+  find_type: xpath
+  operate_type: click
+  info: 点击'新建'
+- element_info: //*[@for='name']/following::input[contains(@placeholder,"请输入")]
+  find_type: xpath
+  operate_type: send_keys
+  msg: data_flow_+随机数
+  info: 输入data_flow名称
+#- element_info: //*[@id="bm-addflow-dialog-form"]//input[@placeholder="Select"]]
+#  find_type: xpath
+#  operate_type: click
+#  info: 点击‘流程类型'弹出下拉菜单
+#  is_time: 0.5
+#- element_info: "dataflow"]
+#  find_type: xpath/html/body/div/div/div/ul/li[@name=
+#  operate_type: click
+#  info: 点击‘dataflow'
+#  is_time: 0.5
+- element_info: //*[contains(text(),"确定")]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘确定’按钮
+check:
+- element_info: //span[contains(text(),"新建")]
+  find_type: xpath
+  check: displayed
+  info: 断言‘新建’按钮存在
+- element_info: //*[contains(text(), "%s")]+随机数
+  find_type: xpath
+  v_index: 0
+  info: 断言“新建的dataflow存在”出现
+#- element_info: //*[@id="bm-rh-flowManage-table"]/div[3]/table/tbody/tr[1]/td[7]/div
+#  find_type: xpath
+#  operate_type: get_text
+#  check: time_difference
+#  info: 断言“新建的dataflow” 与断言时间相差小于5秒

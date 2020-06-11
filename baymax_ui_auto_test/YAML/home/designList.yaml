@@ -1,0 +1,25 @@
+testinfo:
+- id: test0400
+  title: 校验“designList”页面
+  launch: 1
+  info: 成功登录
+testcase:
+- element_info: //div[@id="app"]//*[contains(text(),"designList")]
+  find_type: xpath
+  operate_type: action_chains
+  info: 鼠标悬停到‘designList’标签
+  is_time: 5
+- element_info: //*[@test-id="/designList"]
+  find_type: xpath
+  operate_type: click
+  info: 点击designList
+
+- operate_type: move_by_offset
+  move_to: (0, 0)
+  info: 移送鼠标到0,0像素
+check:
+- operate_type: get_current_url
+  check: current_equal_expect
+  expect_value: http://192.168.1.83:8515/#/designList
+  info: 检查"designList"的URL是否正确
+

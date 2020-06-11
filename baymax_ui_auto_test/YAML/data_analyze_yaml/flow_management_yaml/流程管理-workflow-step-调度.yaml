@@ -6,7 +6,7 @@ testinfo:
 testcase:
 - info: 等待0.5秒
   is_time: 0.5
-- element_info: //*[@name="根目录"]/preceding-sibling::i[1]
+- element_info: //*[contains(text(),"根目录")]/parent::em/preceding-sibling::i
   find_type: xpath
   operate_type: click
   info: 点击‘根目录'文件夹图标
