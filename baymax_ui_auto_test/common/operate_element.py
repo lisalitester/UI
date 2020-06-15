@@ -72,6 +72,7 @@ class OperateElement():
                 ep.ACTION_CHAINS: lambda: self.action_chains(operate),
                 ep.MOVE_BY_OFFSET: lambda: self.move_mouse(operate),
                 ep.GET_TEXT: lambda: self.get_text(operate),
+                ep.GET_SIZE: lambda: self.get_size(operate),
                 ep.GET_VALUE: lambda: self.get_value(operate),
                 ep.GET_CURRENT_URL: lambda: self.get_current_url(operate),
                 ep.GET_ATTR: lambda: self.get_attr(operate),
@@ -500,6 +501,17 @@ class OperateElement():
                 text = "None"
                 print('text是none类型转化的值为：', text)
             return {'result': True, 'text': text}
+
+    def get_size(self, operate):
+        if operate['find_type'] == ep.find_element_by_id or operate['find_type'] == ep.find_element_by_xpath or \
+            operate['find_type'] == ep.find_element_by_name or operate['find_type'] == ep.find_element_by_class_name:
+            size = len(self.element_by(operate))
+            return {'result': True, 'size': size}
+        elif operate['find_type'] == ep.find_elements_by_id or operate['find_type'] == ep.find_elements_by_xpath or \
+            operate['find_type'] == ep.find_elements_by_name or operate['find_type'] == ep.find_elements_by_class_name:
+            size = len(self.element_by(operate))
+            return {'result': True, 'size': size}
+
 
     def get_attr(self, operate):
         if operate['find_type'] == ep.find_element_by_id or operate['find_type'] == ep.find_element_by_xpath or \

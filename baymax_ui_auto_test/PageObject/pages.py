@@ -92,7 +92,6 @@ class PagesObjects:
                     self.testInfo[0]['msg'] = msg
                     return False
 
-
                 # 默认检查点，检查元素存在
                 if i.get('check', ElementParam.DEFAULT_CHECK) == ElementParam.DEFAULT_CHECK and not op_re['result']:
                     msg = get_error_info({"type": ElementParam.DEFAULT_CHECK, "element_info": i['element_info'], "info": i['info']})
@@ -134,11 +133,27 @@ class PagesObjects:
                     result = False
                     break
                 # 当前值 等于 预期值
-                if i.get('check', ElementParam.DEFAULT_CHECK) == ElementParam.CURRENT_EQUAL_EXPECT and op_re['text'] != i.get('expect_value', 'ooo'):
-                    msg = get_error_info({'type': ElementParam.CURRENT_EQUAL_EXPECT, 'info': i['info'], 'get_attr': op_re['text'], 'expect_value': i.get('expect_value', 'ooo')})
-                    self.testInfo[0]['msg'] = msg
-                    result = False
-                    break
+                try:
+                    if i.get('check', ElementParam.DEFAULT_CHECK) == ElementParam.CURRENT_EQUAL_EXPECT and op_re['text'] != i.get('expect_value', 'ooo'):
+                        msg = get_error_info(
+                            {'type': ElementParam.CURRENT_EQUAL_EXPECT, 'info': i['info'], 'get_attr': op_re['text'],
+                             'expect_value': i.get('expect_value', 'ooo')})
+                        self.testInfo[0]['msg'] = msg
+                        result = False
+                        break
+                except KeyError as e:
+                    if 'size' in op_re:
+                        print("当前步骤为测试size")
+                    else:
+                        print(e)
+
+                    if i.get('check', ElementParam.DEFAULT_CHECK) == ElementParam.CURRENT_EQUAL_EXPECT and op_re['size'] != i.get('expect_value', 0):
+                        msg = get_error_info(
+                            {'type': ElementParam.CURRENT_EQUAL_EXPECT, 'info': i['info'], 'get_attr': op_re['size'],
+                             'expect_value': i.get('expect_value', 'ooo')})
+                        self.testInfo[0]['msg'] = msg
+                        result = False
+                        break
                 # 当前值 不等于 预期值
                 if i.get('check', ElementParam.DEFAULT_CHECK) == ElementParam.CURRENT_NOT_EQUAL_EXPECT and op_re['text'] == i.get('expect_value', 'ooo'):
                     msg = get_error_info({'type': ElementParam.CURRENT_NOT_EQUAL_EXPECT, 'info': i['info'], 'get_attr': op_re['text'], 'expect_value': i.get('expect_value', 'ooo')})
