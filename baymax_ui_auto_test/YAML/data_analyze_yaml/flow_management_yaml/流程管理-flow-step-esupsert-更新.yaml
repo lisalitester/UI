@@ -1,0 +1,84 @@
+testinfo:
+- id: test_a178
+  title: 校验“流程管理-flow-step-保存”
+  launch: 0
+  info: 先进入流程管理
+testcase:
+- element_info: //*[contains(text(),"根目录")]/parent::em/preceding-sibling::i
+  find_type: xpath
+  operate_type: click
+  info: 点击‘根目录'文件夹图标
+- element_info: //em[@name="auto_flow"]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘auto_flow'的文字
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//table//tr[1]/td[2]//span
+  find_type: xpath
+  v_index: 0
+  operate_type: click
+  info:  点击“第一行”flow的名字
+  is_time: 3
+- element_info: //*[@id="designMain"]//div/h4[text()="source_1"]
+  find_type: xpath
+  operate_type: double_click
+  info:  双击“source_1”
+  is_time: 0.5
+- element_info: dataSetInq
+  find_type: name
+  operate_type: click
+  info: 在source弹窗中 点击“数据集”搜索按钮
+  is_time: 0.5
+- element_info: //*[@id="ch-components-dataSourceInq-dataSourceInquire-temp"]//input[@placeholder="请输入名称"]
+  find_type: xpath
+  operate_type: send_keys
+  msg: sjj_ts2
+  info: 数据集查询输入“sjj_ts2”
+- element_info: //*[@id="ch-components-dataSourceInq-dataSourceInquire-temp"]//input[@placeholder="请输入名称"]/following-sibling::div/button
+  find_type: xpath
+  operate_type: click
+  info:  点击“数据集查询输入框后的”搜索按钮
+  is_time: 2
+- element_info: //*[@id="ch-components-dataSourceInq-dataSourceInquire-temp"]/div[3]//tbody/tr/td/div[text()="sjj_ts2"]/ancestor::td/preceding-sibling::td//label
+  find_type: xpath
+  operate_type: click
+  info:  勾选“数据集sjj_ts2”
+  is_time: 1
+- element_info: bm-ch-step2Form-dataset-ok
+  find_type: name
+  operate_type: click
+  info: 在数据集弹窗中 点击“确定”按钮
+#- element_info: footer-sure
+#  find_type: name
+#  operate_type: click
+#  info: 在弹窗中 点击“确定”按钮
+  is_time: 1
+- element_info: //*[@aria-label='提示' and @tabindex='-1']//span[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: click
+  info: 更改数据集
+  is_time: 1
+- element_info: footer-sure
+  find_type: name
+  operate_type: click
+  info: 在source弹窗中 点击“确定”按钮
+  is_time: 5
+- element_info: //*[@id="designSave"]/span
+  find_type: xpath
+  operate_type: click
+  info: 在design页 点击“保存”按钮
+  is_time: 2
+- element_info: //*[@id="designSubmit"]/span
+  find_type: xpath
+  operate_type: click
+  info: 点击提交
+  is_time: 1
+- element_info: footer-sure
+  find_type: name
+  operate_type: click
+  info: 点击“确定”按钮
+  is_time: 5
+check:
+- element_info: //*[text()="操作成功！"]
+  find_type: xpath
+  check: displayed
+  info: 断言“操作成功！”吐词出现

@@ -1,0 +1,82 @@
+testinfo:
+- id: test_a192
+  title: 校验“流程管理-flow-step-执行明细-running输出-预览”
+  launch: 0
+  info: 先进入流程管理
+testcase:
+- element_info: //*[contains(text(),"根目录")]/parent::em/preceding-sibling::i
+  find_type: xpath
+  operate_type: click
+  info: 点击‘根目录'文件夹图标
+- element_info: //em[@name="auto_flow"]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘auto_flow'的文字
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//table//tr[1]/td[2]//span
+  find_type: xpath
+  v_index: 0
+  operate_type: click
+  info:  点击“第一行”flow的名字
+- element_info: //*[@id="bm-rh-design-dg-content"]/div/button/span
+  find_type: xpath
+  operate_type: click
+  info:  点击
+  is_time: 2
+- element_info: //*[contains(text(),'执行详细')]
+  find_type: xpath
+  operate_type: click
+  info:  点击
+  is_time: 2
+- element_info: //*[@id="tab- 输出"]/a
+  find_type: xpath
+  operate_type: click
+  info:  点击
+  is_time: 2
+- element_info: //*[@id="bm-rh-design-outputs-table"]/div[4]/div[2]/table/tbody/tr/td[11]/div/button/span
+  find_type: xpath
+  operate_type: click
+  info:  点击
+  is_time: 1
+
+check:
+- element_info: //*[@class='el-dialog__body']//table//tr
+  find_type: xpaths
+  operate_type: get_size
+  check: current_equal_expect
+  expect_value: 51
+  info: 断言预览数据是51条
+- element_info: //*[@id="bm-com-collTask-dataset-dialog"]/div/div[3]/div/button[3]/span
+  find_type: xpath
+  operate_type: click
+  info:  点击取消
+  is_time: 2
+- element_info: //*[@id="bm-rh-design-dg-content"]/div/button/span
+  find_type: xpath
+  operate_type: click
+  info:  点击执行历史
+  is_time: 2
+- element_info: //*[(text()='设计')]
+  find_type: xpath
+  operate_type: click
+  info:  点击设计
+  is_time: 2
+- element_info: //*[@id="designMain"]//div/h4[text()="sink_2"]
+  find_type: xpath
+  operate_type: double_click
+  info:  双击“sink_2”
+  is_time: 2
+- element_info: //*[@id="tab-parameter"]/div
+  find_type: xpath
+  operate_type: click
+  info:  点击“参数”
+  is_time: 2
+- element_info: //*[@id="bm-nodeset-sink-form"]/div[11]/div/div/div[1]/input
+  find_type: xpath
+  operate_type: get_attr
+  attr: value
+  check: current_equal_expect
+  expect_value: field_1
+  info: 断言“当前的value”符合预期值
+
+
+
