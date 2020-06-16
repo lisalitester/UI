@@ -1,6 +1,6 @@
 testinfo:
 - id: test_a178
-  title: 校验“流程管理-flow-step-保存”
+  title: 校验“流程管理-flow-step-esupsert-保存”
   launch: 0
   info: 先进入流程管理
 testcase:
@@ -130,8 +130,8 @@ testcase:
 - element_info: //*[@id="ch-components-dataSourceInq-dataSourceInquire-temp"]//input[@placeholder="请输入名称"]
   find_type: xpath
   operate_type: send_keys
-  msg: es
-  info: 数据集查询输入“sjj_ts”
+  msg: sjj_es
+  info: 数据集查询输入“sjj_es”
 - element_info: //*[@id="ch-components-dataSourceInq-dataSourceInquire-temp"]//input[@placeholder="请输入名称"]/following-sibling::div/button
   find_type: xpath
   operate_type: click
@@ -147,22 +147,6 @@ testcase:
   operate_type: click
   info: 在数据集弹窗中 点击“确定”按钮
   is_time: 1
-#- element_info: schema
-#  find_type: name
-#  operate_type: send_keys
-#  msg: es+随机数
-#  info: 在元数据输入框输入元数据名称
-#  is_time: 1
-#- element_info: //*[@id="bm-nodeset-sink-form"]/div[5]/div/div/div/input
-#  find_type: xpath
-#  operate_type: click
-#  info: 点击type下拉列表
-#  is_time: 1
-#- element_info: ElasticSearch
-#  find_type: name
-#  operate_type: click
-#  info: 选择elasticsearch
-#  is_time: 1
 - element_info: //*[@id="bm-nodeset-sink-form"]/div[11]/div/div/div[1]/input
   find_type: xpath
   operate_type: click
@@ -197,15 +181,24 @@ testcase:
   operate_type: click
   info: 点击提交
   is_time: 1
+- element_info: //*[@name='footer-sure']/span
+  find_type: xpath
+  operate_type: click
+  info: 点击确定
+  is_time: 1
 check:
-#- element_info: //*[text()="success，保存成功！"]
-#  find_type: xpath
-#  check: displayed
-#  info: 断言“success，保存成功！”吐词出现
+- element_info: //*[text()="操作成功！"]
+  find_type: xpath
+  check: displayed
+  info: 断言“操作成功！”吐词出现
 - element_info: //*[@id="designMain"]//div/h4[text()="source_1"]
   find_type: xpath
   check: displayed
   info: 断言“source_1”在design里存在
+- element_info: //*[@id="designMain"]//div/h4[text()="sink_2"]
+  find_type: xpath
+  check: displayed
+  info: 断言“sink_2”在design里存在
 - element_info: //*[contains(text(),"根目录")]/parent::em/preceding-sibling::i
   find_type: xpath
   operate_type: click
@@ -225,3 +218,7 @@ check:
   find_type: xpath
   check: displayed
   info: 断言“source_1”在design里存在
+- element_info: //*[@id="designMain"]//div/h4[text()="sink_2"]
+  find_type: xpath
+  check: displayed
+  info: 断言“sink_2”在design里存在
