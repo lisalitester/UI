@@ -35,9 +35,10 @@ def get_driver():
     os.environ["webdriver.chrome.driver"] = chromedriver
     driver = webdriver.Chrome(chromedriver,chrome_options=chromeOptions)
 
-    # #
-    # # firefox 普通模式
-    # driver = webdriver.Firefox()
+    # # #
+    # # # firefox 普通模式
+    # geckodriver = PATH("../exe/geckodriver.exe")
+    # driver = webdriver.Firefox(executable_path=geckodriver)
 
 
     # # firefox headless 模式

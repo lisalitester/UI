@@ -20,6 +20,7 @@ class ElementParam(object):
     MOVE_BY_OFFSET = 'move_by_offset'  # 移动鼠标到某个像素
     GET_CURRENT_URL = 'get_current_url'
     GET_ATTR = 'get_attr'
+    GET_SIZE = 'get_size'
     IS_DISPLAYED = "is_displayed"  # 检查元素是否显示
     FIND_DOWN = "find_down"  # 下拉菜单中向下查找元素
     MOVE_SCROLLBAR_BOTTOM = "move_scrollbar_bottom"  # 移动滚动条到某元素底部
