@@ -15,7 +15,7 @@ PATH = lambda p: os.path.abspath(
 )
 
 class DesignList(ParametrizedTestCase):
-    resourceMan_url = ElementParam.DESIGN_LIST_URL
+    designList_url = ElementParam.DESIGN_LIST_URL
 
 
     def login(self):
@@ -45,27 +45,74 @@ class DesignList(ParametrizedTestCase):
             return wrapper
         return decorator
 
-    #    校验“新建批处理”      ！
-
-
-    @get_url()
-    def test_a0400_design_list(self):
+    def test_a0399_design_list_login(self):
         self.to_resource_dir()
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList/designList-新建-批处理.yaml"),
+        print("测试designList的登录")
+
+    @get_url(designList_url)
+    def test_a0400_design_list_create_dataflow(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-新建-批处理.yaml"),
                "caseName": sys._getframe().f_code.co_name}
         page = DesignListPage(app)
         page.operate()
         page.check_point()
 
-    @get_url()
-    def test_a0401_design_list(self):
-        self.to_resource_dir()
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList/designList-删除-批处理.yaml"),
+    @get_url(designList_url)
+    def test_a0401_design_list_delete_dataflow(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-删除-批处理.yaml"),
            "caseName": sys._getframe().f_code.co_name}
         page = DesignListPage(app)
         page.operate()
         page.check_point()
 
+    # @get_url(designList_url)
+    # def test_a0402_design_list_create_workflow(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-新建-工作流.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
+    #
+    # @get_url(designList_url)
+    # def test_a0403_design_list_delete_workflow(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-删除-工作流.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
+    #
+    # @get_url(designList_url)
+    # def test_a0404_design_list_create_streamflow(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-新建-流处理.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
+    #
+    # @get_url(designList_url)
+    # def test_a0405_design_list_delete_streamflow(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-删除-流处理.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
+    #
+    # @get_url(designList_url)
+    # def test_a0406_design_list_create_RtcFlow(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-新建-RtcFlow.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
+    #
+    # @get_url(designList_url)
+    # def test_a0407_design_list_delete_RtcFlow(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-删除-RtcFlow.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
+    #
 
 
 

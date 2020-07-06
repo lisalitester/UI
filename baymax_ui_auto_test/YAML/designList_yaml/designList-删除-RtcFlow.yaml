@@ -1,14 +1,18 @@
 testinfo:
-- id: test_a401
-  title: 校验“designList-新建-批处理”
-  launch: 0
+- id: test_a407
+  title: 校验“designList-删除-RtcFlow”
+  launch: 1
   info: 先进入designList
 testcase:
-- element_info: //*[contains(text(),"Flows")]
+- element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
   find_type: xpath
   operate_type: click
-  info: 点击‘Flows'
+  info: 点击‘Flows'前的文件夹图标
   is_time: 1
+- element_info: //span[text()="auto_flow"]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘auto_flow'的文字
 - element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: get_text
@@ -19,18 +23,7 @@ testcase:
   v_index: 0
   operate_type: click
   info:  勾选“第一行的”flow
-#- element_info: //*[contains(text(), "data_flow")]
-#  find_type: xpaths
-#  index: 0
-#  operate_type: get_text
-#  info: 获取列表中第一行'data_flow'的title
-#  is_time: 2
-#- element_info: //*[contains(text(), '%s')]/ancestor::td/preceding-sibling::td[1]+随机数
-#  find_type: xpaths
-#  v_index: 0
-#  operate_type: click
-#  info: 勾选列表中第一条'data_flow'
-- element_info: //*[contains(text(),'删除')]
+- element_info: //span[contains(text(),'删除')]
   find_type: xpath
   operate_type: click
   info: 点击‘删除'按钮
@@ -39,9 +32,11 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击‘确定'按钮
-- operate_type: refresh
-  info: 刷新当前页面
 check:
+- element_info: //*[text()="操作成功！"]
+  find_type: xpath
+  check: displayed
+  info: 断言“操作成功！”吐词出现
 - element_info: //span[contains(text(),"新建")]
   find_type: xpath
   info: 断言‘新建’按钮存在

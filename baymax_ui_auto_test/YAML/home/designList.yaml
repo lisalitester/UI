@@ -4,22 +4,24 @@ testinfo:
   launch: 1
   info: 成功登录
 testcase:
-- element_info: //div[@id="app"]//*[contains(text(),"designList")]
+- element_info: //div[contains(@class,'el-submenu__title')]/span[contains(text(),'designList')]
   find_type: xpath
-  operate_type: action_chains
+  operate_type: click
   info: 鼠标悬停到‘designList’标签
-  is_time: 5
-- element_info: //*[@test-id="/designList"]
+  is_time: 1
+- element_info: //*[contains(@role,'menuitem')]/span[contains(text(),'designList')]
+  find_type: xpath
+  operate_type: move_to_element
+  info: 移动到designList
+  is_time: 2
+- element_info: //*[contains(@role,'menuitem')]/span[contains(text(),'designList')]
   find_type: xpath
   operate_type: click
   info: 点击designList
 
-- operate_type: move_by_offset
-  move_to: (0, 0)
-  info: 移送鼠标到0,0像素
 check:
 - operate_type: get_current_url
   check: current_equal_expect
-  expect_value: http://192.168.1.83:8515/#/designList
+  expect_value: http://192.168.1.84:8515/#/releaseNote
   info: 检查"designList"的URL是否正确
 

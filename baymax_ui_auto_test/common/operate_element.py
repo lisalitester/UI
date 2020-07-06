@@ -99,6 +99,7 @@ class OperateElement():
                 ep.KEY_PAGE_DOWN:lambda: self.key_page_down(),
                 ep.ZJ_CLICK:lambda : self.zj_click(),
                 ep.KEY_ENTER:lambda : self.key_enter(),
+                ep.MOVE_TO_ELEMENT: lambda: self.move_to_element(operate),
 
             }
             return elements[operate['operate_type']]()
@@ -395,6 +396,11 @@ class OperateElement():
     # 移动鼠标到某个像素
     def move_mouse(self, operate):
         ActionChains(self.driver).move_by_offset(*tuple(eval(operate['move_to']))).perform()
+        return {'result': True}
+
+    # 移动鼠标到某个元素
+    def move_to_element(self, operate):
+        ActionChains(self.driver).move_to_element(self.element_by(operate)).perform()
         return {'result': True}
 
     # 输入文字操作

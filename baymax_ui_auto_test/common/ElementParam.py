@@ -44,6 +44,7 @@ class ElementParam(object):
     ZJ_CLICK='zj_click'#直接单击
     IS_SELECTED='is_selected'#判断勾选框
     KEY_ENTER='key_enter' #键盘回车
+    MOVE_TO_ELEMENT='move_to_element' #移动到元素
 
 
     # 错误日志
@@ -76,8 +77,8 @@ class ElementParam(object):
     SUM_FILE = "sum.pickle"
     REPORT_FILE = "Report.xlsx"
 
-    # URL = 'http://192.168.1.81:8515/#/login'
-    # HOST = 'http://192.168.1.81:8515'
+    # URL = 'http://192.168.1.84:8515/#/login'
+    # HOST = 'http://192.168.1.84:8515'
     # #测试84环境
     URL = 'http://192.168.1.84:8515/#/login'
     HOST = 'http://192.168.1.84:8515'
@@ -113,6 +114,9 @@ class ElementParam(object):
 
     #实时计算
     TASK_ADMINISTRATION_URL = HOST +"/#/jobManage" # 作业管理url
+
+    # designList
+    DESIGN_LIST_URL = HOST + "/#/designList?resId=84d0fb02-7ddc-4ed5-b51a-b857dbbb1e92"
 
     #脚本版本
     VERSION = '2020-03-30'
