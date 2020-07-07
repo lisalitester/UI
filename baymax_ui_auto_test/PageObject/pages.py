@@ -36,13 +36,13 @@ class PagesObjects:
         self.is_get = False
 
     def operate(self):
-        if self.testmsg[0] is False:
+        if self.testmsg[0] is False:   # 判断通过getYaml返回的值，返回list[True,x]，true表示找到了文件
             self.isOperate = False
             return False
         self.operateElement = OperateElement(self.driver)
         for i in self.testcase:
             self.rw_get_value(i)  # 读写容器操作
-            result = self.operateElement.operate(i, self.testInfo, self.logTest)
+            result = self.operateElement.operate(i, self.testInfo, self.logTest)  #通过找到元素，操作元素，得到result有无返回值，getText,getValue这些方法会有返回值
             if not result['result']:
                 msg = get_error_info({'type': ElementParam.DEFAULT_ERROR, 'element_info': i['element_info']})
                 self.testInfo[0]['msg'] = msg
@@ -50,7 +50,7 @@ class PagesObjects:
                 return False
             if i.get('is_time', 0) != 0:
                 sleep(i['is_time'])
-            self.rw_get_value(i, result)  # 读写容器操作 并且打开开关
+            self.rw_get_value(i, result)  # 读写容器操作 并且打开开关 如果result返回true,返回值,会把返回值写进get_value list
         return True
 
     def checkPoint(self):
@@ -85,7 +85,7 @@ class PagesObjects:
                 except TypeError as msg:
                     print(msg)
 
-                op_re = self.operateElement.operate(i, self.testInfo, self.logTest)
+                op_re = self.operateElement.operate(i, self.testInfo, self.logTest)   #  等于result
 
                 if not op_re['result'] and (i.get('check', ElementParam.DEFAULT_CHECK) != ElementParam.CONTRARY):
                     msg = get_error_info({'type': ElementParam.DEFAULT_ERROR, 'element_info': i['element_info']})
@@ -209,11 +209,13 @@ class PagesObjects:
         if str(i.get('msg', ''))[-4:] == '+随机数':
                 i['msg'] = random_str(i['msg'])
                 self.get_value.append(i['msg'])
+                print("msg测试随机数结果放进list", self.get_value, self.get_value.append(i['msg']))
         if i.get('element_info', '')[-4:] == '+随机数':
             if i['find_type'] == 'name':
                 i['element_info'] = self.get_value[int(i['v_index'])]
             if i['find_type'] == 'xpath':
                 i['element_info'] = i['element_info'][: -4] % self.get_value[int(i['v_index'])]
+                print("element随机数",self.get_value)
         if i.get('element_info', '')[-3:] == '+拼接':
             if i['find_type'] == 'name':
                 i['element_info'] = self.get_value[int(i['v_index'])] + i['join_value']
@@ -222,6 +224,7 @@ class PagesObjects:
         # result 开关被打开
         if (i.get('operate_type', 0) == ElementParam.GET_TEXT or i.get('operate_type', 0) == ElementParam.GET_VALUE or \
                                 i.get('operate_type', 0) == ElementParam.GET_ATTR) and result.get('result', False):
+            print("result开关打开",result)
             self.get_value.append(result['text'])
             self.is_get = True
 

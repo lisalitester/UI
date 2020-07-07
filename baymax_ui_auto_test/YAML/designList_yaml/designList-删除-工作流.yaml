@@ -1,7 +1,7 @@
 testinfo:
 - id: test_a403
   title: 校验“designList-删除-工作流”
-  launch: 1
+  launch: 0
   info: 先进入designList
 testcase:
 - element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
@@ -9,10 +9,14 @@ testcase:
   operate_type: click
   info: 点击‘Flows'前的文件夹图标
   is_time: 1
-#- element_info: //span[text()="auto_flow"]
-#  find_type: xpath
-#  operate_type: click
-#  info: 点击‘auto_flow'的文字
+- element_info: //*[contains(text(),"Flows")]/parent::span
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'的文字
+- element_info: //span[text()="auto_flow"]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘auto_flow'的文字
 - element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: get_text

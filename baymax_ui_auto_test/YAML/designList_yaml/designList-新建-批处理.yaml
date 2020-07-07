@@ -9,10 +9,6 @@ testcase:
   operate_type: click
   info: 点击‘Flows'前的文件夹图标
   is_time: 1
-#- element_info: //span[text()="auto_flow"]
-#  find_type: xpath
-#  operate_type: move_to_element
-#  info: 移动到auto_flow
 - element_info: //span[text()="auto_flow"]
   find_type: xpath
   operate_type: click

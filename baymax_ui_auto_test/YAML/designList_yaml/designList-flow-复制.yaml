@@ -8,6 +8,10 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击‘根目录'文件夹图标
+- element_info: //*[contains(text(),"Flows")]/parent::span
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'的文字
 - element_info: //em[@name="auto_flow"]
   find_type: xpath
   operate_type: click

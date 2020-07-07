@@ -1,0 +1,35 @@
+testinfo:
+- id: test_a416
+  title: 校验“designList-流程目录-导出”
+  launch: 0
+  info: 先进入designList
+testcase:
+- element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'前的文件夹图标
+  is_time: 1
+- element_info: //span[text()="auto_flow"]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘auto_flow'的文字
+  is_time: 1
+- element_info: primaryBtn
+  find_type: name
+  operate_type: click
+  info: 点击‘操作'按鈕
+  is_time: 1
+- element_info: //*[contains(@class,'el-icon-edit')]/parent::li/following-sibling::li[2]
+  find_type: xpath
+  operate_type: click
+  info:  点击”导出“按钮
+  is_time: 1
+- element_info: //span[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘确定’按钮
+  is_time: 1
+check:
+- check: time_difference
+  max_time: 10
+  info: 断言“本地的下载目录”最新下载的文件的创建时间小于现在5秒
