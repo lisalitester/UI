@@ -9,4 +9,4 @@
 数据标准：文件夹 auto_UI_a   auto_UI_b
 数据源： auto_UI
 数据驱动：auto_mysql auto_hive auto_oracle
-流程目录：auto_flowGIT
+流程目录：auto_flow auto_move

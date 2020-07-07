@@ -1,0 +1,75 @@
+testinfo:
+- id: test_a409
+  title: 校验“designList-flow-移动”
+  launch: 1
+  info: 先进入designList
+testcase:
+- element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'文件夹图标
+- element_info: //span[text()="auto_flow"]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘auto_flow'的文字
+  is_time: 1
+- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
+  find_type: xpath
+  operate_type: get_text
+  info:  获取列表“第一行的”名字
+  is_time: 0.5
+- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]//span[text()="%s"]/ancestor::td/preceding-sibling::td//label+随机数
+  find_type: xpath
+  v_index: 0
+  operate_type: click
+  info:  勾选“第一行的”flow
+  is_time: 2
+- element_info: //span[text()="操作"]/i
+  find_type: xpath
+  operate_type: click
+  info: 点击‘操作’按钮
+  index: 2
+- element_info: //li[(@name='move' and @uib-tooltip='移动')]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘移动’按钮
+  is_time: 1
+- element_info: //*[contains(text(),'Flows')]
+  find_type: xpaths
+  index: 1
+  operate_type: click
+  info: 在弹框中，点击‘Flows'文件夹图标
+  is_time: 1
+- element_info: //*[contains(text(),"auto_move")]
+  find_type: xpaths
+  index : 2
+  operate_type: click
+  info: 点击‘auto_move'的文字
+- element_info: //*[contains(text(),"确定")]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘确定’按钮
+- element_info: //*[contains(text(),"OK")]
+  find_type: xpath
+  operate_type: click
+  info: 点击"提示框中的OK"按钮
+  is_time: 0.5
+check:
+- element_info: //*[contains(text(),'新建')]
+  find_type: xpath
+  info: 断言‘新建’按钮存在
+- element_info: //*[contains(text(), "%s")]+随机数
+  find_type: xpath
+  v_index: 0
+  check: contrary
+  check_time: 1
+  info: 断言“被移动的flow”不存在
+- element_info: //*[@id="bm-designTreeMenu"]//*[@name="auto_move"]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘auto_move'的文字
+  is_time: 0.5
+- element_info: //*[contains(text(), "%s")]+随机数
+  find_type: xpath
+  v_index: 0
+  info: 断言“被移动的flow”在auto_move文件夹中存在

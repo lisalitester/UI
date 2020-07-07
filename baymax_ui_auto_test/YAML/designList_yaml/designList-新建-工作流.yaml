@@ -1,7 +1,7 @@
 testinfo:
 - id: test_a402
   title: 校验“designList-新建-工作流”
-  launch: 1
+  launch: 0
   info: 先进入designList
 testcase:
 - element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
