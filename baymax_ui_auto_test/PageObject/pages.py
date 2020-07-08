@@ -209,7 +209,7 @@ class PagesObjects:
         if str(i.get('msg', ''))[-4:] == '+随机数':
                 i['msg'] = random_str(i['msg'])
                 self.get_value.append(i['msg'])
-                print("msg测试随机数结果放进list", self.get_value, self.get_value.append(i['msg']))
+                print("msg测试随机数结果放进list", self.get_value)
         if i.get('element_info', '')[-4:] == '+随机数':
             if i['find_type'] == 'name':
                 i['element_info'] = self.get_value[int(i['v_index'])]

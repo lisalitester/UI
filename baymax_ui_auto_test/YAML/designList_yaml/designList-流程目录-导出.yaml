@@ -1,5 +1,5 @@
 testinfo:
-- id: test_a416
+- id: test_a414
   title: 校验“designList-流程目录-导出”
   launch: 0
   info: 先进入designList
@@ -8,6 +8,10 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击‘Flows'前的文件夹图标
+- element_info: //*[contains(text(),"Flows")]/parent::span
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'的文字
   is_time: 1
 - element_info: //span[text()="auto_flow"]
   find_type: xpath

@@ -1,5 +1,5 @@
 testinfo:
-- id: test_a409
+- id: test_a404
   title: 校验“designList-flow-移动”
   launch: 1
   info: 先进入designList
@@ -28,47 +28,38 @@ testcase:
   operate_type: click
   info:  勾选“第一行的”flow
   is_time: 2
-- element_info: //span[text()="操作"]/i
-  find_type: xpath
+- element_info: dropdown-toggle
+  find_type: name
   operate_type: click
   info: 点击‘操作’按钮
-  index: 2
+  is_time: 0.5
 - element_info: //li[(@name='move' and @uib-tooltip='移动')]
   find_type: xpath
   operate_type: click
   info: 点击‘移动’按钮
   is_time: 1
-- element_info: //*[contains(text(),'Flows')]
+- element_info: //span[contains(text(),"auto_move")]
   find_type: xpaths
-  index: 1
-  operate_type: click
-  info: 在弹框中，点击‘Flows'文件夹图标
-  is_time: 1
-- element_info: //*[contains(text(),"auto_move")]
-  find_type: xpaths
-  index : 2
+  index : 1
   operate_type: click
   info: 点击‘auto_move'的文字
 - element_info: //*[contains(text(),"确定")]
   find_type: xpath
   operate_type: click
   info: 点击‘确定’按钮
-- element_info: //*[contains(text(),"OK")]
-  find_type: xpath
-  operate_type: click
-  info: 点击"提示框中的OK"按钮
-  is_time: 0.5
+#- element_info: //*[contains(text(),"OK")]
+#  find_type: xpath
+#  operate_type: click
+#  info: 点击"提示框中的OK"按钮
+#  is_time: 0.5
+- operate_type: refresh
+  info: 刷新
+
 check:
 - element_info: //*[contains(text(),'新建')]
   find_type: xpath
   info: 断言‘新建’按钮存在
-- element_info: //*[contains(text(), "%s")]+随机数
-  find_type: xpath
-  v_index: 0
-  check: contrary
-  check_time: 1
-  info: 断言“被移动的flow”不存在
-- element_info: //*[@id="bm-designTreeMenu"]//*[@name="auto_move"]
+- element_info: //span[text()="auto_move"]
   find_type: xpath
   operate_type: click
   info: 点击‘auto_move'的文字

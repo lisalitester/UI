@@ -1,5 +1,5 @@
 testinfo:
-- id: test_a414
+- id: test_a416
   title: 校验“designList-流程目录-重命名”
   launch: 0
   info: 先进入designList
@@ -8,6 +8,10 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击‘Flows'前的文件夹图标
+- element_info: //*[contains(text(),"Flows")]/parent::span
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'的文字
 - element_info: //*[contains(text(),"auto_flow")]/parent::span/preceding-sibling::span/i[contains(@class,'el-icon-ump-file')]
   find_type: xpath
   operate_type: click
@@ -48,12 +52,22 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击‘确定’按钮
-- operate_type: refresh
-  info: 刷新
 check:
 - element_info: //span[contains(text(),"新建")]
   find_type: xpath
   info: 断言‘新建’按钮存在
+- element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'前的文件夹图标
+- element_info: //*[contains(text(),"Flows")]/parent::span
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'的文字
+- element_info: //*[(text()='auto_flow' and @class='el-tooltip text')]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘auto_flow'的文字
 - element_info: //*[contains(text(), "%s")]+随机数
   find_type: xpath
   v_index: 0

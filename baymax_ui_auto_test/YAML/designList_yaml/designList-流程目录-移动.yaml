@@ -8,6 +8,10 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击‘Flows'前的文件夹图标
+- element_info: //*[contains(text(),"Flows")]/parent::span
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'的文字
 - element_info: //*[contains(text(),"auto_flow")]/parent::span/preceding-sibling::span/i[contains(@class,'el-icon-ump-file')]
   find_type: xpath
   operate_type: click
@@ -43,28 +47,7 @@ check:
 - element_info: //span[contains(text(),"新建")]
   find_type: xpath
   info: 断言‘新建’按钮存在
-- element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
-  find_type: xpath
-  operate_type: click
-  info: 点击‘Flows'前的文件夹图标
-  is_time: 1
-- element_info: //*[contains(text(),"auto_flow")]/parent::span/preceding-sibling::span/i[contains(@class,'el-icon-ump-file')]
-  find_type: xpath
-  operate_type: click
-  info: 点击‘auto_flow'的文件夹图标
-  is_time: 1
-#- element_info: //*[contains(text(), "%s")]+随机数
-#  find_type: xpath
-#  v_index: 0
-#  check: contrary
-#  check_time: 1
-#  info: 断言“被移动的目录”不存在
-- element_info: //*[contains(text(),"auto_move")]/parent::span/preceding-sibling::span/i[2]
-  find_type: xpath
-  operate_type: click
-  info: 点击‘auto_move'的文字
-  is_time: 0.5
 - element_info: //*[contains(text(), "%s")]+随机数
   find_type: xpath
   v_index: 0
-  info: 断言“被移动的目录”在auto_move文件夹中存在
+  info: 断言“被移动的目录”存在

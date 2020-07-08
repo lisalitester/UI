@@ -1,5 +1,5 @@
 testinfo:
-- id: test_a410
+- id: test_a402
   title: 校验“designList-flow-导出”
   launch: 0
   info: 先进入designList
@@ -32,7 +32,7 @@ testcase:
   operate_type: click
   info: 点击‘操作’按钮
   is_time: 1
-- element_info: //*[@id="dropdown-menu-5993"]/li[3]
+- element_info: //*[(@name='export' and @uib-tooltip='导出')]
   find_type: xpath
   operate_type: click
   info: 点击‘导出’按钮

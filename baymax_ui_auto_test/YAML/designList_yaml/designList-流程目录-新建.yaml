@@ -8,11 +8,14 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击‘Flows'前的文件夹图标
+- element_info: //*[contains(text(),"Flows")]/parent::span
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'的文字
 - element_info: //span[text()="auto_flow"]
   find_type: xpath
   operate_type: click
   info: 点击‘auto_flow'的文字
-  is_time: 1
 - element_info: primaryBtn
   find_type: name
   operate_type: click
@@ -26,7 +29,7 @@ testcase:
 - element_info: //*[@required='required']
   find_type: xpath
   operate_type: send_keys
-  msg: create_list+随机数
+  msg: create_list_+随机数
   info: 输入新的目录名称
   is_time: 0.5
 - element_info: //*[contains(text(),'确定')]

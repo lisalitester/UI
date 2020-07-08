@@ -1,5 +1,5 @@
 testinfo:
-- id: test_a408
+- id: test_a403
   title: 校验“designList-flow-重命名”
   launch: 0
   info: 先进入designList
@@ -31,8 +31,8 @@ testcase:
   operate_type: click
   info: 点击‘操作’按钮
   is_time: 0.5
-- element_info: rename
-  find_type: name
+- element_info: //*[(@name='rename' and @uib-tooltip='重命名')]
+  find_type: xpath
   operate_type: click
   info: 点击‘重命名’按钮
   is_time: 0.5
@@ -49,6 +49,13 @@ testcase:
   find_type: name
   operate_type: click
   info: 点击‘确定’按钮
+- operate_type: refresh
+  info: 刷新
+#- element_info:  //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
+#  find_type: xpath
+#  operate_type: get_text
+#  info:  获取重命名后的“第一行的”名字
+#  is_time: 0.5
 check:
 #- element_info: //*[text()="恭喜您，修改已成功！"]
 #  find_type: xpath
