@@ -7,6 +7,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time, os, re, subprocess
 from selenium.webdriver.common.keys import Keys
 from common.operate_time import to_time_stamp
+import pyautogui
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
@@ -52,7 +53,7 @@ class OperateElement():
     '''
     def operate(self, operate, testInfo, logTest):
         res = self.findElement(operate)
-        print(res)
+        print("通过findElement找到元素",res)
         if res["result"]:
             return self.operate_by(operate, testInfo, logTest)
         else:
@@ -100,6 +101,9 @@ class OperateElement():
                 ep.ZJ_CLICK:lambda : self.zj_click(),
                 ep.KEY_ENTER:lambda : self.key_enter(),
                 ep.MOVE_TO_ELEMENT: lambda: self.move_to_element(operate),
+                ep.DRAG_EL1: lambda: self.drag_el1(operate),
+                ep.VALUE_OF_CSS_PROPERTY: lambda: self.value_of_css_property(operate)
+
 
             }
             return elements[operate['operate_type']]()
@@ -290,6 +294,7 @@ class OperateElement():
      # 刷新页面 直到页面属性变化或超时 返回最后的text
     def refresh_get_attr(self, operate):
         old_text =self.get_attr(operate)["text"]
+        print("旧的值",old_text)
         time_out = int(operate["time_out"])
         cs_time = 0
         s_time = time.time()
@@ -300,6 +305,7 @@ class OperateElement():
             new_text =self.get_attr(operate)["text"]
             if new_text != old_text:
                 return {'result': True, 'text': new_text}
+                print("新的值",old_text)
             time.sleep(1)
             cs_time = int(time.time() - s_time)
         return {'result': False, 'text': new_text}
@@ -392,6 +398,14 @@ class OperateElement():
         print("缺少find_type2 或者 element_info2 或者 move_to")
         return {'result': False}
 
+    # 拖拽元素带轨迹
+    def drag_el1(self,operate):
+        start = self.element_by(operate)
+        # 让鼠标移动到起点元素上
+        pyautogui.moveTo(start.location['x']+10,start.location['y']+130)
+        # # 定位要拖拽到的位置元素
+        pyautogui.dragRel(*tuple(eval(operate['move_to'])),duration=2.0)
+        return {'result': True}
 
     # 移动鼠标到某个像素
     def move_mouse(self, operate):
@@ -532,6 +546,21 @@ class OperateElement():
             print('获取到的值为：', text)
             text = str(text)
             return {'result': True, 'text': text}
+
+    def value_of_css_property(self, operate):
+        if operate['find_type'] == ep.find_element_by_id or operate['find_type'] == ep.find_element_by_xpath or \
+                operate['find_type'] == ep.find_element_by_name or operate['find_type'] == ep.find_element_by_class_name:
+            text = self.element_by(operate).value_of_css_property(operate['attr'])
+            print('获取到的值为：', text)
+            text = str(text)
+            return {'result': True, 'text': text}
+        elif operate['find_type'] == ep.find_elements_by_id or operate['find_type'] == ep.find_elements_by_xpath or \
+                operate['find_type'] == ep.find_elements_by_name or operate['find_type'] == ep.find_elements_by_class_name:
+            text =  self.element_by(operate)[operate['index']].value_of_css_property(operate['attr'])
+            print('获取到的值为：', text)
+            text = str(text)
+            return {'result': True, 'text': text}
+
 
     # 在下拉菜单中 向下查找元素 直到元素出现
     def find_element_down(self, operate):

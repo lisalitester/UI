@@ -45,6 +45,8 @@ class ElementParam(object):
     IS_SELECTED='is_selected'#判断勾选框
     KEY_ENTER='key_enter' #键盘回车
     MOVE_TO_ELEMENT='move_to_element' #移动到元素
+    DRAG_EL1 = 'drag_el1' #拖拽元素带轨迹
+    VALUE_OF_CSS_PROPERTY = 'value_of_css_property' #获取元素得样式信息
 
 
     # 错误日志

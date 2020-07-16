@@ -1,0 +1,47 @@
+testinfo:
+- id: test_a226
+  title: 校验“流程管理-workflow-step-调度”
+  launch: 0
+  info: 先进入流程管理
+testcase:
+- element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'前的文件夹图标
+  is_time: 1
+- element_info: //*[contains(text(),"Flows")]/parent::span
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'的文字
+- element_info: //span[text()="auto_flow"]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘auto_flow'的文字
+  is_time: 1
+- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
+  find_type: xpath
+  operate_type: click
+  info:  点击“第一行”flow的名字
+  is_time: 0.5
+- element_info: //i[contains(@class,'el-icon-data-board')]/following-sibling::span[contains(text(),"调度")]
+  find_type: xpath
+  operate_type: click
+  info:  点击“调度”按钮
+- element_info: name
+  find_type: name
+  operate_type: send_keys
+  msg: dataflow_schedule_+随机数
+  info: 输入"调度名称"
+- element_info: //span[contains(text(),"确定")]
+  find_type: xpath
+  operate_type: click
+  info: 在schedule_add页，点击‘确定'按钮
+check:
+#- element_info: //*[text()="恭喜你，新增数据已成功！"]
+#  find_type: xpath
+#  check: displayed
+#  info: 断言“恭喜你，新增数据已成功！”吐词出现
+- operate_type: get_current_url
+  check: current_contain_expect
+  expect_value: /#/hippo/schedule拼接值后+前host+拼接
+  info: 断言“当前的url”符合预期值
