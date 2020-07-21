@@ -214,7 +214,7 @@ testcase:
   find_type: xpath
   operate_type: click
   info:  点击“提交”按钮
-  is_time: 1
+  is_time: 2
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
