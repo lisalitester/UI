@@ -305,7 +305,7 @@ class OperateElement():
             new_text =self.get_attr(operate)["text"]
             if new_text != old_text:
                 return {'result': True, 'text': new_text}
-                print("新的值",old_text)
+                print("新的值",new_text)
             time.sleep(1)
             cs_time = int(time.time() - s_time)
         return {'result': False, 'text': new_text}
