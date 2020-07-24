@@ -1,8 +1,8 @@
 testinfo:
 - id: test_a417
-  title: 校验“designList-flow-step-保存”
+  title: 校验“designList-flow-step-拖拽”
   launch: 0
-  info: 先进入流程管理
+  info: 先进入designList
 testcase:
 - element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
   find_type: xpath
@@ -40,77 +40,16 @@ testcase:
   find_type: xpath
   operate_type: click
   info:  点击“IO”tab
-  is_time: 0.5
+  is_time: 1
 - element_info: //p[text()="source"]/preceding-sibling::i
   find_type: xpath
-  operate_type: drag_el
-  move_to: (-800, 210)
+  operate_type: drag_el1
+  move_to: (-800, -210)
   info:  拖拽
   is_time: 2
-- element_info: source_1
-  find_type: id
-  operate_type: double_click
-  info:  双击“source_1”
-  is_time: 0.5
-- element_info: //*[@class='el-icon-search']
-  find_type: xpath
-  operate_type: click
-  info: 在source弹窗中 点击“数据集”搜索按钮
-  is_time: 0.5
-- element_info: searchInput
-  find_type: name
-  operate_type: send_keys
-  msg: sjj_ts
-  info: 数据集查询输入“sjj_ts”
-- element_info: //*[@name='searchInput']/following-sibling::div
-  find_type: xpath
-  operate_type: click
-  info:  点击“数据集查询输入框后的”搜索按钮
-  is_time: 1
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'sjj_ts')]
-  find_type: xpath
-  operate_type: double_click
-  info:  双击选中“数据集sjj_ts”
-  is_time: 0.3
-- element_info: tab-output_output
-  find_type: id
-  operate_type: click
-  info:  点击output tab
-  is_time: 0.3
-- element_info: //*[contains(@class,'el-tooltip el-icon-copy-document')]
-  find_type: xpath
-  operate_type: click
-  info:  点击"添加全部字段"
-  is_time: 0.3
-- element_info: //span[contains(text(),'确定')]
-  find_type: xpath
-  operate_type: click
-  info: 在数据集弹窗中 点击“确定”按钮
-  is_time: 0.5
-- element_info: //span[contains(text(),'保存')]
-  find_type: xpath
-  operate_type: click
-  info: 在design页 点击“保存”按钮
-  is_time: 0.5
 check:
-- element_info: //*[text()="保存成功！"]
-  find_type: xpath
-  check: displayed
-  info: 断言“保存成功！”吐词出现
 - element_info: source_1
   find_type: id
   check: displayed
   info: 断言“source_1”在design里存在
-- element_info: //span[text()="auto_flow"]
-  find_type: xpath
-  operate_type: click
-  info: 点击‘auto_flow'的文字
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
-  find_type: xpath
-  operate_type: click
-  info:  点击“第一行”flow的名字
-  is_time: 0.5
-- element_info: source_1
-  find_type: id
-  check: displayed
-  info: 断言“source_1”在design里存在
+

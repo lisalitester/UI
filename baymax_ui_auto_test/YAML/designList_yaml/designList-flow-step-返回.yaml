@@ -1,38 +1,38 @@
 testinfo:
-- id: test_a182
-  title: 校验“流程管理-flow-step-返回”
+- id: test_a421
+  title: 校验“designList-flow-step-返回”
   launch: 0
-  info: 先进入流程管理
+  info: 先进入designList
 testcase:
-- element_info: //*[contains(text(),"根目录")]/parent::em/preceding-sibling::i
+- element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
   find_type: xpath
   operate_type: click
-  info: 点击‘根目录'文件夹图标
-- element_info: //em[@name="auto_flow"]
+  info: 点击‘Flows'前的文件夹图标
+  is_time: 1
+- element_info: //*[contains(text(),"Flows")]/parent::span
+  find_type: xpath
+  operate_type: click
+  info: 点击‘Flows'的文字
+- element_info: //span[text()="auto_flow"]
   find_type: xpath
   operate_type: click
   info: 点击‘auto_flow'的文字
-- element_info: //*[@id="bm-rh-flowManage-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span
-  find_type: xpath
-  operate_type: get_text
-  info:  获取列表“第一行的”名字
-  is_time: 0.5
-- element_info: //*[@id="bm-rh-flowManage-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span
+- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: click
   info:  点击“第一行”flow的名字
   is_time: 0.5
-- element_info: drawReturn
-  find_type: id
+- element_info: //*[contains(text(), '返回')]
+  find_type: xpath
   operate_type: click
   info:  点击“返回”按钮
   is_time: 0.5
 check:
-- element_info: addFlowBtn
-  find_type: name
-  info: 按钮‘新建’存在
+- element_info: //span[contains(text(),"新建")]
+  find_type: xpath
+  info: 断言‘新建’按钮存在
 - operate_type: get_current_url
   check: current_equal_expect
-  expect_value: /#/design拼接值后+前host+拼接
+  expect_value: /#/designList?resId=718df21d-eed4-4243-a9a7-3043784d3005拼接值后+前host+拼接
   info: 断言“当前的url”符合预期值
 
