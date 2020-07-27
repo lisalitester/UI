@@ -4,11 +4,11 @@ testinfo:
   launch: 0
   info: 先进入designlist
 testcase:
-- element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
-  find_type: xpath
-  operate_type: click
-  info: 点击‘Flows'前的文件夹图标
-  is_time: 1
+#- element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
+#  find_type: xpath
+#  operate_type: click
+#  info: 点击‘Flows'前的文件夹图标
+#  is_time: 1
 - element_info: //*[contains(text(),"Flows")]/parent::span
   find_type: xpath
   operate_type: click
