@@ -123,7 +123,7 @@ expect_value:
           - v_index:  value 在‘get_value' 容器的位置   # send_keys 方法存放属性值的位置
           - join_value: 要拼接字符串的值
       获取 属性值时:
-      - attr_index:  # gget_text get_value get_attr方法存放属性值的位置
+      - attr_index:  # get_text get_value get_attr方法存放属性值的位置
 
 xpath:
   先辈: /ancestor::td
