@@ -4,15 +4,15 @@ testinfo:
   launch: 0
   info: 先进入designlist
 testcase:
-- element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
+#- element_info: //*[contains(text(),"根目录")]/parent::span/preceding-sibling::span/i[2]
+#  find_type: xpath
+#  operate_type: click
+#  info: 点击‘根目录'前的文件夹图标
+#  is_time: 1
+- element_info: //*[contains(text(),"根目录")]/parent::span
   find_type: xpath
   operate_type: click
-  info: 点击‘Flows'前的文件夹图标
-  is_time: 1
-- element_info: //*[contains(text(),"Flows")]/parent::span
-  find_type: xpath
-  operate_type: click
-  info: 点击‘Flows'的文字
+  info: 点击‘根目录'的文字
   is_time: 1
 - element_info: //span[text()="auto_flow"]
   find_type: xpath
@@ -135,7 +135,7 @@ testcase:
 - element_info: searchInput
   find_type: name
   operate_type: send_keys
-  msg: test_colsplit_source4_test_colsplit
+  msg: test_colsplit_source_test_colsplit
   info: 输入数据集名称
   is_time: 0.5
 - element_info: //*[@name='searchInput']/following-sibling::div
@@ -143,7 +143,7 @@ testcase:
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
   is_time: 1
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_colsplit_source4_test_colsplit']
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_colsplit_source_test_colsplit']
   find_type: xpath
   operate_type: double_click
   info:  双击选中“test_colsplit_source4_test_colsplit”
