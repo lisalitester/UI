@@ -31,7 +31,7 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击‘确定’按钮
-  is_time: 1
+  is_time: 2
 - element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: click
@@ -68,6 +68,10 @@ testcase:
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
   is_time: 1
+- element_info: "//*[@class='el-dialog__body']//div[@class='el-loading-mask' and @style='display: none;']"
+  find_type: xpath
+  info:  等待加载圈消失
+  is_time: 0.5
 - element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'test_colsplit_source')]
   find_type: xpath
   operate_type: double_click
@@ -77,7 +81,11 @@ testcase:
   find_type: id
   operate_type: click
   info:  点击output tab
-  is_time: 1
+  is_time: 0.1
+- element_info: "//*[@class='el-dialog__body']//div[@class='el-loading-mask' and @style='display: none;']"
+  find_type: xpath
+  info:  等待加载圈消失
+  is_time: 0.5
 - element_info: //*[contains(@class,'el-tooltip el-icon-copy-document')]
   find_type: xpath
   operate_type: click
@@ -128,9 +136,10 @@ testcase:
   find_type: xpath
   operate_type: click
   info:  选择“name”选项
-  is_time: 0.5
-- operate_type: zj_click
-  info:  鼠标左键
+  is_time: 1
+- operate_type: zj_click1
+  info:  鼠标向下移动，再左键单击
+  is_time: 1
 - element_info: //*[@id="pane-second"]/form/div[2]/div/div[1]/div[3]/table/tbody/tr/td[1]/div/div/div/div/div[1]/input
   find_type: xpath
   operate_type: click
@@ -161,12 +170,16 @@ testcase:
   find_type: id
   operate_type: click
   info:  点击output tab
-  is_time: 1
+  is_time: 0.3
+- element_info: "//*[@id='step-index']//div[@class='el-loading-mask' and @style='display: none;']"
+  find_type: xpath
+  info:  等待加载圈消失
+  is_time: 0.5
 - element_info: //*[@id="pane-output_output"]/div/div[1]/div[1]/div/div[1]/div/div[2]/i[1]
   find_type: xpath
   operate_type: click
   info:  点击"添加全部字段"
-  is_time: 0.3
+  is_time: 0.5
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
@@ -221,10 +234,21 @@ testcase:
   msg: /tmp/lisatest/test_aggregate
   info: 输入路径名称
   is_time: 0.5
+- element_info: //*[@for='mode']/following-sibling::div//input
+  find_type: xpath
+  operate_type: click
+  info: 点击‘模式'下拉框
+  is_time: 0.3
+- element_info: //*[text()='覆盖']
+  find_type: xpath
+  operate_type: click
+  info: 选择‘覆盖'
+  is_time: 0.5
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
   info: 在执行计划设置页，点击‘确定'按钮
+  is_time: 1.5
 - element_info: //span[contains(text(),'保存')]
   find_type: xpath
   operate_type: click
