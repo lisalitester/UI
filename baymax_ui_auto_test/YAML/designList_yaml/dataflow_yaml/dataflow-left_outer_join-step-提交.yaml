@@ -1,5 +1,5 @@
 testinfo:
-- id: test_a456
+- id: test_a460
   title: 校验“dataflow-left_outer_join-step-提交”
   launch: 0
   info: 先进入designlist
@@ -7,7 +7,7 @@ testcase:
 #- element_info: //*[contains(text(),"根目录")]/parent::span/preceding-sibling::span/i[2]
 #  find_type: xpath
 #  operate_type: click
-#  info: 点击‘Flows'前的文件夹图标
+#  info: 点击‘根目录'前的文件夹图标
 #  is_time: 1
 - element_info: //*[contains(text(),"根目录")]/parent::span
   find_type: xpath
