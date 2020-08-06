@@ -15,7 +15,8 @@ testcase:
   info: 点击‘根目录'的文字
 - element_info: //span[text()="auto_flow"]
   find_type: xpath
-  operate_type: click
+  js: "arguments[0].click();"
+  operate_type: execute_script
   info: 点击‘auto_flow'的文字
   is_time: 1
 - element_info: //span[contains(text(),"新建")]
@@ -77,21 +78,32 @@ testcase:
   operate_type: click
   info:  点击output tab
   is_time: 1
+- element_info: "//*[@class='el-dialog__body']//div[@class='el-loading-mask' and @style='display: none;']"
+  find_type: xpath
+  info:  等待加载圈消失
+  is_time: 0.5
 - element_info: //*[contains(@class,'el-tooltip el-icon-copy-document')]
   find_type: xpath
-  operate_type: click
+  js: "arguments[0].click();"
+  operate_type: execute_script
   info:  点击"添加全部字段"
-  is_time: 0.3
+  is_time: 0.1
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
   info: 在数据集弹窗中 点击“确定”按钮
-  is_time: 1
+  is_time: 3
 - element_info: //div[contains(text(),'Gateway')]
   find_type: xpath
   operate_type: click
   info:  点击“Gateway”tab
-  is_time: 0.5
+  is_time: 1
+#- element_info: //div[contains(text(),'Gateway')]
+#  find_type: xpath
+#  js: "arguments[0].click();"
+#  operate_type: execute_script
+#  info:  点击“Gateway”tab
+#  is_time: 2
 - element_info: //*[@id="decision"]/i
   find_type: xpath
   operate_type: drag_el1
@@ -134,6 +146,10 @@ testcase:
   operate_type: click
   info: 点击”no“tab
   is_time: 1
+- element_info: "//*[@id='step-index']//div[@class='el-loading-mask' and @style='display: none;']"
+  find_type: xpath
+  info:  等待加载圈消失
+  is_time: 0.5
 - element_info: //*[@id="pane-no_output"]/div/div[1]/div[1]/div/div[1]/div/div[2]/i[1]
   find_type: xpath
   operate_type: click
@@ -143,21 +159,27 @@ testcase:
   find_type: id
   operate_type: click
   info: 点击”yes“tab
-  is_time: 1
+  is_time: 0.1
+- element_info: "//*[@id='step-index']//div[@class='el-loading-mask' and @style='display: none;']"
+  find_type: xpath
+  info:  等待加载圈消失
+  is_time: 0.5
 - element_info: //*[@id="pane-yes_output"]/div/div[1]/div[1]/div/div[1]/div/div[2]/i[1]
   find_type: xpath
   operate_type: click
   info:  点击添加全部字段
-  is_time: 1
+  is_time: 2
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
   info: 点击‘确定'按钮
+  is_time: 3
 - element_info: //div[contains(text(), "IO")]
   find_type: xpath
-  operate_type: click
+  js: "arguments[0].click();"
+  operate_type: execute_script
   info:  点击“IO”tab
-  is_time: 0.5
+  is_time: 1
 - element_info: //p[text()="sink"]/preceding-sibling::i
   find_type: xpath
   operate_type: drag_el1
@@ -172,12 +194,6 @@ testcase:
   find_type: xpath
   operate_type: drag_el
   element_info2: //*[@id="sink_1"]/following-sibling::div[1]
-  find_type2: xpath
-  info:  连接2个节点
-- element_info: //*[@id="decision_1"]/following-sibling::div[4]
-  find_type: xpath
-  operate_type: drag_el
-  element_info2: //*[@id="sink_2"]/following-sibling::div[1]
   find_type2: xpath
   info:  连接2个节点
 - element_info: sink_1
@@ -210,19 +226,42 @@ testcase:
 - element_info: path
   find_type: name
   operate_type: send_keys
-  msg: /tmp/lisatest/test_decision
+  msg: /tmp/lisatest/test_decision_yes
   info: 输入路径名称
-  is_time: 0.5
+  is_time: 1
+- element_info: //*[@for='mode']/following-sibling::div//input
+  find_type: xpath
+  js: "arguments[0].click();"
+  operate_type: execute_script
+  info: 点击‘模式'下拉框
+  is_time: 0.3
+- element_info: //*[text()='覆盖']
+  find_type: xpath
+  operate_type: click
+  info: 选择‘覆盖'
+  is_time: 1
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
   info: 在执行计划设置页，点击‘确定'按钮
+  is_time: 2
+- element_info: //*[@id="decision_1"]/following-sibling::div[4]
+  find_type: xpath
+  operate_type: drag_el
+  element_info2: //*[@id="sink_2"]/following-sibling::div[1]
+  find_type2: xpath
+  info:  连接2个节点
   is_time: 1
+#- element_info: sink_2
+#  find_type: id
+#  operate_type: move_to_element
+#  info:  移动到“sink_2”
+#  is_time: 0.5
 - element_info: sink_2
   find_type: id
   operate_type: double_click
   info:  双击“sink_2”
-  is_time: 0.5
+  is_time: 1
 - element_info: //*[@id="pane-0"]/div/div[1]/div[1]/div/div[1]/div/div[2]/i[1]
   find_type: xpath
   operate_type: click
@@ -248,16 +287,29 @@ testcase:
 - element_info: path
   find_type: name
   operate_type: send_keys
-  msg: /tmp/lisatest/test_decision
+  msg: /tmp/lisatest/test_decision_no
   info: 输入路径名称
+  is_time: 3
+- element_info: //*[@for='mode']/following-sibling::div//input
+  find_type: xpath
+  js: "arguments[0].click();"
+  operate_type: execute_script
+  info: 点击‘模式'下拉框
+  is_time: 0.3
+- element_info: //*[text()='覆盖']
+  find_type: xpath
+  operate_type: click
+  info: 选择‘覆盖'
   is_time: 0.5
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
   info: 在执行计划设置页，点击‘确定'按钮
+  is_time: 2
 - element_info: //span[contains(text(),'保存')]
   find_type: xpath
-  operate_type: click
+  js: "arguments[0].click();"
+  operate_type: execute_script
   info: 在design页 点击“保存”按钮
   is_time: 1
 - element_info: //span[contains(text(),'提交')]
