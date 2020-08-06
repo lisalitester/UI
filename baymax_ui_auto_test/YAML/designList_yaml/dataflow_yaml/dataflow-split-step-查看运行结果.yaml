@@ -18,20 +18,10 @@ testcase:
   operate_type: click
   info: 点击‘auto_flow'的文字
   is_time: 1
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
+- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[4]/div[2]/table/tbody/tr[1]/td[8]/div/div/span[2]/button/span
   find_type: xpath
   operate_type: click
-  info:  点击“第一行”flow的名字
-  is_time: 0.5
-- element_info: //*[@id="operationPanel"]/div[1]/div/div[1]/div/div/button[2]/span/i
-  find_type: xpath
-  operate_type: click
-  info: 点击‘流程设计'的下拉箭头
-  is_time: 1
-- element_info: //*[contains(text(),'流程历史')]
-  find_type: xpath
-  operate_type: click
-  info:  点击
+  info:  点击“第一行”flow的执行按钮
   is_time: 1
 check:
 - element_info: //table/tbody/tr[1]/td[7]/div/span
