@@ -37,9 +37,40 @@ check:
 - element_info: //table/tbody/tr[1]/td[7]/div/span
   find_type: xpath
   operate_type: refresh_get_attr
-  time_out: 90
+  time_out: 180
   attr: class
   check: current_contain_expect
   expect_value: success
   info: 断言执行历史的进度最终状态为“success”
-
+- element_info: '//*[@class="el-dialog__body"]//*[@class="el-loading-mask" and @style="display: none;"]'
+  find_type: xpath
+  info:  等待加载圈消失
+  is_time: 1
+- element_info: //table/tbody/tr[1]/td[2]/div/span
+  find_type: xpath
+  operate_type: click
+  info:  点击流程名称
+  is_time: 1
+- element_info: //*[text()='输出']
+  find_type: xpath
+  operate_type: click
+  info:  点击输出tab
+  is_time: 1
+- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[4]/div[2]/table/tbody/tr/td[10]/div/div/span/button/span
+  find_type: xpath
+  operate_type: click
+  info:  点击预览按钮
+  is_time: 1
+- element_info: '//*[@class="el-dialog__body"]//*[@class="el-loading-mask" and @style="display: none;"]'
+  find_type: xpath
+  info:  等待加载圈消失
+  is_time: 1
+- element_info: //*[contains(text(),'预览数据集')]
+  find_type: xpath
+  info:  断言预览数据集弹框存在
+- element_info: //*[@aria-label='预览数据集']//tbody/tr
+  find_type: xpaths
+  operate_type: get_size
+  check: current_equal_expect
+  expect_value: 3
+  info: 断言数据总条数是3
