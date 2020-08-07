@@ -37,7 +37,7 @@ check:
 - element_info: //table/tbody/tr[1]/td[7]/div/span
   find_type: xpath
   operate_type: refresh_get_attr
-  time_out: 60
+  time_out: 180
   attr: class
   check: current_contain_expect
   expect_value: success
