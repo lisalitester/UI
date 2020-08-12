@@ -15,9 +15,10 @@ testcase:
   info: 点击‘根目录'的文字
 - element_info: //span[text()="auto_flow"]
   find_type: xpath
-  operate_type: click
+  js: "arguments[0].click();"
+  operate_type: execute_script
   info: 点击‘auto_flow'的文字
-  is_time: 1
+  is_time: 2
 - element_info: //span[contains(text(),"新建")]
   find_type: xpath
   operate_type: click
@@ -154,6 +155,7 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击type下拉框
+  is_time: 0.5
 - element_info: //span[contains(text(),'string')]
   find_type: xpath
   operate_type: click
@@ -174,6 +176,7 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击type下拉框
+  is_time: 0.5
 - element_info: //span[contains(text(),'string')]
   find_type: xpaths
   index: 1
@@ -250,7 +253,9 @@ testcase:
   operate_type: send_keys
   msg: /tmp/lisatest/test_colsplit
   info: 输入路径名称
-  is_time: 0.5
+  is_time: 2
+- operate_type: zj_click1
+  info: 点击‘模式'下拉框
 - element_info: //*[@for='mode']/following-sibling::div//input
   find_type: xpath
   operate_type: click
@@ -273,9 +278,10 @@ testcase:
   is_time: 1
 - element_info: //span[contains(text(),'提交')]
   find_type: xpath
-  operate_type: click
+  operate_type: execute_script
+  js: "arguments[0].click();"
   info:  点击“提交”按钮
-  is_time: 1
+  is_time: 2
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
