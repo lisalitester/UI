@@ -1,14 +1,9 @@
 testinfo:
-- id: test_a434
-  title: 校验“dataflow-aggregate-step-提交”
+- id: test_a429
+  title: 校验“rtcflow-watermarek-transform-step-提交”
   launch: 0
   info: 先进入designlist
 testcase:
-#- element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
-#  find_type: xpath
-#  operate_type: click
-#  info: 点击‘Flows'前的文件夹图标
-#  is_time: 1
 - element_info: //*[contains(text(),"根目录")]/parent::span
   find_type: xpath
   operate_type: click
@@ -26,13 +21,25 @@ testcase:
 - element_info: //*[@for='name']/following::input[contains(@placeholder,"请输入")]
   find_type: xpath
   operate_type: send_keys
-  msg: test_aggregate_auto_+随机数
-  info: 输入data_flow名称
+  msg: test_watermark_transfrom_rtc_auto_+随机数
+  info: 输入rtc_flow名称
+- element_info: //*[contains(text(),"流程类型")]/parent::div/div/div/div/input
+  find_type: xpaths
+  index: 1
+  operate_type: click
+  info: 点击‘流程类型’输入框
+  is_time: 0.5
+- element_info: //span[text()='Flink流处理']
+  find_type: xpaths
+  index: 1
+  operate_type: click
+  info: 选择‘Flink流处理’
+  is_time: 0.5
 - element_info: //*[contains(text(),"确定")]
   find_type: xpath
   operate_type: click
   info: 点击‘确定’按钮
-  is_time: 0.1
+  is_time: 0.5
 - element_info: "//*[@id='flow']//div[@class='el-loading-mask' and @style='display: none;']"
   find_type: xpath
   info:  等待加载圈消失
@@ -41,7 +48,7 @@ testcase:
   find_type: xpath
   operate_type: click
   info:  点击“第一行”flow的名字
-  is_time: 1.5
+  is_time: 0.5
 - element_info: //div[contains(text(), "IO")]
   find_type: xpath
   operate_type: click
@@ -50,9 +57,8 @@ testcase:
 - element_info: //p[text()="source"]/preceding-sibling::i
   find_type: xpath
   operate_type: drag_el1
-  move_to: (-900, -210)
+  move_to: (-800, 0)
   info:  拖拽
-#  is_time: 2
 - element_info: source_1
   find_type: id
   operate_type: double_click
@@ -66,31 +72,41 @@ testcase:
 - element_info: searchInput
   find_type: name
   operate_type: send_keys
-  msg: test_colsplit_source
-  info: 数据集查询输入“test_colsplit_source”
+  msg: test_kafka_click
+  info: 数据集查询输入“test_kafka_click”
 - element_info: //*[@name='searchInput']/following-sibling::div
   find_type: xpath
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
   is_time: 1
-- element_info: "//*[@class='el-dialog__body']//div[@class='el-loading-mask' and @style='display: none;']"
+- element_info: '//*[@class="el-dialog__body"]//*[@class="el-loading-mask" and @style="display: none;"]'
   find_type: xpath
   info:  等待加载圈消失
-  is_time: 0.5
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_colsplit_source']
+  is_time: 1
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'test_kafka_click')]
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“test_colsplit_source”
+  info:  双击选中“test_kafka_click”
+  is_time: 0.3
+- element_info: //*[text()='watermark']/parent::div/div/div/div/input
+  find_type: xpath
+  operate_type: click
+  info:  点击“watermark”输入框
+  is_time: 0.3
+- element_info: //span[text()='clickTime']
+  find_type: xpath
+  operate_type: click
+  info:  选择“clickTime”
   is_time: 0.3
 - element_info: tab-output_output
   find_type: id
   operate_type: click
   info:  点击output tab
-  is_time: 0.1
-- element_info: "//*[@class='el-dialog__body']//div[@class='el-loading-mask' and @style='display: none;']"
+  is_time: 0.5
+- element_info: '//*[@class="el-dialog__body"]//*[@class="el-loading-mask" and @style="display: none;"]'
   find_type: xpath
   info:  等待加载圈消失
-  is_time: 0.5
+  is_time: 1
 - element_info: //*[contains(@class,'el-tooltip el-icon-copy-document')]
   find_type: xpath
   operate_type: click
@@ -100,82 +116,47 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 在数据集弹窗中 点击“确定”按钮
-  is_time: 2
-- element_info: //div[contains(text(),'Group')]
+  is_time: 3
+- element_info: //div[contains(text(),'Transform')]
   find_type: xpath
   operate_type: click
-  info:  点击“Group”tab
+  info:  点击“Transform”tab
   is_time: 0.5
-- element_info: //*[@id="aggregate"]/i
+- element_info: //*[@id="watermark"]/i
   find_type: xpath
   operate_type: drag_el1
   move_to: (-600, 0)
   info:  拖拽
+  is_time: 2
+- element_info: //*[@id="transform"]/i
+  find_type: xpath
+  operate_type: drag_el1
+  move_to: (-400, 0)
+  info:  拖拽
+  is_time: 2
 - element_info: //*[@fill="transparent"]
   find_type: xpath
   operate_type: drag_el
-  element_info2: //*[@id="aggregate_1"]/following-sibling::div[1]
+  element_info2: //*[@id="watermark_1"]/following-sibling::div[1]
   find_type2: xpath
   info:  连接2个节点
-- element_info: aggregate_1
+  is_time: 2
+- element_info: watermark_1
   find_type: id
   operate_type: double_click
-  info:  双击“aggregate_1”
+  info:  双击“wataermark_1”
   is_time: 1
-- element_info: //*[@id="pane-0"]/div/div[1]/div[1]/div/div[1]/div/div[2]/i[1]
-  find_type: xpath
-  operate_type: click
-  info:  点击"添加全部字段"
-  is_time: 0.3
-- element_info: tab-second
+- element_info: //*[text()='timeColumn']/parent::div/div/div/div/input
   find_type: id
-  operate_type: click
-  info:  点击参数 tab
+  operate_type: double_click
+  info:  选择“timeColumn”
   is_time: 1
-- element_info: //*[@class='el-select__input is-small']
+- element_info: //*[text()='clickTime']
   find_type: xpath
   operate_type: click
-  info: 在aggregate弹窗中 点击“groupBy”下拉框
-  is_time: 0.5
-- element_info: //ul//span[contains(text(), "name")]
-  find_type: xpath
-  operate_type: click
-  info:  选择“name”选项
+  index: 1
+  info:  选择“clickTime”
   is_time: 1
-- element_info: //label[text()='groupBy']
-  find_type: xpath
-  operate_type: move_to_element
-  info:  移动到元素
-  is_time: 1
-- operate_type: zj_click
-  info:  鼠标左键单击
-  is_time: 1
-- element_info: //*[@id="pane-second"]/form/div[2]/div/div[1]/div[3]/table/tbody/tr/td[1]/div/div/div/div/div[1]/input
-  find_type: xpath
-  operate_type: click
-  info: 在aggregate弹窗中 点击“aggregate”下拉框
-  is_time: 1
-- element_info: /html/body/div[8]/div[1]/div[1]/ul/li[3]/span
-  find_type: xpath
-  operate_type: click
-  info: 选择“age”选项
-  is_time: 0.5
-- element_info: //*[@id="pane-second"]/form/div[2]/div/div[1]/div[3]/table/tbody/tr/td[2]/div/div/div/div/div[1]/input
-  find_type: xpath
-  operate_type: click
-  info: 点击“fuction”列
-  is_time: 1
-- element_info: //span[(text()='count')]
-  find_type: xpath
-  operate_type: click
-  info:  选择“count”选项
-  is_time: 0.5
-- element_info: //*[@id="pane-second"]/form/div[2]/div/div[1]/div[3]/table/tbody/tr/td[3]/div/div/div/div/input
-  find_type: xpath
-  operate_type: send_keys
-  msg: count
-  info: 输入别名
-  is_time: 0.5
 - element_info: tab-output_output
   find_type: id
   operate_type: click
@@ -189,12 +170,63 @@ testcase:
   find_type: xpath
   operate_type: click
   info:  点击"添加全部字段"
-  is_time: 0.5
+  is_time: 0.3
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
   info: 在数据集弹窗中 点击“确定”按钮
-  is_time: 3
+  is_time: 2
+- element_info: //*[@id="watermark_1"]/following-sibling::div[2]
+  find_type: xpath
+  operate_type: drag_el
+  element_info2: //*[@id="transform_1"]/following-sibling::div
+  find_type2: xpath
+  info:  连接2个节点
+- element_info: transform_1
+  find_type: id
+  operate_type: double_click
+  info:  双击“transform_1”
+  is_time: 1
+- element_info: //*[@id="pane-0"]/div/div[1]/div[1]/div/div[1]/div/div[2]/i[1]
+  find_type: xpath
+  operate_type: click
+  info:  点击添加全部字段
+  is_time: 1
+- element_info: tab-second
+  find_type: id
+  operate_type: click
+  info:  点击参数tab
+  is_time: 0.3
+- element_info: //*[@class='ace_text-input']
+  find_type: xpath
+  operate_type: zj_click
+  info: 鼠标左键
+  is_time: 1
+- element_info: //textarea[@class='ace_text-input']
+  find_type: xpath
+  operate_type: send_keys
+  msg: ltrim(username) as username1
+  info: 在expressions窗口输入语句
+  is_time: 1
+- element_info: tab-output_output
+  find_type: id
+  operate_type: click
+  info:  点击output tab
+  is_time: 0.3
+- element_info: "//*[@id='step-index']//div[@class='el-loading-mask' and @style='display: none;']"
+  find_type: xpath
+  info:  等待加载圈消失
+  is_time: 0.5
+- element_info: //*[@id="pane-output_output"]/div/div[1]/div[1]/div/div[1]/div/div[2]/i[1]
+  find_type: xpath
+  operate_type: click
+  info:  点击"添加全部字段"
+  is_time: 0.3
+- element_info: //span[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: click
+  info: 在数据集弹窗中 点击“确定”按钮
+  is_time: 2
 - element_info: //div[contains(text(), "IO")]
   find_type: xpath
   js: "arguments[0].click();"
@@ -204,19 +236,20 @@ testcase:
 - element_info: //p[text()="sink"]/preceding-sibling::i
   find_type: xpath
   operate_type: drag_el1
-  move_to: (-300, -210)
+  move_to: (-200, 0)
   info:  拖拽
-- element_info: //*[@id="aggregate_1"]/following-sibling::div[2]
+- element_info: //*[@id="transform_1"]/following-sibling::div[2]
   find_type: xpath
   operate_type: drag_el
   element_info2: //*[@id="sink_1"]/following-sibling::div
   find_type2: xpath
   info:  连接2个节点
+#  is_time: 2
 - element_info: sink_1
   find_type: id
   operate_type: double_click
   info:  双击“sink_1”
-  is_time: 0.5
+  is_time: 1
 - element_info: //*[@id="pane-0"]/div/div[1]/div[1]/div/div[1]/div/div[2]/i[1]
   find_type: xpath
   operate_type: click
@@ -227,49 +260,46 @@ testcase:
   operate_type: click
   info: 在sink弹窗中 点击“参数”搜索按钮
   is_time: 1
-- element_info: dataset
-  find_type: name
-  operate_type: send_keys
-  msg: test_aggregate_sink_+随机数
-  info: 输入数据集名称
-  is_time: 0.5
-- element_info: schema
-  find_type: name
-  operate_type: send_keys
-  msg: test_aggregate_schema_+随机数
-  info: 输入元数据名称
-  is_time: 1
-- element_info: path
-  find_type: name
-  operate_type: send_keys
-  msg: /tmp/lisatest/test_aggregate
-  info: 输入路径名称
-  is_time: 1
-- element_info: //*[@for='mode']/following-sibling::div//input
+- element_info: //*[@name='datasetName']/parent::div/div/button/i
   find_type: xpath
   operate_type: click
-  info: 点击‘模式'下拉框
-  is_time: 0.3
-- element_info: //*[text()='覆盖']
+  info: 在sink弹窗中 点击“datasetName”搜索按钮
+  is_time: 1
+- element_info: searchInput
+  find_type: name
+  operate_type: send_keys
+  msg: kafka_hdfs_rtc7
+  info: 数据集查询输入“kafka_hdfs_rtc7“
+- element_info: //*[@name='searchInput']/following-sibling::div
   find_type: xpath
   operate_type: click
-  info: 选择‘覆盖'
+  info:  点击“数据集查询输入框后的”搜索按钮
+  is_time: 1
+- element_info: "//*[@class='el-dialog__body']//div[@class='el-loading-mask' and @style='display: none;']"
+  find_type: xpath
+  info:  等待加载圈消失
   is_time: 0.5
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='kafka_hdfs_rtc7']
+  find_type: xpath
+  operate_type: double_click
+  info:  双击选中“kafka_hdfs_rtc7”
+  is_time: 2
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
   info: 在执行计划设置页，点击‘确定'按钮
-  is_time: 1.5
+  is_time: 0.5
 - element_info: //span[contains(text(),'保存')]
   find_type: xpath
-  operate_type: click
+  js: "arguments[0].click();"
+  operate_type: execute_script
   info: 在design页 点击“保存”按钮
   is_time: 1
 - element_info: //span[contains(text(),'提交')]
   find_type: xpath
   operate_type: click
   info:  点击“提交”按钮
-  is_time: 1
+  is_time: 3
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
@@ -279,10 +309,14 @@ check:
   find_type: id
   check: displayed
   info: 断言“source_1”在design里存在
-- element_info: aggregate_1
+- element_info: watermark_1
   find_type: id
   check: displayed
-  info: 断言“aggregate_1”在design里存在
+  info: 断言“watermark_1”在design里存在
+- element_info: transfrom_1
+  find_type: id
+  check: displayed
+  info: 断言“transfrom_1”在design里存在
 - element_info: sink_1
   find_type: id
   check: displayed

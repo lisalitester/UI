@@ -73,7 +73,7 @@ testcase:
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
   is_time: 1
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'test_colsplit_source')]
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_colsplit_source']
   find_type: xpath
   operate_type: double_click
   info:  双击选中“数据集test_colsplit_source”
