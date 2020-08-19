@@ -13,11 +13,6 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击‘根目录'的文字
-#- element_info: //span[text()="auto_flow"]
-#  find_type: xpath
-#  operate_type: click
-#  info: 点击‘auto_flow'的文字
-#  is_time: 1
 - element_info: //span[text()="auto_flow"]
   find_type: xpath
   js: "arguments[0].click();"

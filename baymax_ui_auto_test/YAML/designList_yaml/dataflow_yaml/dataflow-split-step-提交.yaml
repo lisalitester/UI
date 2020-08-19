@@ -15,9 +15,10 @@ testcase:
   info: 点击‘根目录'的文字
 - element_info: //span[text()="auto_flow"]
   find_type: xpath
-  operate_type: click
+  js: "arguments[0].click();"
+  operate_type: execute_script
   info: 点击‘auto_flow'的文字
-  is_time: 1
+  is_time: 2
 - element_info: //span[contains(text(),"新建")]
   find_type: xpath
   operate_type: click
@@ -66,7 +67,7 @@ testcase:
   operate_type: send_keys
   msg: test_colsplit_source
   info: 数据集查询输入“test_colsplit_source”
-  is_time: 0.5
+  is_time: 1
 - element_info: //*[@name='searchInput']/following-sibling::div
   find_type: xpath
   operate_type: click
@@ -99,7 +100,7 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 在数据集弹窗中 点击“确定”按钮
-  is_time: 1
+  is_time: 2
 - element_info: //div[contains(text(),'Set')]
   find_type: xpath
   operate_type: click

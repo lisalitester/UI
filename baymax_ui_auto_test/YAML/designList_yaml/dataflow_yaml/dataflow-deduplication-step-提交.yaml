@@ -1,5 +1,5 @@
 testinfo:
-- id: test_a446
+- id: test_a452
   title: 校验“dataflow-deduplication-step-提交”
   launch: 0
   info: 先进入designlist
@@ -15,7 +15,8 @@ testcase:
   info: 点击‘根目录'的文字
 - element_info: //span[text()="auto_flow"]
   find_type: xpath
-  operate_type: click
+  js: "arguments[0].click();"
+  operate_type: execute_script
   info: 点击‘auto_flow'的文字
   is_time: 1
 - element_info: //span[contains(text(),"新建")]
@@ -51,6 +52,7 @@ testcase:
   operate_type: drag_el1
   move_to: (-900, -210)
   info:  拖拽
+  is_time: 1
 - element_info: source_1
   find_type: id
   operate_type: double_click
@@ -75,7 +77,7 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'test_colsplit_source')]
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_colsplit_source']
   find_type: xpath
   operate_type: double_click
   info:  双击选中“test_colsplit_source”
@@ -141,9 +143,14 @@ testcase:
   operate_type: click
   info:  选择“age”选项
   is_time: 1
-- operate_type: zj_click1
-  info:  先下移，再点击鼠标左键
-#  is_time: 1
+- element_info: //label[text()='columns']
+  find_type: xpath
+  operate_type: move_to_element
+  info:  移动到元素
+  is_time: 1
+- operate_type: zj_click
+  info:  鼠标左键单击
+  is_time: 1
 - element_info: //*[@id="pane-second"]/form/div[2]/div/div/div[1]/input
   find_type: xpath
   operate_type: click

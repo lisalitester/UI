@@ -4,20 +4,21 @@ testinfo:
   launch: 0
   info: 先进入designList
 testcase:
-- element_info: //*[contains(text(),"Flows")]/parent::span/preceding-sibling::span/i[2]
+#- element_info: //*[contains(text(),"根目录")]/parent::span/preceding-sibling::span/i[2]
+#  find_type: xpath
+#  operate_type: click
+#  info: 点击‘根目录'前的文件夹图标
+#  is_time: 1
+- element_info: //*[contains(text(),"根目录")]/parent::span
   find_type: xpath
   operate_type: click
-  info: 点击‘Flows'前的文件夹图标
-  is_time: 1
-- element_info: //*[contains(text(),"Flows")]/parent::span
-  find_type: xpath
-  operate_type: click
-  info: 点击‘Flows'的文字
+  info: 点击‘根目录'的文字
 - element_info: //span[text()="auto_flow"]
   find_type: xpath
-  operate_type: click
+  js: "arguments[0].click();"
+  operate_type: execute_script
   info: 点击‘auto_flow'的文字
-  is_time: 1
+  is_time: 2
 - element_info: //span[contains(text(),"新建")]
   find_type: xpath
   operate_type: click
@@ -60,17 +61,17 @@ testcase:
 - element_info: searchInput
   find_type: name
   operate_type: send_keys
-  msg: sjj_ts
-  info: 数据集查询输入“sjj_ts”
+  msg: test_colsplit_source
+  info: 数据集查询输入“test_colsplit_source”
 - element_info: //*[@name='searchInput']/following-sibling::div
   find_type: xpath
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
   is_time: 1
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'sjj_ts')]
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'test_colsplit_source')]
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“数据集sjj_ts”
+  info:  双击选中“数据集test_colsplit_source”
   is_time: 0.3
 - element_info: tab-output_output
   find_type: id
@@ -106,17 +107,17 @@ testcase:
 - element_info: searchInput
   find_type: name
   operate_type: send_keys
-  msg: sjj_ts
-  info: 数据集查询输入“sjj_ts”
+  msg: test_colsplit_source
+  info: 数据集查询输入“test_colsplit_source”
 - element_info: //*[@name='searchInput']/following-sibling::div
   find_type: xpath
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
   is_time: 1
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'sjj_ts')]
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'test_colsplit_source')]
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“数据集sjj_ts”
+  info:  双击选中“数据集test_colsplit_source”
   is_time: 0.3
 - element_info: tab-output_output
   find_type: id

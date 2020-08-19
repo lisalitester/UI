@@ -15,9 +15,10 @@ testcase:
   info: 点击‘根目录'的文字
 - element_info: //span[text()="auto_flow"]
   find_type: xpath
-  operate_type: click
+  js: "arguments[0].click();"
+  operate_type: execute_script
   info: 点击‘auto_flow'的文字
-  is_time: 1
+  is_time: 2
 - element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[4]/div[2]/table/tbody/tr[1]/td[8]/div/div/span[2]/button/span
   find_type: xpath
   operate_type: click
@@ -50,7 +51,7 @@ check:
   operate_type: click
   info:  点击输出tab
   is_time: 1
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[4]/div[2]/table/tbody/tr/td[10]/div/div/span/button/span
+- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[4]/div[2]/table/tbody/tr[2]/td[10]/div/div/span/button/span
   find_type: xpath
   operate_type: click
   info:  点击预览按钮

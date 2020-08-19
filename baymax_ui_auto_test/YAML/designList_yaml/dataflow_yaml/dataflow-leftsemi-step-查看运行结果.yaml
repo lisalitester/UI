@@ -1,5 +1,5 @@
 testinfo:
-- id: test_a465
+- id: test_a471
   title: 校验“dataflow-leftsemi-step-查看运行结果”
   launch: 0
   info: 先进入designlist
@@ -15,9 +15,10 @@ testcase:
   info: 点击‘根目录'的文字
 - element_info: //span[text()="auto_flow"]
   find_type: xpath
-  operate_type: click
+  js: "arguments[0].click();"
+  operate_type: execute_script
   info: 点击‘auto_flow'的文字
-  is_time: 1
+  is_time: 2
 - element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: click

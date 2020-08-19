@@ -1,5 +1,5 @@
 testinfo:
-- id: test_a462
+- id: test_a468
   title: 校验“dataflow-right_outer_join-step-提交”
   launch: 0
   info: 先进入designlist
@@ -16,9 +16,10 @@ testcase:
   is_time: 1
 - element_info: //span[text()="auto_flow"]
   find_type: xpath
-  operate_type: click
+  js: "arguments[0].click();"
+  operate_type: execute_script
   info: 点击‘auto_flow'的文字
-  is_time: 1
+  is_time: 2
 - element_info: //span[contains(text(),"新建")]
   find_type: xpath
   operate_type: click
@@ -314,7 +315,7 @@ testcase:
   operate_type: send_keys
   msg: test_right_join_schema_+随机数
   info: 输入元数据名称
-  is_time: 1
+  is_time: 2
 - element_info: path
   find_type: name
   operate_type: send_keys
@@ -341,7 +342,7 @@ testcase:
   js: "arguments[0].click();"
   operate_type: execute_script
   info: 在design页 点击“保存”按钮
-  is_time: 1
+  is_time: 2
 - element_info: //span[contains(text(),'提交')]
   find_type: xpath
   operate_type: click

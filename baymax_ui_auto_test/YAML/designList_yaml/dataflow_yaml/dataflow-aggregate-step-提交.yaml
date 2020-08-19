@@ -244,7 +244,7 @@ testcase:
   operate_type: send_keys
   msg: /tmp/lisatest/test_aggregate
   info: 输入路径名称
-  is_time: 1
+  is_time: 2
 - element_info: //*[@for='mode']/following-sibling::div//input
   find_type: xpath
   operate_type: click

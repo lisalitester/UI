@@ -68,7 +68,7 @@ testcase:
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
   is_time: 1
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'test_colsplit_source')]
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_colsplit_source']
   find_type: xpath
   operate_type: double_click
   info:  双击选中“test_colsplit_source”
@@ -311,12 +311,12 @@ testcase:
   js: "arguments[0].click();"
   operate_type: execute_script
   info: 在design页 点击“保存”按钮
-  is_time: 1
+  is_time: 2
 - element_info: //span[contains(text(),'提交')]
   find_type: xpath
   operate_type: click
   info:  点击“提交”按钮
-  is_time: 1
+  is_time: 2
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
