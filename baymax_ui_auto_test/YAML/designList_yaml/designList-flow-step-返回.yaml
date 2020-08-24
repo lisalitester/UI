@@ -19,6 +19,25 @@ testcase:
   operate_type: execute_script
   info: 点击‘auto_flow'的文字
   is_time: 2
+- element_info: //span[contains(text(),"新建")]
+  find_type: xpath
+  operate_type: click
+  info: 点击'新建'
+- element_info: //*[@for='name']/following::input[contains(@placeholder,"请输入")]
+  find_type: xpath
+  operate_type: send_keys
+  msg: data_flow_+随机数
+  info: 输入data_flow名称
+  is_time: 0.5
+- element_info: //*[contains(text(),"确定")]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘确定’按钮
+  is_time: 0.5
+- element_info: "//*[@id='flow']//div[@class='el-loading-mask' and @style='display: none;']"
+  find_type: xpath
+  info:  等待加载圈消失
+  is_time: 0.5
 - element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: click
@@ -33,8 +52,4 @@ check:
 - element_info: //span[contains(text(),"新建")]
   find_type: xpath
   info: 断言‘新建’按钮存在
-- operate_type: get_current_url
-  check: current_equal_expect
-  expect_value: /#/designList?resId=718df21d-eed4-4243-a9a7-3043784d3005拼接值后+前host+拼接
-  info: 断言“当前的url”符合预期值
 

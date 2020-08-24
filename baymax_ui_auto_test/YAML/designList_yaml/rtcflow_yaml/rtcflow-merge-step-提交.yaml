@@ -63,6 +63,10 @@ testcase:
   operate_type: double_click
   info:  双击“source_1”
   is_time: 0.5
+- element_info: //*[@for='watermark']
+  find_type: xpath
+  info: 等待watermark出现
+  is_time: 0.5
 - element_info: //*[@class='el-icon-search']
   find_type: xpath
   operate_type: click
@@ -301,6 +305,16 @@ testcase:
   operate_type: double_click
   info:  双击选中“kafka_hdfs_rtc4”
   is_time: 2
+- element_info: //span[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: move_scrollbar_bottom
+  info:  移动到元素底部
+  is_time: 0.5
+- element_info: //span[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: click
+  info: 在执行计划设置页，点击‘确定'按钮
+  is_time: 0.5
 - element_info: sink_2
   find_type: id
   operate_type: move_to_element
@@ -321,7 +335,7 @@ testcase:
   operate_type: click
   info: 在sink弹窗中 点击“参数”搜索按钮
   is_time: 1
-- element_info: //*[@id="pane-second"]/form/div[1]/div/div/div/button/i
+- element_info: //*[@class="el-icon-search"]
   find_type: xpath
   operate_type: click
   info: 在sink弹窗中 点击“datasetName”搜索按钮
@@ -345,6 +359,11 @@ testcase:
   operate_type: double_click
   info:  双击选中“kafka_hdfs_rtc5”
   is_time: 2
+- element_info: //span[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: move_scrollbar_bottom
+  info:  移动到元素底部
+  is_time: 0.5
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click

@@ -63,6 +63,10 @@ testcase:
   operate_type: double_click
   info:  双击“source_1”
   is_time: 0.5
+- element_info: //*[@for='watermark']
+  find_type: xpath
+  info: 等待watermark出现
+  is_time: 0.5
 - element_info: //*[@class='el-icon-search']
   find_type: xpath
   operate_type: click
@@ -124,13 +128,13 @@ testcase:
 - element_info: //*[@id="split"]/i
   find_type: xpath
   operate_type: drag_el1
-  move_to: (-400, 0)
+  move_to: (-600, 0)
   info:  拖拽
   is_time: 2
 - element_info: //*[@fill="transparent"]
   find_type: xpath
   operate_type: drag_el
-  element_info2: //*[@id="split"]/following-sibling::div[1]
+  element_info2: //*[@id="split_1"]/following-sibling::div[1]
   find_type2: xpath
   info:  连接2个节点
   is_time: 2
@@ -185,16 +189,16 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@id="pane-output_output"]/div/div[1]/div[1]/div/div[1]/div/div[2]/i[1]
+- element_info: //*[@id="pane-o1_output"]/div/div[1]/div[1]/div/div[1]/div/div[2]/i[1]
   find_type: xpath
   operate_type: click
   info:  点击"添加全部字段"
-  is_time: 0.3
-- element_info: //span[contains(text(),'确定')]
+  is_time: 1
+- element_info: //div[@class='el-dialog__footer']//span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
   info: 在数据集弹窗中 点击“确定”按钮
-  is_time: 3
+  is_time: 2
 - element_info: //div[contains(text(), "IO")]
   find_type: xpath
   js: "arguments[0].click();"
@@ -206,11 +210,11 @@ testcase:
   operate_type: drag_el1
   move_to: (-300, 0)
   info:  拖拽
-- element_info: //p[text()="sink"]/preceding-sibling::i
-  find_type: xpath
-  operate_type: drag_el1
-  move_to: (-300, 200)
-  info:  拖拽
+#- element_info: //p[text()="sink"]/preceding-sibling::i
+#  find_type: xpath
+#  operate_type: drag_el1
+#  move_to: (-300, 200)
+#  info:  拖拽
 - element_info: //*[@id="split_1"]/following-sibling::div[3]
   find_type: xpath
   operate_type: drag_el
@@ -256,18 +260,23 @@ testcase:
   find_type: xpath
   operate_type: double_click
   info:  双击选中“kafka_hdfs_rtc8”
-  is_time: 2
+  is_time: 0.5
+- element_info: //span[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: move_scrollbar_bottom
+  info:  移动到元素底部
+  is_time: 1
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
   info: 点击‘确定'按钮
-  is_time: 2
+  is_time: 1
 - element_info: //span[contains(text(),'保存')]
   find_type: xpath
   js: "arguments[0].click();"
   operate_type: execute_script
   info: 在design页 点击“保存”按钮
-  is_time: 3
+  is_time: 2
 - element_info: //span[contains(text(),'提交')]
   find_type: xpath
   operate_type: click

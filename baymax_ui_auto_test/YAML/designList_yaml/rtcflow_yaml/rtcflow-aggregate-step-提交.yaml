@@ -64,8 +64,12 @@ testcase:
   find_type: id
   operate_type: double_click
   info:  双击“source_1”
+  is_time: 1
+- element_info: //*[@for='watermark']
+  find_type: xpath
+  info: 等待watermark出现
   is_time: 0.5
-- element_info: //*[@class='el-icon-search']
+- element_info: //*[@name='datasetName']/parent::div/div//i
   find_type: xpath
   operate_type: click
   info: 在source弹窗中 点击“数据集”搜索按钮
@@ -155,14 +159,19 @@ testcase:
   operate_type: click
   info: 在aggregate弹窗中 点击“groupBy”下拉框
   is_time: 0.5
-- element_info: //ul//span[contains(text(), "userId")]
+- element_info: //ul//span[contains(text(), "username")]
   find_type: xpath
   operate_type: click
-  info:  选择“userId”选项
+  info:  选择“username”选项
   is_time: 1
-- operate_type: zj_click1
-  info:  鼠标向下移动，再左键单击
-  is_time: 1
+- element_info: //*[@for='groupBy']
+  find_type: xpath
+  operate_type: move_to_element
+  info:  移动到‘groupBy’
+  is_time: 0.3
+- operate_type: zj_click
+  info:  左键单击
+  is_time: 0.5
 - element_info: //*[@id="dynamicTable"]/div[4]/div[1]/table/thead/tr/th[4]/div/i[1]
   find_type: xpath
   operate_type: click
@@ -175,7 +184,7 @@ testcase:
   is_time: 1
 - element_info: //span[text()='userId']
   find_type: xpaths
-  index: 2
+  index: 1
   operate_type: click
   info:  在“column”列中选择userId
   is_time: 0.3
@@ -267,9 +276,19 @@ testcase:
   is_time: 0.5
 - element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='kafka_hdfs_rtc']
   find_type: xpath
+  operate_type: move_scrollbar_bottom
+  info:  移动到元素底部
+  is_time: 0.5
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='kafka_hdfs_rtc']
+  find_type: xpath
   operate_type: double_click
   info:  双击选中“kafka_hdfs_rtc”
   is_time: 2
+- element_info: //span[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: move_scrollbar_bottom
+  info:  移动到元素底部
+  is_time: 0.5
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click

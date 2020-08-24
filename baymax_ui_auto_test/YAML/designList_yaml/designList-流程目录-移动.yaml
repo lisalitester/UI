@@ -40,6 +40,12 @@ testcase:
   operate_type: click
   info:  点击”移动“按钮
   is_time: 1
+- element_info: //*[@class='active name']/span[text()='auto_move']
+  find_type: xpaths
+  index: 1
+  operate_type: click
+  info:  点击”auto_move“目录
+  is_time: 1
 - element_info: //*[contains(text(),'确定')]
   find_type: xpath
   operate_type: click

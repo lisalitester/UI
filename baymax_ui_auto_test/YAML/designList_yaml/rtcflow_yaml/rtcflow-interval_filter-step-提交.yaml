@@ -63,6 +63,10 @@ testcase:
   operate_type: double_click
   info:  双击“source_1”
   is_time: 0.5
+- element_info: //*[@for='watermark']
+  find_type: xpath
+  info: 等待watermark出现
+  is_time: 0.5
 - element_info: //*[@class='el-icon-search']
   find_type: xpath
   operate_type: click
@@ -275,6 +279,11 @@ testcase:
   operate_type: double_click
   info:  双击选中“kafka_hdfs_rtc3”
   is_time: 2
+- element_info: //span[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: move_scrollbar_bottom
+  info:  移动到元素底部
+  is_time: 0.5
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
