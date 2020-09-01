@@ -1,6 +1,6 @@
 testinfo:
-- id: test_a476
-  title: 校验“dataflow-lookup-step-提交”
+- id: test_a480
+  title: 校验“dataflow-lookupTable-step-提交”
   launch: 0
   info: 先进入designlist
 testcase:

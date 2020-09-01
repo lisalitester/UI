@@ -61,6 +61,6 @@ check:
   find_type: xpaths
   operate_type: get_size
   check: current_equal_expect
-  expect_value: 1
-  info: 断言数据总条数是1
+  expect_value: 3
+  info: 断言数据总条数是3
 

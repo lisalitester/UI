@@ -1,5 +1,5 @@
 testinfo:
-- id: test_a475
+- id: test_a481
   title: 校验“dataflow-lookupTable-step-查看运行结果”
   launch: 0
   info: 先进入designlist

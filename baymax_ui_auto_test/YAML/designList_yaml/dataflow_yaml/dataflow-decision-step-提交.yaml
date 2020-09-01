@@ -244,8 +244,8 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 在执行计划设置页，点击‘确定'按钮
-  is_time: 2
-- element_info: //*[@id="decision_1"]/following-sibling::div[4]
+  is_time: 3
+- element_info: //*[@id="decision_1"]/following-sibling::div[5]
   find_type: xpath
   operate_type: drag_el
   element_info2: //*[@id="sink_2"]/following-sibling::div[1]
@@ -289,7 +289,15 @@ testcase:
   operate_type: send_keys
   msg: /tmp/lisatest/test_decision_no
   info: 输入路径名称
-  is_time: 3
+  is_time: 0.5
+- element_info: //*[text()='路径']
+  find_type: xpath
+  operate_type: move_to_element
+  info: 移动到‘路径’
+  is_time: 0.3
+- operate_type: zj_click
+  info: 直接点击鼠标左键
+  is_time: 0.3
 - element_info: //*[@for='mode']/following-sibling::div//input
   find_type: xpath
   js: "arguments[0].click();"

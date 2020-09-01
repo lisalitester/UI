@@ -153,7 +153,7 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 1
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'test_colsplit_source_test_colsplit')]
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_colsplit_source_test_colsplit']
   find_type: xpath
   operate_type: double_click
   info:  双击选中“数据集test_colsplit_source_test_colsplit”
@@ -210,26 +210,24 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 在sink弹窗中 点击“参数”搜索按钮
-  is_time: 1
-- element_info: //*[@id="pane-second"]/form/div[1]/div/div/div/button
-  find_type: xpath
-  operate_type: click
-  info: 在sink弹窗中 点击“数据集”搜索按钮
   is_time: 0.5
-- element_info: searchInput
+- element_info: dataset
   find_type: name
   operate_type: send_keys
-  msg: sjj_sink_hdfs
-  info: 数据集查询输入“sjj_sink_hdfs”
-- element_info: //*[@name='searchInput']/following-sibling::div
-  find_type: xpath
-  operate_type: click
-  info:  点击“数据集查询输入框后的”搜索按钮
+  msg: test_supplement_sink_+随机数
+  info: 输入数据集名称
+  is_time: 0.5
+- element_info: schema
+  find_type: name
+  operate_type: send_keys
+  msg: test_supplement_schema_+随机数
+  info: 输入元数据名称
   is_time: 1
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'sjj_sink_hdfs')]
-  find_type: xpath
-  operate_type: double_click
-  info:  双击选中“数据集sjj_sink_hdfs”
+- element_info: path
+  find_type: name
+  operate_type: send_keys
+  msg: /tmp/lisatest/test_supplement
+  info: 输入路径名称
   is_time: 2
 - element_info: //*[@for='mode']/following-sibling::div//input
   find_type: xpath

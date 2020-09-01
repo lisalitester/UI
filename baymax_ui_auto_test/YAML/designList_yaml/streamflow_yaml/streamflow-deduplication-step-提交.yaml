@@ -22,7 +22,7 @@ testcase:
   find_type: xpath
   operate_type: send_keys
   msg: test_deduplication_stream_auto_+随机数
-  info: 输入data_flow名称
+  info: 输入stream_flow名称
 - element_info: //*[contains(text(),"流程类型")]/parent::div/div/div/div/input
   find_type: xpaths
   index: 1
@@ -43,6 +43,22 @@ testcase:
 - element_info: "//*[@id='flow']//div[@class='el-loading-mask' and @style='display: none;']"
   find_type: xpath
   info:  等待加载圈消失
+  is_time: 0.5
+- element_info: //*[@placeholder='请输入...']
+  find_type: xpath
+  operate_type: clear
+  info: 清楚输入框
+  is_time: 0.5
+- element_info: //*[@placeholder='请输入...']
+  find_type: xpath
+  msg: test_deduplication_stream_auto
+  operate_type: send_keys
+  info:  在“请输入”框中输入搜索的关键字
+  is_time: 0.5
+- element_info: //*[@class='el-icon-search']
+  find_type: xpath
+  operate_type: click
+  info:  点击“搜索”按钮
   is_time: 0.5
 - element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath

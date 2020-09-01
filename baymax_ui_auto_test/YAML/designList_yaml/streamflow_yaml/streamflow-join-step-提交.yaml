@@ -45,6 +45,22 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
+- element_info: //*[@placeholder='请输入...']
+  find_type: xpath
+  operate_type: clear
+  info: 清楚输入框
+  is_time: 0.5
+- element_info: //*[@placeholder='请输入...']
+  find_type: xpath
+  msg: test_join_stream_auto
+  operate_type: send_keys
+  info:  在“请输入”框中输入搜索的关键字
+  is_time: 0.5
+- element_info: //*[@class='el-icon-search']
+  find_type: xpath
+  operate_type: click
+  info:  点击“搜索”按钮
+  is_time: 2
 - element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: click

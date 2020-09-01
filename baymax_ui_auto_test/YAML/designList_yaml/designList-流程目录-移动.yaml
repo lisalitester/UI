@@ -24,6 +24,7 @@ testcase:
   index: 0
   operate_type: get_text
   info:  获取“第一行的”名字
+  is_time: 0.5
 - element_info:  //*[starts-with(text(),'create_list')]
   find_type: xpaths
   index: 0
@@ -39,6 +40,12 @@ testcase:
   find_type: xpath
   operate_type: click
   info:  点击”移动“按钮
+  is_time: 1
+- element_info: //*[text()='根目录']
+  find_type: xpaths
+  index: 1
+  operate_type: click
+  info:  点击”根目录“
   is_time: 1
 - element_info: //*[@class='active name']/span[text()='auto_move']
   find_type: xpaths

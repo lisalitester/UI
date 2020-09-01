@@ -47,7 +47,7 @@ testcase:
   operate_type: drag_el1
   move_to: (-800, -210)
   info:  拖拽
-  is_time: 2
+  is_time: 1
 check:
 - element_info: source_1
   find_type: id

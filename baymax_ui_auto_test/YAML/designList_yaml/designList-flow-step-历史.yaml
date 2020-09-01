@@ -99,7 +99,7 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 在数据集弹窗中 点击“确定”按钮
-  is_time: 1
+  is_time: 2
 - element_info: //p[text()="source"]
   find_type: xpath
   operate_type: drag_el1

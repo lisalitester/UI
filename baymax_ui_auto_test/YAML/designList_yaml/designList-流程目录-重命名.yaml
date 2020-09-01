@@ -23,6 +23,7 @@ testcase:
   index: 0
   operate_type: get_text
   info:  获取“第一行的”名字
+  is_time: 0.5
 - element_info:  //*[starts-with(text(),'create_list')]
   find_type: xpaths
   index: 0

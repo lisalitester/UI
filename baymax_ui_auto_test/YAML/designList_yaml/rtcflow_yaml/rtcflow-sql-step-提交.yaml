@@ -64,6 +64,10 @@ testcase:
   operate_type: double_click
   info:  双击“source_1”
   is_time: 0.5
+- element_info: //*[@for='watermark']
+  find_type: xpath
+  info: 等待watermark出现
+  is_time: 0.5
 - element_info: //*[@class='el-icon-search']
   find_type: xpath
   operate_type: click
@@ -125,7 +129,7 @@ testcase:
 - element_info: //*[@id="sql"]/i
   find_type: xpath
   operate_type: drag_el1
-  move_to: (-600, 0)
+  move_to: (-400, 0)
   info:  拖拽
   is_time: 2
 - element_info: //*[@fill="transparent"]

@@ -162,7 +162,7 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 在数据集弹窗中 点击“确定”按钮
-  is_time: 2
+  is_time: 2.5
 - element_info: //div[contains(text(), "IO")]
   find_type: xpath
   js: "arguments[0].click();"
@@ -199,13 +199,13 @@ testcase:
 - element_info: dataset
   find_type: name
   operate_type: send_keys
-  msg: test_explode_sink_+随机数
+  msg: test_sql_sink_+随机数
   info: 输入数据集名称
   is_time: 0.5
 - element_info: schema
   find_type: name
   operate_type: send_keys
-  msg: test_explode_schema_+随机数
+  msg: test_sql_schema_+随机数
   info: 输入元数据名称
   is_time: 0.5
 - element_info: path
