@@ -202,9 +202,17 @@ testcase:
   operate_type: click
   info:  选择“userId”选项
   is_time: 1
-- operate_type: zj_click1
-  info:  鼠标向下移动，再左键单击
-  is_time: 1
+#- operate_type: zj_click1
+#  info:  鼠标向下移动，再左键单击
+#  is_time: 1
+- element_info: //*[text()='groupBy']
+  find_type: xpath
+  operate_type: move_to_element
+  info: 移动到groupBy
+  is_time: 0.3
+- operate_type: zj_click
+  info:  左键单击
+  is_time: 0.5
 - element_info: //*[text()="watermarkColumn"]/parent::div/div/div/div/input
   find_type: xpath
   operate_type: click

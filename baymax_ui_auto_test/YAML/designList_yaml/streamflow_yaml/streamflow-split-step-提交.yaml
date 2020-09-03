@@ -162,6 +162,11 @@ testcase:
   is_time: 2
 - element_info: //div[contains(text(),'Set')]
   find_type: xpath
+  operate_type: move_to_element
+  info:  移动到“set” tab
+  is_time: 1
+- element_info: //div[contains(text(),'Set')]
+  find_type: xpath
   operate_type: click
   info:  点击“Set”tab
   is_time: 0.5
@@ -234,7 +239,12 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击‘确定'按钮
-  is_time: 3
+  is_time: 2
+- element_info: //div[contains(text(), "IO")]
+  find_type: xpath
+  operate_type: move_to_element
+  info:  移动到“IO”tab
+  is_time: 1
 - element_info: //div[contains(text(), "IO")]
   find_type: xpath
   operate_type: click
@@ -309,7 +319,7 @@ testcase:
   find_type: id
   operate_type: double_click
   info:  双击“sink_2”
-  is_time: 0.5
+  is_time: 1
 - element_info: //*[@id="pane-0"]/div/div[1]/div[1]/div/div[1]/div/div[2]/i[1]
   find_type: xpath
   operate_type: click
@@ -348,12 +358,12 @@ testcase:
   js: "arguments[0].click();"
   operate_type: execute_script
   info: 在design页 点击“保存”按钮
-  is_time: 2
+  is_time: 2.5
 - element_info: //span[contains(text(),'提交')]
   find_type: xpath
   operate_type: click
   info:  点击“提交”按钮
-  is_time: 3
+  is_time: 2
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click

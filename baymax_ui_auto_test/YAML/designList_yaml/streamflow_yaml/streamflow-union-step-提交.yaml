@@ -252,7 +252,7 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 在数据集弹窗中 点击“确定”按钮
-  is_time: 2
+  is_time: 2.5
 - element_info: //div[contains(text(),'Set')]
   find_type: xpath
   operate_type: click

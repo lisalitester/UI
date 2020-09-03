@@ -46,7 +46,7 @@ check:
   time_out: 180
   expect_values: ['00','34','44']
   check: current_contain_expect
-  expect_value: '34'
+  expect_value: '44'
   info: 断言执行历史的进度最终进度为“44”
 - element_info: //table/tbody/tr[1]/td[2]/div/span
   find_type: xpath
@@ -62,7 +62,7 @@ check:
   find_type: xpath
   operate_type: refresh_until_element_appear
   time_out: 180
-  info:  等待数据出现
+  info:  等待预览出现
   is_time: 1
 - element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[4]/div[2]/table/tbody/tr/td[10]/div/div/span/button/span
   find_type: xpath
@@ -76,6 +76,14 @@ check:
 - element_info: //*[contains(text(),'预览数据集')]
   find_type: xpath
   info:  断言预览数据集弹框存在
+- element_info: //*[@class="tableListBtn"]//table/tbody
+  find_type: xpath
+  element_info2: //*[contains(text(),'刷新')]
+  find_type2: xpath
+  operate_type: refresh_button_until_element_appear
+  time_out: 180
+  info:  等待数据出现
+  is_time: 1
 - element_info: //*[@aria-label='预览数据集']//tbody/tr
   find_type: xpaths
   operate_type: get_size

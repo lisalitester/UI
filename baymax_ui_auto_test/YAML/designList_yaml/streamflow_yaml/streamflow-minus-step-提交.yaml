@@ -157,10 +157,13 @@ testcase:
   is_time: 0.3
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
-  js: "arguments[0].click();"
-  operate_type: execute_script
+  operate_type: click
   info: 在数据集弹窗中 点击“确定”按钮
   is_time: 3
+- element_info: //p[text()="source"]/preceding-sibling::i
+  find_type: xpath
+  operate_type: move_to_element
+  info:  移动到source
 - element_info: //p[text()="source"]/preceding-sibling::i
   find_type: xpath
   operate_type: drag_el1
@@ -211,8 +214,7 @@ testcase:
   is_time: 0.3
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
-  js: "arguments[0].click();"
-  operate_type: execute_script
+  operate_type: click
   info: 在数据集弹窗中 点击“确定”按钮
   is_time: 3
 - element_info: //div[contains(text(),'Set')]
@@ -360,7 +362,8 @@ testcase:
   is_time: 1.5
 - element_info: //span[contains(text(),'保存')]
   find_type: xpath
-  operate_type: click
+  js: "arguments[0].click();"
+  operate_type: execute_script
   info: 在design页 点击“保存”按钮
   is_time: 2
 - element_info: //span[contains(text(),'提交')]

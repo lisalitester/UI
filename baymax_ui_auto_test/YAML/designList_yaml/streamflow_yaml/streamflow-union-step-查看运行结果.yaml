@@ -72,6 +72,14 @@ check:
 - element_info: //*[contains(text(),'预览数据集')]
   find_type: xpath
   info:  断言预览数据集弹框存在
+- element_info: //*[@class="tableListBtn"]//table/tbody
+  find_type: xpath
+  element_info2: //*[contains(text(),'刷新')]
+  find_type2: xpath
+  operate_type: refresh_button_until_element_appear
+  time_out: 180
+  info:  等待数据出现
+  is_time: 1
 - element_info: //*[@aria-label='预览数据集']//tbody/tr
   find_type: xpaths
   operate_type: get_size
