@@ -42,11 +42,16 @@ class ElementParam(object):
     REFRESH_GET_TEXT_IS_EXPECT = "refresh_get_text_is_expect"  # 刷新页面 获取的值符合预期 返回最后的text
     KEY_PAGE_DOWN ='key_page_down' #下滑 
     ZJ_CLICK='zj_click'#直接单击
+    ZJ_CLICK1='zj_click1'#先向下移动，再鼠标单击
     IS_SELECTED='is_selected'#判断勾选框
     KEY_ENTER='key_enter' #键盘回车
     MOVE_TO_ELEMENT='move_to_element' #移动到元素
     DRAG_EL1 = 'drag_el1' #拖拽元素带轨迹
     VALUE_OF_CSS_PROPERTY = 'value_of_css_property' #获取元素得样式信息
+    EXECUTE_SCRIPT = 'execute_script'  #执行js脚本
+    DOUBLE_CLICK1 = 'double_click1'
+    REFRESH_UNTIL_ELEMENT_APPEAR = 'refresh_until_element_appear'
+    REFRESH_BUTTON_UNTIL_ELEMENT_APPEAR = 'refresh_button_until_element_appear'
 
 
     # 错误日志
@@ -78,12 +83,16 @@ class ElementParam(object):
     INFO_FILE = "info.pickle"
     SUM_FILE = "sum.pickle"
     REPORT_FILE = "Report.xlsx"
+    #
+    # URL = 'http://192.168.1.83:8515/#/login'
+    # HOST = 'http://192.168.1.83:8515'
+    # #测试自动化199环境
+    URL = 'http://192.168.1.199:8515/#/login'
+    HOST = 'http://192.168.1.199:8515'
 
-    # URL = 'http://192.168.1.84:8515/#/login'
-    # HOST = 'http://192.168.1.84:8515'
-    # #测试84环境
-    URL = 'http://192.168.1.84:8515/#/login'
-    HOST = 'http://192.168.1.84:8515'
+    # #测试dsp 82环境
+    # URL = 'http://192.168.1.82:8008/#/login'
+    # HOST = 'http://192.168.1.82:8008'
 
     # 页面url
     #资源目录

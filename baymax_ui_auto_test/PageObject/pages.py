@@ -83,7 +83,7 @@ class PagesObjects:
                             result = False
                             break
                 except TypeError as msg:
-                    print(msg)
+                    print("打印type错误",msg)
 
                 op_re = self.operateElement.operate(i, self.testInfo, self.logTest)   #  等于result
 

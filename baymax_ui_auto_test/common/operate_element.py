@@ -102,7 +102,12 @@ class OperateElement():
                 ep.KEY_ENTER:lambda : self.key_enter(),
                 ep.MOVE_TO_ELEMENT: lambda: self.move_to_element(operate),
                 ep.DRAG_EL1: lambda: self.drag_el1(operate),
-                ep.VALUE_OF_CSS_PROPERTY: lambda: self.value_of_css_property(operate)
+                ep.VALUE_OF_CSS_PROPERTY: lambda: self.value_of_css_property(operate),
+                ep.ZJ_CLICK1: lambda: self.zj_click1(),
+                ep.EXECUTE_SCRIPT: lambda: self.execute_script_operate(operate),
+                ep.DOUBLE_CLICK1: lambda: self.double_click1(),
+                ep.REFRESH_UNTIL_ELEMENT_APPEAR: lambda: self.refresh_until_element_appear(operate),
+                ep.REFRESH_BUTTON_UNTIL_ELEMENT_APPEAR: lambda: self.refresh_button_until_element_appear(operate)
 
 
             }
@@ -270,7 +275,7 @@ class OperateElement():
                 return {'result': True, 'text': new_text}
             time.sleep(1)
             cs_time = int(time.time() - s_time)
-        return {'result': False, 'text': new_text}
+        return {'result': False, 'text': old_text}
 
     # 刷新页面 获取的值符合预期 返回最后的text
     def refresh_get_text_is_expect(self, operate):
@@ -289,7 +294,7 @@ class OperateElement():
                 return {'result': True, 'text': new_text}
             time.sleep(1)
             cs_time = int(time.time() - s_time)
-        return {'result': False, 'text': new_text}
+        return {'result': False, 'text': old_text}
 
      # 刷新页面 直到页面属性变化或超时 返回最后的text
     def refresh_get_attr(self, operate):
@@ -303,12 +308,49 @@ class OperateElement():
             time.sleep(2)
             # self.driver.implicitly_wait(3)
             new_text =self.get_attr(operate)["text"]
-            if new_text != old_text:
+            if new_text != old_text or old_text.find("success")>=0:
                 return {'result': True, 'text': new_text}
-                print("新的值",new_text)
+            if old_text.find("danger")>=0:
+                return {'result': False, 'text': old_text}
             time.sleep(1)
             cs_time = int(time.time() - s_time)
-        return {'result': False, 'text': new_text}
+        return {'result': False, 'text': old_text}
+
+    def refresh_until_element_appear(self,operate):
+        time_out = int(operate["time_out"])
+        cs_time = 0
+        s_time = time.time()
+        while time_out > cs_time:
+            self.driver.refresh()
+            time.sleep(2)
+            # js="return document.querySelector('.el-table__body').childNodes.length"
+            js = "return arguments[0].childNodes.length;"
+            length = int(self.driver.execute_script(js,self.element_by(operate)))
+            print("长度",length)
+            if length <= 1:
+                self.driver.refresh()
+            elif length > 1:
+                return {'result': True}
+            time.sleep(1)
+            cs_time = int(time.time() - s_time)
+        return {'result': False}
+
+    def refresh_button_until_element_appear(self,operate):
+        time_out = int(operate["time_out"])
+        cs_time = 0
+        s_time = time.time()
+        while time_out > cs_time:
+            time.sleep(2)
+            js = "return arguments[0].childNodes.length;"
+            length = int(self.driver.execute_script(js,self.element_by(operate)))
+            print("长度",length)
+            if length <= 1:
+                self.element_by2(operate).click()
+            elif length > 1:
+                return {'result': True}
+            time.sleep(1)
+            cs_time = int(time.time() - s_time)
+        return {'result': False}
 
     # 刷新页面直到时间差小于预期值
     def refresh_time_difference(self, operate):
@@ -456,22 +498,50 @@ class OperateElement():
                 time.sleep(1)
                 self.element_by(operate)[operate['index']].click()
                 return {'result': True}
+
+    #js实现执行脚本
+    def execute_script_operate(self, operate):
+        self.driver.execute_script(operate['js'],self.element_by(operate))
+        return {'result': True}
+
+
     #直接鼠标左键
     def zj_click(self):
         action =ActionChains(self.driver)
         action.click().perform()
         return {'result': True}
+
+    # #先向下移动，再鼠标左键
+    # def zj_click1(self):
+    #     pyautogui.moveRel(-500,0)
+    #     pyautogui.click()
+    #     return {'result': True}
     # 双击操作
     def double_click_opetate(self, operate):
         action_chains = ActionChains(self.driver)
         if operate['find_type'] == ep.find_element_by_id or operate['find_type'] == ep.find_element_by_xpath or \
             operate['find_type'] == ep.find_element_by_name or operate['find_type'] == ep.find_element_by_class_name:
-            action_chains.double_click(self.element_by(operate)).perform()
-            return {'result': True}
+            try:
+                action_chains.double_click(self.element_by(operate)).perform()
+                return {'result': True}
+            except selenium.common.exceptions.ElementClickInterceptedException:
+                print('抓到了这个错：is not clickable at point')
+                time.sleep(1)
+                action_chains.double_click(self.element_by(operate)).perform()
+                return {'result': True}
+
         elif operate['find_type'] == ep.find_elements_by_id or operate['find_type'] == ep.find_elements_by_xpath or \
             operate['find_type'] == ep.find_elements_by_name or operate['find_type'] == ep.find_elements_by_class_name:
-            action_chains.double_click(self.element_by(operate)[operate['index']]).perform()
-            return {'result': True}
+            try:
+                action_chains.double_click(self.element_by(operate)[operate['index']]).perform()
+                return {'result': True}
+            except selenium.common.exceptions.ElementClickInterceptedException:
+                print('抓到了这个错：is not clickable at point')
+                action_chains.double_click(self.element_by(operate)[operate['index']]).perform()
+                return {'result': True}
+
+    # def double_click1(self):
+    #     pyautogui.doubleClick()
 
     #鼠标悬停事件
     def action_chains(self, operate):
@@ -537,13 +607,13 @@ class OperateElement():
         if operate['find_type'] == ep.find_element_by_id or operate['find_type'] == ep.find_element_by_xpath or \
             operate['find_type'] == ep.find_element_by_name or operate['find_type'] == ep.find_element_by_class_name:
             text = self.element_by(operate).get_attribute(operate['attr'])
-            print('获取到的值为：', text)
+            print('获取到的text值为：', text)
             text = str(text)
             return {'result': True, 'text': text}
         elif operate['find_type'] == ep.find_elements_by_id or operate['find_type'] == ep.find_elements_by_xpath or \
             operate['find_type'] == ep.find_elements_by_name or operate['find_type'] == ep.find_elements_by_class_name:
             text =  self.element_by(operate)[operate['index']].get_attribute(operate['attr'])
-            print('获取到的值为：', text)
+            print('获取到的text值为：', text)
             text = str(text)
             return {'result': True, 'text': text}
 

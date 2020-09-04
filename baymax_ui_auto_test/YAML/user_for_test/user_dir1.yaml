@@ -4,24 +4,24 @@ testinfo:
   launch: 1
   info: 环境正常
 testcase:
-- element_info: //*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input
-  find_type: xpath
-  operate_type: click
-  info: 点击租户输入框
-- element_info: //*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input
-  find_type: xpath
-  operate_type: send_keys
-#  msg: autoui
-  msg: default
-  info: 向租户输入框输入内容
-- element_info: /html/body/div[2]/div[1]/div[1]/ul/li[1]
-  find_type: xpath
-  operate_type: click
-  info: 点击租户的下拉框
+#- element_info: //*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input
+#  find_type: xpath
+#  operate_type: click
+#  info: 点击租户输入框
+#- element_info: //*[@id="app"]/div/div/div[2]/div/form/div[1]/div/div/div/input
+#  find_type: xpath
+#  operate_type: send_keys
+##  msg: autoui
+#  msg: default
+#  info: 向租户输入框输入内容
+#- element_info: /html/body/div[2]/div[1]/div[1]/ul/li[1]
+#  find_type: xpath
+#  operate_type: click
+#  info: 点击租户的下拉框
 - element_info: name
   find_type: name
   operate_type: send_keys
-  msg: dir1
+  msg: admin
   info: 输入账号
 - element_info: password
   find_type: name
@@ -33,7 +33,7 @@ testcase:
   operate_type: click
   info: 点击确定登录
 check:
-- element_info: //*[text()="dir1"]
+- element_info: //*[text()="admin"]
   find_type: xpath
   info: 检查“admin用户名是否存在”   
 - element_info: //*[contains(text(),'数据集成')]

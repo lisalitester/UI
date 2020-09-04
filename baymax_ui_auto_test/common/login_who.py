@@ -6,7 +6,8 @@ def who_login(who):
         'Cab': '../YAML/user_for_test/user_dir1.yaml',
         'Cad': '../YAML/user_for_test/user_dir1.yaml',
         'YinPao': '../YAML/user_for_test/user_dir1_for_beiruan.yaml',
-        'ShuBo': '../YAML/user_for_test/user_dir1.yaml'
+        'ShuBo': '../YAML/user_for_test/user_dir1.yaml',
+         'Dsp': '../../YAML/user_for_test/user_admin_for_dsp.yaml'
     }
     return login[who]
 

@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*- 
 #
 import sys
+
+from cases.case_designList.case_designList import DesignList
+from cases.case_dsp.case_data_management.case_data_setup.case_data_setup import DataSetUp
+from cases.case_dsp.case_data_management.case_data_source.case_data_source import DataSource
+
 sys.path.append("..")     #3层 格式照抄
 from common.BaseRunner import ParametrizedTestCase, get_driver
 from cases.case_home.case_home_page_click import HomePageTest
@@ -21,7 +26,8 @@ from cases.case_data_monitor.case_task_control.case_task_control import TaskCont
 from cases.cases_data_govern.case_quality_analyze.case_quality_analyze import QualityAnalyzeTest
 from cases.cases_data_govern.case_blood_analyze.case_blood_analyze import BloodAnalyzeTest
 from cases.cases_data_govern.case_schema_analyze.case_schema_analyze import SchemaAnalyzeTest
-from cases.case_data_analyze.case_flow_management.case_flow_management import FlowManagementTest
+from cases.case_data_analyze.case_flow_management.case_flow_management import FlowManagementTest, \
+    FlowManagementTest_SSSS
 from cases.case_data_analyze.case_project_dir.case_project_dir import ProjectDirTest
 from cases.case_authority_management.case_role_mange.case_role_management import RoleManagementTest
 from cases.case_authority_management.case_user_manage.case_user_management import UserManagementTest
@@ -71,7 +77,7 @@ def suite_case(who):
     Check_module = {
       
         #'bayMax': [LoginTest,HomePageTest]
-        'bayMax': [TaskOperationTest]
+        'bayMax': [DesignList]
 #         
     }
     cases = map(ParametrizedTestCase.parametrize, Check_module[who])
