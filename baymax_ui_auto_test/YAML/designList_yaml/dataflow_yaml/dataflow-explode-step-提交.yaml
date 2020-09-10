@@ -101,6 +101,11 @@ testcase:
   is_time: 3
 - element_info: //div[contains(text(),'Transform')]
   find_type: xpath
+  operate_type: move_to_element
+  info:  移动到“Transform”tab
+  is_time: 0.5
+- element_info: //div[contains(text(),'Transform')]
+  find_type: xpath
   operate_type: click
   info:  点击“Transform”tab
   is_time: 0.5
@@ -262,8 +267,17 @@ testcase:
   is_time: 1
 - element_info: //span[contains(text(),'提交')]
   find_type: xpath
+  operate_type: move_to_element
+  info:  移动到“提交”按钮
+  is_time: 0.5
+- element_info: //span[contains(text(),'提交')]
+  find_type: xpath
   operate_type: click
   info:  点击“提交”按钮
+- element_info: //span[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: move_to_element
+  info: 移动到‘确定'按钮
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click

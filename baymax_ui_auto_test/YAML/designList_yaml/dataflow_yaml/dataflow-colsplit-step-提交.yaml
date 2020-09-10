@@ -99,6 +99,11 @@ testcase:
   is_time: 2
 - element_info: //div[contains(text(),'Transform')]
   find_type: xpath
+  operate_type: move_to_element
+  info:  移动到“Transform”tab
+  is_time: 0.5
+- element_info: //div[contains(text(),'Transform')]
+  find_type: xpath
   operate_type: click
   info:  点击“Transform”tab
   is_time: 0.5
@@ -254,8 +259,14 @@ testcase:
   msg: /tmp/lisatest/test_colsplit
   info: 输入路径名称
   is_time: 2
-- operate_type: zj_click1
-  info: 点击‘模式'下拉框
+- element_info: //label[@for='path']
+  find_type: xpath
+  operate_type: move_to_element
+  info:  移动到元素
+  is_time: 0.5
+- operate_type: zj_click
+  info:  直接点击鼠标左键
+  is_time: 0.5
 - element_info: //*[@for='mode']/following-sibling::div//input
   find_type: xpath
   operate_type: click
@@ -270,16 +281,16 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 在执行计划设置页，点击‘确定'按钮
-  is_time: 3
+  is_time: 0.5
 - element_info: //span[contains(text(),'保存')]
-  find_type: xpath
-  operate_type: click
-  info: 在design页 点击“保存”按钮
-  is_time: 1
-- element_info: //span[contains(text(),'提交')]
   find_type: xpath
   operate_type: execute_script
   js: "arguments[0].click();"
+  info:  点击“保存”按钮
+  is_time: 3
+- element_info: //span[contains(text(),'提交')]
+  find_type: xpath
+  operate_type: click
   info:  点击“提交”按钮
   is_time: 2
 - element_info: //span[contains(text(),'确定')]

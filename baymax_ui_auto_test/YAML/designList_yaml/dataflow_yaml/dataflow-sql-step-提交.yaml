@@ -237,6 +237,11 @@ testcase:
   is_time: 1
 - element_info: //span[contains(text(),'提交')]
   find_type: xpath
+  operate_type: move_to_element
+  info:  移动到“提交”按钮
+  is_time: 1
+- element_info: //span[contains(text(),'提交')]
+  find_type: xpath
   operate_type: click
   info:  点击“提交”按钮
   is_time: 3

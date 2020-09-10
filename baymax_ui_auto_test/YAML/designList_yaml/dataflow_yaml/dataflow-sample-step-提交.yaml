@@ -102,6 +102,11 @@ testcase:
   is_time: 2
 - element_info: //div[contains(text(),'Transform')]
   find_type: xpath
+  operate_type: move_to_element
+  info:  移动到“Transform”tab
+  is_time: 0.5
+- element_info: //div[contains(text(),'Transform')]
+  find_type: xpath
   operate_type: click
   info:  点击“Transform”tab
   is_time: 0.5
@@ -137,10 +142,11 @@ testcase:
   find_type: name
   operate_type: clear
   info:  清除输入框
+  is_time: 0.5
 - element_info: fraction
   find_type: name
   operate_type: send_keys
-  msg: 0.99999
+  msg: '0.99'
   info:  输入参数
   is_time: 0.5
 - element_info: tab-output_output
