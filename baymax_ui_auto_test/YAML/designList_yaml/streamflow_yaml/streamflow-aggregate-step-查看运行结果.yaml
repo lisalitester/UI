@@ -1,6 +1,6 @@
 testinfo:
 - id: test_a501
-  title: 校验“streamflow-aggregate-step-提交”
+  title: 校验“streamflow-aggregate-step-查看运行结果”
   launch: 0
   info: 先进入designlist
 testcase:
@@ -65,7 +65,7 @@ check:
   operate_type: click
   info:  点击预览按钮
   is_time: 1
-- element_info: '//*[@class="el-dialog__body"]//*[@class="el-loading-mask" and @style="display: none;"]'
+- element_info: '//*[@class="el-loading-mask" and @style="display: none;"]'
   find_type: xpath
   info:  等待加载圈消失
   is_time: 1

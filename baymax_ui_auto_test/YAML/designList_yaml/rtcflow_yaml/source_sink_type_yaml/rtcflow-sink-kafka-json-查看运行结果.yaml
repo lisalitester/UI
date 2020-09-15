@@ -21,7 +21,7 @@ testcase:
   is_time: 0.5
 - element_info: //*[@placeholder='请输入...']
   find_type: xpath
-  msg: sink_mysql_auto
+  msg: sink_kafka_json_auto
   operate_type: send_keys
   info:  在“请输入”框中输入搜索的关键字
   is_time: 0.5

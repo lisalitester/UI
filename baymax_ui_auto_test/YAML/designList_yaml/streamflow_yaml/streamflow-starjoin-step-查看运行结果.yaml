@@ -69,7 +69,7 @@ check:
   operate_type: click
   info:  点击预览按钮
   is_time: 1
-- element_info: '//*[@class="el-dialog__body"]//*[@class="el-loading-mask" and @style="display: none;"]'
+- element_info: '//*[@class="el-loading-mask" and @style="display: none;"]'
   find_type: xpath
   info:  等待加载圈消失
   is_time: 1

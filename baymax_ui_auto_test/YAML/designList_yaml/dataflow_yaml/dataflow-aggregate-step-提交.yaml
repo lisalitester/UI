@@ -262,14 +262,15 @@ testcase:
   is_time: 1.5
 - element_info: //span[contains(text(),'保存')]
   find_type: xpath
-  operate_type: click
-  info: 在design页 点击“保存”按钮
-  is_time: 1
+  operate_type: execute_script
+  js: "arguments[0].click();"
+  info:  点击“保存”按钮
+  is_time: 3
 - element_info: //span[contains(text(),'提交')]
   find_type: xpath
   operate_type: click
   info:  点击“提交”按钮
-  is_time: 1
+  is_time: 2
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click

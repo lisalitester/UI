@@ -196,6 +196,12 @@ testcase:
   element_info2: //*[@id="sink_1"]/following-sibling::div[1]
   find_type2: xpath
   info:  连接2个节点
+- element_info: //*[@id="decision_1"]/following-sibling::div[2]
+  find_type: xpath
+  operate_type: drag_el
+  element_info2: //*[@id="sink_2"]/following-sibling::div[1]
+  find_type2: xpath
+  info:  连接2个节点
 - element_info: sink_1
   find_type: id
   operate_type: double_click
@@ -245,18 +251,18 @@ testcase:
   operate_type: click
   info: 在执行计划设置页，点击‘确定'按钮
   is_time: 3
-- element_info: //*[@id="decision_1"]/following-sibling::div[5]
-  find_type: xpath
-  operate_type: drag_el
-  element_info2: //*[@id="sink_2"]/following-sibling::div[1]
-  find_type2: xpath
-  info:  连接2个节点
-  is_time: 1
-#- element_info: sink_2
-#  find_type: id
-#  operate_type: move_to_element
-#  info:  移动到“sink_2”
-#  is_time: 0.5
+#- element_info: //*[@id="decision_1"]/following-sibling::div[5]
+#  find_type: xpath
+#  operate_type: drag_el
+#  element_info2: //*[@id="sink_2"]/following-sibling::div[1]
+#  find_type2: xpath
+#  info:  连接2个节点
+#  is_time: 1
+- element_info: sink_2
+  find_type: id
+  operate_type: move_to_element
+  info:  移动到“sink_2”
+  is_time: 0.5
 - element_info: sink_2
   find_type: id
   operate_type: double_click

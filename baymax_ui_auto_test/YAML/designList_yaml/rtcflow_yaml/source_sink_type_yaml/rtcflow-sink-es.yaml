@@ -102,6 +102,21 @@ testcase:
   operate_type: click
   info:  选择“clickTime”
   is_time: 0.3
+- element_info: //*[text()='高级选项']/i
+  find_type: xpath
+  operate_type: move_scrollbar_bottom
+  info:  滚动到高级选项底部
+  is_time: 0.5
+- element_info: //*[text()='高级选项']
+  find_type: xpath
+  operate_type: click
+  info:  点击高级选项旁的箭头
+  is_time: 0.5
+- element_info: //*[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: move_scrollbar_bottom
+  info:  滚动到确定底部
+  is_time: 0.5
 - element_info: //*[@for='readFromOffset']/parent::div/div/div/div/input
   find_type: xpath
   operate_type: click
@@ -183,6 +198,16 @@ testcase:
   index: 0
   operate_type: double_click
   info:  双击选中“ESdataset”
+  is_time: 0.5
+- element_info: //*[text()='高级选项']
+  find_type: xpath
+  operate_type: click
+  info:  点击高级选项旁的箭头
+  is_time: 0.5
+- element_info: //*[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: move_scrollbar_bottom
+  info:  滚动到确定底部
   is_time: 0.5
 - element_info: batchRows
   find_type: name
