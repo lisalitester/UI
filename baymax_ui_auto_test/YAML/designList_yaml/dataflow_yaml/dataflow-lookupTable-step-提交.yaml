@@ -68,6 +68,7 @@ testcase:
   operate_type: send_keys
   msg: test_colsplit_source
   info: 数据集查询输入“test_colsplit_source”
+  is_time: 0.5
 - element_info: //*[@name='searchInput']/following-sibling::div
   find_type: xpath
   operate_type: click
@@ -276,26 +277,26 @@ testcase:
 #  operate_type: click
 #  info: 在执行计划设置页，点击‘确定'按钮
 #  is_time: 0.5
-#- element_info: //span[contains(text(),'保存')]
-#  find_type: xpath
-#  js: "arguments[0].click();"
-#  operate_type: execute_script
-#  info: 在design页 点击“保存”按钮
-#  is_time: 1
-#- element_info: //span[contains(text(),'提交')]
-#  find_type: xpath
-#  operate_type: move_to_element
-#  info:  移动到"提交"按钮
-#  is_time: 1
-#- element_info: //span[contains(text(),'提交')]
-#  find_type: xpath
-#  operate_type: click
-#  info:  点击“提交”按钮
-#  is_time: 2
-#- element_info: //span[contains(text(),'确定')]
-#  find_type: xpath
-#  operate_type: click
-#  info: 在执行计划设置页，点击‘确定'按钮
+- element_info: //span[contains(text(),'保存')]
+  find_type: xpath
+  js: "arguments[0].click();"
+  operate_type: execute_script
+  info: 在design页 点击“保存”按钮
+  is_time: 1
+- element_info: //span[contains(text(),'提交')]
+  find_type: xpath
+  operate_type: move_to_element
+  info:  移动到"提交"按钮
+  is_time: 1
+- element_info: //span[contains(text(),'提交')]
+  find_type: xpath
+  operate_type: click
+  info:  点击“提交”按钮
+  is_time: 2
+- element_info: //span[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: click
+  info: 在执行计划设置页，点击‘确定'按钮
 check:
 - element_info: source_1
   find_type: id
@@ -305,7 +306,3 @@ check:
   find_type: id
   check: displayed
   info: 断言“cache_1”在design里存在
-- element_info: sink_1
-  find_type: id
-  check: displayed
-  info: 断言“sink_1”在design里存在

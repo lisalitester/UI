@@ -1,6 +1,6 @@
 testinfo:
-- id: test_a527
-  title: 校验“rtcflow-sink-HDFS_parquet”
+- id: test_a529
+  title: 校验“rtcflow-lookup-step-redis-mapping-提交.yaml”
   launch: 0
   info: 先进入designlist
 testcase:
@@ -21,7 +21,7 @@ testcase:
 - element_info: //*[@for='name']/following::input[contains(@placeholder,"请输入")]
   find_type: xpath
   operate_type: send_keys
-  msg: sink_hdfs_parquet_auto_+随机数
+  msg: test_lookup_redis_mapping_auto_+随机数
   info: 输入rtc_flow名称
 - element_info: //*[contains(text(),"流程类型")]/parent::div/div/div/div/input
   find_type: xpaths
@@ -43,22 +43,6 @@ testcase:
 - element_info: "//*[@id='flow']//div[@class='el-loading-mask' and @style='display: none;']"
   find_type: xpath
   info:  等待加载圈消失
-  is_time: 0.5
-- element_info: //*[@placeholder='请输入...']
-  find_type: xpath
-  operate_type: clear
-  info: 清除输入框
-  is_time: 0.5
-- element_info: //*[@placeholder='请输入...']
-  find_type: xpath
-  msg: sink_hdfs_parquet_auto
-  operate_type: send_keys
-  info:  在“请输入”框中输入搜索的关键字
-  is_time: 0.5
-- element_info: //*[@class='el-icon-search']
-  find_type: xpath
-  operate_type: click
-  info:  点击“搜索”按钮
   is_time: 0.5
 - element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
@@ -163,15 +147,159 @@ testcase:
   operate_type: click
   info: 在数据集弹窗中 点击“确定”按钮
   is_time: 2
+- element_info: //div[contains(text(),'Join')]
+  find_type: xpath
+  operate_type: move_to_element
+  info:  移动到“Join”tab
+- element_info: //div[contains(text(),'Join')]
+  find_type: xpath
+  operate_type: click
+  info:  点击“Join”tab
+  is_time: 0.5
+- element_info: //*[@id="lookup"]/i
+  find_type: xpath
+  operate_type: drag_el1
+  move_to: (-600, 0)
+  info:  拖拽
+  is_time: 2
+- element_info: //*[@fill="transparent"]
+  find_type: xpath
+  operate_type: drag_el
+  element_info2: //*[@id="lookup_1"]/following-sibling::div[1]
+  find_type2: xpath
+  info:  连接2个节点
+  is_time: 2
+- element_info: lookup_1
+  find_type: id
+  operate_type: double_click
+  info:  双击“lookup_1”
+  is_time: 1
+- element_info: //*[contains(@class,'el-tooltip el-icon-copy-document')]
+  find_type: xpath
+  operate_type: click
+  info:  点击"添加全部字段"
+  is_time: 0.3
+- element_info: tab-second
+  find_type: id
+  operate_type: click
+  info:  点击参数 tab
+  is_time: 1
+- element_info: //*[@for='type']/parent::div/div/div/div/input
+  find_type: xpath
+  operate_type: click
+  info: 点击type输入框
+  is_time: 0.5
+- element_info: //*[text()='Redis']
+  find_type: xpath
+  operate_type: click
+  info: 选择Redis
+  is_time: 0.5
+- element_info: //*[@for='mode']/parent::div/div/div/div/input
+  find_type: xpath
+  operate_type: click
+  info: 点击mode输入框
+  is_time: 0.5
+- element_info: //*[text()='mapping']
+  find_type: xpath
+  operate_type: click
+  info: 选择mapping
+  is_time: 0.5
+- element_info: //*[@class='el-icon-search']
+  find_type: xpath
+  operate_type: click
+  info: 点击数据集后面的搜索按钮
+  is_time: 0.5
+- element_info: searchInput
+  find_type: name
+  operate_type: send_keys
+  msg: Redisdataset
+  info: 输入数据集名称
+  is_time: 0.5
+- element_info: //*[@name='searchInput']/following-sibling::div
+  find_type: xpath
+  operate_type: click
+  info: 点击搜索
+  is_time: 0.5
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='Redisdataset']
+  find_type: xpath
+  operate_type: double_click
+  info: 双击选择的Redisdataset
+  is_time: 1
+- element_info: //*[@for='lookupRules[0].key']/parent::div/div/div/div/input
+  find_type: xpath
+  operate_type: click
+  info: 点击key输入框
+  is_time: 0.5
+- element_info: //*[text()='clickTime']
+  find_type: xpaths
+  index: 1
+  operate_type: click
+  info: 选择clickTime
+  is_time: 0.5
+- element_info: //*[@id="dynamicTable"]/div[4]/div[1]/table/thead/tr/th[6]/div/i
+  find_type: xpath
+  operate_type: click
+  info: 点击”+“
+  is_time: 0.5
+- element_info: //*[@id="dynamicTable"]/div[3]/table/tbody/tr/td[1]/div/div/div/div/div[1]/input
+  find_type: xpath
+  operate_type: click
+  info: 点击”name“输入框
+  is_time: 0.5
+- element_info: //*[text()='url']
+  find_type: xpaths
+  index: 3
+  operate_type: click
+  info: 选择”url“
+- element_info: alias
+  find_type: name
+  operate_type: send_keys
+  msg: aaa
+  info: 输入别名”aaa“
+- element_info: defaultNoMatch
+  find_type: name
+  operate_type: send_keys
+  msg: bbb
+  info: 输入bbb
+- element_info: defaultNullKey
+  find_type: name
+  operate_type: send_keys
+  msg: ccc
+  info: 输入ccc
+- element_info: tab-output_output
+  find_type: id
+  operate_type: click
+  info:  点击output tab
+  is_time: 0.3
+- element_info: "//*[@id='step-index']//div[@class='el-loading-mask' and @style='display: none;']"
+  find_type: xpath
+  info:  等待加载圈消失
+  is_time: 0.5
+- element_info: //*[@id="pane-output_output"]/div/div[1]/div[1]/div/div[1]/div/div[2]/i[1]
+  find_type: xpath
+  operate_type: click
+  info:  点击"添加全部字段"
+  is_time: 0.3
+- element_info: //span[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: click
+  info: 在数据集弹窗中 点击“确定”按钮
+  is_time: 2
+- element_info: //div[contains(text(), "IO")]
+  find_type: xpath
+  js: "arguments[0].click();"
+  operate_type: execute_script
+  info:  点击“IO”tab
+  is_time: 2
 - element_info: //p[text()="sink"]/preceding-sibling::i
   find_type: xpath
   operate_type: drag_el1
   move_to: (-200, 0)
   info:  拖拽
-- element_info: //*[@id="source_1"]/following-sibling::div[1]
+- element_info: //*[@id="lookup_1"]/following-sibling::div[2]
   find_type: xpath
   operate_type: drag_el
-  element_info2: //*[@id="source_1"]/following-sibling::div[2]
+  element_info2: //*[@id="sink_1"]/following-sibling::div
   find_type2: xpath
   info:  连接2个节点
 #  is_time: 2
@@ -198,8 +326,8 @@ testcase:
 - element_info: searchInput
   find_type: name
   operate_type: send_keys
-  msg: HDFSDataset_parquet
-  info: 数据集查询输入“HDFSDataset_parquet”
+  msg: kafka_hdfs_rtc16
+  info: 数据集查询输入“kafka_hdfs_rtc16”
 - element_info: //*[@name='searchInput']/following-sibling::div
   find_type: xpath
   operate_type: click
@@ -209,33 +337,11 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'HDFSDataset_parquet')]
-  find_type: xpaths
-  index: 0
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='kafka_hdfs_rtc16']
+  find_type: xpath
   operate_type: double_click
-  info:  双击选中“HDFSDataset_parquet”
-  is_time: 0.5
-- element_info: //*[text()='高级选项']/i
-  find_type: xpath
-  operate_type: click
-  info:  点击高级选项旁的箭头
-  is_time: 1
-- element_info: //*[contains(text(),'确定')]
-  find_type: xpath
-  operate_type: move_scrollbar_bottom
-  info:  滚动到确定底部
-  is_time: 1
-- element_info: batchSize
-  find_type: name
-  operate_type: clear
-  info: 清空batchSize
-  is_time: 0.5
-- element_info: batchSize
-  find_type: name
-  operate_type: send_keys
-  msg: 1
-  info: 输入batchSize
-  is_time: 0.5
+  info:  双击选中“kafka_hdfs_rtc16”
+  is_time: 2
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
@@ -247,33 +353,29 @@ testcase:
   operate_type: execute_script
   info: 在design页 点击“保存”按钮
   is_time: 1
-check:
-- element_info: //*[contains(text(),'保存成功')]
-  find_type: xpath
-  check: displayed
-  info: 断言“保存成功”出现
 - element_info: //span[contains(text(),'提交')]
   find_type: xpath
   operate_type: move_to_element
-  info:  移动到"提交”按钮
-  is_time: 0.5
+  info:  移动到“提交”按钮
+  is_time: 1
 - element_info: //span[contains(text(),'提交')]
   find_type: xpath
   operate_type: click
   info:  点击“提交”按钮
-  is_time: 3
+  is_time: 2
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
   info: 在执行计划设置页，点击‘确定'按钮
-- element_info: //*[contains(text(),'操作成功！')]
-  find_type: xpath
-  check: displayed
-  info: 断言“操作成功”出现
+check:
 - element_info: source_1
   find_type: id
   check: displayed
   info: 断言“source_1”在design里存在
+- element_info: lookup_1
+  find_type: id
+  check: displayed
+  info: 断言“lookup_1”在design里存在
 - element_info: sink_1
   find_type: id
   check: displayed

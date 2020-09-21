@@ -51,7 +51,7 @@ check:
   operate_type: click
   info:  点击输出tab
   is_time: 1
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[4]/div[2]/table/tbody/tr[2]/td[10]/div/div/span/button/span
+- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[4]/div[2]/table/tbody/tr/td[10]/div/div/span/button
   find_type: xpath
   operate_type: click
   info:  点击预览按钮
@@ -73,5 +73,5 @@ check:
   find_type: xpaths
   operate_type: get_size
   check: current_equal_expect
-  expect_value: 4
-  info: 断言表的总列数是4
+  expect_value: 5
+  info: 断言表的总列数是5

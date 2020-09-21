@@ -1,6 +1,6 @@
 testinfo:
-- id: test_a527
-  title: 校验“rtcflow-sink-csv”
+- id: test_a550
+  title: 校验“rtcflow-sink-kafka-csv”
   launch: 0
   info: 先进入designlist
 testcase:
