@@ -103,9 +103,7 @@ class OperateElement():
                 ep.MOVE_TO_ELEMENT: lambda: self.move_to_element(operate),
                 ep.DRAG_EL1: lambda: self.drag_el1(operate),
                 ep.VALUE_OF_CSS_PROPERTY: lambda: self.value_of_css_property(operate),
-                ep.ZJ_CLICK1: lambda: self.zj_click1(),
                 ep.EXECUTE_SCRIPT: lambda: self.execute_script_operate(operate),
-                ep.DOUBLE_CLICK1: lambda: self.double_click1(),
                 ep.REFRESH_UNTIL_ELEMENT_APPEAR: lambda: self.refresh_until_element_appear(operate),
                 ep.REFRESH_BUTTON_UNTIL_ELEMENT_APPEAR: lambda: self.refresh_button_until_element_appear(operate)
 
@@ -511,12 +509,7 @@ class OperateElement():
         action.click().perform()
         return {'result': True}
 
-    # #先向下移动，再鼠标左键
-    # def zj_click1(self):
-    #     pyautogui.moveRel(-500,0)
-    #     pyautogui.click()
-    #     return {'result': True}
-    # 双击操作
+
     def double_click_opetate(self, operate):
         action_chains = ActionChains(self.driver)
         if operate['find_type'] == ep.find_element_by_id or operate['find_type'] == ep.find_element_by_xpath or \
@@ -540,8 +533,6 @@ class OperateElement():
                 action_chains.double_click(self.element_by(operate)[operate['index']]).perform()
                 return {'result': True}
 
-    # def double_click1(self):
-    #     pyautogui.doubleClick()
 
     #鼠标悬停事件
     def action_chains(self, operate):
