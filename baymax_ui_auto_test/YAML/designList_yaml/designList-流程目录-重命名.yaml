@@ -35,8 +35,8 @@ testcase:
   operate_type: click
   info: 点击‘操作'按鈕
   is_time: 1
-- element_info: //*[contains(@class,'el-icon-edit')]/parent::li
-  find_type: xpath
+- element_info: rename
+  find_type: name
   operate_type: click
   info:  点击”重命名“按钮
   is_time: 1

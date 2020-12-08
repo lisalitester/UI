@@ -30,14 +30,14 @@ testcase:
   index: 0
   operate_type: click
   info:  点击“第一行的”名字
-  is_time: 0.5
+  is_time: 1
 - element_info: primaryBtn
   find_type: name
   operate_type: click
   info: 点击‘操作'按鈕
   is_time: 1
-- element_info: //*[contains(@class,'el-icon-edit')]/parent::li/following-sibling::li[1]
-  find_type: xpath
+- element_info: move
+  find_type: name
   operate_type: click
   info:  点击”移动“按钮
   is_time: 1

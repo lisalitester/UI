@@ -18,22 +18,22 @@ testcase:
   operate_type: execute_script
   info: 点击‘auto_flow'的文字
   is_time: 2
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
+- element_info: //*[@id="flow"]//div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: get_text
   info:  获取列表“第一行的”名字
   is_time: 0.5
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]//span[text()="%s"]/ancestor::td/preceding-sibling::td//label+随机数
+- element_info: //*[@id="flow"]//div[3]//span[text()="%s"]/ancestor::td/preceding-sibling::td//label+随机数
   find_type: xpath
   v_index: 0
   operate_type: click
   info:  勾选“第一行的”flow
-- element_info: dropdown-toggle
-  find_type: name
+- element_info: //*[@id="operationPanel"]/div[1]/form/div[5]/button/span
+  find_type: xpath
   operate_type: click
   info: 点击‘操作’按钮
   is_time: 0.5
-- element_info: //*[(@name='copy' and @uib-tooltip='复制')]
+- element_info: //*[text()='复制']
   find_type: xpath
   operate_type: click
   info: 点击‘复制’按钮
@@ -47,7 +47,7 @@ testcase:
   operate_type: send_keys
   msg: flow_copy_+随机数
   info: 输入flow的复制名称
-- element_info: global.determine
+- element_info: determine
   find_type: name
   operate_type: click
   info: 点击‘确定’按钮

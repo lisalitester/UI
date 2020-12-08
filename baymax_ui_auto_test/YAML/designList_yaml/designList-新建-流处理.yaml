@@ -29,9 +29,9 @@ testcase:
   operate_type: send_keys
   msg: streamflow_+随机数
   info: 输入work_flow名称
-- element_info: //*[@placeholder='请选择...']
+- element_info: //*[@placeholder='请选择']
   find_type: xpaths
-  index: 1
+  index: 2
   operate_type: click
   info: 点击‘流程类型'弹出下拉菜单
   is_time: 0.5
@@ -41,7 +41,7 @@ testcase:
   operate_type: click
   info: 点击‘流处理'
   is_time: 0.5
-- element_info: global.determine
+- element_info: determine
   find_type: name
   operate_type: click
   info: 点击‘确定’按钮

@@ -33,7 +33,7 @@ testcase:
   operate_type: click
   info: 点击‘确定’按钮
   is_time: 1
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
+- element_info: //*[@id="flow"]//div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: click
   info:  点击“第一行”flow的名字
