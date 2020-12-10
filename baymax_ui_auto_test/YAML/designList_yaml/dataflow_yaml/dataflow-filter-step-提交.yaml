@@ -36,7 +36,7 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
+- element_info: //*[@id="flow"]/section/section/section/main/div/div/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: click
   info:  点击“第一行”flow的名字
@@ -61,12 +61,12 @@ testcase:
   operate_type: click
   info: 在source弹窗中 点击“数据集”搜索按钮
   is_time: 0.5
-- element_info: searchInput
+- element_info: name.model
   find_type: name
   operate_type: send_keys
-  msg: test_colsplit_source
-  info: 数据集查询输入“test_colsplit_source”
-- element_info: //*[@name='searchInput']/following-sibling::div
+  msg: colsplit_source
+  info: 数据集查询输入“colsplit_source”
+- element_info: //*[@name='name.model']/following-sibling::div
   find_type: xpath
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
@@ -75,10 +75,10 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_colsplit_source']
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='colsplit_source']
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“test_colsplit_source”
+  info:  双击选中“colsplit_source”
   is_time: 0.3
 - element_info: tab-output_output
   find_type: id
@@ -198,13 +198,13 @@ testcase:
 - element_info: dataset
   find_type: name
   operate_type: send_keys
-  msg: test_explode_sink_+随机数
+  msg: test_filter_sink_+随机数
   info: 输入数据集名称
   is_time: 0.5
 - element_info: schema
   find_type: name
   operate_type: send_keys
-  msg: test_explode_schema_+随机数
+  msg: test_filter_schema_+随机数
   info: 输入元数据名称
   is_time: 0.5
 - element_info: path
@@ -213,6 +213,11 @@ testcase:
   msg: /tmp/lisatest/test_filter
   info: 输入路径名称
   is_time: 2
+- element_info: //*[@for='path']
+  find_type: xpath
+  operate_type: click
+  info: 点击路径名称
+  is_time: 0.5
 - element_info: //*[@for='mode']/following-sibling::div//input
   find_type: xpath
   operate_type: click
@@ -243,6 +248,7 @@ testcase:
   find_type: xpath
   operate_type: click
   info:  点击“提交”按钮
+  is_time: 1
 - element_info: //span[contains(text(),'确定')]
   find_type: xpath
   operate_type: click
