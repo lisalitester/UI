@@ -23,7 +23,7 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击'新建'
-- element_info: //*[@for='name']/following::input[contains(@placeholder,"请输入")]
+- element_info: //*[@for='name']/following::input[contains(@placeholder,"输入")]
   find_type: xpath
   operate_type: send_keys
   msg: test_colsplit_auto_+随机数
@@ -37,7 +37,7 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
+- element_info: //*[@id="flow"]/section/section/section/main/div/div/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: click
   info:  点击“第一行”flow的名字
@@ -63,20 +63,20 @@ testcase:
   operate_type: click
   info: 在source弹窗中 点击“数据集”搜索按钮
   is_time: 0.5
-- element_info: searchInput
+- element_info: name.model
   find_type: name
   operate_type: send_keys
-  msg: test_colsplit_source
-  info: 数据集查询输入“test_colsplit_source”
-- element_info: //*[@name='searchInput']/following-sibling::div
+  msg: colsplit_source
+  info: 数据集查询输入“colsplit_source”
+- element_info: //*[@name='name.model']/following-sibling::div
   find_type: xpath
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
   is_time: 1
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_colsplit_source']
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='colsplit_source']
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“数据集test_colsplit_source”
+  info:  双击选中“数据集colsplit_source”
   is_time: 0.3
 - element_info: tab-output_output
   find_type: id
@@ -135,28 +135,28 @@ testcase:
   operate_type: click
   info:  点击参数 tab
   is_time: 0.3
-- element_info: //*[@id="pane-second"]/form/div[1]/div/div[1]/div[3]/table/tbody/tr/td[2]/div/div/div/div/div/input
+- element_info: //*[@id="pane-second"]/div/form/div[1]/div/div[2]/div/div/div[1]/input
   find_type: xpath
   operate_type: click
-  info:  点击column
+  info:  点击"拆分字段"
   is_time: 0.3
 - element_info: //span[(text()='col')]
   find_type: xpath
   operate_type: click
   info:  选中col列
   is_time: 0.5
-- element_info: //*[@id="pane-second"]/form/div[1]/div/div[1]/div[3]/table/tbody/tr/td[1]/div/div/i
+- element_info: //*[@id="dynamicTable"]/div[4]/div[1]/table/thead/tr/th[3]/div/i
   find_type: xpath
   operate_type: click
-  info:  点击column旁边向下的三角符号
+  info:  点击新增字段旁边的+号
   is_time: 0.5
-- element_info: //*[@id="secondLeveldynamic"]/div[3]/table/tbody/tr/td[1]/div/div/div/div/input
+- element_info: //*[@id="dynamicTable"]/div[3]/table/tbody/tr/td[1]/div/div/div/div/input
   find_type: xpath
   msg: TEL
   operate_type: send_keys
   info: 输入name
   is_time: 0.5
-- element_info: //*[@id="secondLeveldynamic"]/div[3]/table/tbody/tr/td[2]/div/div/div/div/div/input
+- element_info: //*[@id="dynamicTable"]/div[3]/table/tbody/tr/td[2]/div/div/div/div/div[1]/input
   find_type: xpath
   operate_type: click
   info: 点击type下拉框
@@ -166,18 +166,18 @@ testcase:
   operate_type: click
   info:  选择string类型
   is_time: 0.3
-- element_info: //*[@id="secondLeveldynamic"]/div[4]/div[1]/table/thead/tr/th[3]/div/i
+- element_info: //*[@id="dynamicTable"]/div[4]/div[2]/table/tbody/tr/td[3]/div/i[2]
   find_type: xpath
   operate_type: click
   info:  点击“+”号
   is_time: 0.3
-- element_info: //*[@id="secondLeveldynamic"]/div[3]/table/tbody/tr[2]/td[1]/div/div/div/div/input
+- element_info: //*[@id="dynamicTable"]/div[3]/table/tbody/tr[2]/td[1]/div/div/div/div/input
   find_type: xpath
   msg: QQ
   operate_type: send_keys
   info: 输入name
   is_time: 0.5
-- element_info: //*[@id="secondLeveldynamic"]/div[3]/table/tbody/tr[2]/td[2]/div/div/div/div/div[1]/input
+- element_info: //*[@id="dynamicTable"]/div[3]/table/tbody/tr[2]/td[2]/div/div/div/div/div[1]/input
   find_type: xpath
   operate_type: click
   info: 点击type下拉框
@@ -266,7 +266,7 @@ testcase:
   is_time: 0.5
 - operate_type: zj_click
   info:  直接点击鼠标左键
-  is_time: 0.5
+  is_time: 1
 - element_info: //*[@for='mode']/following-sibling::div//input
   find_type: xpath
   operate_type: click
