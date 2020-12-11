@@ -19,13 +19,13 @@ testcase:
   operate_type: execute_script
   info: 点击‘auto_flow'的文字
   is_time: 2
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[4]/div[2]/table/tbody/tr[1]/td[8]/div/div/span[2]/button/span
+- element_info: //*[@id="flow"]/section/section/section/main/div/div/div[4]/div[2]/table/tbody/tr[1]/td[8]/div/div/span[2]/button/span
   find_type: xpath
   operate_type: click
   info:  点击“第一行”flow的执行按钮
   is_time: 1
 check:
-- element_info: //table/tbody/tr[1]/td[7]/div/span
+- element_info: //table/tbody/tr[1]/td[8]/div/span
   find_type: xpath
   operate_type: refresh_get_attr
   time_out: 180
@@ -33,7 +33,7 @@ check:
   check: current_contain_expect
   expect_value: success
   info: 断言执行历史的进度最终状态为“success”
-- element_info: '//*[@class="table"]//*[@class="el-loading-mask" and @style="display: none;"]'
+- element_info: '//*[@class="el-loading-mask" and @style="display: none;"]'
   find_type: xpath
   info:  等待加载圈消失
   is_time: 1
@@ -47,7 +47,7 @@ check:
   operate_type: click
   info:  点击输出tab
   is_time: 1
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[4]/div[2]/table/tbody/tr/td[10]/div/div/span/button/span
+- element_info: //*[@id="infoDataset"]/div[1]/div[1]/div/div[4]/div[2]/table/tbody/tr/td[10]/div/div/span/button/span
   find_type: xpath
   operate_type: click
   info:  点击预览按钮
