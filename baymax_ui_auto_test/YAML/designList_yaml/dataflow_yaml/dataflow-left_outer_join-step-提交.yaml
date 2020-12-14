@@ -38,7 +38,7 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
+- element_info: //*[@id="flow"]/section/section/section/main/div/div/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: click
   info:  点击“第一行”flow的名字
@@ -68,12 +68,12 @@ testcase:
   operate_type: click
   info: 在source弹窗中 点击“数据集”搜索按钮
   is_time: 0.5
-- element_info: searchInput
+- element_info: name.model
   find_type: name
   operate_type: send_keys
-  msg: test_colsplit_source
-  info: 数据集查询输入“test_colsplit_source”
-- element_info: //*[@name='searchInput']/following-sibling::div
+  msg: colsplit_source
+  info: 数据集查询输入“colsplit_source”
+- element_info: //*[@name='name.model']/following-sibling::div
   find_type: xpath
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
@@ -82,10 +82,10 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_colsplit_source']
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='colsplit_source']
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“test_colsplit_source”
+  info:  双击选中“colsplit_source”
   is_time: 0.3
 - element_info: tab-output_output
   find_type: id
@@ -121,12 +121,12 @@ testcase:
   operate_type: click
   info: 在source弹窗中 点击“数据集”搜索按钮
   is_time: 0.5
-- element_info: searchInput
+- element_info: name.model
   find_type: name
   operate_type: send_keys
-  msg: test_colsplit_source1
-  info: 数据集查询输入“test_colsplit_source1”
-- element_info: //*[@name='searchInput']/following-sibling::div
+  msg: colsplit_source1
+  info: 数据集查询输入“colsplit_source1”
+- element_info: //*[@name='name.model']/following-sibling::div
   find_type: xpath
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
@@ -135,10 +135,10 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_colsplit_source1']
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='colsplit_source1']
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“test_colsplit_source1”
+  info:  双击选中“colsplit_source1”
   is_time: 0.5
 - element_info: tab-output_output
   find_type: id
@@ -207,22 +207,22 @@ testcase:
   operate_type: click
   info:  点击"参数"标签页
   is_time: 0.5
-- element_info: //*[@id="pane-second"]/form/div[1]/div/div/div/input
+- element_info: //*[@id="pane-second"]/div/form/div[1]/div/div/div[1]/input
   find_type: xpath
   operate_type: click
-  info:  点击"jointYpe"输入框
+  info:  点击"连接类型"输入框
   is_time: 0.5
 - element_info: //span[text()='left_outer']
   find_type: xpath
   operate_type: click
   info:  选择“left_outer” type
   is_time: 1
-- element_info: //*[@id="pane-second"]/form/div[2]/div/div[1]/div[4]/div[1]/table/thead/tr/th[4]/div/i
+- element_info: //*[@id="dynamicTable"]/div[4]/div[1]/table/thead/tr/th[4]/div/i
   find_type: xpath
   operate_type: click
-  info:  点击“joinConditions”的“+”号
+  info:  点击“连接条件”的“+”号
   is_time: 0.5
-- element_info: //*[@id="pane-second"]/form/div[2]/div/div[1]/div[3]/table/tbody/tr/td[1]/div/div/div/div/div/input
+- element_info: //*[@id="dynamicTable"]/div[3]/table/tbody/tr/td[1]/div/div/div/div/div[1]/input
   find_type: xpath
   operate_type: click
   info:  点击"leftField"选择框
@@ -232,7 +232,7 @@ testcase:
   operate_type: click
   info:  选择“id”
   is_time: 0.5
-- element_info: //*[@id="pane-second"]/form/div[2]/div/div[1]/div[3]/table/tbody/tr/td[2]/div/div/div/div/div/input
+- element_info: //*[@id="dynamicTable"]/div[3]/table/tbody/tr/td[2]/div/div/div/div/div[1]/input
   find_type: xpath
   operate_type: click
   info:  选择“character”
@@ -242,7 +242,7 @@ testcase:
   operate_type: click
   info:  选择“=”
   is_time: 0.5
-- element_info: //*[@id="pane-second"]/form/div[2]/div/div[1]/div[3]/table/tbody/tr/td[3]/div/div/div/div/div/input
+- element_info: //*[@id="dynamicTable"]/div[3]/table/tbody/tr/td[3]/div/div/div/div/div[1]/input
   find_type: xpath
   operate_type: click
   info:  点击“rightField”
@@ -321,7 +321,12 @@ testcase:
   operate_type: send_keys
   msg: /tmp/lisatest/test_left_join
   info: 输入路径名称
-  is_time: 3
+  is_time: 0.5
+- element_info: //*[@for='path']
+  find_type: xpath
+  operate_type: click
+  info: 点击路径名称
+  is_time: 0.5
 - element_info: //*[@for='mode']/following-sibling::div//input
   find_type: xpath
   operate_type: click
@@ -345,7 +350,9 @@ testcase:
   is_time: 2
 - element_info: //span[contains(text(),'提交')]
   find_type: xpath
-  info:  等待“提交”按钮出现
+  operate_type: move_to_element
+  info:  移动到“提交”按钮
+  is_time: 1
 - element_info: //span[contains(text(),'提交')]
   find_type: xpath
   operate_type: click
