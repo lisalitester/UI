@@ -14,13 +14,13 @@ testcase:
   operate_type: execute_script
   info: 点击‘auto_flow'的文字
   is_time: 2
-- element_info: //*[@placeholder='请输入...']
-  find_type: xpath
+- element_info: name.model
+  find_type: name
   operate_type: clear
-  info: 清楚输入框
+  info: 清除输入框
   is_time: 0.5
-- element_info: //*[@placeholder='请输入...']
-  find_type: xpath
+- element_info: name.model
+  find_type: name
   msg: test_aggregate_stream_auto
   operate_type: send_keys
   info:  在“请输入”框中输入搜索的关键字
@@ -30,13 +30,13 @@ testcase:
   operate_type: click
   info:  点击“搜索”按钮
   is_time: 0.5
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[4]/div[2]/table/tbody/tr[1]/td[8]/div/div/span[2]/button/span
+- element_info: //*[@id="flow"]/section/section/section/main/div/div/div[4]/div[2]/table/tbody/tr[1]/td[8]/div/div/span[2]/button/span
   find_type: xpath
   operate_type: click
   info:  点击“第一行”flow的执行按钮
   is_time: 0.5
 check:
-- element_info: //table/tbody/tr[1]/td[7]/div/span
+- element_info: //table/tbody/tr[1]/td[8]/div/span
   find_type: xpath
   operate_type: refresh_get_text_is_expect
   time_out: 180
@@ -60,7 +60,7 @@ check:
   time_out: 180
   info:  等待预览出现
   is_time: 1
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[4]/div[2]/table/tbody/tr/td[10]/div/div/span/button/span
+- element_info: //*[@id="infoDataset"]/div[1]/div[1]/div/div[4]/div[2]/table/tbody/tr/td[10]/div/div/span/button/span
   find_type: xpath
   operate_type: click
   info:  点击预览按钮
