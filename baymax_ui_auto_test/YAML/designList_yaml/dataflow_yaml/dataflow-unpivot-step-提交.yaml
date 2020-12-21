@@ -37,7 +37,7 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
+- element_info: //*[@id="flow"]/section/section/section/main/div/div/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: click
   info:  点击“第一行”flow的名字
@@ -64,12 +64,12 @@ testcase:
   operate_type: click
   info: 在source弹窗中 点击“数据集”搜索按钮
   is_time: 0.5
-- element_info: searchInput
+- element_info: name.model
   find_type: name
   operate_type: send_keys
-  msg: test_unpivot_source
-  info: 数据集查询输入“test_unpivot_source”
-- element_info: //*[@name='searchInput']/following-sibling::div
+  msg: unpivot_source
+  info: 数据集查询输入“unpivot_source”
+- element_info: //*[@name='name.model']/following-sibling::div
   find_type: xpath
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
@@ -78,10 +78,10 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 1
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'test_unpivot_source')]
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[contains(text(),'unpivot_source')]
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“test_unpivot_source”
+  info:  双击选中“unpivot_source”
   is_time: 0.3
 - element_info: tab-output_output
   find_type: id
@@ -134,77 +134,72 @@ testcase:
   operate_type: click
   info:  点击参数 tab
   is_time: 1
-- element_info: //*[@for='reservedFields']/following-sibling::div/div/div[1]/input
+- element_info: //*[@id="pane-second"]/div/form/div[1]/div/div/div[1]/input
   find_type: xpath
   operate_type: click
-  info: 在unpivot弹窗中 点击“reservedFields”下拉框
+  info: 在unpivot弹窗中 点击“保留字段”下拉框
   is_time: 0.5
 - element_info: //li//span[contains(text(), "cource")]
-  find_type: xpath
+  find_type: xpaths
+  index: 1
   operate_type: click
   info:  选择“cource”选项
   is_time: 0.5
-- element_info: tab-0
-  find_type: id
+- element_info: //*[text()="保留字段"]
+  find_type: xpath
   operate_type: click
-  info:  点击input
+  info:  点击保留字段
   is_time: 0.5
-- element_info: tab-second
-  find_type: id
-  operate_type: click
-  info:  点击参数 tab
-  is_time: 1
-- element_info: //*[@for='conversionFields']/following-sibling::div/div/div[1]/input
+- element_info: //*[@id="pane-second"]/div/form/div[2]/div/div/div[1]/input
   find_type: xpath
   operate_type: click
-  info: 在unpivot弹窗中 点击“conversionFields”下拉框
+  info: 在unpivot弹窗中 点击“转换字段”下拉框
   is_time: 1
-- element_info: /html/body/div[8]/div[1]/div[1]/ul/li[2]/span
-  find_type: xpath
+- element_info: //li//span[contains(text(), "zhangsan")]
+  find_type: xpaths
+  index: 1
   operate_type: click
   info: 选择“zhangsan”选项
   is_time: 0.5
-- element_info: /html/body/div[8]/div[1]/div[1]/ul/li[3]/span
-  find_type: xpath
+- element_info: //li//span[contains(text(), "wangwu")]
+  find_type: xpaths
+  index: 1
   operate_type: click
-  info: 选择“zhangsan”选项
-- element_info: /html/body/div[8]/div[1]/div[1]/ul/li[4]/span
-  find_type: xpath
+  info: 选择“wangwu”选项
+- element_info: //li//span[contains(text(), "lilei")]
+  find_type: xpaths
+  index: 1
   operate_type: click
   info: 选择“lilei”选项
   is_time: 0.5
-- element_info: /html/body/div[8]/div[1]/div[1]/ul/li[5]/span
-  find_type: xpath
+- element_info: //li//span[contains(text(), "gongjiu")]
+  find_type: xpaths
+  index: 1
   operate_type: click
   info: 选择“gongjiu”选项
   is_time: 0.5
-- element_info: tab-0
-  find_type: id
-  operate_type: click
-  info:  点击input
-  is_time: 0.5
-- element_info: tab-second
-  find_type: id
-  operate_type: click
-  info:  点击参数 tab
-  is_time: 1
-- element_info: //*[@id="pane-second"]/form/div[3]/div/div[1]/div[4]/div[1]/table/thead/tr/th[2]/div/i
+- element_info: //*[text()="转换字段"]
   find_type: xpath
   operate_type: click
-  info: 在targetFields选择“+”号
+  info:  点击转换字段
   is_time: 0.5
-- element_info: //*[@id="pane-second"]/form/div[3]/div/div[1]/div[4]/div[1]/table/thead/tr/th[2]/div/i
+- element_info: //*[@id="dynamicTable"]/div[4]/div[1]/table/thead/tr/th[2]/div/i
   find_type: xpath
   operate_type: click
-  info: 在targetFields选择“+”号
+  info: 在目标字段点击“+”号
   is_time: 0.5
-- element_info: //*[@id="pane-second"]/form/div[3]/div/div[1]/div[3]/table/tbody/tr[1]/td[1]/div/div/div/div/input
+- element_info: //*[@id="dynamicTable"]/div[4]/div[2]/table/tbody/tr/td[2]/div/i[2]
+  find_type: xpath
+  operate_type: click
+  info: 在目标字段点击“+”号
+  is_time: 0.5
+- element_info: //*[@id="dynamicTable"]/div[3]/table/tbody/tr[1]/td[1]/div/div/div/div/input
   find_type: xpath
   operate_type: send_keys
   msg: name
   info: 输入”name“
   is_time: 0.5
-- element_info: //*[@id="pane-second"]/form/div[3]/div/div[1]/div[3]/table/tbody/tr[2]/td[1]/div/div/div/div/input
+- element_info: //*[@id="dynamicTable"]/div[3]/table/tbody/tr[2]/td[1]/div/div/div/div/input
   find_type: xpath
   operate_type: send_keys
   msg: score
