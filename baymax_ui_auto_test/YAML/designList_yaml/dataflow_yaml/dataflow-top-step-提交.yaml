@@ -37,7 +37,7 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
+- element_info: //*[@id="flow"]/section/section/section/main/div/div/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: click
   info:  点击“第一行”flow的名字
@@ -62,12 +62,12 @@ testcase:
   operate_type: click
   info: 在source弹窗中 点击“数据集”搜索按钮
   is_time: 0.5
-- element_info: searchInput
+- element_info: name.model
   find_type: name
   operate_type: send_keys
-  msg: test_colsplit_source
-  info: 数据集查询输入“test_colsplit_source”
-- element_info: //*[@name='searchInput']/following-sibling::div
+  msg: colsplit_source
+  info: 数据集查询输入“colsplit_source”
+- element_info: //*[@name='name.model']/following-sibling::div
   find_type: xpath
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
@@ -76,10 +76,10 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 1
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_colsplit_source']
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='colsplit_source']
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“test_colsplit_source”
+  info:  双击选中“colsplit_source”
   is_time: 0.3
 - element_info: tab-output_output
   find_type: id
@@ -131,15 +131,15 @@ testcase:
   operate_type: click
   info:  点击参数 tab
   is_time: 1
-- element_info: //*[@id="pane-second"]/form/div[1]/div/div/div/input
+- element_info: //*[@id="pane-second"]/div/form/div[1]/div/div/div/input
   find_type: xpath
   operate_type: click
-  info: 在top弹窗中 点击“limitType”下拉框
+  info: 在top弹窗中 点击“限制方式”下拉框
   is_time: 0.5
-- element_info: //*[text()='RATE']
+- element_info: //*[text()='按比率']
   find_type: xpath
   operate_type: click
-  info:  选择“RATE”选项
+  info:  选择“按比率”选项
   is_time: 1
 - element_info: limit
   find_type: name
@@ -147,28 +147,35 @@ testcase:
   msg: "0.5"
   is_time: 0.3
   info: 输入limit
-- element_info: //*[@id="pane-second"]/form/div[3]/div/div/div[1]/input
+- element_info: //*[@id="pane-second"]/div/form/div[3]/div/div/div[1]/input
   find_type: xpath
   operate_type: click
   info: 点击“groupBy”
   is_time: 1
-- element_info: /html/body/div[8]/div[1]/div[1]/ul/li[1]/span
-  find_type: xpath
+- element_info: //*[text()='name']
+  find_type: xpaths
+  index: 1
   operate_type: click
   info: 选择”name“选项
   is_time: 0.5
-- operate_type: zj_click
-  info: 鼠标左键点击
-- element_info:  //*[@id="pane-second"]/form/div[4]/div/div/div[1]/input
+- element_info: //*[text()='分组字段']
   find_type: xpath
   operate_type: click
-  info:  点击”orderBy“
+  info: 选择”分组字段“选项
+  is_time: 0.5
+- element_info:  //*[@id="pane-second"]/div/form/div[4]/div/div/div[1]/input
+  find_type: xpath
+  operate_type: click
+  info:  点击”排序字段“
 - element_info:  //*[text()='age asc']
   find_type: xpath
   operate_type: click
   info:  选择”age asc“
-- operate_type: zj_click
-  info: 鼠标左键点击
+- element_info: //*[text()='排序字段']
+  find_type: xpath
+  operate_type: click
+  info: 选择”排序字段“选项
+  is_time: 0.5
 - element_info: tab-output_output
   find_type: id
   operate_type: click
