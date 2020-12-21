@@ -44,12 +44,12 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@placeholder='请输入...']
+- element_info: //*[@placeholder='请输入']
   find_type: xpath
   operate_type: clear
   info: 清楚输入框
   is_time: 0.5
-- element_info: //*[@placeholder='请输入...']
+- element_info: //*[@placeholder='请输入']
   find_type: xpath
   msg: test_union_stream_auto
   operate_type: send_keys
@@ -60,7 +60,7 @@ testcase:
   operate_type: click
   info:  点击“搜索”按钮
   is_time: 0.5
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
+- element_info: //*[@id="flow"]/section/section/section/main/div/div/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: click
   info:  点击“第一行”flow的名字
@@ -90,12 +90,12 @@ testcase:
   operate_type: click
   info: 在streaming_source弹窗中 点击“数据集”搜索按钮
   is_time: 0.5
-- element_info: searchInput
+- element_info: name.model
   find_type: name
   operate_type: send_keys
-  msg: test_kafka_click
-  info: 数据集查询输入“test_kafka_click”
-- element_info: //*[@name='searchInput']/following-sibling::div
+  msg: kafka_click
+  info: 数据集查询输入“kafka_click”
+- element_info: //*[@name='name.model']/following-sibling::div
   find_type: xpath
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
@@ -104,10 +104,10 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 1
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_kafka_click']
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='kafka_click']
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“test_kafka_click”
+  info:  双击选中“kafka_click”
   is_time: 0.3
 - element_info: //*[text()='startingOffsets']/parent::div/div/div/div/input
   find_type: xpath
@@ -135,7 +135,7 @@ testcase:
   msg: 1
   info:  在“watermarkInterval”输入框输入1
   is_time: 0.3
-- element_info: //*[@id="pane-second"]/form/div[4]/div/div/div/div/div[1]/span/span/i
+- element_info: //*[@id="pane-second"]/div/form/div[4]/div/div/div/div/div[1]/span/span/i
   find_type: xpath
   operate_type: click
   info:  点击三角形的下拉按钮
@@ -179,12 +179,12 @@ testcase:
   operate_type: click
   info: 在streaming_source弹窗中 点击“数据集”搜索按钮
   is_time: 0.5
-- element_info: searchInput
+- element_info: name.model
   find_type: name
   operate_type: send_keys
-  msg: test_kafka_click
-  info: 数据集查询输入“test_kafka_click”
-- element_info: //*[@name='searchInput']/following-sibling::div
+  msg: kafka_click
+  info: 数据集查询输入“kafka_click”
+- element_info: //*[@name='name.model']/following-sibling::div
   find_type: xpath
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
@@ -193,10 +193,10 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 1
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_kafka_click']
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='kafka_click']
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“test_kafka_click”
+  info:  双击选中“kafka_click”
   is_time: 0.3
 - element_info: //*[text()='startingOffsets']/parent::div/div/div/div/input
   find_type: xpath
@@ -224,7 +224,7 @@ testcase:
   msg: 1
   info:  在“watermarkInterval”输入框输入1
   is_time: 0.3
-- element_info: //*[@id="pane-second"]/form/div[4]/div/div/div/div/div[1]/span/span/i
+- element_info: //*[@id="pane-second"]/div/form/div[4]/div/div/div/div/div[1]/span/span/i
   find_type: xpath
   operate_type: click
   info:  点击三角形的下拉按钮
