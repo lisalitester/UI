@@ -105,7 +105,8 @@ class OperateElement():
                 ep.VALUE_OF_CSS_PROPERTY: lambda: self.value_of_css_property(operate),
                 ep.EXECUTE_SCRIPT: lambda: self.execute_script_operate(operate),
                 ep.REFRESH_UNTIL_ELEMENT_APPEAR: lambda: self.refresh_until_element_appear(operate),
-                ep.REFRESH_BUTTON_UNTIL_ELEMENT_APPEAR: lambda: self.refresh_button_until_element_appear(operate)
+                ep.REFRESH_BUTTON_UNTIL_ELEMENT_APPEAR: lambda: self.refresh_button_until_element_appear(operate),
+                ep.WAIT_UNTIL_LOADING_DISAPPERR: lambda: self.wait_until_loading_disappear()
 
 
             }
@@ -235,6 +236,15 @@ class OperateElement():
     def refresh(self):
         self.driver.refresh()
         return {'result': True}
+
+    # 等待加载圈消失
+    def wait_until_loading_disappear(self):
+        print("测试", WebDriverWait(self.driver, 20, 1).until(lambda x: self.driver.find_element_by_xpath("//*[text()='进度']")))
+        WebDriverWait(self.driver, 20, 1).until(lambda x: self.driver.find_element_by_xpath("//*[text()='进度']"))
+        # self.driver.find_element_by_xpath("//div[@class='el-loading-mask' and @style='display: none;']").is_displayed()
+        # print("测试",self.driver.find_element_by_xpath("//div[@class='el-loading-mask' and @style='display: none;']").is_displayed())
+        return {'result': True}
+
     
     #滑动滚动条至最底部操作
     def key_page_down(self):
@@ -279,12 +289,13 @@ class OperateElement():
     def refresh_get_text_is_expect(self, operate):
         old_text =self.get_text(operate)["text"]
         if old_text not in operate["expect_values"]:
-            return {'result': False, 'text': old_text}
+            return {'result': True, 'text': old_text}
         time_out = int(operate["time_out"])
         cs_time = 0
         s_time = time.time()
         while time_out > cs_time:
             self.driver.refresh()
+            self.wait_until_loading_disappear()
             time.sleep(2)
             # self.driver.implicitly_wait(3)
             new_text =self.get_text(operate)["text"]
@@ -296,23 +307,30 @@ class OperateElement():
 
      # 刷新页面 直到页面属性变化或超时 返回最后的text
     def refresh_get_attr(self, operate):
+        self.wait_until_loading_disappear()
         old_text =self.get_attr(operate)["text"]
         print("旧的值",old_text)
-        time_out = int(operate["time_out"])
-        cs_time = 0
-        s_time = time.time()
-        while time_out > cs_time:
-            self.driver.refresh()
-            time.sleep(2)
-            # self.driver.implicitly_wait(3)
-            new_text =self.get_attr(operate)["text"]
-            if new_text != old_text or old_text.find("success")>=0:
-                return {'result': True, 'text': new_text}
-            if old_text.find("danger")>=0:
-                return {'result': False, 'text': old_text}
-            time.sleep(1)
-            cs_time = int(time.time() - s_time)
-        return {'result': False, 'text': old_text}
+        if old_text.find("success")>=0:
+            return {'result': True, 'text': old_text}
+        elif old_text.find("danger")>=0:
+            return {'result': True, 'text': old_text}
+        else:
+            time_out = int(operate["time_out"])
+            cs_time = 0
+            s_time = time.time()
+            while time_out > cs_time:
+                self.driver.refresh()
+                self.wait_until_loading_disappear()
+                time.sleep(2)
+                # self.driver.implicitly_wait(3)
+                new_text =self.get_attr(operate)["text"]
+                if new_text.find("success")>=0:
+                    return {'result': True, 'text': new_text}
+                elif new_text.find("danger")>=0:
+                    return {'result': True, 'text': new_text}
+                time.sleep(1)
+                cs_time = int(time.time() - s_time)
+            return {'result': False, 'text': old_text}
 
     def refresh_until_element_appear(self,operate):
         time_out = int(operate["time_out"])
@@ -444,7 +462,7 @@ class OperateElement():
         # 让鼠标移动到起点元素上
         pyautogui.moveTo(start.location['x']+10,start.location['y']+130)
         # # 定位要拖拽到的位置元素
-        pyautogui.dragRel(*tuple(eval(operate['move_to'])),duration=2.0)
+        pyautogui.dragRel(*tuple(eval(operate['move_to'])),duration=1.0)
         return {'result': True}
 
     # 移动鼠标到某个像素
