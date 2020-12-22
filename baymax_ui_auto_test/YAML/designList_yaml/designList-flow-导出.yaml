@@ -28,7 +28,7 @@ testcase:
   v_index: 0
   operate_type: click
   info:  勾选“第一行的”flow
-- element_info: //*[@id="operationPanel"]/div[1]/form/div[5]/button/span
+- element_info: //*[@id="operationPanel"]/div[1]/div/form/div[5]/button/span
   find_type: xpath
   operate_type: click
   info: 点击‘操作’按钮
