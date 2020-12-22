@@ -50,6 +50,7 @@ class ElementParam(object):
     EXECUTE_SCRIPT = 'execute_script'  #执行js脚本
     REFRESH_UNTIL_ELEMENT_APPEAR = 'refresh_until_element_appear'
     REFRESH_BUTTON_UNTIL_ELEMENT_APPEAR = 'refresh_button_until_element_appear'
+    WAIT_UNTIL_LOADING_DISAPPERR= 'wait_until_loading_disappear'
 
 
     # 错误日志
@@ -125,7 +126,7 @@ class ElementParam(object):
     TASK_ADMINISTRATION_URL = HOST +"/#/jobManage" # 作业管理url
 
     # designList
-    DESIGN_LIST_URL = HOST + "/#/designList?resId=84d0fb02-7ddc-4ed5-b51a-b857dbbb1e92"
+    DESIGN_LIST_URL = HOST + "/flowManagement/designList?resId=79045c30-5edb-4632-a5a4-54813a7e5da6"
 
     #脚本版本
     VERSION = '2020-03-30'

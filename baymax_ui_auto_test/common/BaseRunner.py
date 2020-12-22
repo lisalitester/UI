@@ -32,6 +32,7 @@ def get_driver():
     # chrome 普通模式
     chromedriver = PATH("../exe/chromedriver.exe")
     chromeOptions.add_experimental_option("prefs", prefs)
+    # chromeOptions.add_argument('--headless') #不启动浏览器模式
     os.environ["webdriver.chrome.driver"] = chromedriver
     driver = webdriver.Chrome(chromedriver,chrome_options=chromeOptions)
 
