@@ -5,7 +5,7 @@ import sys
 from cases.case_designList.case_designList import DesignList
 # from cases.case_dsp.case_data_management.case_data_setup.case_data_setup import DataSetUp
 # from cases.case_dsp.case_data_management.case_data_source.case_data_source import DataSource
-from common import ClearDb
+# from common import ClearDb
 
 sys.path.append("..")     #3层 格式照抄
 from common.BaseRunner import ParametrizedTestCase, get_driver
