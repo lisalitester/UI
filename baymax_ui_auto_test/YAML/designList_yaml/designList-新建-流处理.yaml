@@ -4,12 +4,12 @@ testinfo:
   launch: 0
   info: 先进入流程管理
 testcase:
-#- element_info: //*[contains(text(),"根目录")]/parent::span/preceding-sibling::span/i[2]
+#- element_info: //*[contains(text(),"根目录")]/preceding-sibling::span/i[2]
 #  find_type: xpath
 #  operate_type: click
 #  info: 点击‘根目录'前的文件夹图标
 #  is_time: 1
-- element_info: //*[contains(text(),"根目录")]/parent::span
+- element_info: //*[contains(text(),"根目录")]
   find_type: xpath
   operate_type: click
   info: 点击‘根目录'的文字

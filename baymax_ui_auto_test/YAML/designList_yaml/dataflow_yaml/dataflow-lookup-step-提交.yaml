@@ -4,12 +4,12 @@ testinfo:
   launch: 0
   info: 先进入designlist
 testcase:
-#- element_info: //*[contains(text(),"根目录")]/parent::span/preceding-sibling::span/i[2]
+#- element_info: //*[contains(text(),"根目录")]/preceding-sibling::span/i[2]
 #  find_type: xpath
 #  operate_type: click
 #  info: 点击‘根目录'前的文件夹图标
 #  is_time: 1
-- element_info: //*[contains(text(),"根目录")]/parent::span
+- element_info: //*[contains(text(),"根目录")]
   find_type: xpath
   operate_type: click
   info: 点击‘根目录'的文字
@@ -38,7 +38,7 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody/tr[1]/td[2]/div/span/span
+- element_info: //*[@id="flow"]/section/section/section/main/div/div/div[3]/table/tbody/tr[1]/td[2]/div/span/span
   find_type: xpath
   operate_type: click
   info:  点击“第一行”flow的名字
@@ -63,12 +63,12 @@ testcase:
   operate_type: click
   info: 在source弹窗中 点击“数据集”搜索按钮
   is_time: 0.5
-- element_info: searchInput
+- element_info: name.model
   find_type: name
   operate_type: send_keys
-  msg: test_colsplit_source
-  info: 数据集查询输入“test_colsplit_source”
-- element_info: //*[@name='searchInput']/following-sibling::div
+  msg: colsplit_source
+  info: 数据集查询输入“colsplit_source”
+- element_info: //*[@name='name.model']/following-sibling::div
   find_type: xpath
   operate_type: click
   info:  点击“数据集查询输入框后的”搜索按钮
@@ -77,10 +77,10 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='test_colsplit_source']
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='colsplit_source']
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“test_colsplit_source”
+  info:  双击选中“colsplit_source”
   is_time: 0.3
 - element_info: tab-output_output
   find_type: id
@@ -148,13 +148,13 @@ testcase:
   operate_type: click
   info:  点击“dataset”的下面的搜索框
   is_time: 0.5
-- element_info: searchInput
+- element_info: name.model
   find_type: name
   operate_type: send_keys
-  msg: cache_sink1
-  info:  输入"cache_sink1"
+  msg: cache19
+  info:  输入"cache19"
   is_time: 0.5
-- element_info:  //*[@name='searchInput']/following-sibling::div
+- element_info:  //*[@name='name.model']/following-sibling::div
   find_type: xpath
   operate_type: click
   info:  选择“搜索”按钮
@@ -163,17 +163,17 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='cache_sink1']
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='cache19']
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“cache_sink1”
+  info:  双击选中“cache19”
   is_time: 0.3
-- element_info: //*[@id="pane-second"]/form/div[2]/div/div[1]/div[3]/table/tbody/tr/td[3]/div/div/div/div/div/input
+- element_info: //*[@id="pane-second"]/div/form/div[3]/div/div/div[1]/input
   find_type: xpath
   operate_type: click
   info:  点击“inputKeyColumn”输入框
   is_time: 0.3
-- element_info: /html/body/div[8]/div[1]/div[1]/ul/li[4]/span
+- element_info: /html/body/div[7]/div[1]/div[1]/ul/li[4]/span
   find_type: xpath
   operate_type: click
   info:  选择“id”选项

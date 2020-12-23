@@ -4,12 +4,12 @@ testinfo:
   launch: 0
   info: 先进入designlist
 testcase:
-#- element_info: //*[contains(text(),"根目录")]/parent::span/preceding-sibling::span/i[2]
+#- element_info: //*[contains(text(),"根目录")]/preceding-sibling::span/i[2]
 #  find_type: xpath
 #  operate_type: click
 #  info: 点击‘根目录'前的文件夹图标
 #  is_time: 1
-- element_info: //*[contains(text(),"根目录")]/parent::span
+- element_info: //*[contains(text(),"根目录")]
   find_type: xpath
   operate_type: click
   info: 点击‘根目录'的文字
@@ -19,13 +19,13 @@ testcase:
   operate_type: execute_script
   info: 点击‘auto_flow'的文字
   is_time: 2
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[4]/div[2]/table/tbody/tr[1]/td[8]/div/div/span[2]/button/span
+- element_info: //*[@id="flow"]/section/section/section/main/div/div/div[4]/div[2]/table/tbody/tr[1]/td[8]/div/div/span[2]/button/span
   find_type: xpath
   operate_type: click
   info:  点击“第一行”flow的执行按钮
   is_time: 1
 check:
-- element_info: //table/tbody/tr[1]/td[7]/div/span
+- element_info: //table/tbody/tr[1]/td[8]/div/span
   find_type: xpath
   operate_type: refresh_get_attr
   time_out: 180
