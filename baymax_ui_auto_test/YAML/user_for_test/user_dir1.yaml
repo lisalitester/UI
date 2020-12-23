@@ -28,7 +28,8 @@ testcase:
   operate_type: send_keys
   msg: 123456
   info: 输入密码
-- element_info: login.login
+  is_time: 1
+- element_info: login
   find_type: name
   operate_type: click
   info: 点击确定登录
