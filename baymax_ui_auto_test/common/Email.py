@@ -47,8 +47,7 @@ def send_mail(**kwargs):
 
 
 def send():
-    to_addr = ['bingjie.gu@inforefiner.com', 'zhiming.wang@inforefiner.com', 'qian.feng@inforefiner.com', "haonan.xu@inforefiner.com"]
-    # to_addr = ['bingjie.gu@inforefiner.com', "anchong.wang@inforefiner.com"]
+    to_addr = ['289332729@qq.com']
     mail_host = "smtp.163.com"
     mail_user = "ruifan_test@163.com"
     mail_pass = "ruifantest2018"
