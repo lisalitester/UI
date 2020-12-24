@@ -131,17 +131,20 @@ testcase:
   operate_type: click
   info:  点击参数 tab
   is_time: 1
-- element_info: //label[@for='partitionFields']/parent::div/div/div/div/span/following-sibling::input
+- element_info: //*[@id="pane-second"]/div/form/div[1]/div/div/div[1]/input
   find_type: xpath
   operate_type: click
   info: 点击“partitionFields”输入框
   is_time: 1
 - element_info: //span[text()='department']
-  find_type: xpath
+  find_type: xpaths
+  index: 1
   operate_type: click
   info: 选择department
-- operate_type: zj_click
-  info: 鼠标左键
+- element_info: //*[text()='partitionFields']
+  find_type: xpath
+  operate_type: click
+  info: 鼠标点击partitionFields
 - element_info: //label[@for='orderFields']/parent::div/div/div/div/span/following-sibling::input
   find_type: xpath
   operate_type: click
@@ -152,8 +155,10 @@ testcase:
   index: 1
   operate_type: click
   info: 选择salary
-- operate_type: zj_click
-  info: 鼠标左键
+- element_info: //*[text()='orderFields']
+  find_type: xpath
+  operate_type: click
+  info: 鼠标点击orderFields
 - element_info: //*[@id="dynamicTable"]/div[4]/div[1]/table/thead/tr/th[4]/div/i
   find_type: xpath
   operate_type: click
