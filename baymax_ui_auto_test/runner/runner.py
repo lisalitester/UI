@@ -7,6 +7,7 @@ from cases.case_designList.case_designList import DesignList
 # from cases.case_dsp.case_data_management.case_data_source.case_data_source import DataSource
 # from common import ClearDb
 
+
 sys.path.append("..")     #3层 格式照抄
 from common.BaseRunner import ParametrizedTestCase, get_driver
 from cases.case_home.case_home_page_click import HomePageTest
@@ -45,7 +46,7 @@ from datetime import datetime
 from common.TearDown import mk_file
 from common.Count import countDate, writeExcel
 from common.Email import send
-
+from common import RunShell
 
 def suite_case(who):
     '''根据当前测试环境的ui包 判断执行某个测试用例集合'''
@@ -101,7 +102,8 @@ def runnerCaseApp():
     countDate(datetime.now().strftime('%Y-%m-%d %H:%M:%S'), str((end_time - start_time).seconds) + "秒")
 
 if __name__ == '__main__':
+    RunShell.ConnectShell().remotConnect()
     mk_file()
     runnerCaseApp()
     writeExcel()
-    send()
+    # send()

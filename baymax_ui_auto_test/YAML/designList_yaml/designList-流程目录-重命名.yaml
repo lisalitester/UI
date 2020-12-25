@@ -12,21 +12,41 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击‘根目录'的文字
-- element_info: //span[text()="auto_flow"]
+  is_time: 1
+- element_info: primaryBtn
+  find_type: name
+  operate_type: click
+  info: 点击‘操作'按鈕
+  is_time: 1
+- element_info: add
+  find_type: name
+  operate_type: click
+  info:  点击”新建“按钮
+  is_time: 1
+- element_info: //*[@required='required']
   find_type: xpath
-  js: "arguments[0].click();"
-  operate_type: execute_script
-  info: 点击‘auto_flow'的文字
-  is_time: 2
+  operate_type: send_keys
+  msg: create_list_+随机数
+  info: 输入新的目录名称
+  is_time: 0.5
+- element_info: //*[contains(text(),'确定')]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘确定’按钮
+- element_info: //*[contains(text(),"根目录")]
+  find_type: xpath
+  operate_type: click
+  info: 点击‘根目录'的文字
+  is_time: 1
 - element_info:  //*[starts-with(text(),'create_list')]
   find_type: xpaths
-  index: 0
+  index: 1
   operate_type: get_text
   info:  获取“第一行的”名字
   is_time: 0.5
 - element_info:  //*[starts-with(text(),'create_list')]
   find_type: xpaths
-  index: 0
+  index: 1
   operate_type: click
   info:  点击“第一行的”名字
   is_time: 0.5

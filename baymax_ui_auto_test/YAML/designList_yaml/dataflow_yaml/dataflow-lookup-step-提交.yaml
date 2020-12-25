@@ -151,8 +151,8 @@ testcase:
 - element_info: name.model
   find_type: name
   operate_type: send_keys
-  msg: cache19
-  info:  输入"cache19"
+  msg: cache_sink1
+  info:  输入"cache_sink1"
   is_time: 0.5
 - element_info:  //*[@name='name.model']/following-sibling::div
   find_type: xpath
@@ -163,10 +163,10 @@ testcase:
   find_type: xpath
   info:  等待加载圈消失
   is_time: 0.5
-- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='cache19']
+- element_info: //*[@class='el-table__body-wrapper is-scrolling-none']//span[text()='cache_sink1']
   find_type: xpath
   operate_type: double_click
-  info:  双击选中“cache19”
+  info:  双击选中“cache_sink1”
   is_time: 0.3
 - element_info: //*[@id="pane-second"]/div/form/div[3]/div/div/div[1]/input
   find_type: xpath

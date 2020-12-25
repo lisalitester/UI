@@ -170,7 +170,7 @@ testcase:
   info:  等待加载圈消失
   is_time: 1
 check:
-- element_info: //*[@id="operationPanel"]/div[1]/div/div[2]/div/button[1]/span
+- element_info: //*[@id="operationPanel"]/div[1]/div/div/form/div[2]/button/span
   find_type: xpath
   operate_type: get_text
   check: current_contain_expect
