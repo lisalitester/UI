@@ -4,10 +4,10 @@ testinfo:
   launch: 0
   info: 先进入designList
 testcase:
-#- element_info: //*[contains(text(),"根目录")]/preceding-sibling::span/i[2]
-#  find_type: xpath
-#  operate_type: click
-#  info: 点击‘根目录'前的文件夹图标
+- element_info: "//*[@id='flow']//div[@class='el-loading-mask' and @style='display: none;']"
+  find_type: xpath
+  info:  等待加载圈消失
+  is_time: 0.5
 - element_info: //*[contains(text(),"根目录")]
   find_type: xpath
   operate_type: click
@@ -33,6 +33,10 @@ testcase:
   find_type: xpath
   operate_type: click
   info: 点击‘确定’按钮
+- element_info: "//*[@id='flow']//div[@class='el-loading-mask' and @style='display: none;']"
+  find_type: xpath
+  info:  等待加载圈消失
+  is_time: 0.5
 - element_info: //*[contains(text(),"根目录")]
   find_type: xpath
   operate_type: click
@@ -40,7 +44,7 @@ testcase:
   is_time: 1
 - element_info:  //*[starts-with(text(),'create_list')]
   find_type: xpaths
-  index: 1
+  index: 0
   operate_type: get_text
   info:  获取“第一行的”名字
   is_time: 0.5
