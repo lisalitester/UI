@@ -19,16 +19,26 @@ testcase:
   operate_type: click
   info:  点击“第一行”flow的名字
   is_time: 0.5
-- element_info: //*[contains(text(), '返回')]
+- element_info: //div[contains(text(), "IO")]
+  find_type: xpath
+  operate_type: click
+  info:  点击“IO”tab
+  is_time: 1
+- element_info: //p[text()="source"]/preceding-sibling::i
+  find_type: xpath
+  operate_type: drag_el1
+  move_to: (-800, -210)
+  info:  拖拽
+  is_time: 1
+- element_info: //span[contains(text(), '返回')]
   find_type: xpath
   operate_type: click
   info:  点击“返回”按钮
   is_time: 0.5
-- element_info: //*[contains(text(), '确定')]
-  find_type: xpaths
-  index: 1
+- element_info: //span[contains(text(), '确定')]
+  find_type: xpath
   operate_type: click
-  info:  点击“返回”按钮
+  info:  点击“确定”按钮
   is_time: 0.5
 check:
 - element_info: //span[contains(text(),"新建")]
