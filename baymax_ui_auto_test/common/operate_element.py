@@ -106,7 +106,8 @@ class OperateElement():
                 ep.EXECUTE_SCRIPT: lambda: self.execute_script_operate(operate),
                 ep.REFRESH_UNTIL_ELEMENT_APPEAR: lambda: self.refresh_until_element_appear(operate),
                 ep.REFRESH_BUTTON_UNTIL_ELEMENT_APPEAR: lambda: self.refresh_button_until_element_appear(operate),
-                ep.WAIT_UNTIL_LOADING_DISAPPERR: lambda: self.wait_until_loading_disappear()
+                ep.WAIT_UNTIL_TEXT_APPEAR: lambda: self.wait_until_text_appear(),
+                ep.SWITCH_TO_ALERT: lambda: self.switch_to_alert()
 
 
             }
@@ -237,12 +238,10 @@ class OperateElement():
         self.driver.refresh()
         return {'result': True}
 
-    # 等待加载圈消失
-    def wait_until_loading_disappear(self):
+    # 等待某元素出现
+    def wait_until_text_appear(self):
         print("测试", WebDriverWait(self.driver, 20, 1).until(lambda x: self.driver.find_element_by_xpath("//*[text()='进度']")))
         WebDriverWait(self.driver, 20, 1).until(lambda x: self.driver.find_element_by_xpath("//*[text()='进度']"))
-        # self.driver.find_element_by_xpath("//div[@class='el-loading-mask' and @style='display: none;']").is_displayed()
-        # print("测试",self.driver.find_element_by_xpath("//div[@class='el-loading-mask' and @style='display: none;']").is_displayed())
         return {'result': True}
 
     
@@ -295,7 +294,7 @@ class OperateElement():
         s_time = time.time()
         while time_out > cs_time:
             self.driver.refresh()
-            self.wait_until_loading_disappear()
+            self.wait_until_text_appear()
             time.sleep(2)
             # self.driver.implicitly_wait(3)
             new_text =self.get_text(operate)["text"]
@@ -307,7 +306,7 @@ class OperateElement():
 
      # 刷新页面 直到页面属性变化或超时 返回最后的text
     def refresh_get_attr(self, operate):
-        self.wait_until_loading_disappear()
+        self.wait_until_text_appear()
         old_text =self.get_attr(operate)["text"]
         print("旧的值",old_text)
         if old_text.find("success")>=0:
@@ -320,7 +319,7 @@ class OperateElement():
             s_time = time.time()
             while time_out > cs_time:
                 self.driver.refresh()
-                self.wait_until_loading_disappear()
+                self.wait_until_text_appear()
                 time.sleep(2)
                 # self.driver.implicitly_wait(3)
                 new_text =self.get_attr(operate)["text"]
@@ -694,6 +693,16 @@ class OperateElement():
             operate['find_type'] == ep.find_elements_by_name or operate['find_type'] == ep.find_elements_by_class_name:
             self.driver.execute_script(js2, self.element_by(operate)[operate['index']])
             return {'result': True}
+
+    def switch_to_alert(self):
+        try:
+            dialog_box= self.driver.switch_to.alert()
+            print ("测试1228",dialog_box.text)
+            dialog_box.accept()
+            return {'result': True}
+        except selenium.common.exceptions.UnexpectedAlertPresentException:
+            return {'result': False}
+
 
     # 查找元素的封装
     def element_by2(self, operate):

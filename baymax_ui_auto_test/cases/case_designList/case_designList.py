@@ -84,13 +84,13 @@ class DesignList(ParametrizedTestCase):
     #     page.operate()
     #     page.check_point()
     #
-    @get_url(designList_url)
-    def test_a404_designList_flow_move(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-flow-移动.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
+    # @get_url(designList_url)
+    # def test_a404_designList_flow_move(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-flow-移动.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
     #
     #
     # @get_url(designList_url)
@@ -162,29 +162,29 @@ class DesignList(ParametrizedTestCase):
     #     page.operate()
     #     page.check_point()
     # #
-    @get_url(designList_url)
-    def test_a415_designList_move_list(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-流程目录-移动.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
-    # #
-    @get_url(designList_url)
-    def test_a416_designList_rename_list(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-流程目录-重命名.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
-    # #
-    @get_url(designList_url)
-    def test_a417_designList_flow_step_drag(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-flow-step-拖拽.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
+    # @get_url(designList_url)
+    # def test_a415_designList_move_list(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-流程目录-移动.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
+    # # #
+    # @get_url(designList_url)
+    # def test_a416_designList_rename_list(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-流程目录-重命名.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
+    # # #
+    # @get_url(designList_url)
+    # def test_a417_designList_flow_step_drag(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-flow-step-拖拽.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
     #
     # @get_url(designList_url)
     # def test_a418_designList_flow_step_submit(self):
@@ -202,13 +202,13 @@ class DesignList(ParametrizedTestCase):
     #     page.operate()
     #     page.check_point()
     #
-    @get_url(designList_url)
-    def test_a420_designList_flow_step_schedule(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-flow-step-调度.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
+    # @get_url(designList_url)
+    # def test_a420_designList_flow_step_schedule(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-flow-step-调度.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
 
 
     # @get_url(designList_url)
@@ -219,13 +219,13 @@ class DesignList(ParametrizedTestCase):
     #     page.operate()
     #     page.check_point()
 
-    @get_url(designList_url)
-    def test_a422_designList_flow_step_back(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-flow-step-返回.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
+    # @get_url(designList_url)
+    # def test_a422_designList_flow_step_back(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/designList-flow-step-返回.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
 
     # @get_url(designList_url)
     # def test_a423_designList_flow_step_clear(self):
@@ -235,22 +235,22 @@ class DesignList(ParametrizedTestCase):
     #     page.operate()
     #     page.check_point()
 
-    @get_url(designList_url)
-    def test_a424_dataflow_sample_step_submit(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-sample-step-提交.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
-
-    @get_url(designList_url)
-    def test_a425_dataflow_sample_step_view_result(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-sample-step-查看运行结果.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
-    # #
+    # @get_url(designList_url)
+    # def test_a424_dataflow_sample_step_submit(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-sample-step-提交.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
+    #
+    # @get_url(designList_url)
+    # def test_a425_dataflow_sample_step_view_result(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-sample-step-查看运行结果.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
+    # # #
     # @get_url(designList_url)
     # def test_a426_dataflow_colsplit_step_submit(self):
     #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-colsplit-step-提交.yaml"),
@@ -331,22 +331,22 @@ class DesignList(ParametrizedTestCase):
     #     page = DesignListPage(app)
     #     page.operate()
     #     page.check_point()
+    # #
+    # @get_url(designList_url)
+    # def test_a436_dataflow_transform_step_submit(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-transform-step-提交.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
     #
-    @get_url(designList_url)
-    def test_a436_dataflow_transform_step_submit(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-transform-step-提交.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
-
-    @get_url(designList_url)
-    def test_a437_dataflow_transfrom_step_view_result(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-transform-step-查看运行结果.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
+    # @get_url(designList_url)
+    # def test_a437_dataflow_transfrom_step_view_result(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-transform-step-查看运行结果.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
     # # #
     # @get_url(designList_url)
     # def test_a438_dataflow_unpivot_step_submit(self):
@@ -675,37 +675,37 @@ class DesignList(ParametrizedTestCase):
     #     page.operate()
     #     page.check_point()
     # #
-    @get_url(designList_url)
-    def test_a482_dataflow_lookup_step_submit(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-lookup-step-提交.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
-
-    @get_url(designList_url)
-    def test_a483_dataflow_lookup_step_view_result(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-lookup-step-查看运行结果.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
-
-    @get_url(designList_url)
-    def test_a480_dataflow_lookupTable_step_submit(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-lookupTable-step-提交.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
-
-    @get_url(designList_url)
-    def test_a481_dataflow_lookupTable_step_view_result(self):
-        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-lookupTable-step-查看运行结果.yaml"),
-               "caseName": sys._getframe().f_code.co_name}
-        page = DesignListPage(app)
-        page.operate()
-        page.check_point()
+    # @get_url(designList_url)
+    # def test_a482_dataflow_lookup_step_submit(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-lookup-step-提交.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
+    #
+    # @get_url(designList_url)
+    # def test_a483_dataflow_lookup_step_view_result(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-lookup-step-查看运行结果.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
+    #
+    # @get_url(designList_url)
+    # def test_a480_dataflow_lookupTable_step_submit(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-lookupTable-step-提交.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
+    #
+    # @get_url(designList_url)
+    # def test_a481_dataflow_lookupTable_step_view_result(self):
+    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/dataflow_yaml/dataflow-lookupTable-step-查看运行结果.yaml"),
+    #            "caseName": sys._getframe().f_code.co_name}
+    #     page = DesignListPage(app)
+    #     page.operate()
+    #     page.check_point()
     # #
     # @get_url(designList_url)
     # def test_a484_dataflow_win_aggregate_step_submit(self):
@@ -766,182 +766,182 @@ class DesignList(ParametrizedTestCase):
 ##========================================= dataflow end ========================================================================================
 
 # ##========================================= stream start ========================================================================================
-#     @get_url(designList_url)
-#     def test_a500_streamflow_aggregate_step_submit(self):
-#         app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-aggregate-step-提交.yaml"),
-#                "caseName": sys._getframe().f_code.co_name}
-#         page = DesignListPage(app)
-#         page.operate()
-#         page.check_point()
-#
-    # @get_url(designList_url)
-    # def test_a501_streamflow_aggregate_step_view_result(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-aggregate-step-查看运行结果.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
+    @get_url(designList_url)
+    def test_a500_streamflow_aggregate_step_submit(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-aggregate-step-提交.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
+
+    @get_url(designList_url)
+    def test_a501_streamflow_aggregate_step_view_result(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-aggregate-step-查看运行结果.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
 
 
-    # @get_url(designList_url)
-    # def test_a502_streamflow_deduplication_step_submit(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-deduplication-step-提交.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
+    @get_url(designList_url)
+    def test_a502_streamflow_deduplication_step_submit(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-deduplication-step-提交.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
 
-    # @get_url(designList_url)
-    # def test_a503_streamflow_deduplication_step_view_result(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-deduplication-step-查看运行结果.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
-    # #
-    # @get_url(designList_url)
-    # def test_a504_streamflow_intersect_step_submit(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-intersect-step-提交.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
-
-    # @get_url(designList_url)
-    # def test_a505_streamflow_intersect_step_view_result(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-intersect-step-查看运行结果.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
-
-    # @get_url(designList_url)
-    # def test_a506_streamflow_minus_step_submit(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-minus-step-提交.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
-
-    # @get_url(designList_url)
-    # def test_a507_streamflow_minus_step_view_result(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-minus-step-查看运行结果.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
-
-    # @get_url(designList_url)
-    # def test_a508_streamflow_split_step_submit(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-split-step-提交.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
-
-    # @get_url(designList_url)
-    # def test_a509_streamflow_split_step_view_result(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-split-step-查看运行结果.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
-
-    # @get_url(designList_url)
-    # def test_a509_streamflow_union_step_submit(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-union-step-提交.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
-
-    # @get_url(designList_url)
-    # def test_a510_streamflow_union_step_view_result(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-union-step-查看运行结果.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
+    @get_url(designList_url)
+    def test_a503_streamflow_deduplication_step_view_result(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-deduplication-step-查看运行结果.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
     #
-    # @get_url(designList_url)
-    # def test_a511_streamflow_filter_step_submit(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-filter-step-提交.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
+    @get_url(designList_url)
+    def test_a504_streamflow_intersect_step_submit(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-intersect-step-提交.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
 
-    # @get_url(designList_url)
-    # def test_a512_streamflow_filter_step_view_result(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-filter-step-查看运行结果.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
-    # #
-    # @get_url(designList_url)
-    # def test_a513_streamflow_sql_step_submit(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-sql-step-提交.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
+    @get_url(designList_url)
+    def test_a505_streamflow_intersect_step_view_result(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-intersect-step-查看运行结果.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
 
-    # @get_url(designList_url)
-    # def test_a514_streamflow_sql_step_view_result(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-sql-step-查看运行结果.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
-    # #
-    # @get_url(designList_url)
-    # def test_a515_streamflow_transform_step_submit(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-transform-step-提交.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
+    @get_url(designList_url)
+    def test_a506_streamflow_minus_step_submit(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-minus-step-提交.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
 
-    # @get_url(designList_url)
-    # def test_a516_streamflow_transform_step_view_result(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-transform-step-查看运行结果.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
-    # #
-    # @get_url(designList_url)
-    # def test_a517_streamflow_join_step_submit(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-join-step-提交.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
+    @get_url(designList_url)
+    def test_a507_streamflow_minus_step_view_result(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-minus-step-查看运行结果.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
 
-    # @get_url(designList_url)
-    # def test_a518_streamflow_join_step_view_result(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-join-step-查看运行结果.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
+    @get_url(designList_url)
+    def test_a508_streamflow_split_step_submit(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-split-step-提交.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
 
-    # @get_url(designList_url)
-    # def test_a519_streamflow_starjoin_step_submit(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-starjoin-step-提交.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
+    @get_url(designList_url)
+    def test_a509_streamflow_split_step_view_result(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-split-step-查看运行结果.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
 
-    # @get_url(designList_url)
-    # def test_a520_streamflow_starjoin_step_view_result(self):
-    #     app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-starjoin-step-查看运行结果.yaml"),
-    #            "caseName": sys._getframe().f_code.co_name}
-    #     page = DesignListPage(app)
-    #     page.operate()
-    #     page.check_point()
+    @get_url(designList_url)
+    def test_a509_streamflow_union_step_submit(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-union-step-提交.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
+
+    @get_url(designList_url)
+    def test_a510_streamflow_union_step_view_result(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-union-step-查看运行结果.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
+
+    @get_url(designList_url)
+    def test_a511_streamflow_filter_step_submit(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-filter-step-提交.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
+
+    @get_url(designList_url)
+    def test_a512_streamflow_filter_step_view_result(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-filter-step-查看运行结果.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
+    #
+    @get_url(designList_url)
+    def test_a513_streamflow_sql_step_submit(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-sql-step-提交.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
+
+    @get_url(designList_url)
+    def test_a514_streamflow_sql_step_view_result(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-sql-step-查看运行结果.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
+    #
+    @get_url(designList_url)
+    def test_a515_streamflow_transform_step_submit(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-transform-step-提交.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
+
+    @get_url(designList_url)
+    def test_a516_streamflow_transform_step_view_result(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-transform-step-查看运行结果.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
+    #
+    @get_url(designList_url)
+    def test_a517_streamflow_join_step_submit(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-join-step-提交.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
+
+    @get_url(designList_url)
+    def test_a518_streamflow_join_step_view_result(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-join-step-查看运行结果.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
+
+    @get_url(designList_url)
+    def test_a519_streamflow_starjoin_step_submit(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-starjoin-step-提交.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
+
+    @get_url(designList_url)
+    def test_a520_streamflow_starjoin_step_view_result(self):
+        app = {"logTest": self.logTest, "driver": self.driver, "path": PATH("../../YAML/designList_yaml/streamflow_yaml/streamflow-starjoin-step-查看运行结果.yaml"),
+               "caseName": sys._getframe().f_code.co_name}
+        page = DesignListPage(app)
+        page.operate()
+        page.check_point()
 
 
 
