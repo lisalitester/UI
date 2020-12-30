@@ -54,7 +54,7 @@ check:
   operate_type: click
   info:  点击输出tab
   is_time: 1
-- element_info: //*[@id="bm-com-table-tableList-btn-table"]/div[3]/table/tbody
+- element_info: //*[@id="infoDataset"]/div[1]/div[1]/div/div[4]/div[2]/table/tbody/tr/td[10]/div/div/span/button
   find_type: xpath
   operate_type: refresh_until_element_appear
   time_out: 180
